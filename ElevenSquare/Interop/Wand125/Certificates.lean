@@ -22,6 +22,10 @@ theorem excluded (k : Fin 2184) (hk : applicable k = true)
   exact excludes_occupancy _ hJ
     (SquarePacking.S11Opt.ImportedFields.applicable_sound hJ hk) P
 
+private def emptyState : PoseState where
+  rows := fun _ => []
+  owned := fun _ => []
+
 /-- Feed the imported geometric contradiction into the existing trace contract,
 using the same empty-state construction as the completed native groups. -/
 theorem certificate (k : Fin 2184) (hk : applicable k = true) :

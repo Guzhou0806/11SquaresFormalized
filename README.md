@@ -79,9 +79,10 @@ The branch imports wand125's box-tree checker, field certificates 0, 3, 6, and
 19, and owned-hull induction/branching rules. The original packing model is
 connected to the imported model in `ElevenSquare/Interop/Wand125/`. See
 [integration details and validation requirements](integrations/wand125/README.md).
-The source comparison identifies 247 additional baseline cases; the concrete
-coverage theorem and the complete upgraded source tree must pass the verifier
-before this is treated as a completed upgrade.
+Lean has checked 247 additional baseline case exclusions and their disjointness
+from the previously completed groups, with only the standard axioms. The focused
+180-module replay passed. **Full-project validation of the Lean upgrade is still
+pending**; see `verification/wand125-integration.json` for the checked scope.
 
 ## Assembly provenance
 

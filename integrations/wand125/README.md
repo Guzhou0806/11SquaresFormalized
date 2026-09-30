@@ -29,8 +29,9 @@ The exact lists and comparison are in `coverage.json`.
 | Union | 1,103 | 247 |
 
 The last column is not additive because the fields overlap. The combined native
-and imported coverage is 1,379 baseline cases, leaving 552 outside that union,
-**once the integration's concrete coverage theorem has been kernel-checked**.
+and imported coverage is 1,379 baseline cases, leaving 552 outside that union.
+The concrete coverage theorem has passed Lean 4.34.1 checking with only the
+standard axioms. The wider native toolchain migration is still being checked.
 
 The `split` branch additionally publishes batch ownership promotion, triangle
 ownership, and closed-half-plane branching rules, with their generators. These
@@ -54,7 +55,7 @@ the pinned toolchain. `ElevenSquare/Interop/Wand125/` supplies the connection:
   normalization, and converts native closed-cell occupancy into `Realizes`.
 - `Certificates.lean`: transports imported exclusions into the original
   initialized-terminal-trace contract, as the native completed groups do.
-- `Coverage.lean`: checks the concrete 247 new cases and their disjointness from
+- `Coverage.lean` and `Coverage/`: check the concrete 247 new cases and their disjointness from
   the old completed groups.
 
 The T01 dispatcher tries the imported certificate before the existing groups
@@ -102,8 +103,10 @@ serial verifier for compilation. Machine build output belongs in `.verification/
 `imported-source-hashes.json` records the initial import before compatibility
 edits. `evand-provenance.json` identifies its external geometry dependency.
 The generated data reproduction completed with `N11_DATA_VERIFIED`; that marker
-checks data hashes, not Lean proofs. Native compilation status is recorded by
-actual verifier receipts and the final axiom audit, not by this document.
+checks data hashes, not Lean proofs. The 180-module focused integration replay passed, including the imported axiom
+audit and the split-branch rules. Its target axioms and source hashes are saved in
+`verification/wand125-integration.json`. Full-project compilation remains pending;
+this focused result does not certify the entire toolchain migration.
 
 ## Attribution
 

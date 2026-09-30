@@ -15,9 +15,12 @@ Three sites under `ElevenSquare/Tasks/T01/Handoff/` remain:
 
 The reduced inventory covers all 1,931 baseline indices with 71 selected groups.
 Groups G003, G004, and G007 are already integrated into the dispatcher; their
-completed certificates cover 1,132 distinct required cases. The other 799 cases
-remain outside that completed union. The number of cases is not an estimate of
-remaining computational effort.
+completed certificates cover 1,132 distinct required cases. The wand125
+integration proves 247 additional baseline exclusions in the original packing
+model, disjoint from those groups. Their combined union covers 1,379 cases,
+leaving 552 outside it. The new coverage theorem passed Lean 4.34.1; validation
+of the full native toolchain upgrade remains pending. Case counts are not an
+estimate of remaining computational effort.
 
 The return also includes all 188 shared owned-point proofs, uniform wall and core
 lemmas, shared Bernstein sign certificates, finished parts of G005, and partial
