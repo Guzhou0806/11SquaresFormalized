@@ -1,5 +1,5 @@
 {
-  "status": "PARTIAL_COMMON_HELPERS_AND_ONE_COMPLETE_CASE",
+  "status": "PARTIAL_COMMON_TOOLS_CASE2135_IN_GIT_AND_151_CASE_SOURCE_RELEASE",
   "snapshot_date": "2026-09-30",
   "meaning": "Independent returned compiler audits. This is not a fresh combined replay of the GitHub assembly.",
   "lean_version": "4.10.0-rc2",
@@ -1653,5 +1653,16 @@
     "new_lean_bytes": 5349623026,
     "method": "Union of completed-check archive source manifests; no large source extraction or Lean rebuild.",
     "published_in_full": false
+  },
+  "source_release": {
+    "tag": "t03-audited-151-20260930",
+    "release_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/tag/t03-audited-151-20260930",
+    "asset_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/T03-audited-151-source-checkpoint.zip",
+    "asset_bytes": 1518846009,
+    "asset_sha256": "44fa1bf800965c2b511fb52195206c7ea3849e8e3073c180fa1896860216b4ca",
+    "case_certificates": 151,
+    "source_modules": 101494,
+    "source_lean_bytes": 5499202925,
+    "meaning": "All151 exact source dependency collections are supplied in the standalone release asset; only case2135 is directly integrated into the Git source tree. No merged Lean replay or full-family completion is claimed."
   }
 }

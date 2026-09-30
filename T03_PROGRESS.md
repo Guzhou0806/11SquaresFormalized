@@ -54,6 +54,35 @@ an empty state; its initialization implication follows from that proved
 contradiction. The public theorem type is unchanged, and the geometric replay
 is proved rather than assumed.
 
+## Full 151-case source release
+
+The complete exact source dependency collection for **151 independently audited
+cases** is available in the [partial T03 release](https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/tag/t03-audited-151-20260930). This extends
+the earlier 150-case snapshot with the completed case1840 certificate. Download
+the [source checkpoint](https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/T03-audited-151-source-checkpoint.zip) and [SHA-256 sidecar](https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/T03-audited-151-source-checkpoint.zip.sha256).
+
+The ZIP contains 101,494 reachable Lean modules and 5,499,202,925 bytes of Lean
+source, compressed into a 1,518,846,009-byte asset. Its SHA-256 is
+`44fa1bf800965c2b511fb52195206c7ea3849e8e3073c180fa1896860216b4ca`. Every selected original source and every finished
+output member was streamed and hash-verified. Actual independent target audits
+for all 151 certificates use only the three standard axioms. The pinned
+dependency metadata and original supplied serial checkers are included.
+
+The large generated collection lives in the release asset. The Git branch
+continues to contain the common tools, the small case2135 checkpoint, and compact
+release metadata in `verification/t03-release-checkpoint.json`. It does not put
+the multi-gigabyte generated collection into normal Git history.
+
+Extract the release checkpoint separately. It preserves the exact frozen
+interfaces from the successful independent checks and should not overwrite the
+stronger interfaces already merged into this repository. It contains no build
+objects, machine logs, private handoff archives, account information, or chats.
+
+This is partial T03 progress. The other 22 cases, assembly and clean combined
+audits of both exact public returned targets, and the final return ZIP remain
+unfinished. A fresh Lean replay of the merged repository and a global optimality
+proof are not claimed. The source asset's README explains serial replay.
+
 ## Audit scope
 
 The six distance/collision declarations passed an independent compiler audit

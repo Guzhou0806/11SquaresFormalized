@@ -56,11 +56,16 @@ checked common geometry/checker tools are present. Case2135's complete certifica
 source closure is also included; the other 172 assigned indices still need their
 complete source proofs integrated before the public family theorem can close.
 
-The checkpoint is documented in [T03_PROGRESS.md](T03_PROGRESS.md). Separate
-ongoing work had reported 150 completed case audits at the original progress
-snapshot. Only case2135's source collection is included here; the other records
-do not supply proofs in this repository. No completed T03 case-family return is
-claimed, and the exact public family admission remains open.
+The checkpoints are documented in [T03_PROGRESS.md](T03_PROGRESS.md). The
+[partial T03 release](https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/tag/t03-audited-151-20260930) supplies a standalone exact source collection
+for 151 independently audited case certificates. Their actual target audits have
+only the three standard axioms. The Git source tree contains case2135 directly;
+the full generated collection is distributed as the release asset.
+
+The other 22 cases and assembly of all 173 certificates into the exact public
+family theorem remain unfinished. Its clean combined target audit and the final
+return package are also pending. No fresh merged repository Lean replay or
+completed T03 case-family return is claimed; the public admission remains open.
 
 ## 4. Complete case438 capture into the local rectangle
 

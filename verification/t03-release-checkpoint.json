@@ -1,0 +1,1842 @@
+{
+  "status": "PUBLISHED_PARTIAL_T03_151_CASE_SOURCE_CHECKPOINT",
+  "asset_name": "T03-audited-151-source-checkpoint.zip",
+  "asset_bytes": 1518846009,
+  "asset_sha256": "44fa1bf800965c2b511fb52195206c7ea3849e8e3073c180fa1896860216b4ca",
+  "case_certificates": 151,
+  "required_cases": 173,
+  "source_modules": 101494,
+  "source_lean_bytes": 5499202925,
+  "source_members": 101500,
+  "actual_independent_axiom_audits_checked": 151,
+  "all_source_archive_bindings_checked": true,
+  "all_output_member_hashes_checked": true,
+  "privacy_findings": [],
+  "merged_repository_lean_replay_performed": false,
+  "public_target_assembly_complete": false,
+  "final_return_zip_complete": false,
+  "tag": "t03-audited-151-20260930",
+  "release_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/tag/t03-audited-151-20260930",
+  "asset_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/T03-audited-151-source-checkpoint.zip",
+  "checksum_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/T03-audited-151-source-checkpoint.zip.sha256",
+  "asset_kind": "Standalone exact audited T03 dependency source snapshot",
+  "case_audits": [
+    {
+      "case": 1145,
+      "module": "ElevenSquare.Tasks.T03.Batch01.Case1145.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch01.Case1145.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact supplied-checker recursive source key matched to genuine accepted source/object receipt and clean target audit",
+      "source_closure_sha256": "4aae6a0892bc0daff5020130011349ee295d4668971cbb5324c3d9748cf16e74"
+    },
+    {
+      "case": 1156,
+      "module": "ElevenSquare.Tasks.T03.Batch01.Case1156.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch01.Case1156.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact supplied-checker recursive source key matched to genuine accepted source/object receipt and clean target audit",
+      "source_closure_sha256": "a9e423dba6b004d6a3397977820c7ceab0bd6943a9e5deaa8617df2898d13c47"
+    },
+    {
+      "case": 1235,
+      "module": "ElevenSquare.Tasks.T03.Batch01.Case1235.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch01.Case1235.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1248,
+      "module": "ElevenSquare.Tasks.T03.Batch01.Case1248.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch01.Case1248.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1249,
+      "module": "ElevenSquare.Tasks.T03.Batch01.Case1249.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch01.Case1249.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1257,
+      "module": "ElevenSquare.Tasks.T03.Batch01.Case1257.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch01.Case1257.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1258,
+      "module": "ElevenSquare.Tasks.T03.Batch01.Case1258.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch01.Case1258.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1259,
+      "module": "ElevenSquare.Tasks.T03.Batch01.Case1259.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch01.Case1259.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1261,
+      "module": "ElevenSquare.Tasks.T03.Batch01.Case1261.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch01.Case1261.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1262,
+      "module": "ElevenSquare.Tasks.T03.Batch01.Case1262.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch01.Case1262.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1264,
+      "module": "ElevenSquare.Tasks.T03.Batch01.Case1264.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch01.Case1264.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1265,
+      "module": "ElevenSquare.Tasks.T03.Batch01.Case1265.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch01.Case1265.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1266,
+      "module": "ElevenSquare.Tasks.T03.Batch01.Case1266.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch01.Case1266.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1267,
+      "module": "ElevenSquare.Tasks.T03.Batch01.Case1267.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch01.Case1267.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1268,
+      "module": "ElevenSquare.Tasks.T03.Batch01.Case1268.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch01.Case1268.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1269,
+      "module": "ElevenSquare.Tasks.T03.Batch02.Case1269.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch02.Case1269.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1270,
+      "module": "ElevenSquare.Tasks.T03.Batch02.Case1270.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch02.Case1270.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1271,
+      "module": "ElevenSquare.Tasks.T03.Batch02.Case1271.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch02.Case1271.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1281,
+      "module": "ElevenSquare.Tasks.T03.Batch02.Case1281.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch02.Case1281.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1303,
+      "module": "ElevenSquare.Tasks.T03.Batch02.Case1303.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch02.Case1303.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1310,
+      "module": "ElevenSquare.Tasks.T03.Batch02.Case1310.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch02.Case1310.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1312,
+      "module": "ElevenSquare.Tasks.T03.Batch02.Case1312.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch02.Case1312.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1315,
+      "module": "ElevenSquare.Tasks.T03.Batch02.Case1315.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch02.Case1315.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1333,
+      "module": "ElevenSquare.Tasks.T03.Batch02.Case1333.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch02.Case1333.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1335,
+      "module": "ElevenSquare.Tasks.T03.Batch02.Case1335.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch02.Case1335.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1341,
+      "module": "ElevenSquare.Tasks.T03.Batch02.Case1341.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch02.Case1341.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1342,
+      "module": "ElevenSquare.Tasks.T03.Batch02.Case1342.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch02.Case1342.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1343,
+      "module": "ElevenSquare.Tasks.T03.Batch02.Case1343.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch02.Case1343.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1347,
+      "module": "ElevenSquare.Tasks.T03.Batch02.Case1347.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch02.Case1347.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1365,
+      "module": "ElevenSquare.Tasks.T03.Batch03.Case1365.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch03.Case1365.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1371,
+      "module": "ElevenSquare.Tasks.T03.Batch03.Case1371.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch03.Case1371.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1374,
+      "module": "ElevenSquare.Tasks.T03.Batch03.Case1374.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch03.Case1374.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1384,
+      "module": "ElevenSquare.Tasks.T03.Batch03.Case1384.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch03.Case1384.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1411,
+      "module": "ElevenSquare.Tasks.T03.Batch03.Case1411.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch03.Case1411.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1416,
+      "module": "ElevenSquare.Tasks.T03.Batch03.Case1416.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch03.Case1416.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1417,
+      "module": "ElevenSquare.Tasks.T03.Batch03.Case1417.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch03.Case1417.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1420,
+      "module": "ElevenSquare.Tasks.T03.Batch03.Case1420.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch03.Case1420.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1422,
+      "module": "ElevenSquare.Tasks.T03.Batch03.Case1422.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch03.Case1422.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1424,
+      "module": "ElevenSquare.Tasks.T03.Batch03.Case1424.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch03.Case1424.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1429,
+      "module": "ElevenSquare.Tasks.T03.Batch03.Case1429.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch03.Case1429.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1430,
+      "module": "ElevenSquare.Tasks.T03.Batch03.Case1430.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch03.Case1430.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1433,
+      "module": "ElevenSquare.Tasks.T03.Batch04.Case1433.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch04.Case1433.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1436,
+      "module": "ElevenSquare.Tasks.T03.Batch04.Case1436.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch04.Case1436.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1437,
+      "module": "ElevenSquare.Tasks.T03.Batch04.Case1437.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch04.Case1437.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1438,
+      "module": "ElevenSquare.Tasks.T03.Batch04.Case1438.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch04.Case1438.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1439,
+      "module": "ElevenSquare.Tasks.T03.Batch04.Case1439.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch04.Case1439.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1441,
+      "module": "ElevenSquare.Tasks.T03.Batch04.Case1441.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch04.Case1441.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1449,
+      "module": "ElevenSquare.Tasks.T03.Batch04.Case1449.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch04.Case1449.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1450,
+      "module": "ElevenSquare.Tasks.T03.Batch04.Case1450.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch04.Case1450.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1467,
+      "module": "ElevenSquare.Tasks.T03.Batch04.Case1467.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch04.Case1467.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1476,
+      "module": "ElevenSquare.Tasks.T03.Batch04.Case1476.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch04.Case1476.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1478,
+      "module": "ElevenSquare.Tasks.T03.Batch04.Case1478.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch04.Case1478.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1487,
+      "module": "ElevenSquare.Tasks.T03.Batch05.Case1487.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch05.Case1487.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1490,
+      "module": "ElevenSquare.Tasks.T03.Batch05.Case1490.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch05.Case1490.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1491,
+      "module": "ElevenSquare.Tasks.T03.Batch05.Case1491.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch05.Case1491.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1492,
+      "module": "ElevenSquare.Tasks.T03.Batch05.Case1492.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch05.Case1492.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1530,
+      "module": "ElevenSquare.Tasks.T03.Batch05.Case1530.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch05.Case1530.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1538,
+      "module": "ElevenSquare.Tasks.T03.Batch05.Case1538.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch05.Case1538.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1539,
+      "module": "ElevenSquare.Tasks.T03.Batch05.Case1539.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch05.Case1539.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1554,
+      "module": "ElevenSquare.Tasks.T03.Batch05.Case1554.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch05.Case1554.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1567,
+      "module": "ElevenSquare.Tasks.T03.Batch05.Case1567.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch05.Case1567.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1574,
+      "module": "ElevenSquare.Tasks.T03.Batch05.Case1574.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch05.Case1574.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1582,
+      "module": "ElevenSquare.Tasks.T03.Batch05.Case1582.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch05.Case1582.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1594,
+      "module": "ElevenSquare.Tasks.T03.Batch05.Case1594.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch05.Case1594.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1595,
+      "module": "ElevenSquare.Tasks.T03.Batch05.Case1595.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch05.Case1595.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1597,
+      "module": "ElevenSquare.Tasks.T03.Batch05.Case1597.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch05.Case1597.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1621,
+      "module": "ElevenSquare.Tasks.T03.Batch06.Case1621.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch06.Case1621.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1628,
+      "module": "ElevenSquare.Tasks.T03.Batch06.Case1628.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch06.Case1628.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1632,
+      "module": "ElevenSquare.Tasks.T03.Batch06.Case1632.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch06.Case1632.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1636,
+      "module": "ElevenSquare.Tasks.T03.Batch06.Case1636.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch06.Case1636.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1637,
+      "module": "ElevenSquare.Tasks.T03.Batch06.Case1637.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch06.Case1637.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1640,
+      "module": "ElevenSquare.Tasks.T03.Batch06.Case1640.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch06.Case1640.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1641,
+      "module": "ElevenSquare.Tasks.T03.Batch06.Case1641.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch06.Case1641.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1642,
+      "module": "ElevenSquare.Tasks.T03.Batch06.Case1642.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch06.Case1642.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1644,
+      "module": "ElevenSquare.Tasks.T03.Batch06.Case1644.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch06.Case1644.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1645,
+      "module": "ElevenSquare.Tasks.T03.Batch06.Case1645.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch06.Case1645.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1648,
+      "module": "ElevenSquare.Tasks.T03.Batch06.Case1648.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch06.Case1648.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1650,
+      "module": "ElevenSquare.Tasks.T03.Batch06.Case1650.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch06.Case1650.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1651,
+      "module": "ElevenSquare.Tasks.T03.Batch06.Case1651.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch06.Case1651.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1673,
+      "module": "ElevenSquare.Tasks.T03.Batch07.Case1673.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch07.Case1673.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1674,
+      "module": "ElevenSquare.Tasks.T03.Batch07.Case1674.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch07.Case1674.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1680,
+      "module": "ElevenSquare.Tasks.T03.Batch07.Case1680.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch07.Case1680.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1686,
+      "module": "ElevenSquare.Tasks.T03.Batch07.Case1686.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch07.Case1686.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1688,
+      "module": "ElevenSquare.Tasks.T03.Batch07.Case1688.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch07.Case1688.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1691,
+      "module": "ElevenSquare.Tasks.T03.Batch07.Case1691.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch07.Case1691.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1693,
+      "module": "ElevenSquare.Tasks.T03.Batch07.Case1693.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch07.Case1693.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1694,
+      "module": "ElevenSquare.Tasks.T03.Batch07.Case1694.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch07.Case1694.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1695,
+      "module": "ElevenSquare.Tasks.T03.Batch07.Case1695.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch07.Case1695.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1696,
+      "module": "ElevenSquare.Tasks.T03.Batch07.Case1696.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch07.Case1696.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1716,
+      "module": "ElevenSquare.Tasks.T03.Batch07.Case1716.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch07.Case1716.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1722,
+      "module": "ElevenSquare.Tasks.T03.Batch07.Case1722.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch07.Case1722.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1728,
+      "module": "ElevenSquare.Tasks.T03.Batch07.Case1728.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch07.Case1728.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1729,
+      "module": "ElevenSquare.Tasks.T03.Batch07.Case1729.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch07.Case1729.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1769,
+      "module": "ElevenSquare.Tasks.T03.Batch08.Case1769.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch08.Case1769.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1774,
+      "module": "ElevenSquare.Tasks.T03.Batch08.Case1774.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch08.Case1774.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1775,
+      "module": "ElevenSquare.Tasks.T03.Batch08.Case1775.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch08.Case1775.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1783,
+      "module": "ElevenSquare.Tasks.T03.Batch08.Case1783.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch08.Case1783.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1805,
+      "module": "ElevenSquare.Tasks.T03.Batch08.Case1805.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch08.Case1805.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1810,
+      "module": "ElevenSquare.Tasks.T03.Batch08.Case1810.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch08.Case1810.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1821,
+      "module": "ElevenSquare.Tasks.T03.Batch08.Case1821.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch08.Case1821.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1822,
+      "module": "ElevenSquare.Tasks.T03.Batch08.Case1822.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch08.Case1822.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1824,
+      "module": "ElevenSquare.Tasks.T03.Batch08.Case1824.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch08.Case1824.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1831,
+      "module": "ElevenSquare.Tasks.T03.Batch08.Case1831.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch08.Case1831.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1840,
+      "module": "ElevenSquare.Tasks.T03.Batch08.Case1840.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch08.Case1840.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1842,
+      "module": "ElevenSquare.Tasks.T03.Batch08.Case1842.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch08.Case1842.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1847,
+      "module": "ElevenSquare.Tasks.T03.Batch09.Case1847.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch09.Case1847.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1850,
+      "module": "ElevenSquare.Tasks.T03.Batch09.Case1850.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch09.Case1850.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1864,
+      "module": "ElevenSquare.Tasks.T03.Batch09.Case1864.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch09.Case1864.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1866,
+      "module": "ElevenSquare.Tasks.T03.Batch09.Case1866.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch09.Case1866.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1871,
+      "module": "ElevenSquare.Tasks.T03.Batch09.Case1871.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch09.Case1871.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1875,
+      "module": "ElevenSquare.Tasks.T03.Batch09.Case1875.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch09.Case1875.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1882,
+      "module": "ElevenSquare.Tasks.T03.Batch09.Case1882.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch09.Case1882.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1885,
+      "module": "ElevenSquare.Tasks.T03.Batch09.Case1885.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch09.Case1885.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1889,
+      "module": "ElevenSquare.Tasks.T03.Batch09.Case1889.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch09.Case1889.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1950,
+      "module": "ElevenSquare.Tasks.T03.Batch09.Case1950.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch09.Case1950.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 1955,
+      "module": "ElevenSquare.Tasks.T03.Batch10.Case1955.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch10.Case1955.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 2048,
+      "module": "ElevenSquare.Tasks.T03.Batch10.Case2048.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch10.Case2048.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 2049,
+      "module": "ElevenSquare.Tasks.T03.Batch10.Case2049.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch10.Case2049.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 2050,
+      "module": "ElevenSquare.Tasks.T03.Batch10.Case2050.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch10.Case2050.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 2052,
+      "module": "ElevenSquare.Tasks.T03.Batch10.Case2052.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch10.Case2052.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 2053,
+      "module": "ElevenSquare.Tasks.T03.Batch10.Case2053.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch10.Case2053.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 2055,
+      "module": "ElevenSquare.Tasks.T03.Batch10.Case2055.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch10.Case2055.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 2056,
+      "module": "ElevenSquare.Tasks.T03.Batch10.Case2056.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch10.Case2056.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 2057,
+      "module": "ElevenSquare.Tasks.T03.Batch10.Case2057.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch10.Case2057.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 2071,
+      "module": "ElevenSquare.Tasks.T03.Batch11.Case2071.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch11.Case2071.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 2072,
+      "module": "ElevenSquare.Tasks.T03.Batch11.Case2072.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch11.Case2072.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 2073,
+      "module": "ElevenSquare.Tasks.T03.Batch11.Case2073.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch11.Case2073.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 2074,
+      "module": "ElevenSquare.Tasks.T03.Batch11.Case2074.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch11.Case2074.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 2075,
+      "module": "ElevenSquare.Tasks.T03.Batch11.Case2075.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch11.Case2075.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 2076,
+      "module": "ElevenSquare.Tasks.T03.Batch11.Case2076.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch11.Case2076.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 2077,
+      "module": "ElevenSquare.Tasks.T03.Batch11.Case2077.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch11.Case2077.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 2078,
+      "module": "ElevenSquare.Tasks.T03.Batch11.Case2078.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch11.Case2078.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 2084,
+      "module": "ElevenSquare.Tasks.T03.Batch11.Case2084.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch11.Case2084.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 2088,
+      "module": "ElevenSquare.Tasks.T03.Batch11.Case2088.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch11.Case2088.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 2091,
+      "module": "ElevenSquare.Tasks.T03.Batch11.Case2091.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch11.Case2091.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 2094,
+      "module": "ElevenSquare.Tasks.T03.Batch11.Case2094.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch11.Case2094.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 2097,
+      "module": "ElevenSquare.Tasks.T03.Batch11.Case2097.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch11.Case2097.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 2098,
+      "module": "ElevenSquare.Tasks.T03.Batch11.Case2098.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch11.Case2098.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 2102,
+      "module": "ElevenSquare.Tasks.T03.Batch12.Case2102.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch12.Case2102.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 2103,
+      "module": "ElevenSquare.Tasks.T03.Batch12.Case2103.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch12.Case2103.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 2111,
+      "module": "ElevenSquare.Tasks.T03.Batch12.Case2111.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch12.Case2111.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 2112,
+      "module": "ElevenSquare.Tasks.T03.Batch12.Case2112.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch12.Case2112.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 2114,
+      "module": "ElevenSquare.Tasks.T03.Batch12.Case2114.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch12.Case2114.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 2116,
+      "module": "ElevenSquare.Tasks.T03.Batch12.Case2116.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch12.Case2116.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 2119,
+      "module": "ElevenSquare.Tasks.T03.Batch12.Case2119.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch12.Case2119.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 2125,
+      "module": "ElevenSquare.Tasks.T03.Batch12.Case2125.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch12.Case2125.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 2129,
+      "module": "ElevenSquare.Tasks.T03.Batch12.Case2129.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch12.Case2129.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 2130,
+      "module": "ElevenSquare.Tasks.T03.Batch12.Case2130.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch12.Case2130.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 2132,
+      "module": "ElevenSquare.Tasks.T03.Batch12.Case2132.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch12.Case2132.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 2133,
+      "module": "ElevenSquare.Tasks.T03.Batch12.Case2133.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch12.Case2133.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    },
+    {
+      "case": 2135,
+      "module": "ElevenSquare.Tasks.T03.Batch12.Case2135.Forward.Certificate",
+      "target": "ElevenSquare.Pending.T03.Batch12.Case2135.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_independent_audit_status": "accepted",
+      "source_binding_method": "Exact completed-check archive digest"
+    }
+  ],
+  "github_server_digest": "sha256:44fa1bf800965c2b511fb52195206c7ea3849e8e3073c180fa1896860216b4ca",
+  "github_server_size_verified": true,
+  "release_is_prerelease": true
+}

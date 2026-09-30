@@ -42808,18 +42808,18 @@
     },
     {
       "path": "MISSING.md",
-      "bytes": 6058,
-      "sha256": "8ffa1b5a7d2cd96d898e75f917ff1afd07d4b428fe7c9e182da0e87a6dfa5e14"
+      "bytes": 6465,
+      "sha256": "99ebca66e7c84d26ebecd9fe1220229edf028ef4211c4017467fc095b5963d9a"
     },
     {
       "path": "README.md",
-      "bytes": 4936,
-      "sha256": "8c02f7fb76695faf2bf7a81aa3489fbe650306d8773bd2baf3d8192bbd60063c"
+      "bytes": 5248,
+      "sha256": "d7376666d5de1b0e08f1208ef99efb6a68be9a50b3de4b4055a5faedb3073296"
     },
     {
       "path": "T03_PROGRESS.md",
-      "bytes": 5378,
-      "sha256": "59b7ca5d0fc169c00a10ddf3e739374b4713044476b8ce647e13ddf3193a8c04"
+      "bytes": 7483,
+      "sha256": "2d5827e94f1c5c75677b02e793c3da9d0140b63aec965838e4998ebe5489437f"
     },
     {
       "path": "lake-manifest.json",
@@ -42863,8 +42863,8 @@
     },
     {
       "path": "verification/privacy-review.json",
-      "bytes": 1183,
-      "sha256": "3a8b6f95b23bfd2f79b981bdd27ac303e526b4982e65c9cb5ab26b8fba483514"
+      "bytes": 1518,
+      "sha256": "e416d5fad5bc25b31e1cd07eef5910f3ab905d7ca8646538d8d34ff807dda1c0"
     },
     {
       "path": "verification/source-check.json",
@@ -42883,8 +42883,13 @@
     },
     {
       "path": "verification/t03-progress.json",
-      "bytes": 49423,
-      "sha256": "c603feef1b0f6d4e21f3ad396423fb674a8a190949903505d7a0ec879f5c66e6"
+      "bytes": 50233,
+      "sha256": "fde6cb1a8db5ce9efb7074645bfdb4a9b659000393afcd486a0bd3dc5a426712"
+    },
+    {
+      "path": "verification/t03-release-checkpoint.json",
+      "bytes": 68066,
+      "sha256": "52f3a96e931f3748f6cf96ca22453a3c57d4a7f94156a90e59a338f7a44af5a8"
     }
   ]
 }

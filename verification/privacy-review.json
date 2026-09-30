@@ -21,5 +21,13 @@
   },
   "added_or_changed_files_inspected": 686,
   "personal_information_findings": [],
-  "raw_archives_or_logs_added": false
+  "raw_archives_or_logs_added": false,
+  "release_asset_review": {
+    "source_members_inspected": 101500,
+    "source_archive_binding_checks": 151,
+    "output_member_hash_verification": true,
+    "personal_information_findings": [],
+    "raw_handoff_archives_logs_caches_or_chats_included": false,
+    "neutral_serial_profile_replaces_private_resource_history": true
+  }
 }

@@ -12,6 +12,10 @@ closure of the independently audited case2135 certificate. The supplied
 checkpoint and the precise limits of the ongoing case progress are described in
 [T03_PROGRESS.md](T03_PROGRESS.md). The public 173-case obligation remains open.
 
+A [partial T03 release](https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/tag/t03-audited-151-20260930) supplies the complete exact source
+checkpoint for 151 independently audited cases as a separate asset. The public
+family assembly and its clean combined target audits are still unfinished.
+
 The target side length is the exact real number
 
 \[
