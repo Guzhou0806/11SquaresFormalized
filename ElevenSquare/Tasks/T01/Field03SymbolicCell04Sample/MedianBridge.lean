@@ -196,10 +196,9 @@ theorem target00_pair01_pos_witness (q : UnitSquare) (t : ℝ)
         ((site0.1 : ℝ) - (site1.1 : ℝ)) * (1 - t ^ 2)
     have hx : -X ≤ |X| := neg_le_abs X
     have hy : -Y ≤ |Y| := neg_le_abs Y
-    dsimp [f, target00, SymbolicQuadratic.eval, medianHalfwidth,
+    norm_num [f, target00, SymbolicQuadratic.eval, medianHalfwidth,
       chartDenom, fixedPairNormal, realPoint, dot, X, Y,
-      site0, site1] at *
-    push_cast at *
+      site0, site1] at hx hy ⊢
     nlinarith
   · have horder :
         dot (fixedPairNormal site0 site1) (realPoint site0) ≤
@@ -237,10 +236,9 @@ theorem target00_pair01_neg_witness (q : UnitSquare) (t : ℝ)
         ((site0.1 : ℝ) - (site1.1 : ℝ)) * (1 - t ^ 2)
     have hx : -X ≤ |X| := neg_le_abs X
     have hy : -Y ≤ |Y| := neg_le_abs Y
-    dsimp [f, target00, SymbolicQuadratic.eval, medianHalfwidth,
+    norm_num [f, target00, SymbolicQuadratic.eval, medianHalfwidth,
       chartDenom, fixedPairNormal, realPoint, dot, X, Y,
-      site0, site1] at *
-    push_cast at *
+      site0, site1] at hx hy ⊢
     nlinarith
   · have horder :
         dot (fixedPairNormal site0 site1) (realPoint site2) ≤
@@ -281,10 +279,9 @@ theorem target00_pair02_pos_witness (q : UnitSquare) (t : ℝ)
         ((site0.1 : ℝ) - (site2.1 : ℝ)) * (1 - t ^ 2)
     have hx : X ≤ |X| := le_abs_self X
     have hy : Y ≤ |Y| := le_abs_self Y
-    dsimp [f, target00, SymbolicQuadratic.eval, medianHalfwidth,
+    norm_num [f, target00, SymbolicQuadratic.eval, medianHalfwidth,
       chartDenom, fixedPairNormal, realPoint, dot, X, Y,
-      site0, site2, site2] at *
-    push_cast at *
+      site0, site2, site2] at hx hy ⊢
     nlinarith
   · have horder :
         dot (fixedPairNormal site0 site2) (realPoint site2) ≤
@@ -325,10 +322,9 @@ theorem target00_pair02_neg_witness (q : UnitSquare) (t : ℝ)
         ((site0.1 : ℝ) - (site2.1 : ℝ)) * (1 - t ^ 2)
     have hx : X ≤ |X| := le_abs_self X
     have hy : Y ≤ |Y| := le_abs_self Y
-    dsimp [f, target00, SymbolicQuadratic.eval, medianHalfwidth,
+    norm_num [f, target00, SymbolicQuadratic.eval, medianHalfwidth,
       chartDenom, fixedPairNormal, realPoint, dot, X, Y,
-      site0, site2, site2] at *
-    push_cast at *
+      site0, site2, site2] at hx hy ⊢
     nlinarith
   · have horder :
         dot (fixedPairNormal site0 site2) (realPoint site0) ≤
@@ -369,10 +365,9 @@ theorem target00_pair12_pos_witness (q : UnitSquare) (t : ℝ)
         ((site1.1 : ℝ) - (site2.1 : ℝ)) * (1 - t ^ 2)
     have hx : X ≤ |X| := le_abs_self X
     have hy : Y ≤ |Y| := le_abs_self Y
-    dsimp [f, target00, SymbolicQuadratic.eval, medianHalfwidth,
+    norm_num [f, target00, SymbolicQuadratic.eval, medianHalfwidth,
       chartDenom, fixedPairNormal, realPoint, dot, X, Y,
-      site1, site2, site1] at *
-    push_cast at *
+      site1, site2, site1] at hx hy ⊢
     nlinarith
   · have horder :
         dot (fixedPairNormal site1 site2) (realPoint site1) ≤
@@ -413,10 +408,9 @@ theorem target00_pair12_neg_witness (q : UnitSquare) (t : ℝ)
         ((site1.1 : ℝ) - (site2.1 : ℝ)) * (1 - t ^ 2)
     have hx : X ≤ |X| := le_abs_self X
     have hy : Y ≤ |Y| := le_abs_self Y
-    dsimp [f, target00, SymbolicQuadratic.eval, medianHalfwidth,
+    norm_num [f, target00, SymbolicQuadratic.eval, medianHalfwidth,
       chartDenom, fixedPairNormal, realPoint, dot, X, Y,
-      site1, site2, site1] at *
-    push_cast at *
+      site1, site2, site1] at hx hy ⊢
     nlinarith
   · have horder :
         dot (fixedPairNormal site1 site2) (realPoint site0) ≤

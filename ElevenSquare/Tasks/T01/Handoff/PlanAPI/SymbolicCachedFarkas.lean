@@ -50,12 +50,15 @@ theorem cached_farkas_sound (signs : CachedFarkasSigns)
     t x hx
   · have hp := quartic_sign_ref_sound signs.denominator cache hcache
       w.denominator.quartic true l u hden t hlt htu
+    change 0 < w.denominator.quartic.eval t at hp
     simpa only [symbolic_quadratic_quartic_eval] using hp
   · have hp := quartic_sign_ref_sound signs.firstWeight cache hcache
       w.firstWeight.quartic false l u hweight1 t hlt htu
+    change 0 ≤ w.firstWeight.quartic.eval t at hp
     simpa only [symbolic_quadratic_quartic_eval] using hp
   · have hp := quartic_sign_ref_sound signs.secondWeight cache hcache
       w.secondWeight.quartic false l u hweight2 t hlt htu
+    change 0 ≤ w.secondWeight.quartic.eval t at hp
     simpa only [symbolic_quadratic_quartic_eval] using hp
   · exact quartic_sign_ref_sound signs.margin cache hcache
       (w.margin

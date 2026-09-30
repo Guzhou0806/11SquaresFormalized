@@ -47,6 +47,8 @@ def fromLocalAffineMap (q : UnitSquare) : Point →ᵃ[ℝ] Point where
   }
   map_vadd' := by
     intro p v
+    change fromLocalCoordinates q (v +ᵥ p) =
+      (v.1 • q.axis + v.2 • perp q.axis) +ᵥ fromLocalCoordinates q p
     apply Prod.ext <;> dsimp [fromLocalCoordinates, perp] <;> ring
 
 theorem local_hull_preimage (q : UnitSquare) (sites : Finset QPoint)

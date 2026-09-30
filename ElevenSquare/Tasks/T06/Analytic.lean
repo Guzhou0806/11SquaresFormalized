@@ -26,22 +26,26 @@ theorem trigAffine_hasDerivAt (a b c d w t : ℝ) :
   have hx := (hasDerivAt_id t).const_mul w
   have hab := ((hasDerivAt_id t).const_mul b).const_add a
   have hcd := ((hasDerivAt_id t).const_mul d).const_add c
-  convert (hab.fun_mul hx.cos).fun_add (hcd.fun_mul hx.sin) using 1 <;>
-    dsimp [trigAffine, trigAffineDerivative] <;> ring
+  convert (hab.fun_mul hx.cos).fun_add (hcd.fun_mul hx.sin) using 1
+  · rfl
+  · try dsimp [trigAffine, trigAffineDerivative]
+    ring
 
 theorem trigAffineDerivative_hasDerivAt (a b c d w t : ℝ) :
     HasDerivAt (trigAffineDerivative a b c d w)
       (trigAffineSecond a b c d w t) t := by
-  convert trigAffine_hasDerivAt (b + w*c) (w*d) (d - w*a) (-w*b) w t using 1 <;>
-    dsimp [trigAffineDerivative, trigAffineSecond, trigAffine] <;> ring
+  convert trigAffine_hasDerivAt (b + w*c) (w*d) (d - w*a) (-w*b) w t using 1
+  · rfl
+  · try dsimp [trigAffineDerivative, trigAffineSecond, trigAffine]
+    ring
 
 theorem abs_affine_le (a b t : ℝ) (ht : |t| ≤ 1) :
     |a + b*t| ≤ |a| + |b| := by
   calc
     |a + b*t| ≤ |a| + |b*t| := abs_add_le _ _
     _ = |a| + |b| * |t| := by rw [abs_mul]
-    _ ≤ |a| + |b| * 1 := add_le_add_left
-      (mul_le_mul_of_nonneg_left ht (abs_nonneg _)) _
+    _ ≤ |a| + |b| * 1 := add_le_add le_rfl
+      (mul_le_mul_of_nonneg_left ht (abs_nonneg _))
     _ = |a| + |b| := by ring
 
 theorem trigAffine_abs_le (a b c d w t : ℝ) (ht : |t| ≤ 1) :
