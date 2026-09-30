@@ -23,10 +23,13 @@ instance cachedPolygonSignRefsCheckDecidable
     Decidable (CachedPolygonSignRefs.Check cache source l u targets ws signs) := by
   induction targets generalizing ws signs with
   | nil =>
-      cases ws <;> cases signs <;>
-        first
-        | exact inferInstanceAs (Decidable True)
-        | exact inferInstanceAs (Decidable False)
+      cases ws with
+      | nil =>
+          cases signs with
+          | nil => exact inferInstanceAs (Decidable True)
+          | cons s rest => exact inferInstanceAs (Decidable False)
+      | cons w ws =>
+          cases signs <;> exact inferInstanceAs (Decidable False)
   | cons target targets ih =>
       cases ws with
       | nil =>
