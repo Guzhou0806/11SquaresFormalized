@@ -33,8 +33,7 @@ theorem turn_formula (t : ℝ) :
     ab1,
     chartLocalOffset, realPoint, Prod.fst_sub, Prod.snd_sub]
   push_cast
-  field_simp [hd]
-  ring
+  field_simp [hd] <;> ring
 
 theorem turn_positive (t : ℝ) (hl : ((15/32 : ℚ) : ℝ) ≤ t)
     (hu : t ≤ ((19/32 : ℚ) : ℝ)) :

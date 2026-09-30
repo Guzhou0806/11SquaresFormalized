@@ -39,7 +39,7 @@ theorem roster_index_points_owned (P : Packing 11 coverCap)
   have hpoint :
       (SharedFieldOwnership.sharedRoster item.1).getD item.2 (0, 0) ∈
         SharedFieldOwnership.sharedRoster item.1 := by
-    rw [List.getD_eq_get _ _ (hindex item hi)]
+    rw [List.getD_eq_getElem _ _ (hindex item hi)]
     exact List.get_mem ..
   exact blocker_owned_for_partner P hc i (partner item.1) (hne item hi)
     item.1 (hcell item hi) _ hpoint

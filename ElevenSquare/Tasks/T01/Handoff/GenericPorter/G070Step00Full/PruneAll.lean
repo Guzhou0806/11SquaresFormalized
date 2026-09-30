@@ -19,14 +19,14 @@ theorem source_row_contains (k : Fin 32) (q : UnitSquare)
     t, ht0, ht1, hlo, hhi, ha⟩
 
 def outputRows (cert : Fin 32 → RowPruningCertificate) : List PoseRow :=
-  (List.finRange 32).bind (fun k => (cert k).keptRows (sourceRow k))
+  (List.finRange 32).flatMap (fun k => (cert k).keptRows (sourceRow k))
 
 theorem output_rows_eq_kept_rows
     (cert : Fin 32 → RowPruningCertificate) (kept : Fin 32 → PoseRow)
     (hkept : ∀ k, (cert k).keptRows (sourceRow k) = [kept k]) :
     outputRows cert = (List.finRange 32).map kept := by
   have hbind (ks : List (Fin 32)) :
-      ks.bind (fun k => (cert k).keptRows (sourceRow k)) =
+      ks.flatMap (fun k => (cert k).keptRows (sourceRow k)) =
         ks.map kept := by
     induction ks with
     | nil => rfl
@@ -52,7 +52,7 @@ theorem prune_all (s : PoseState)
       (hcheck k) q (source_row_contains k q hcontains) with hkeep | hbad
   · left
     obtain ⟨out, hout, hcontains'⟩ := hkeep
-    exact ⟨out, List.mem_bind.mpr ⟨k, hk, hout⟩, hcontains'⟩
+    exact ⟨out, List.mem_flatMap.mpr ⟨k, hk, hout⟩, hcontains'⟩
   · exact Or.inr hbad
 
 #print axioms prune_all

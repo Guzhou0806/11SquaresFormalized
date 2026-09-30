@@ -64,15 +64,15 @@ theorem symbolic_empty3_sound (w : SymbolicEmpty3Witness)
   let h := source.getD w.third zeroSymbolicFacet
   have hf : f.contains t x := hx f (by
     dsimp [f]
-    rw [List.getD_eq_get source zeroSymbolicFacet hfi]
+    rw [List.getD_eq_getElem source zeroSymbolicFacet hfi]
     exact List.get_mem ..)
   have hg : g.contains t x := hx g (by
     dsimp [g]
-    rw [List.getD_eq_get source zeroSymbolicFacet hgi]
+    rw [List.getD_eq_getElem source zeroSymbolicFacet hgi]
     exact List.get_mem ..)
   have hh : h.contains t x := hx h (by
     dsimp [h]
-    rw [List.getD_eq_get source zeroSymbolicFacet hhi]
+    rw [List.getD_eq_getElem source zeroSymbolicFacet hhi]
     exact List.get_mem ..)
   have hfw : 0 ≤ w.firstWeight.eval t := by
     have hp := quartic_bernstein_nonneg _ l u hwf t hlt htu

@@ -147,13 +147,11 @@ theorem chart_pair_perp_local_coordinates
   · dsimp [chartDenom, pairPerp, pairDY, localY, dot, perp, realPoint]
     rw [ha]
     dsimp [chartAxis]
-    field_simp [hd]
-    ring
+    field_simp [hd] <;> ring
   · dsimp [chartDenom, pairPerp, pairDX, localX, dot, realPoint]
     rw [ha]
     dsimp [chartAxis]
-    field_simp [hd]
-    ring
+    field_simp [hd] <;> ring
 
 theorem chart_pair_perp_local_abs_support
     (q : UnitSquare) (t : ℝ) (ha : q.axis = chartAxis t)

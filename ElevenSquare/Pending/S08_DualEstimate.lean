@@ -82,12 +82,12 @@ theorem normalized_radius_attained (r : Fin 33 → ℝ) (h : Displacement)
       funext k
       have hk : |h k|/r k ≤ 0 := le_trans (hj k) (le_of_not_gt hn)
       have hk' : |h k| ≤ 0 := by
-        simpa using (div_le_iff (hr k)).mp hk
+        simpa using (div_le_iff₀ (hr k)).mp hk
       exact abs_eq_zero.mp (le_antisymm hk' (abs_nonneg _))
     exact hnz hzero
   refine ⟨τ, hpos, hupper, ?_, j, ?_⟩
   · intro k
-    exact (div_le_iff (hr k)).mp (hj k)
+    exact (div_le_iff₀ (hr k)).mp (hj k)
   · exact (div_mul_cancel₀ (|h j|) (ne_of_gt (hr j))).symm
 
 

@@ -130,8 +130,7 @@ theorem fieldCoreVertex_open_of_signed_quads (q : UnitSquare) (v : QPoint)
     rw [haxis]
     dsimp [chartAxis, nx, den]
     have hd : 1 + t ^ 2 ≠ 0 := ne_of_gt (by positivity)
-    field_simp [fieldScale_ne_zero, hd]
-    ring
+    field_simp [fieldScale_ne_zero, hd] <;> ring
   have hyloc : localY q (q.center + realPoint (qpointFieldNormalize v)) =
       ny / den := by
     rw [realPoint_qpointFieldNormalize]
@@ -139,22 +138,21 @@ theorem fieldCoreVertex_open_of_signed_quads (q : UnitSquare) (v : QPoint)
     rw [haxis]
     dsimp [chartAxis, ny, den]
     have hd : 1 + t ^ 2 ≠ 0 := ne_of_gt (by positivity)
-    field_simp [fieldScale_ne_zero, hd]
-    ring
+    field_simp [fieldScale_ne_zero, hd] <;> ring
   rw [OpenSquare, hxloc, hyloc]
   constructor
   · apply abs_lt.mpr
     constructor
-    · have hl := (div_lt_iff hden).mpr (show -nx < (1 / 2 : ℝ) * den by linarith)
+    · have hl := (div_lt_iff₀ hden).mpr (show -nx < (1 / 2 : ℝ) * den by linarith)
       rw [neg_div] at hl
       linarith
-    · exact (div_lt_iff hden).mpr (by linarith [hxhi])
+    · exact (div_lt_iff₀ hden).mpr (by linarith [hxhi])
   · apply abs_lt.mpr
     constructor
-    · have hl := (div_lt_iff hden).mpr (show -ny < (1 / 2 : ℝ) * den by linarith)
+    · have hl := (div_lt_iff₀ hden).mpr (show -ny < (1 / 2 : ℝ) * den by linarith)
       rw [neg_div] at hl
       linarith
-    · exact (div_lt_iff hden).mpr (by linarith [hyhi])
+    · exact (div_lt_iff₀ hden).mpr (by linarith [hyhi])
 
 end
 end ElevenSquare.Tasks.T07

@@ -128,7 +128,7 @@ theorem point_owned_of_direction_numerators (q : UnitSquare) (p : Point) (t : �
   rw [hy] at h2
   rw [hyn] at h3
   refine ⟨abs_lt.mpr ⟨?_, ?_⟩, abs_lt.mpr ⟨?_, ?_⟩⟩
-  all_goals apply (mul_lt_mul_left hd).mp
+  all_goals apply (mul_lt_mul_iff_of_pos_left hd).mp
   all_goals nlinarith
 
 /-- Two nonnegative dual weights suffice in dimension two. This analytic

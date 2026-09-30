@@ -31,7 +31,7 @@ theorem roster_index_points_owned (P : Packing 11 coverCap)
   intro p hp
   obtain ⟨item, hi, rfl⟩ := List.mem_map.mp hp
   have hpoint : (ownedRoster item.1).getD item.2 (0, 0) ∈ ownedRoster item.1 := by
-    rw [List.getD_eq_get _ _ (hindex item hi)]
+    rw [List.getD_eq_getElem _ _ (hindex item hi)]
     exact List.get_mem ..
   exact blocker_owned_for_partner P hc i (partner item.1) (hne item hi)
     item.1 (hcell item hi) _ hpoint

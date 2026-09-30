@@ -134,11 +134,11 @@ theorem symbolic_farkas_sound (w : SymbolicFarkasWitness)
   let g := source.getD w.second z
   have hf : f.contains t x := hx f (by
     dsimp [f]
-    rw [List.getD_eq_get source z hc.1]
+    rw [List.getD_eq_getElem source z hc.1]
     exact List.get_mem ..)
   have hg : g.contains t x := hx g (by
     dsimp [g]
-    rw [List.getD_eq_get source z hc.2.1]
+    rw [List.getD_eq_getElem source z hc.2.1]
     exact List.get_mem ..)
   have hd : 0 < w.denominator.eval t := by
     have h := quartic_bernstein_pos _ l u hc.2.2.1 t hlt htu
@@ -187,7 +187,7 @@ theorem symbolic_farkas_sound (w : SymbolicFarkasWitness)
       _ ≤ w.firstWeight.eval t * f.c.eval t +
           w.secondWeight.eval t * g.c.eval t := add_le_add h₁ h₂
       _ ≤ w.denominator.eval t * target.c.eval t := hm
-  exact (mul_le_mul_left hd).mp hscaled
+  exact (mul_le_mul_iff_of_pos_left hd).mp hscaled
 
 /-- Exact coefficient identities and interval signs for every target facet. -/
 def SymbolicPolygonImplicationCheck (source target : List SymbolicFacet)
@@ -270,7 +270,7 @@ theorem symbolic_cover_sound (source : List SymbolicFacet)
     refine ⟨targets.getD i [], ?_,
       symbolic_polygon_implication_sound source (targets.getD i []) ws l u
         hc.2 t hlt htu x hx⟩
-    rw [List.getD_eq_get targets [] hc.1]
+    rw [List.getD_eq_getElem targets [] hc.1]
     exact List.get_mem ..
   | split facet left right ihl ihr =>
     by_cases hfacet : facet.contains t x

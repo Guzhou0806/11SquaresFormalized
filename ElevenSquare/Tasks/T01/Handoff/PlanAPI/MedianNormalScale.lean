@@ -72,9 +72,9 @@ theorem median_lower_bound_scale_pos (sites : Finset QPoint) (k : ℕ)
     simp only [Finset.mem_filter]
     constructor
     · rintro ⟨hp, hlt⟩
-      exact ⟨hp, (mul_lt_mul_left hr).mp hlt⟩
+      exact ⟨hp, (mul_lt_mul_iff_of_pos_left hr).mp hlt⟩
     · rintro ⟨hp, hlt⟩
-      exact ⟨hp, (mul_lt_mul_left hr).mpr hlt⟩
+      exact ⟨hp, (mul_lt_mul_iff_of_pos_left hr).mpr hlt⟩
   rw [heq]
 
 theorem median_lower_bound_zero (sites : Finset QPoint) (k : ℕ) :

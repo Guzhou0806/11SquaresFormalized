@@ -23,7 +23,7 @@ theorem packet_isolates (S : ℝ) (q₀ : Owner → UnitSquare) (p : LocalPacket
     intro k
     dsimp [u]
     rw [abs_div, abs_of_pos hτpos]
-    apply (div_le_iff hτpos).mpr
+    apply (div_le_iff₀ hτpos).mpr
     simpa only [mul_comm] using hbox k
   have hscale : τ • u = h := by
     funext k

@@ -13,9 +13,9 @@ theorem exists_uniform_bin (n : ℕ) (hn : 0 < n) (t : ℝ)
   by_cases ht : t = 1
   · subst t
     refine ⟨⟨n - 1, by omega⟩, ?_, ?_⟩
-    · apply (div_le_iff hnR).mpr
+    · apply (div_le_iff₀ hnR).mpr
       norm_num
-    · apply (le_div_iff hnR).mpr
+    · apply (le_div_iff₀ hnR).mpr
       have hs : n - 1 + 1 = n := by omega
       have hsR : ((n - 1 : ℕ) : ℝ) + 1 = n := by exact_mod_cast hs
       simpa using hsR.ge
@@ -24,9 +24,9 @@ theorem exists_uniform_bin (n : ℕ) (hn : 0 < n) (t : ℝ)
     have hfloor : Nat.floor ((n : ℝ) * t) < n :=
       (Nat.floor_lt hnon).mpr (by nlinarith)
     refine ⟨⟨Nat.floor ((n : ℝ) * t), hfloor⟩, ?_, ?_⟩
-    · apply (div_le_iff hnR).mpr
+    · apply (div_le_iff₀ hnR).mpr
       simpa [mul_comm] using Nat.floor_le hnon
-    · apply (le_div_iff hnR).mpr
+    · apply (le_div_iff₀ hnR).mpr
       simpa [mul_comm] using (Nat.lt_floor_add_one ((n : ℝ) * t)).le
 
 def uniformRow (n : ℕ) (poly : Polygon) (i : Fin n) : PoseRow :=

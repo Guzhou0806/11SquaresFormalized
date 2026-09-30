@@ -64,7 +64,7 @@ theorem guarded_median_facet_certificate_sound (gc : GuardedMedianFacetCertifica
     ⟨⟨0,0,0⟩,⟨0,0,0⟩,⟨0,0,0⟩⟩
   have hmem : f ∈ target := by
     dsimp [f]
-    rw [List.getD_eq_get target _ hindex]
+    rw [List.getD_eq_getElem target _ hindex]
     exact List.get_mem ..
   have hnormal := c.direction.world_eval q t ha
   have hproj (p : QPoint) :

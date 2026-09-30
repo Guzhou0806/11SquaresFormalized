@@ -24,11 +24,11 @@ theorem increasing_segment_hits_closed_square
   have hly : ly ≤ t := le_trans (le_max_right _ _) (le_max_right _ _)
   have ht0 : 0 ≤ t := le_max_left _ _
   have hlx1 : lx ≤ 1 := by
-    apply (div_le_iff hdx).mpr
+    apply (div_le_iff₀ hdx).mpr
     dsimp [lx]
     linarith
   have hly1 : ly ≤ 1 := by
-    apply (div_le_iff hdy).mpr
+    apply (div_le_iff₀ hdy).mpr
     dsimp [ly]
     linarith
   have ht1 : t ≤ 1 := max_le (by norm_num) (max_le hlx1 hly1)
@@ -36,16 +36,16 @@ theorem increasing_segment_hits_closed_square
   have h0uy : 0 ≤ uy := div_nonneg (sub_nonneg.mpr hy0) hdy.le
   have hlxux : lx ≤ ux := by
     dsimp [lx, ux]
-    exact (div_le_div_iff hdx hdx).mpr (by nlinarith)
+    exact (div_le_div_iff₀ hdx hdx).mpr (by nlinarith)
   have hlyuy : ly ≤ uy := by
     dsimp [ly, uy]
-    exact (div_le_div_iff hdy hdy).mpr (by nlinarith)
+    exact (div_le_div_iff₀ hdy hdy).mpr (by nlinarith)
   have hlyux : ly ≤ ux := by
     dsimp [ly, ux]
-    exact (div_le_div_iff hdy hdx).mpr (by nlinarith [hc1])
+    exact (div_le_div_iff₀ hdy hdx).mpr (by nlinarith [hc1])
   have hlxuy : lx ≤ uy := by
     dsimp [lx, uy]
-    exact (div_le_div_iff hdx hdy).mpr (by nlinarith [hc2])
+    exact (div_le_div_iff₀ hdx hdy).mpr (by nlinarith [hc2])
   have htux : t ≤ ux := max_le h0ux (max_le hlxux hlyux)
   have htuy : t ≤ uy := max_le h0uy (max_le hlxuy hlyuy)
   refine ⟨t, ht0, ht1, ?_, ?_, ?_, ?_⟩
@@ -79,12 +79,12 @@ theorem increasing_segment_hits_closed_interval
     have ht0 : 0 ≤ t := le_max_left _ _
     have hlo1 : lo ≤ 1 := by
       dsimp [lo]
-      exact (div_le_iff hdp).mpr (by linarith)
+      exact (div_le_iff₀ hdp).mpr (by linarith)
     have ht1 : t ≤ 1 := max_le (by norm_num) hlo1
     have h0hi : 0 ≤ hi := div_nonneg (sub_nonneg.mpr ha0) hdp.le
     have hlohi : lo ≤ hi := by
       dsimp [lo, hi]
-      exact (div_le_div_iff hdp hdp).mpr (by nlinarith)
+      exact (div_le_div_iff₀ hdp hdp).mpr (by nlinarith)
     have hthi : t ≤ hi := max_le h0hi hlohi
     refine ⟨t, ht0, ht1, ?_, ?_⟩
     · have hm := mul_le_mul_of_nonneg_right hlo hdp.le
@@ -213,7 +213,7 @@ theorem segment_hits_open_square
     (max (-max b (b + dy))
       (|a * dy - b * dx| / (|dx| + |dy|))))))
   have hcross' : |a * dy - b * dx| / (|dx| + |dy|) < h :=
-    (div_lt_iff hs).mpr hcross
+    (div_lt_iff₀ hs).mpr hcross
   have hradius : radius < h := by
     dsimp [radius]
     apply max_lt hh

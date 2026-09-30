@@ -94,7 +94,7 @@ theorem quartic_sign_ref_sound (ref : QuarticSignRef)
   rcases hr with ⟨hindex, hscale, hpoly, hstrict, hlower, hupper⟩
   have hmem : ref.entry cache ∈ cache := by
     unfold QuarticSignRef.entry
-    rw [List.getD_eq_get cache defaultCachedQuarticSign hindex]
+    rw [List.getD_eq_getElem cache defaultCachedQuarticSign hindex]
     exact List.get_mem ..
   have hentry := symbolic_sign_cache_entry_checked cache hc
     (ref.entry cache) hmem

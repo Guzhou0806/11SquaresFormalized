@@ -289,7 +289,7 @@ theorem universal_piece_collision (s : PoseState) (i : Owner)
     (polygon_corner_check_sound _ _ _ hc.2.1) q r hcontains hqcore hcenter
 
 def universalPruningOutput (plan : List (PoseRow × UniversalPiece)) : List PoseRow :=
-  plan.bind (fun item => outsideRows item.1 item.2.polygon)
+  plan.flatMap (fun item => outsideRows item.1 item.2.polygon)
 
 def UniversalPruningCheck (s : PoseState) (i : Owner)
     (plan : List (PoseRow × UniversalPiece)) : Prop :=
@@ -371,7 +371,7 @@ theorem universal_row_pruning_keeps {S : ℝ} (P : Packing 11 S)
 
 def universalProgramOutput (plan : List (PoseRow × UniversalRowPruningCertificate)) :
     List PoseRow :=
-  plan.bind (fun item => item.2.keptRows item.1)
+  plan.flatMap (fun item => item.2.keptRows item.1)
 
 def UniversalProgramCheck (s : PoseState) (i : Owner)
     (plan : List (PoseRow × UniversalRowPruningCertificate)) : Prop :=
@@ -403,7 +403,7 @@ theorem universal_program_sound {S : ℝ} (P : Packing 11 S)
       universal_row_pruning_keeps P s i item.1 item.2 hcheck hs hcontains
     simpa only [replaceRows, Function.update_self] using
       (show RowsContain (universalProgramOutput plan) (P.squares i) from
-        ⟨out, List.mem_bind.mpr ⟨item, hm, hout⟩, hq⟩)
+        ⟨out, List.mem_flatMap.mpr ⟨item, hm, hout⟩, hq⟩)
   · simpa only [replaceRows, Function.update_of_ne hj] using hs.1 j
 
 end

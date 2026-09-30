@@ -44,7 +44,7 @@ theorem outsideRows_cover (r : PoseRow) (polygon : Polygon) (q : UnitSquare)
 state transition recomputes all surviving rows, so archived output rows cannot
 be substituted silently. -/
 def subtractOneRows (rs : List PoseRow) (piece : ForbiddenPiece) : List PoseRow :=
-  rs.bind (fun r => outsideRows r piece.polygon)
+  rs.flatMap (fun r => outsideRows r piece.polygon)
 
 def SubtractOneCheck (s : PoseState) (i : Owner) (piece : ForbiddenPiece) : Prop :=
   ∀ r ∈ s.rows i, piece.Check s i r
@@ -65,7 +65,7 @@ theorem subtract_one_step (s : PoseState) (i : Owner) (piece : ForbiddenPiece)
   rcases outsideRows_cover r piece.polygon q hrow with hout | hin
   · left
     obtain ⟨out, hm, hcontains⟩ := hout
-    exact ⟨out, List.mem_bind.mpr ⟨r, hr, hm⟩, hcontains⟩
+    exact ⟨out, List.mem_flatMap.mpr ⟨r, hr, hm⟩, hcontains⟩
   · right
     have hp := hc r hr
     refine ⟨piece.partner, hp.1, rationalHull piece.core, ?_, ?_⟩

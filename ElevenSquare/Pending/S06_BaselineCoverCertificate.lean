@@ -70,7 +70,7 @@ theorem baseline_cover_certificate_sound (source : Polygon) (targets : List Poly
   | hit i ws =>
     refine ⟨targets.getD i [], ?_,
       baseline_polygon_implication_check_sound _ _ ws hc.2 hp⟩
-    rw [List.getD_eq_get targets [] hc.1]
+    rw [List.getD_eq_getElem targets [] hc.1]
     exact List.get_mem ..
   | split h l r il ir =>
     by_cases hin : h.contains p

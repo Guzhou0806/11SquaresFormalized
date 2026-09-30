@@ -57,7 +57,7 @@ theorem row_transition_keeps {S : ℝ} (P : Packing 11 S) (s : PoseState)
     exact False.elim (P.interior_disjoint i j hij p ⟨hpi, hpj⟩)
 
 def rowTransitionsOutput (plan : List (PoseRow × RowTransitionCertificate)) :
-    List PoseRow := plan.bind (fun item => item.2.outputRows item.1)
+    List PoseRow := plan.flatMap (fun item => item.2.outputRows item.1)
 
 theorem row_transitions_sound {S : ℝ} (P : Packing 11 S) (s : PoseState)
     (i : Owner) (plan : List (PoseRow × RowTransitionCertificate))
@@ -74,7 +74,7 @@ theorem row_transitions_sound {S : ℝ} (P : Packing 11 S) (s : PoseState)
     obtain ⟨out, hout, hcontains⟩ :=
       row_transition_keeps P s hs i item.1 item.2 (hchecks item hm) hq
     simp only [replaceRows, Function.update_self]
-    exact ⟨out, List.mem_bind.mpr ⟨item, hm, hout⟩, hcontains⟩
+    exact ⟨out, List.mem_flatMap.mpr ⟨item, hm, hout⟩, hcontains⟩
   · simpa only [replaceRows, Function.update_of_ne hji] using hs.1 j
 
 end

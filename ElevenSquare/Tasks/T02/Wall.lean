@@ -18,7 +18,7 @@ theorem baseline_cos_antitone (a b : ℝ) (ha : 0 ≤ a) (hab : a ≤ b) :
   have hda : 0 < 1 + a ^ 2 := by positivity
   have hdb : 0 < 1 + b ^ 2 := by positivity
   unfold baselineCos
-  apply (div_le_div_iff hdb hda).mpr
+  apply (div_le_div_iff₀ hdb hda).mpr
   nlinarith [mul_nonneg (sub_nonneg.mpr hab) (show 0 ≤ b + a by linarith)]
 
 theorem baseline_sin_monotone (a b : ℝ) (ha : 0 ≤ a) (hab : a ≤ b) (hb : b ≤ 1) :
@@ -29,7 +29,7 @@ theorem baseline_sin_monotone (a b : ℝ) (ha : 0 ≤ a) (hab : a ≤ b) (hb : b
     (mul_le_mul_of_nonneg_right (hab.trans hb) (ha.trans hab)).trans (by simpa using hb)
   have hprod := mul_nonneg (sub_nonneg.mpr hab) (sub_nonneg.mpr hab1)
   unfold baselineSin
-  apply (div_le_div_iff hda hdb).mpr
+  apply (div_le_div_iff₀ hda hdb).mpr
   nlinarith
 
 theorem baseline_concave_quadratic_nonneg (a b c l u t : ℝ)
@@ -82,8 +82,8 @@ theorem baseline_wall_check_sound (lo hi h : ℚ) (hc : BaselineWallCheck lo hi 
   have hd : (0 : ℝ) < 1 + t ^ 2 := by positivity
   unfold baselineCos baselineSin
   rw [← add_div]
-  apply (le_div_iff (show (0 : ℝ) < 2 by norm_num)).mpr
-  apply (le_div_iff hd).mpr
+  apply (le_div_iff₀ (show (0 : ℝ) < 2 by norm_num)).mpr
+  apply (le_div_iff₀ hd).mpr
   nlinarith
 
 def baselineCorner (q : UnitSquare) (a b : ℝ) : Point :=

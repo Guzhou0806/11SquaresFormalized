@@ -106,21 +106,19 @@ theorem baseline_core_vertex_check_sound (q : UnitSquare) (v : QPoint) (l u : �
   have hx : localX q (q.center + realPoint v) * (1+t^2) =
       (v.1:ℝ)*(1-t^2) + 2*(v.2:ℝ)*t := by
     simp only [localX, add_sub_cancel_left, hq, dot, chartAxis, realPoint]
-    field_simp [ne_of_gt hd]
-    ring
+    field_simp [ne_of_gt hd] <;> ring
   have hy : localY q (q.center + realPoint v) * (1+t^2) =
       (v.2:ℝ)*(1-t^2) - 2*(v.1:ℝ)*t := by
     simp only [localY, add_sub_cancel_left, hq, dot, chartAxis, realPoint, perp]
-    field_simp [ne_of_gt hd]
-    ring
+    field_simp [ne_of_gt hd] <;> ring
   have bound (z r : ℝ) (hz : z*(1+t^2)=r)
       (hm : 0 < (1+t^2)/2-r) (hp : 0 < (1+t^2)/2+r) : |z| < 1/2 := by
     apply abs_lt.mpr
     constructor
-    · apply (mul_lt_mul_right hd).mp
+    · apply (mul_lt_mul_iff_of_pos_right hd).mp
       rw [hz]
       linarith
-    · apply (mul_lt_mul_right hd).mp
+    · apply (mul_lt_mul_iff_of_pos_right hd).mp
       rw [hz]
       linarith
   constructor

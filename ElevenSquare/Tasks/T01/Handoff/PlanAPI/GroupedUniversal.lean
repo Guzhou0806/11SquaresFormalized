@@ -49,7 +49,7 @@ structure GroupedUniversalCertificate where
 
 def GroupedUniversalCertificate.domainVertices
     (c : GroupedUniversalCertificate) : List QPoint :=
-  c.members.bind (fun item => item.2.domainVertices)
+  c.members.flatMap (fun item => item.2.domainVertices)
 
 def GroupedUniversalCertificate.Check (c : GroupedUniversalCertificate)
     (currentCore regionVertices : List QPoint) : Prop :=
@@ -91,8 +91,8 @@ theorem grouped_universal_row_collision (c : GroupedUniversalCertificate)
     exact facet_support_domain_subset regionVertices item.2.domainVertices
       c.domainVertices c.difference c.facetBounds hc.2.2.1
       (fun d hd => by
-        change d ∈ c.members.bind (fun x => x.2.domainVertices)
-        exact List.mem_bind.mpr ⟨item, hitem, hd⟩)
+        change d ∈ c.members.flatMap (fun x => x.2.domainVertices)
+        exact List.mem_flatMap.mpr ⟨item, hitem, hd⟩)
   exact universal_support_row_collision cert currentCore regionVertices region
     item.1 hcert hregion q r hr hqcore hcenter
 
@@ -112,7 +112,7 @@ def GroupedUniversalPiece.Check (s : PoseState) (i : Owner)
   PolygonCornerCheck p.vertices p.polygon p.corners ∧
   (∀ v ∈ p.currentCore,
     BaselineCoreVertexCheck v current.lo current.hi) ∧
-  (p.groups.bind (fun g => g.members.map Prod.fst)) = s.rows p.partner ∧
+  (p.groups.flatMap (fun g => g.members.map Prod.fst)) = s.rows p.partner ∧
   p.groups.Forall (fun g => g.Check p.currentCore p.vertices)
 
 instance groupedUniversalPieceCheckDecidable
@@ -131,7 +131,7 @@ theorem grouped_universal_piece_collision (s : PoseState) (i : Owner)
     ∃ x, OpenSquare q x ∧ OpenSquare r x := by
   obtain ⟨partnerRow, hrow, hcontains⟩ := hr
   rw [← hc.2.2.2.1] at hrow
-  obtain ⟨group, hgroup, hrow⟩ := List.mem_bind.mp hrow
+  obtain ⟨group, hgroup, hrow⟩ := List.mem_flatMap.mp hrow
   obtain ⟨item, hitem, heq⟩ := List.mem_map.mp hrow
   subst partnerRow
   have hqcore : CoreFits (rationalHull p.currentCore) q :=

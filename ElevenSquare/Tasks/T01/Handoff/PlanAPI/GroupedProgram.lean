@@ -82,7 +82,7 @@ theorem grouped_row_pruning_keeps {S : ℝ} (P : Packing 11 S)
 
 def groupedProgramOutput
     (program : List (PoseRow × GroupedRowPruningCertificate)) : List PoseRow :=
-  program.bind (fun item => item.2.keptRows item.1)
+  program.flatMap (fun item => item.2.keptRows item.1)
 
 def GroupedProgramCheck (s : PoseState) (i : Owner)
     (program : List (PoseRow × GroupedRowPruningCertificate)) : Prop :=
@@ -114,7 +114,7 @@ theorem grouped_program_sound {S : ℝ} (P : Packing 11 S)
       grouped_row_pruning_keeps P s i item.1 item.2 hcheck hs hcontains
     simpa only [replaceRows, Function.update_self] using
       (show RowsContain (groupedProgramOutput program) (P.squares i) from
-        ⟨out, List.mem_bind.mpr ⟨item, hm, hout⟩, hq⟩)
+        ⟨out, List.mem_flatMap.mpr ⟨item, hm, hout⟩, hq⟩)
   · simpa only [replaceRows, Function.update_of_ne hj] using hs.1 j
 
 end

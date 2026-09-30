@@ -57,13 +57,13 @@ theorem polygon_corners_sound (vs : List QPoint) (hs : Polygon)
   obtain ⟨w, hw⟩ := zip_witness vs ws hc.2.1 v hv
   rcases hc.2.2 (v,w) hw with ⟨hb, ha, hi, ho, hin, hout, hturn⟩
   refine ⟨vs.getD w.before (0,0), ?_, vs.getD w.after (0,0), ?_, ?_, ?_, hturn⟩
-  · rw [List.getD_eq_get vs (0,0) hb]
+  · rw [List.getD_eq_getElem vs (0,0) hb]
     exact List.get_mem ..
-  · rw [List.getD_eq_get vs (0,0) ha]
+  · rw [List.getD_eq_getElem vs (0,0) ha]
     exact List.get_mem ..
-  · rw [hin, List.getD_eq_get hs baselineZeroHalfplane hi]
+  · rw [hin, List.getD_eq_getElem hs baselineZeroHalfplane hi]
     exact List.get_mem ..
-  · rw [hout, List.getD_eq_get hs baselineZeroHalfplane ho]
+  · rw [hout, List.getD_eq_getElem hs baselineZeroHalfplane ho]
     exact List.get_mem ..
 
 end

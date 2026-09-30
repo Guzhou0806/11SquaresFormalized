@@ -56,7 +56,7 @@ theorem symbolic_extended_cover_sound (source : List SymbolicFacet)
   induction cover generalizing source with
   | hit index ws =>
       refine ⟨targets.getD index [], ?_, ?_⟩
-      · rw [List.getD_eq_get targets [] hc.1]
+      · rw [List.getD_eq_getElem targets [] hc.1]
         exact List.get_mem ..
       · exact symbolic_polygon_implication_sound source
           (targets.getD index []) ws l u hc.2 t hlt htu x hx

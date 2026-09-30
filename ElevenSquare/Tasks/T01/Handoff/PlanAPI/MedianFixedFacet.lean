@@ -22,8 +22,7 @@ theorem reference_axisQ_unit (angle : ℚ) :
     rationalDot (referenceAxisQ angle) (referenceAxisQ angle) = 1 := by
   have hd : 1 + angle ^ 2 ≠ 0 := ne_of_gt (by positivity)
   dsimp [rationalDot, referenceAxisQ]
-  field_simp [hd]
-  ring
+  field_simp [hd] <;> ring
 
 def localNormalQ (axis normal : QPoint) : QPoint :=
   (rationalDot normal axis, rationalDot normal (rationalPerp axis))

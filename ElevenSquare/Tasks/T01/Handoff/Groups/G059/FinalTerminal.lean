@@ -51,7 +51,7 @@ def archivedFinalCell5 : List (ℚ × ℚ × List Polygon) := [
 ]
 
 def archivedFinalCell5Rows : List PoseRow :=
-  archivedFinalCell5.bind fun datum =>
+  archivedFinalCell5.flatMap fun datum =>
     datum.2.2.map (fun poly => ⟨datum.1, datum.2.1, poly⟩)
 
 /-- The nine points of `final_state.groups["5"]`, each divided by the

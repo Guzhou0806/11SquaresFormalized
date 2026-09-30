@@ -41,7 +41,7 @@ theorem hullWitness_sound (vs : List QPoint) (w : HullWitness) (hw : w.Valid vs)
   | vertex i =>
     apply subset_convexHull ℝ _
     refine ⟨vs.getD i (0,0), ?_, rfl⟩
-    rw [List.getD_eq_get vs (0,0) hw]
+    rw [List.getD_eq_getElem vs (0,0) hw]
     exact List.get_mem ..
   | mix w a b ia ib =>
     change realPoint (rationalMix w (a.eval vs) (b.eval vs)) ∈ rationalHull vs

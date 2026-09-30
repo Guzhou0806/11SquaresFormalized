@@ -41,7 +41,7 @@ theorem combination_sum_sound (hs : Poly) (ws : Combination)
     have hh : (hs.getD iw.1 zero).contains p := by
       by_cases hi : iw.1 < hs.length
       · apply hp
-        rw [List.getD_eq_get hs zero hi]
+        rw [List.getD_eq_getElem hs zero hi]
         exact List.get_mem ..
       · rw [List.getD_eq_default hs zero (Nat.le_of_not_lt hi)]
         simp [zero, Plane.contains]
@@ -146,7 +146,7 @@ theorem certificate_sound (source : Poly) (targets : List Poly) (c : Certificate
   | empty w => exact (empty_sound source w hc p hp).elim
   | hit i ws =>
     refine ⟨targets.getD i [], ?_, polygon_sound _ _ ws hc.2 hp⟩
-    rw [List.getD_eq_get targets [] hc.1]
+    rw [List.getD_eq_getElem targets [] hc.1]
     exact List.get_mem ..
   | split h l r il ir =>
     by_cases hin : h.contains p

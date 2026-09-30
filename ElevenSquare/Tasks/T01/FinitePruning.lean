@@ -69,7 +69,7 @@ theorem row_pruning_sound (s : PoseState) (i : Owner) (r : PoseRow)
 /-- A plan names its actual predecessor rows. Its output rows are computed,
 so a receipt cannot silently substitute a different residual state. -/
 def pruningOutput (plan : List (PoseRow × RowPruningCertificate)) : List PoseRow :=
-  plan.bind (fun item => item.2.keptRows item.1)
+  plan.flatMap (fun item => item.2.keptRows item.1)
 
 theorem checked_pruning_step (s : PoseState) (i : Owner)
     (plan : List (PoseRow × RowPruningCertificate))
@@ -85,7 +85,7 @@ theorem checked_pruning_step (s : PoseState) (i : Owner)
   rcases row_pruning_sound s i item.1 item.2 (hcheck item hm) q hrow with hk | hb
   · left
     rcases hk with ⟨out, ho, hcontains⟩
-    exact ⟨out, List.mem_bind.mpr ⟨item, hm, ho⟩, hcontains⟩
+    exact ⟨out, List.mem_flatMap.mpr ⟨item, hm, ho⟩, hcontains⟩
   · exact Or.inr hb
 
 end

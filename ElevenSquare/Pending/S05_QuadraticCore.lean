@@ -65,11 +65,11 @@ theorem half_angle_core_projection
   have hd : 0 < 1+t^2 := by positivity
   have hx' : |((1-t^2)*v.1+2*t*v.2)/(1+t^2)| < 1/2 := by
     rw [abs_div, abs_of_pos hd]
-    apply (div_lt_iff hd).mpr
+    apply (div_lt_iff₀ hd).mpr
     nlinarith [hx]
   have hy' : |(-2*t*v.1+(1-t^2)*v.2)/(1+t^2)| < 1/2 := by
     rw [abs_div, abs_of_pos hd]
-    apply (div_lt_iff hd).mpr
+    apply (div_lt_iff₀ hd).mpr
     nlinarith [hy]
   have ex : dot v (chartAxis t) = ((1-t^2)*v.1+2*t*v.2)/(1+t^2) := by
     dsimp [dot, chartAxis]

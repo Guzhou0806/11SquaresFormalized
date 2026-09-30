@@ -63,7 +63,7 @@ theorem baseline_majority_capacity_one (sites : Finset QPoint) (k : ℕ)
   let low := sites.filter (fun v => f (realPoint v) ≤ u)
   let high := sites.filter (fun v => ¬ f (realPoint v) ≤ u)
   have hcard : low.card + high.card = sites.card := by
-    exact Finset.filter_card_add_filter_neg_card_eq_card (fun v => f (realPoint v) ≤ u)
+    exact Finset.card_filter_add_card_filter_not (fun v => f (realPoint v) ≤ u)
   by_cases hl : k ≤ low.card
   · obtain ⟨J, hJ, hJk⟩ := Finset.exists_subset_card_eq hl
     have hJs : J ⊆ sites := hJ.trans (Finset.filter_subset _ _)
@@ -71,7 +71,7 @@ theorem baseline_majority_capacity_one (sites : Finset QPoint) (k : ℕ)
     have hbound := baseline_hull_projection_le J.toList f u (by
       intro v hv
       exact (Finset.mem_filter.mp (hJ (by simpa using hv))).2) p hp
-    exact (hg p hpr).not_le hbound
+    exact not_le_of_gt (hg p hpr) hbound
   · have hh : k ≤ high.card := by omega
     obtain ⟨J, hJ, hJk⟩ := Finset.exists_subset_card_eq hh
     have hJs : J ⊆ sites := hJ.trans (Finset.filter_subset _ _)
@@ -79,7 +79,7 @@ theorem baseline_majority_capacity_one (sites : Finset QPoint) (k : ℕ)
     have hbound := baseline_hull_projection_ge J.toList f u (by
       intro v hv
       exact (lt_of_not_ge (Finset.mem_filter.mp (hJ (by simpa using hv))).2).le) p hp
-    exact (hf p hpq).not_le hbound
+    exact not_le_of_gt (hf p hpq) hbound
 
 theorem baseline_majority_unique_owner {S : ℝ} (P : Packing 11 S)
     (sites : Finset QPoint) (k : ℕ) (hsize : sites.card + 1 = 2 * k)

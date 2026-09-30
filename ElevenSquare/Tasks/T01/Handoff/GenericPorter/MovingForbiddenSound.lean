@@ -28,7 +28,7 @@ theorem movingDifferenceWitness_sound (K : List QPoint)
   let ab := locals.getD w.localIndex (0,0)
   have hab : ab ∈ locals := by
     dsimp [ab]
-    rw [List.getD_eq_get locals (0,0) hw.2]
+    rw [List.getD_eq_getElem locals (0,0) hw.2]
     exact List.get_mem ..
   refine ⟨realPoint (w.owned.eval K), hullWitness_sound K w.owned hw.1,
     localOffset q ab.1 ab.2, ?_, rfl⟩

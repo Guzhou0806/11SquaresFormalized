@@ -73,25 +73,23 @@ theorem openSquare_of_field_quadratics (q : UnitSquare)
     rw [hcenter, haxis]
     dsimp [chartAxis]
     have ht : 0 < 1+t^2 := by positivity
-    field_simp [ne_of_gt hB, ne_of_gt ht]
-    ring
+    field_simp [ne_of_gt hB, ne_of_gt ht] <;> ring
   have hY : localY q (w.1/B,w.2/B) = ny/den := by
     dsimp [localY, dot, perp, ny, den, dx, dy, fieldDX, fieldDY]
     rw [hcenter, haxis]
     dsimp [chartAxis]
     have ht : 0 < 1+t^2 := by positivity
-    field_simp [ne_of_gt hB, ne_of_gt ht]
-    ring
+    field_simp [ne_of_gt hB, ne_of_gt ht] <;> ring
   rw [OpenSquare, hX, hY]
   apply And.intro
   · apply abs_lt.mpr
     constructor
-    · exact (lt_div_iff hden).mpr (by nlinarith only [hxl])
-    · exact (div_lt_iff hden).mpr (by nlinarith only [hxu])
+    · exact (lt_div_iff₀ hden).mpr (by nlinarith only [hxl])
+    · exact (div_lt_iff₀ hden).mpr (by nlinarith only [hxu])
   · apply abs_lt.mpr
     constructor
-    · exact (lt_div_iff hden).mpr (by nlinarith only [hyl])
-    · exact (div_lt_iff hden).mpr (by nlinarith only [hyu])
+    · exact (lt_div_iff₀ hden).mpr (by nlinarith only [hyl])
+    · exact (div_lt_iff₀ hden).mpr (by nlinarith only [hyu])
 
 /-- A proof producer supplies a single finite rational certificate for each
 field vertex. The checker verifies four inequalities across every real angle

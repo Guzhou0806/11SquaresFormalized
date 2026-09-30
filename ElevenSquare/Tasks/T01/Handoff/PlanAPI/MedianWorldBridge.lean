@@ -28,8 +28,7 @@ theorem local_projection_chart_identity
   rw [ha]
   dsimp [chartAxis]
   have hd : 1 + t ^ 2 ≠ 0 := ne_of_gt (by positivity : 0 < 1 + t ^ 2)
-  field_simp [hd]
-  ring
+  field_simp [hd] <;> ring
 
 /-- World-coordinate median bounds transfer to the local directions used by
     segment capture. The source polygon may prove the center bound through a
@@ -53,7 +52,7 @@ theorem local_median_of_world_support
     change chartDenom t * localProjection q normal p =
       dot worldNormal (realPoint p) - worldCenter at he
     dsimp [localBound]
-    rw [lt_div_iff' hd]
+    rw [lt_div_iff₀' hd]
     rw [he]
     constructor <;> intro hh <;> linarith
   have hfilter : sites.filter (fun p => localProjection q normal p < localBound) =
@@ -76,8 +75,7 @@ theorem local_median_of_world_support
     have hdiv := div_nonneg hnum hd.le
     dsimp [localBound]
     convert hdiv using 1
-    field_simp [ne_of_gt hd]
-    ring
+    field_simp [ne_of_gt hd] <;> ring
 
 /-- An evaluated symbolic TRUE facet may be a positive multiple of the
     world-coordinate median inequality. Moving chart-axis facets use scale
@@ -97,7 +95,7 @@ theorem local_median_of_symbolic_facet
     LocalMedianBound sites k q h normal := by
   have hw : dot (chartNumeratorNormal t normal) q.center ≤
       bound + h * chartDenom t * (|normal.1| + |normal.2|) := by
-    apply (mul_le_mul_left hscale).mp
+    apply (mul_le_mul_iff_of_pos_left hscale).mp
     calc
       scale * dot (chartNumeratorNormal t normal) q.center =
           facet.a.eval t * q.center.1 + facet.b.eval t * q.center.2 := by

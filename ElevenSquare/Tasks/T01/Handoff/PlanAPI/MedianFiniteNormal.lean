@@ -20,7 +20,7 @@ theorem finite_hull_of_all_linear_support (vertices : List Point) (center : Poin
     rw [heq]
     exact Finset.finite_toSet vertices.toFinset
   have hclosed : IsClosed (convexHull ℝ {v : Point | v ∈ vertices}) :=
-    hfinite.isClosed_convexHull
+    hfinite.isClosed_convexHull ℝ
   have hinside : center ∈ ⋂ f : Point →L[ℝ] ℝ,
       {x | ∃ y ∈ convexHull ℝ {v : Point | v ∈ vertices}, f x ≤ f y} := by
     rw [Set.mem_iInter]

@@ -16,6 +16,7 @@ from check_sources import ROOT, check, imports
 ap = argparse.ArgumentParser(description=__doc__)
 ap.add_argument('--setup', action='store_true', help='Install the pinned public toolchain and dependency cache.')
 ap.add_argument('--all', action='store_true', help='Check every included local source module.')
+ap.add_argument('--keep-going', action='store_true', help='Continue independent modules after a failure; never accepts an incomplete build.')
 ap.add_argument('--fresh', action='store_true', help='Ignore this checkout\'s matching accepted receipts.')
 ap.add_argument('--plan', action='store_true', help='Print dependency order without installing or compiling.')
 ap.add_argument('--module', action='append', default=[], help='Check only this module and its dependencies (repeatable).')
@@ -91,11 +92,18 @@ def sha(path):
 def object_path(m): return ROOT / '.lake/build/lib/lean' / (m.replace('.', '/') + '.olean')
 
 accepted = 0
+failed = []; blocked = {}
 for index, m in enumerate(order):
     src = modules[m]; rel = str(src.relative_to(ROOT)); target = object_path(m)
     target.parent.mkdir(parents=True, exist_ok=True)
     receipt = state / (m + '.json'); log = state / (m + '.log')
-    deps = {d: sha(object_path(d)) for d in imports(src) if d in modules}
+    local_deps = [d for d in imports(src) if d in modules]
+    unavailable = [d for d in local_deps if d in failed or d in blocked]
+    if unavailable:
+        blocked[m] = unavailable
+        print(f'[{index+1}/{len(order)}] blocked {m}', flush=True)
+        continue
+    deps = {d: sha(object_path(d)) for d in local_deps}
     implicit = '-DautoImplicit=' + ('true' if (m == 'Sqpack' or m.startswith('Sqpack.')) else 'false')
     fingerprint = {'source': sha(src), 'local_dependency_objects': deps, 'compiler': version,
                    'arguments': ['-j1', '-M0', '-s65536', implicit, '-DmaxHeartbeats=0']}
@@ -113,15 +121,26 @@ for index, m in enumerate(order):
                  '-DmaxHeartbeats=0', '-o', str(tmp.relative_to(ROOT)), rel], env=lean_env,
                 stdout=stream, stderr=subprocess.STDOUT)
         os.replace(tmp, target)
-    except BaseException:
+    except BaseException as error:
         if tmp.exists(): tmp.unlink()
         receipt.write_text(json.dumps({'module':m, 'status':'failed_or_interrupted', 'inputs':fingerprint}, indent=2)+'\n')
-        print(log.read_text()[-4000:], file=sys.stderr)
+        print(log.read_text()[-4000:], file=sys.stderr, flush=True)
+        if args.keep_going and isinstance(error, SystemExit):
+            failed.append(m)
+            print(f'[{index+1}/{len(order)}] failed {m}', flush=True)
+            continue
         raise
     receipt.write_text(json.dumps({'module':m, 'status':'accepted', 'inputs':fingerprint,
                                   'object_sha256':sha(target), 'elapsed_seconds':round(time.monotonic()-started, 2)}, indent=2)+'\n')
     accepted += 1
     print(f'[{index+1}/{len(order)}] accepted {m}', flush=True)
+
+if failed or blocked:
+    result = {'status': 'INCOMPLETE_BUILD', 'checked_modules': accepted,
+              'failed_modules': failed, 'blocked_modules': blocked}
+    (state / 'incomplete-result.json').write_text(json.dumps(result, indent=2)+'\n')
+    print(f'Incomplete build: {len(failed)} failed, {len(blocked)} blocked, {accepted} accepted.', flush=True)
+    raise SystemExit(1)
 
 import re
 unfinished = {'ElevenSquare.Pending.'+n for n in ['baseline_certificate_exists','prior_certificate_exists',

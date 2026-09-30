@@ -38,18 +38,18 @@ theorem far15_scaled_box_collision (q : UnitSquare) (pField : Point)
     exact div_nonneg (by nlinarith) (le_of_lt hden)
   have hcLo : (1/70 : ℝ) ≤ c := by
     dsimp [c, chartAxis]
-    apply (le_div_iff hden).mpr
+    apply (le_div_iff₀ hden).mpr
     nlinarith
   have hcHi : c ≤ 1/10 := by
     dsimp [c, chartAxis]
-    apply (div_le_iff hden).mpr
+    apply (div_le_iff₀ hden).mpr
     nlinarith
   have hs0 : 0 ≤ s := by
     dsimp [s, chartAxis]
     exact div_nonneg (by linarith) (le_of_lt hden)
   have hsHi : s ≤ 1 := by
     dsimp [s, chartAxis]
-    apply (div_le_iff hden).mpr
+    apply (div_le_iff₀ hden).mpr
     nlinarith [sq_nonneg (t-1)]
   have hdx : (9/25 : ℝ) ≤ dx ∧ dx ≤ 43/100 := by
     dsimp [dx, far15Owner9Witness]
@@ -103,21 +103,19 @@ theorem far15_scaled_box_collision (q : UnitSquare) (pField : Point)
     dsimp [localX, dot, far15PhysicalWitness]
     rw [hcenter, haxis]
     dsimp [dx, d, c, s]
-    field_simp [fieldScale_ne_zero]
-    ring
+    field_simp [fieldScale_ne_zero] <;> ring
   have hlocalY : localY q far15PhysicalWitness =
       (dx*(-s)-d*c)/fieldScale := by
     dsimp [localY, dot, perp, far15PhysicalWitness]
     rw [hcenter, haxis]
     dsimp [dx, d, c, s]
-    field_simp [fieldScale_ne_zero]
-    ring
+    field_simp [fieldScale_ne_zero] <;> ring
   rw [OpenSquare, hlocalX, hlocalY]
   constructor
   · rw [abs_div, abs_of_pos fieldScale_pos]
-    exact (div_lt_iff fieldScale_pos).mpr (by linarith [hx])
+    exact (div_lt_iff₀ fieldScale_pos).mpr (by linarith [hx])
   · rw [abs_div, abs_of_pos fieldScale_pos]
-    exact (div_lt_iff fieldScale_pos).mpr (by linarith [hy])
+    exact (div_lt_iff₀ fieldScale_pos).mpr (by linarith [hy])
 
 end
 end ElevenSquare.Tasks.T07

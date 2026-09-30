@@ -34,7 +34,7 @@ theorem local_median_bound_scale_pos
       ext p
       simp only [Finset.mem_filter]
       rw [local_projection_scale]
-      simp only [(mul_lt_mul_left hs)]
+      simp only [(mul_lt_mul_iff_of_pos_left hs)]
     rw [hfilter]
     exact hmedian
   · rw [local_l1_scale normal scale hs.le]

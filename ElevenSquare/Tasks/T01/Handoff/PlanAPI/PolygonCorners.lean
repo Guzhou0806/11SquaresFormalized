@@ -54,10 +54,10 @@ theorem polygon_corner_check_sound (vertices : List QPoint) (polygon : Polygon)
         rcases List.mem_cons.mp hp with rfl | hp
         · have hv := hvalid (p,c) (by simp)
           have hu : vertices.getD c.1 (0,0) ∈ vertices := by
-            rw [List.getD_eq_get vertices (0,0) hv.1]
+            rw [List.getD_eq_getElem vertices (0,0) hv.1]
             exact List.get_mem ..
           have hw : vertices.getD c.2 (0,0) ∈ vertices := by
-            rw [List.getD_eq_get vertices (0,0) hv.2.1]
+            rw [List.getD_eq_getElem vertices (0,0) hv.2.1]
             exact List.get_mem ..
           exact ⟨_, hu, _, hw, hv.2.2.1, hv.2.2.2.1, hv.2.2.2.2⟩
         · apply ih cs (by simpa using hlen)

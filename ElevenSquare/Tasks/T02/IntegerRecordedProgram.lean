@@ -21,7 +21,7 @@ instance (s : PoseState) (i : Owner) (r : IntegerRowRecord) :
   infer_instance
 
 def integerRowsOutput (rows : List IntegerRowRecord) : List PoseRow :=
-  rows.bind (fun r => r.transition.outputRows r.predecessor)
+  rows.flatMap (fun r => r.transition.outputRows r.predecessor)
 
 /-- Every predecessor is covered, including closed endpoint ties. The only
 geometric information used is the checked state and each record's certificate. -/
@@ -40,7 +40,7 @@ theorem integer_rows_sound {S : ℝ} (P : Packing 11 S) (s : PoseState)
     obtain ⟨out, hout, hcontains⟩ := integer_row_transition_keeps P s hs i
       record.predecessor record.transition record.cover (hc record hm) hq
     simp only [replaceRows, Function.update_self]
-    exact ⟨out, List.mem_bind.mpr ⟨record, hm, hout⟩, hcontains⟩
+    exact ⟨out, List.mem_flatMap.mpr ⟨record, hm, hout⟩, hcontains⟩
   · simpa only [replaceRows, Function.update_of_ne hji] using hs.1 j
 
 /-- Existing rational/self-cut/ownership instructions and integer row updates

@@ -15,7 +15,7 @@ theorem chartAxis_first_antitone {a b : ℝ}
   have hda : 0 < 1+a^2 := by positivity
   have hdb : 0 < 1+b^2 := by positivity
   dsimp [chartAxis]
-  apply (div_le_div_iff hdb hda).mpr
+  apply (div_le_div_iff₀ hdb hda).mpr
   nlinarith
 
 theorem chartAxis_second_monotone {a b : ℝ}
@@ -29,7 +29,7 @@ theorem chartAxis_second_monotone {a b : ℝ}
   have hda : 0 < 1+a^2 := by positivity
   have hdb : 0 < 1+b^2 := by positivity
   dsimp [chartAxis]
-  apply (div_le_div_iff hda hdb).mpr
+  apply (div_le_div_iff₀ hda hdb).mpr
   nlinarith
 
 end

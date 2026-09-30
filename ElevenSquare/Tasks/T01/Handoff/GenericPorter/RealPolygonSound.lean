@@ -26,7 +26,7 @@ theorem real_halfplane_scale_sound (h : RealHalfplane) (d : ℝ) (p : Point)
   simp only [RealHalfplane.scale, RealHalfplane.contains] at hh ⊢
   have hs : d * (h.a*p.1+h.b*p.2) ≤ d*h.c := by
     convert hh using 1 <;> ring
-  exact (mul_le_mul_left hd).mp hs
+  exact (mul_le_mul_iff_of_pos_left hd).mp hs
 
 def RealPolygon.carrier (hs : List RealHalfplane) : Set Point :=
   {p | ∀ h ∈ hs, h.contains p}
@@ -51,7 +51,7 @@ theorem realHull_isClosed (vs : List Point) :
     ext p
     simp
   rw [he]
-  exact (Finset.finite_toSet vs.toFinset).isClosed_convexHull
+  exact (Finset.finite_toSet vs.toFinset).isClosed_convexHull ℝ
 
 /-- A sound finite polygon rule for arbitrary real vertices and moving
     halfplanes, applied separately at each chart parameter. -/
@@ -78,7 +78,7 @@ theorem real_polygon_check_sound (vs : List Point) (hs : List RealHalfplane)
     (hmax u (by simpa using hu)) (hmax w (by simpa using hw))
   have hvm : v ∈ convexHull ℝ {v | v ∈ vs} :=
     subset_convexHull ℝ _ hv'
-  exact (hvs _ hvm).not_le (hpb.le.trans hfp)
+  exact not_le_of_gt (hvs _ hvm) (hpb.le.trans hfp)
 
 /-- A moving facet can be a positive rescaling of an actual edge. This
     support form avoids requiring literal equality of facet coefficients. -/
@@ -111,7 +111,7 @@ theorem real_polygon_support_sound (vs : List Point) (hs : List RealHalfplane)
     (hmax u (by simpa using hu)) (hmax w (by simpa using hw))
   have hvm : v ∈ convexHull ℝ {v | v ∈ vs} :=
     subset_convexHull ℝ _ hv'
-  exact (hvs _ hvm).not_le (hpb.le.trans hfp)
+  exact not_le_of_gt (hvs _ hvm) (hpb.le.trans hfp)
 
 #print axioms real_polygon_check_sound
 #print axioms real_polygon_support_sound

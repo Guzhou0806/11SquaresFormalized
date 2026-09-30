@@ -47,8 +47,7 @@ theorem affine_tie_at_cross (p q : ℝ × ℝ)
   have hden : p.1 - q.1 ≠ 0 := sub_ne_zero.mpr hslope
   dsimp [affineCross, affineValue]
   rw [if_neg hslope]
-  field_simp [hden]
-  ring
+  field_simp [hden] <;> ring
 
 /-- A strict ordering reversal creates a crossing in the interval, including
     a possible tie at the right endpoint. -/

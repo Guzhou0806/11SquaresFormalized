@@ -8,7 +8,7 @@ noncomputable section
 /-- The finite generators of the Minkowski difference of the site and core
     hulls. Duplicate or interior generators are harmless. -/
 def pairDifferenceVertices (sites core : List QPoint) : List QPoint :=
-  sites.bind (fun s => core.map (qpointSubtract s))
+  sites.flatMap (fun s => core.map (qpointSubtract s))
 
 /-- A finite, rationally checkable presentation of a difference hull.
     `corners` certifies that the polygon has no points outside the proposed
@@ -80,7 +80,7 @@ theorem median_facet_bound_sound
   obtain ⟨s, hs, hsb⟩ := median_lower_bound_hits_subset sites subset k
     (rationalDot normal) bound hmedian hsubset hcard
   have hpairmem : qpointSubtract s q ∈ pairDifferenceVertices subset.toList core := by
-    apply List.mem_bind.mpr
+    apply List.mem_flatMap.mpr
     refine ⟨s, by simpa using hs, ?_⟩
     exact List.mem_map.mpr ⟨q, hq, rfl⟩
   have hpair := hpairs _ hpairmem facet (by simp)

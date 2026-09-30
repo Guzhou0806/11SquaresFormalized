@@ -130,7 +130,7 @@ theorem symbolic_cached_cover_sound
       cases signs with
       | hit ss =>
           refine ⟨targets.getD index [], ?_, ?_⟩
-          · rw [List.getD_eq_get targets [] hc.1]
+          · rw [List.getD_eq_getElem targets [] hc.1]
             exact List.get_mem ..
           · exact cached_polygon_sign_refs_sound cache hcache source
               (targets.getD index []) ws ss l u hc.2 t hlt htu x hx

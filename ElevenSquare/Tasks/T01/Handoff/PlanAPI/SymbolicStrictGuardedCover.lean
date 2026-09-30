@@ -161,7 +161,7 @@ theorem strict_guarded_symbolic_cover_sound (source : List SymbolicFacet)
       refine ⟨targets.getD i [], ?_,
         strict_guarded_polygon_implication_sound source (targets.getD i []) ws
           guard l u hc.2 t hlt htu hguard x hx⟩
-      rw [List.getD_eq_get targets [] hc.1]
+      rw [List.getD_eq_getElem targets [] hc.1]
       exact List.get_mem ..
   | split facet left right ihl ihr =>
       by_cases hfacet : facet.contains t x

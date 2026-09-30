@@ -8,8 +8,7 @@ noncomputable section
 theorem chart_axis_unit (t : ℝ) : normSq (chartAxis t) = 1 := by
   have hd : 1 + t ^ 2 ≠ 0 := ne_of_gt (by positivity)
   dsimp [normSq, dot, chartAxis]
-  field_simp [hd]
-  ring
+  field_simp [hd] <;> ring
 
 /-- A square centered at the actual center, but with a fixed rational chart
     angle. This is the reference frame used by static median facets. -/

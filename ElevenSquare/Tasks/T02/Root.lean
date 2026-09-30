@@ -77,8 +77,7 @@ theorem baselineBisector_contains {i j : Fin 16} {p : Point}
         2 * ((coverSite j).2 - (coverSite i).2) * p.2) := by
     unfold coordinateDistanceSq normalizeCenter
     simp only [Prod.fst, Prod.snd]
-    field_simp [ne_of_gt hu]
-    ring
+    field_simp [ne_of_gt hu] <;> ring
   have hn := mul_nonneg hu.le (sub_nonneg.mpr h)
   rw [hid] at hn
   have hsx (k : Fin 16) : ((baselineRationalSite k).1 : ℝ) = (coverSite k).1 :=

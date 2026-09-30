@@ -19,7 +19,7 @@ theorem wall_endpoint_check (t h : ℚ) (hh : h ≤ exactWallMarginQ t) :
     0 ≤ 1 - 2 * h + 2 * t - (1 + 2 * h) * t ^ 2 := by
   have hd : (0 : ℚ) < 2 * (1 + t ^ 2) := by positivity
   have hc : h * (2 * (1 + t ^ 2)) ≤ 1 - t ^ 2 + 2 * t := by
-    apply (le_div_iff hd).mp
+    apply (le_div_iff₀ hd).mp
     simpa [exactWallMarginQ] using hh
   calc
     0 ≤ (1 - t ^ 2 + 2 * t) - h * (2 * (1 + t ^ 2)) := sub_nonneg.mpr hc
@@ -54,9 +54,9 @@ theorem slabMargin_wall_check (n : ℕ) (hn : 0 < n) (b : Fin n) :
     exact_mod_cast (Nat.succ_le_of_lt b.isLt)
   apply min_wall_check
   · exact div_nonneg (by positivity) hnq.le
-  · exact (div_le_iff hnq).mpr (by simpa using hb)
+  · exact (div_le_iff₀ hnq).mpr (by simpa using hb)
   · exact div_nonneg (by positivity) hnq.le
-  · exact (div_le_iff hnq).mpr (by simpa using hbs)
+  · exact (div_le_iff₀ hnq).mpr (by simpa using hbs)
 
 theorem slab_rows_contain (n : ℕ) (hn : 0 < n) (cell : Fin 16)
     (q : UnitSquare)

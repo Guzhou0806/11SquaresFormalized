@@ -28,8 +28,7 @@ theorem scaled_wall_bound_eval (f : SymbolicWallFacet) (t : ℝ) :
   have hmargin : (1+t^2) * exactWallMargin t =
       (1-t^2+2*t)/2 := by
     rw [exactWallMargin_formula]
-    field_simp [ne_of_gt hd]
-    ring
+    field_simp [ne_of_gt hd] <;> ring
   change ((f.c + f.d / 2 : ℚ) : ℝ) + (f.d:ℝ)*t +
       ((f.c - f.d / 2 : ℚ) : ℝ)*t^2 =
         (1+t^2) * ((f.c:ℝ) + f.d * exactWallMargin t)

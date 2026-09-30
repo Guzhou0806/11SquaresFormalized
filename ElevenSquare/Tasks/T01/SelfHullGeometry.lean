@@ -63,9 +63,8 @@ theorem signed_support_check_sound (n : QPoint) (extent l u e d : ℚ)
       (d : ℝ)*dot (perp (chartAxis t)) (realPoint n)) * (1+t^2) =
       ((e : ℝ)*n.1+(d : ℝ)*n.2)*(1-t^2)+2*((e : ℝ)*n.2-(d : ℝ)*n.1)*t := by
     dsimp [dot, chartAxis, perp, realPoint]
-    field_simp [ne_of_gt hd]
-    ring
-  apply (mul_le_mul_right hd).mp
+    field_simp [ne_of_gt hd] <;> ring
+  apply (mul_le_mul_iff_of_pos_right hd).mp
   rw [he]
   push_cast at hp
   nlinarith

@@ -96,11 +96,11 @@ theorem symbolic_farkas_pointwise (w : SymbolicFarkasWitness)
   let g := source.getD w.second z
   have hf : f.contains t x := hx f (by
     dsimp [f]
-    rw [List.getD_eq_get source z hfirst]
+    rw [List.getD_eq_getElem source z hfirst]
     exact List.get_mem ..)
   have hg : g.contains t x := hx g (by
     dsimp [g]
-    rw [List.getD_eq_get source z hsecond]
+    rw [List.getD_eq_getElem source z hsecond]
     exact List.get_mem ..)
   have hna : w.firstWeight.eval t * f.a.eval t +
       w.secondWeight.eval t * g.a.eval t =
@@ -138,7 +138,7 @@ theorem symbolic_farkas_pointwise (w : SymbolicFarkasWitness)
       _ ≤ w.firstWeight.eval t * f.c.eval t +
           w.secondWeight.eval t * g.c.eval t := add_le_add h₁ h₂
       _ ≤ w.denominator.eval t * target.c.eval t := hmargin
-  exact (mul_le_mul_left hd).mp hscaled
+  exact (mul_le_mul_iff_of_pos_left hd).mp hscaled
 
 theorem guarded_farkas_sound (v : GuardedFarkasWitness)
     (source : List SymbolicFacet) (target : SymbolicFacet)
@@ -253,7 +253,7 @@ theorem guarded_symbolic_cover_sound (source : List SymbolicFacet)
       refine ⟨targets.getD i [], ?_,
         guarded_polygon_implication_sound source (targets.getD i []) ws
           guard l u hc.2 t hlt htu hguard x hx⟩
-      rw [List.getD_eq_get targets [] hc.1]
+      rw [List.getD_eq_getElem targets [] hc.1]
       exact List.get_mem ..
   | split facet left right ihl ihr =>
       by_cases hfacet : facet.contains t x

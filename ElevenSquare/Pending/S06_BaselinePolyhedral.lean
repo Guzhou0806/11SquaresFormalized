@@ -40,8 +40,8 @@ theorem baseline_combination_sum_sound (hs : Polygon) (ws : BaselineCombination)
       intro e he
       exact hw e (by simp [he])
     have hh := hp (hs.getD iw.1 baselineZeroHalfplane) (by
-      rw [List.getD_eq_get hs baselineZeroHalfplane hiw.1]
-      exact List.get_mem ..)
+      rw [List.getD_eq_getElem hs baselineZeroHalfplane hiw.1]
+      exact List.getElem_mem hiw.1)
     have hh' := mul_le_mul_of_nonneg_left hh
       (show (0 : ℝ) ≤ iw.2 by exact_mod_cast hiw.2)
     have hr := ih hrest
@@ -153,7 +153,7 @@ theorem baseline_rationalHull_isClosed (vs : List QPoint) :
       exact ⟨v, hv, rfl⟩
   unfold rationalHull
   rw [he]
-  exact ((Finset.finite_toSet vs.toFinset).image realPoint).isClosed_convexHull
+  exact ((Finset.finite_toSet vs.toFinset).image realPoint).isClosed_convexHull ℝ
 
 theorem baseline_polygon_check_sound (vs : List QPoint) (hs : Polygon)
     (hc : BaselinePolygonCheck vs hs) : hs.carrier ⊆ rationalHull vs := by
@@ -180,7 +180,7 @@ theorem baseline_polygon_check_sound (vs : List QPoint) (hs : Polygon)
     (hmax u (by simpa using hu)) (hmax w (by simpa using hw))
   have hvm : realPoint v ∈ rationalHull vs :=
     subset_convexHull ℝ _ ⟨v, hv', rfl⟩
-  exact (hvs _ hvm).not_le (hpb.le.trans hfp)
+  exact not_le_of_gt (hvs _ hvm) (hpb.le.trans hfp)
 
 end
 end ElevenSquare.Pending

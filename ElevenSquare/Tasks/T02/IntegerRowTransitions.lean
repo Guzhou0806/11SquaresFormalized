@@ -60,7 +60,7 @@ theorem mixed_row_transitions_sound {S : ℝ} (P : Packing 11 S) (s : PoseState)
       · exact integer_row_transition_keeps P s hs i item.1 item.2 cover new hq
     obtain ⟨out, hout, hcontains⟩ := hout
     simp only [replaceRows, Function.update_self]
-    exact ⟨out, List.mem_bind.mpr ⟨item, hm, hout⟩, hcontains⟩
+    exact ⟨out, List.mem_flatMap.mpr ⟨item, hm, hout⟩, hcontains⟩
   · simpa only [replaceRows, Function.update_of_ne hji] using hs.1 j
 
 end

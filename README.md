@@ -53,7 +53,9 @@ python3 scripts/verify.py --setup --all
 ```
 
 Once dependencies are installed, omit `--setup`. Accepted unchanged modules
-can be resumed using the script's source/object/dependency fingerprints. Add
+can be resumed using the script's source/object/dependency fingerprints. Use
+`--keep-going` to collect independent compatibility failures in one run; it
+still rejects any incomplete build. Add
 `--fresh` to rebuild every selected local module. These are substantial exact
 certificate checks and can take a long time. They use ordinary Lean checking;
 no packing search or external algebra system is required.
