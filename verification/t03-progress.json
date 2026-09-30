@@ -1,0 +1,1635 @@
+{
+  "status": "PARTIAL_COMMON_HELPERS_ONLY",
+  "snapshot_date": "2026-09-30",
+  "meaning": "Independent returned compiler audits. This is not a fresh combined replay of the GitHub assembly.",
+  "lean_version": "4.10.0-rc2",
+  "mathlib_revision": "3fef63ff3bda38478ba4364ff03999f0246745a2",
+  "included_common_targets": {
+    "ElevenSquare.Pending.T03.overlap_of_center_distance_lt_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ElevenSquare.Pending.T03.unitCenterBall_convex": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ElevenSquare.Pending.T03.hull_center_distance_overlap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ElevenSquare.Pending.T03.homDistanceCheck_sound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ElevenSquare.Pending.T03.homUnitDistanceCheck_sound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ElevenSquare.Pending.T03.CollisionBand.ofUnitDistance": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "included_helper_sources": [
+    {
+      "path": "ElevenSquare/Tasks/T03/AngleBands.lean",
+      "sha256": "4a079e796f4757b1326b87288c2e70750ad33fad817bdd9bf91c969fe5332da5"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/CellGeometry.lean",
+      "sha256": "aa6ffa0efe6855653c1f98fbaf6dedd71778b7447e4f1580a607af8ed8870b04"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/CellLinear.lean",
+      "sha256": "ff7bff9d2a2fd7c14a1a454695baffa67b5999877a2a9a809899db6a6a7f41ec"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/CellPhysical.lean",
+      "sha256": "aef1c650584d4aad685004bb78090a3df60aaaa1843577e0cae7a25422eec800"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/Certificate.lean",
+      "sha256": "572faf081108df5a85b6a0050159271a85918a1f34bd33bb07a4dd0fcb1b8d38"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/ChartIntervals.lean",
+      "sha256": "3246c78cae7ce9a4e41e1971d94db31d15f51552fafa5a802a032aba18c4998f"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/CollisionFamily.lean",
+      "sha256": "658d621e48497ffb1ef15df24cb063bb7540f93996473cb36d89cec0cd1f11a8"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/CollisionPlanes.lean",
+      "sha256": "532b63b79b981655657a1e627557999f1d3e10f6845297d841f80ca743f40186"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/CollisionRows.lean",
+      "sha256": "73a306dbd375cc6c2e1d3acb6750113049b673c1bfbf5ab5a364f3dc44686226"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/Convexification.lean",
+      "sha256": "84b07f0b73087a71c43fe3e1dd71e957e5d25b261ae5318256377c628cb40431"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/DifferenceSupport.lean",
+      "sha256": "fb19f0cdbbe904086b8c27a42ac7bead99bb2078f8f0b9c188708fcb649a9d85"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/DistanceCollision.lean",
+      "sha256": "3e3e0c181de162abb233831efc0aaad410bb8c77fc9d1241dc974787c80ecacf"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/FiniteConvex.lean",
+      "sha256": "46d56b6a62c2711b301c8b02088fa4da7d45229fb5e5d2d9d10a7bf19e35b46f"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/ForwardRows.lean",
+      "sha256": "224afe04b130dd78376147df8a8762461cc22260f82e6174325bc0064c2b87b0"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/HomogeneousPoints.lean",
+      "sha256": "fe77dc3e920c429e391da1998c0e066f7ead9df610db2cbcc20479718a61daa5"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/HomogeneousSupport.lean",
+      "sha256": "c5e88fe2e0102287d52a8033393d9f30765e1dd4c6daba27ce5fbabd1db5675e"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/HullLinearCertificates.lean",
+      "sha256": "42ff42008512d9405b91d795724336fa896814ec2c92e68318d7e9c541643f28"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/IntegerRowTrace.lean",
+      "sha256": "d9c5c65798e4cc42a9628ce3be561bc62a5cbf659e3fb37d68c76bdd0a73b902"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/IntegerRows.lean",
+      "sha256": "244a6e9bebab9b7ab847ed67d3c2fd77a852a6ba9a61e07253cc8f8b55d8765f"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/KernelBoolRefl.lean",
+      "sha256": "90111f1782484d93843ab7e8ec6789744ebf90afdd8deb6fa2d3ddf3880513ce"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/LinearCertificates.lean",
+      "sha256": "8dcb73f29c784385b6b2b331534b11c2875973122cd05c3a350b4d073222e52f"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/LinearCover.lean",
+      "sha256": "07a06e2af16eba8f1ab5c1874fb30b81eb6e625cffcf24ad7874c2f2bd6d94e8"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/PhysicalRowInput.lean",
+      "sha256": "65665ed05820583694a33f57766fe550ac974bc570150cc456396a81edac48e5"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/PhysicalRows.lean",
+      "sha256": "8c49b244cce3f8140e05651a96769dfc94b246068b0d3f016d7a7c0e79bca9a0"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/PolygonCertificates.lean",
+      "sha256": "ab52222aa4fbfa52080ad9eb0eb085a444d27d68a7c57aeba74ba650b98fb33f"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/PosewiseReplay.lean",
+      "sha256": "dc4b9b89ac1d7cb18df29a7d309c555ece03bdb90c4fcad29c004614ecb6f8e5"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/Promotion.lean",
+      "sha256": "0e39088f1f1f5439f9e29fbf78f81e024f64470025ce26a56f286bcb8b445b60"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/Quadratic.lean",
+      "sha256": "859949b157e91687660210303059ba76c0655e953a18c0554bb39e72f1e9efb8"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/RefinementRows.lean",
+      "sha256": "287348eeae2f3a4caee512129783a630fcff3451c5d6476117d2be78b742b8dd"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/RowRefinement.lean",
+      "sha256": "a4bb7f0861b23c3343761c8146eca51c944e3ee1ed3f560fba5853559ea44983"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/RowTrace.lean",
+      "sha256": "fec8299c0873dc32ef04cf71832caf1d10d3942622ed238c17d2aed3357f6963"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/RowsOwnership.lean",
+      "sha256": "6e9a487d66cb2206902af697df999dcc21556e67c0d01f0b2508e2fc5498a9d3"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/SelfHullCertificates.lean",
+      "sha256": "f99f5e5f57f8c6ecfdfe05520b6178d1327473dd64cee1d32c96c38a2529883e"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/TraceAssembly.lean",
+      "sha256": "c5ac2f4fe23fcd0ccacf43c4f1b9709e566108c2151e6993f2b22905126df459"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/TriangleCertificates.lean",
+      "sha256": "3fca75c845e23778f2c940325b8d19b0d43515553d2fa4c8e7bfd09bfdf81808"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/TriangleCover.lean",
+      "sha256": "085f602a90d0935ae1294a65f063505a15d231b8dcbf39b8bdda23067cbef245"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/UniversalCollision.lean",
+      "sha256": "bdec0c56b98f0b9c30ff5ba0c041ff1b1341554b52ea06b950d5a1d173176c74"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/Walls.lean",
+      "sha256": "f8a23da2db1f6cacd23ef0eb43b7bed7ba3f9797387f47752e46316d0d326d7f"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/Common.lean",
+      "sha256": "029842cf84e2da7000dc3daf2d10a3cfbfa21478f9796ecee91aec368c9ac043"
+    }
+  ],
+  "preserved_upstream_dependencies": [
+    {
+      "path": "ElevenSquare/BasicGeometry.lean",
+      "sha256": "0e291c05b9fa7670ed3bac5c605e5cdb3666994715c9f7e4a16786881d020c72",
+      "lean_tokens_match": true
+    },
+    {
+      "path": "ElevenSquare/Cover.lean",
+      "sha256": "fe57460a07b6acd1561be1d63a9e93c27560716fd1af8df94f65fb7321f7cd1e",
+      "lean_tokens_match": true
+    },
+    {
+      "path": "ElevenSquare/CoverChecks.lean",
+      "sha256": "cfb1ac4a0bbd79e078519e7d9df2e04892458a87cc309a6aa520a0cff2e4e68d",
+      "lean_tokens_match": true
+    },
+    {
+      "path": "ElevenSquare/CoverData.lean",
+      "sha256": "d3ed474b9f3b8c88ffffcfa1c1005b98be709dd5443198088e94e659a299906d",
+      "lean_tokens_match": true
+    },
+    {
+      "path": "ElevenSquare/GeneratedCover0.lean",
+      "sha256": "4936cc6f454137d9509976002e3c719de0dd28441e99ae8fbd0343ab7c2fba99",
+      "lean_tokens_match": true
+    },
+    {
+      "path": "ElevenSquare/GeneratedCover1.lean",
+      "sha256": "e72e09742bd6a4d17a8152f6b69c9cdb94933d15829193e88ec52ba85c6c6d27",
+      "lean_tokens_match": true
+    },
+    {
+      "path": "ElevenSquare/GeneratedCover2.lean",
+      "sha256": "f9d6ccc5aa2ae6c16140dcf8d474f869448c83d965a7644f16fb59b3d2c020b5",
+      "lean_tokens_match": true
+    },
+    {
+      "path": "ElevenSquare/GeneratedCover3.lean",
+      "sha256": "973ed8e31b101004f93e72347411e153c6283022219cfcc5d5846ee1f65a9f0f",
+      "lean_tokens_match": true
+    },
+    {
+      "path": "ElevenSquare/Geometry.lean",
+      "sha256": "fa8ff2c666453b56f04b22c164ef063cbd46dc85fb4afd7ed6fbb01b7c4f641a",
+      "lean_tokens_match": true
+    },
+    {
+      "path": "ElevenSquare/Orientation.lean",
+      "sha256": "2bf5f26832afb8859c2463d5bf813a36fc0d701b598698f59a267db417915601",
+      "lean_tokens_match": true
+    },
+    {
+      "path": "ElevenSquare/Pending/GeometryTypes.lean",
+      "sha256": "a7bf5e2a537e0b81a7d874c35c769f605b61da9e3fef28feb07390736690502a",
+      "lean_tokens_match": true
+    },
+    {
+      "path": "ElevenSquare/Pending/S05_Minkowski.lean",
+      "sha256": "e39dcfc51ad822fffbd76414e140f476baf3d5f0e55f7790e273362ce5484e71",
+      "lean_tokens_match": true
+    },
+    {
+      "path": "ElevenSquare/Pending/S05_OwnedHull.lean",
+      "sha256": "237234a0a57234a0fe6ca3d421758550b50266b6b1411b04ad07c49339a7db42",
+      "lean_tokens_match": true
+    },
+    {
+      "path": "ElevenSquare/Pending/S05_Trace.lean",
+      "sha256": "c28d11831b4130263f31e046d4165e942ce15d6662b1902875e1de2b7c2f7a92",
+      "lean_tokens_match": true
+    },
+    {
+      "path": "ElevenSquare/Pending/Types.lean",
+      "sha256": "a08828e4674559871cfa7ee6e5321d008b43ff66baf2fa6906b3225e59e6dd7a",
+      "lean_tokens_match": true
+    }
+  ],
+  "external_case_progress": {
+    "completed_case_audits": 150,
+    "required_cases": 173,
+    "case_sources_included_here": false,
+    "meaning": "Progress outside this compact publication. The generated case collection is omitted; these records cannot be used as certificate proofs.",
+    "targets": [
+      {
+        "case": 1145,
+        "target": "ElevenSquare.Pending.T03.Batch01.Case1145.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1156,
+        "target": "ElevenSquare.Pending.T03.Batch01.Case1156.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1235,
+        "target": "ElevenSquare.Pending.T03.Batch01.Case1235.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1248,
+        "target": "ElevenSquare.Pending.T03.Batch01.Case1248.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1249,
+        "target": "ElevenSquare.Pending.T03.Batch01.Case1249.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1257,
+        "target": "ElevenSquare.Pending.T03.Batch01.Case1257.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1258,
+        "target": "ElevenSquare.Pending.T03.Batch01.Case1258.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1259,
+        "target": "ElevenSquare.Pending.T03.Batch01.Case1259.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1261,
+        "target": "ElevenSquare.Pending.T03.Batch01.Case1261.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1262,
+        "target": "ElevenSquare.Pending.T03.Batch01.Case1262.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1264,
+        "target": "ElevenSquare.Pending.T03.Batch01.Case1264.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1265,
+        "target": "ElevenSquare.Pending.T03.Batch01.Case1265.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1266,
+        "target": "ElevenSquare.Pending.T03.Batch01.Case1266.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1267,
+        "target": "ElevenSquare.Pending.T03.Batch01.Case1267.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1268,
+        "target": "ElevenSquare.Pending.T03.Batch01.Case1268.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1269,
+        "target": "ElevenSquare.Pending.T03.Batch02.Case1269.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1270,
+        "target": "ElevenSquare.Pending.T03.Batch02.Case1270.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1271,
+        "target": "ElevenSquare.Pending.T03.Batch02.Case1271.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1281,
+        "target": "ElevenSquare.Pending.T03.Batch02.Case1281.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1303,
+        "target": "ElevenSquare.Pending.T03.Batch02.Case1303.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1310,
+        "target": "ElevenSquare.Pending.T03.Batch02.Case1310.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1312,
+        "target": "ElevenSquare.Pending.T03.Batch02.Case1312.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1315,
+        "target": "ElevenSquare.Pending.T03.Batch02.Case1315.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1333,
+        "target": "ElevenSquare.Pending.T03.Batch02.Case1333.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1335,
+        "target": "ElevenSquare.Pending.T03.Batch02.Case1335.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1341,
+        "target": "ElevenSquare.Pending.T03.Batch02.Case1341.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1342,
+        "target": "ElevenSquare.Pending.T03.Batch02.Case1342.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1343,
+        "target": "ElevenSquare.Pending.T03.Batch02.Case1343.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1347,
+        "target": "ElevenSquare.Pending.T03.Batch02.Case1347.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1365,
+        "target": "ElevenSquare.Pending.T03.Batch03.Case1365.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1371,
+        "target": "ElevenSquare.Pending.T03.Batch03.Case1371.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1374,
+        "target": "ElevenSquare.Pending.T03.Batch03.Case1374.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1384,
+        "target": "ElevenSquare.Pending.T03.Batch03.Case1384.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1411,
+        "target": "ElevenSquare.Pending.T03.Batch03.Case1411.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1416,
+        "target": "ElevenSquare.Pending.T03.Batch03.Case1416.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1417,
+        "target": "ElevenSquare.Pending.T03.Batch03.Case1417.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1420,
+        "target": "ElevenSquare.Pending.T03.Batch03.Case1420.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1422,
+        "target": "ElevenSquare.Pending.T03.Batch03.Case1422.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1424,
+        "target": "ElevenSquare.Pending.T03.Batch03.Case1424.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1429,
+        "target": "ElevenSquare.Pending.T03.Batch03.Case1429.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1430,
+        "target": "ElevenSquare.Pending.T03.Batch03.Case1430.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1433,
+        "target": "ElevenSquare.Pending.T03.Batch04.Case1433.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1436,
+        "target": "ElevenSquare.Pending.T03.Batch04.Case1436.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1437,
+        "target": "ElevenSquare.Pending.T03.Batch04.Case1437.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1438,
+        "target": "ElevenSquare.Pending.T03.Batch04.Case1438.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1439,
+        "target": "ElevenSquare.Pending.T03.Batch04.Case1439.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1441,
+        "target": "ElevenSquare.Pending.T03.Batch04.Case1441.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1449,
+        "target": "ElevenSquare.Pending.T03.Batch04.Case1449.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1450,
+        "target": "ElevenSquare.Pending.T03.Batch04.Case1450.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1467,
+        "target": "ElevenSquare.Pending.T03.Batch04.Case1467.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1476,
+        "target": "ElevenSquare.Pending.T03.Batch04.Case1476.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1478,
+        "target": "ElevenSquare.Pending.T03.Batch04.Case1478.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1487,
+        "target": "ElevenSquare.Pending.T03.Batch05.Case1487.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1490,
+        "target": "ElevenSquare.Pending.T03.Batch05.Case1490.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1491,
+        "target": "ElevenSquare.Pending.T03.Batch05.Case1491.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1492,
+        "target": "ElevenSquare.Pending.T03.Batch05.Case1492.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1530,
+        "target": "ElevenSquare.Pending.T03.Batch05.Case1530.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1538,
+        "target": "ElevenSquare.Pending.T03.Batch05.Case1538.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1539,
+        "target": "ElevenSquare.Pending.T03.Batch05.Case1539.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1554,
+        "target": "ElevenSquare.Pending.T03.Batch05.Case1554.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1567,
+        "target": "ElevenSquare.Pending.T03.Batch05.Case1567.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1574,
+        "target": "ElevenSquare.Pending.T03.Batch05.Case1574.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1582,
+        "target": "ElevenSquare.Pending.T03.Batch05.Case1582.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1594,
+        "target": "ElevenSquare.Pending.T03.Batch05.Case1594.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1595,
+        "target": "ElevenSquare.Pending.T03.Batch05.Case1595.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1597,
+        "target": "ElevenSquare.Pending.T03.Batch05.Case1597.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1621,
+        "target": "ElevenSquare.Pending.T03.Batch06.Case1621.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1628,
+        "target": "ElevenSquare.Pending.T03.Batch06.Case1628.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1632,
+        "target": "ElevenSquare.Pending.T03.Batch06.Case1632.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1636,
+        "target": "ElevenSquare.Pending.T03.Batch06.Case1636.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1637,
+        "target": "ElevenSquare.Pending.T03.Batch06.Case1637.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1640,
+        "target": "ElevenSquare.Pending.T03.Batch06.Case1640.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1641,
+        "target": "ElevenSquare.Pending.T03.Batch06.Case1641.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1642,
+        "target": "ElevenSquare.Pending.T03.Batch06.Case1642.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1644,
+        "target": "ElevenSquare.Pending.T03.Batch06.Case1644.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1645,
+        "target": "ElevenSquare.Pending.T03.Batch06.Case1645.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1648,
+        "target": "ElevenSquare.Pending.T03.Batch06.Case1648.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1650,
+        "target": "ElevenSquare.Pending.T03.Batch06.Case1650.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1651,
+        "target": "ElevenSquare.Pending.T03.Batch06.Case1651.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1673,
+        "target": "ElevenSquare.Pending.T03.Batch07.Case1673.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1674,
+        "target": "ElevenSquare.Pending.T03.Batch07.Case1674.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1680,
+        "target": "ElevenSquare.Pending.T03.Batch07.Case1680.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1686,
+        "target": "ElevenSquare.Pending.T03.Batch07.Case1686.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1688,
+        "target": "ElevenSquare.Pending.T03.Batch07.Case1688.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1691,
+        "target": "ElevenSquare.Pending.T03.Batch07.Case1691.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1693,
+        "target": "ElevenSquare.Pending.T03.Batch07.Case1693.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1694,
+        "target": "ElevenSquare.Pending.T03.Batch07.Case1694.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1695,
+        "target": "ElevenSquare.Pending.T03.Batch07.Case1695.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1696,
+        "target": "ElevenSquare.Pending.T03.Batch07.Case1696.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1716,
+        "target": "ElevenSquare.Pending.T03.Batch07.Case1716.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1722,
+        "target": "ElevenSquare.Pending.T03.Batch07.Case1722.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1728,
+        "target": "ElevenSquare.Pending.T03.Batch07.Case1728.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1729,
+        "target": "ElevenSquare.Pending.T03.Batch07.Case1729.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1769,
+        "target": "ElevenSquare.Pending.T03.Batch08.Case1769.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1774,
+        "target": "ElevenSquare.Pending.T03.Batch08.Case1774.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1775,
+        "target": "ElevenSquare.Pending.T03.Batch08.Case1775.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1783,
+        "target": "ElevenSquare.Pending.T03.Batch08.Case1783.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1805,
+        "target": "ElevenSquare.Pending.T03.Batch08.Case1805.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1810,
+        "target": "ElevenSquare.Pending.T03.Batch08.Case1810.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1821,
+        "target": "ElevenSquare.Pending.T03.Batch08.Case1821.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1822,
+        "target": "ElevenSquare.Pending.T03.Batch08.Case1822.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1824,
+        "target": "ElevenSquare.Pending.T03.Batch08.Case1824.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1831,
+        "target": "ElevenSquare.Pending.T03.Batch08.Case1831.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1842,
+        "target": "ElevenSquare.Pending.T03.Batch08.Case1842.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1847,
+        "target": "ElevenSquare.Pending.T03.Batch09.Case1847.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1850,
+        "target": "ElevenSquare.Pending.T03.Batch09.Case1850.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1864,
+        "target": "ElevenSquare.Pending.T03.Batch09.Case1864.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1866,
+        "target": "ElevenSquare.Pending.T03.Batch09.Case1866.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1871,
+        "target": "ElevenSquare.Pending.T03.Batch09.Case1871.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1875,
+        "target": "ElevenSquare.Pending.T03.Batch09.Case1875.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1882,
+        "target": "ElevenSquare.Pending.T03.Batch09.Case1882.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1885,
+        "target": "ElevenSquare.Pending.T03.Batch09.Case1885.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1889,
+        "target": "ElevenSquare.Pending.T03.Batch09.Case1889.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1950,
+        "target": "ElevenSquare.Pending.T03.Batch09.Case1950.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 1955,
+        "target": "ElevenSquare.Pending.T03.Batch10.Case1955.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 2048,
+        "target": "ElevenSquare.Pending.T03.Batch10.Case2048.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 2049,
+        "target": "ElevenSquare.Pending.T03.Batch10.Case2049.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 2050,
+        "target": "ElevenSquare.Pending.T03.Batch10.Case2050.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 2052,
+        "target": "ElevenSquare.Pending.T03.Batch10.Case2052.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 2053,
+        "target": "ElevenSquare.Pending.T03.Batch10.Case2053.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 2055,
+        "target": "ElevenSquare.Pending.T03.Batch10.Case2055.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 2056,
+        "target": "ElevenSquare.Pending.T03.Batch10.Case2056.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 2057,
+        "target": "ElevenSquare.Pending.T03.Batch10.Case2057.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 2071,
+        "target": "ElevenSquare.Pending.T03.Batch11.Case2071.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 2072,
+        "target": "ElevenSquare.Pending.T03.Batch11.Case2072.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 2073,
+        "target": "ElevenSquare.Pending.T03.Batch11.Case2073.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 2074,
+        "target": "ElevenSquare.Pending.T03.Batch11.Case2074.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 2075,
+        "target": "ElevenSquare.Pending.T03.Batch11.Case2075.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 2076,
+        "target": "ElevenSquare.Pending.T03.Batch11.Case2076.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 2077,
+        "target": "ElevenSquare.Pending.T03.Batch11.Case2077.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 2078,
+        "target": "ElevenSquare.Pending.T03.Batch11.Case2078.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 2084,
+        "target": "ElevenSquare.Pending.T03.Batch11.Case2084.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 2088,
+        "target": "ElevenSquare.Pending.T03.Batch11.Case2088.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 2091,
+        "target": "ElevenSquare.Pending.T03.Batch11.Case2091.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 2094,
+        "target": "ElevenSquare.Pending.T03.Batch11.Case2094.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 2097,
+        "target": "ElevenSquare.Pending.T03.Batch11.Case2097.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 2098,
+        "target": "ElevenSquare.Pending.T03.Batch11.Case2098.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 2102,
+        "target": "ElevenSquare.Pending.T03.Batch12.Case2102.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 2103,
+        "target": "ElevenSquare.Pending.T03.Batch12.Case2103.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 2111,
+        "target": "ElevenSquare.Pending.T03.Batch12.Case2111.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 2112,
+        "target": "ElevenSquare.Pending.T03.Batch12.Case2112.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 2114,
+        "target": "ElevenSquare.Pending.T03.Batch12.Case2114.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 2116,
+        "target": "ElevenSquare.Pending.T03.Batch12.Case2116.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 2119,
+        "target": "ElevenSquare.Pending.T03.Batch12.Case2119.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 2125,
+        "target": "ElevenSquare.Pending.T03.Batch12.Case2125.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 2129,
+        "target": "ElevenSquare.Pending.T03.Batch12.Case2129.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 2130,
+        "target": "ElevenSquare.Pending.T03.Batch12.Case2130.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 2132,
+        "target": "ElevenSquare.Pending.T03.Batch12.Case2132.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 2133,
+        "target": "ElevenSquare.Pending.T03.Batch12.Case2133.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "case": 2135,
+        "target": "ElevenSquare.Pending.T03.Batch12.Case2135.Forward.Certificate.certificate_exists",
+        "reported_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    ]
+  },
+  "public_returned_certificate_still_admitted": true,
+  "global_optimality_proved": false,
+  "source_normalization": "LF line endings; unchanged Lean tokens from independently audited common sources."
+}

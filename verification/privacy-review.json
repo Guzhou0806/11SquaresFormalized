@@ -1,11 +1,18 @@
 {
-  "status": "PASS",
-  "files_inspected": 7859,
-  "bytes_inspected": 89696855,
-  "text_only": true,
-  "symlinks": 0,
+  "status": "ADDITIVE_PRIVACY_REVIEW_PASS",
+  "scope": "The previously reviewed base is preserved. Only the added or changed T03 publication text was newly inspected.",
+  "base_review": {
+    "status": "PASS",
+    "files_inspected": 7859,
+    "bytes_inspected": 89696855,
+    "text_only": true,
+    "symlinks": 0,
+    "personal_information_findings": [],
+    "raw_archives_or_logs_included": false,
+    "git_identity_or_remote": false,
+    "scope": "All publication files are UTF-8 text and were inspected. Known private paths/account/project identifiers, email addresses, and credential signatures were checked. Raw archives/logs and build caches were excluded; no Git identity or remote is set."
+  },
+  "added_or_changed_files_inspected": 46,
   "personal_information_findings": [],
-  "raw_archives_or_logs_included": false,
-  "git_identity_or_remote": false,
-  "scope": "All publication files are UTF-8 text and were inspected. Known private paths/account/project identifiers, email addresses, and credential signatures were checked. Raw archives/logs and build caches were excluded; no Git identity or remote is set."
+  "raw_archives_or_logs_added": false
 }

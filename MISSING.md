@@ -51,9 +51,14 @@ useful components, not a complete case exclusion.
 ## 3. Complete the returned-exclusion family
 
 `ElevenSquare/Pending/S06_Returned.lean:returned_certificate_exists` remains
-admitted for the 173 returned indices. No completed T03 case-family return was
-among the supplied files. The generic terminal-trace wrapper is present, but it
-still needs actual initialized certificates for every assigned index.
+admitted for the 173 returned indices. The generic terminal-trace wrapper and
+checked common geometry/checker tools are present, but this repository still
+needs actual initialized certificates for every assigned index.
+
+The compact common-tool update is documented in [T03_PROGRESS.md](T03_PROGRESS.md).
+Separate ongoing work reports 150 completed case audits; their generated case
+sources are not included here. That progress record does not discharge this
+admission, and no completed T03 case-family return is claimed.
 
 ## 4. Complete case438 capture into the local rectangle
 

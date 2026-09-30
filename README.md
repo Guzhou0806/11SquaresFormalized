@@ -6,6 +6,11 @@ still unfinished.** Six explicit `sorry` sites record the remaining obligations.
 A build that accepts those sites checks the surrounding code but does not prove
 the final optimality theorem. See [MISSING.md](MISSING.md).
 
+The returned-case common tools now include a proved center-distance collision
+shortcut and an ordinary kernel-checked Boolean tactic. Their compact source
+closure and the precise limits of the ongoing case progress are described in
+[T03_PROGRESS.md](T03_PROGRESS.md). The public 173-case obligation remains open.
+
 The target side length is the exact real number
 
 \[

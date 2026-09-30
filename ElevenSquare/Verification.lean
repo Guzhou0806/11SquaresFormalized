@@ -13,6 +13,14 @@ import ElevenSquare
 #print axioms ElevenSquare.Pending.exact_local_packet_exists
 #print axioms ElevenSquare.Pending.construction_locally_isolated
 
+-- Common T03 collision tools, with clean independent returned audits.
+#print axioms ElevenSquare.Pending.T03.overlap_of_center_distance_lt_one
+#print axioms ElevenSquare.Pending.T03.unitCenterBall_convex
+#print axioms ElevenSquare.Pending.T03.hull_center_distance_overlap
+#print axioms ElevenSquare.Pending.T03.homDistanceCheck_sound
+#print axioms ElevenSquare.Pending.T03.homUnitDistanceCheck_sound
+#print axioms ElevenSquare.Pending.T03.CollisionBand.ofUnitDistance
+
 -- These targets still depend on the explicit remaining admissions.
 #print axioms ElevenSquare.Pending.baseline_certificate_exists
 #print axioms ElevenSquare.Pending.prior_certificate_exists
