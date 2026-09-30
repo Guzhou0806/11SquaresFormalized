@@ -86,7 +86,7 @@ def site23 : QPoint := ((29998606885 / 10000000000 : ℚ) / physicalToUnit,
 def feature0 : Finset QPoint := {site01, site05, site19}
 
 theorem feature0_card : feature0.card = 3 := by
-  norm_num [feature0, site01, site05, site19, physicalToUnit, Finset.card_insert_of_not_mem]
+  norm_num [feature0, site01, site05, site19, physicalToUnit, Finset.card_insert_of_notMem]
 
 theorem feature0_majority_capacity {S : ℝ} (P : Packing 11 S)
     (left right : Owner)
@@ -101,7 +101,7 @@ theorem feature0_majority_capacity {S : ℝ} (P : Packing 11 S)
 def feature1 : Finset QPoint := {site00, site04, site06, site12, site14}
 
 theorem feature1_card : feature1.card = 5 := by
-  norm_num [feature1, site00, site04, site06, site12, site14, physicalToUnit, Finset.card_insert_of_not_mem]
+  norm_num [feature1, site00, site04, site06, site12, site14, physicalToUnit, Finset.card_insert_of_notMem]
 
 theorem feature1_majority_capacity {S : ℝ} (P : Packing 11 S)
     (left right : Owner)
@@ -116,7 +116,7 @@ theorem feature1_majority_capacity {S : ℝ} (P : Packing 11 S)
 def feature2 : Finset QPoint := {site08, site13, site16, site18, site22}
 
 theorem feature2_card : feature2.card = 5 := by
-  norm_num [feature2, site08, site13, site16, site18, site22, physicalToUnit, Finset.card_insert_of_not_mem]
+  norm_num [feature2, site08, site13, site16, site18, site22, physicalToUnit, Finset.card_insert_of_notMem]
 
 theorem feature2_majority_capacity {S : ℝ} (P : Packing 11 S)
     (left right : Owner)
@@ -131,7 +131,7 @@ theorem feature2_majority_capacity {S : ℝ} (P : Packing 11 S)
 def feature3 : Finset QPoint := {site02, site03, site07, site10, site15}
 
 theorem feature3_card : feature3.card = 5 := by
-  norm_num [feature3, site02, site03, site07, site10, site15, physicalToUnit, Finset.card_insert_of_not_mem]
+  norm_num [feature3, site02, site03, site07, site10, site15, physicalToUnit, Finset.card_insert_of_notMem]
 
 theorem feature3_majority_capacity {S : ℝ} (P : Packing 11 S)
     (left right : Owner)
@@ -146,7 +146,7 @@ theorem feature3_majority_capacity {S : ℝ} (P : Packing 11 S)
 def feature4 : Finset QPoint := {site09, site17, site20, site21, site23}
 
 theorem feature4_card : feature4.card = 5 := by
-  norm_num [feature4, site09, site17, site20, site21, site23, physicalToUnit, Finset.card_insert_of_not_mem]
+  norm_num [feature4, site09, site17, site20, site21, site23, physicalToUnit, Finset.card_insert_of_notMem]
 
 theorem feature4_majority_capacity {S : ℝ} (P : Packing 11 S)
     (left right : Owner)

@@ -16,7 +16,7 @@ theorem nearCenterBox1_numeric :
     coverCap/2-(nearBox1.lx : ℝ)/fieldScale ≤
       nearCenter11Lo + focusedRadii (coordinate (1 : Owner) (1 : Fin 3)) := by
   dsimp only [nearBox1]
-  simp only [Rat.cast_mk]
+  simp only [Rat.cast_divInt]
   norm_num [nearCenter10Hi, nearCenter10Lo, nearCenter11Hi,
     nearCenter11Lo, focusedRadii, coordinate, nearBox1, fieldScale, coverCap]
 

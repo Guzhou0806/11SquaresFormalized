@@ -98,7 +98,7 @@ theorem refute_empty_domain (compatible supports : ℕ → ℕ → Bool)
 theorem refute_no_targets (compatible supports : ℕ → ℕ → Bool) (D : Domains) :
     ¬ Sat compatible supports D [] := by
   rintro ⟨f, t, h⟩
-  exact List.not_mem_nil t h.1
+  exact List.not_mem_nil h.1
 
 end ElevenSquare.Pending.Propagation
 #print axioms ElevenSquare.Pending.Propagation.refute_split

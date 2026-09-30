@@ -31,11 +31,11 @@ def featureB : Finset QPoint := {site02, site06, site07}
 
 theorem featureA_card : featureA.card = 5 := by
   norm_num [featureA, site00, site01, site03, site04, site05,
-    physicalToUnit, Finset.card_insert_of_not_mem]
+    physicalToUnit, Finset.card_insert_of_notMem]
 
 theorem featureB_card : featureB.card = 3 := by
   norm_num [featureB, site02, site06, site07, physicalToUnit,
-    Finset.card_insert_of_not_mem]
+    Finset.card_insert_of_notMem]
 
 def Captures (f : Fin 2) (q : UnitSquare) : Prop :=
   if f = 0 then BaselineMajorityCapture featureA 3 q

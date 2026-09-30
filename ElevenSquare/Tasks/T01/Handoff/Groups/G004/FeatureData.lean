@@ -30,7 +30,7 @@ def featureSites : Finset QPoint := {site00, site01, site02, site03, site04}
 
 theorem featureSites_card : featureSites.card = 5 := by
   norm_num [featureSites, site00, site01, site02, site03, site04,
-    physicalToUnit, Finset.card_insert_of_not_mem]
+    physicalToUnit, Finset.card_insert_of_notMem]
 
 theorem feature_capacity {S : ℝ} (P : Packing 11 S)
     (left right : Owner)

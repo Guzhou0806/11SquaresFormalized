@@ -41,7 +41,7 @@ private theorem array_toList_append (a b : Array ℕ) :
     (a ++ b).toList = a.toList ++ b.toList := by simp
 
 private theorem baseline_array_assignments :
-    baselineArray.toList = (assignmentChunks.join.map Prod.fst) := by
+    baselineArray.toList = (assignmentChunks.flatten.map Prod.fst) := by
   simp [baselineArray, assignmentChunks, array_toList_append, List.append_assoc,
       ← CoverageChunks.C00.keys_match,
       ← CoverageChunks.C01.keys_match,
@@ -76,21 +76,21 @@ private theorem baseline_array_assignments :
       ← CoverageChunks.C30.keys_match]
 
 private theorem assignments_valid :
-    List.Forall (fun p => p.1 ∈ groupCases p.2) assignmentChunks.join := by
+    List.Forall (fun p => p.1 ∈ groupCases p.2) assignmentChunks.flatten := by
   have hchunks : List.Forall (List.Forall (fun p => p.1 ∈ groupCases p.2))
       assignmentChunks := by
     simp only [assignmentChunks, List.forall_cons]
     exact ⟨CoverageChunks.C00.valid, CoverageChunks.C01.valid, CoverageChunks.C02.valid, CoverageChunks.C03.valid, CoverageChunks.C04.valid, CoverageChunks.C05.valid, CoverageChunks.C06.valid, CoverageChunks.C07.valid, CoverageChunks.C08.valid, CoverageChunks.C09.valid, CoverageChunks.C10.valid, CoverageChunks.C11.valid, CoverageChunks.C12.valid, CoverageChunks.C13.valid, CoverageChunks.C14.valid, CoverageChunks.C15.valid, CoverageChunks.C16.valid, CoverageChunks.C17.valid, CoverageChunks.C18.valid, CoverageChunks.C19.valid, CoverageChunks.C20.valid, CoverageChunks.C21.valid, CoverageChunks.C22.valid, CoverageChunks.C23.valid, CoverageChunks.C24.valid, CoverageChunks.C25.valid, CoverageChunks.C26.valid, CoverageChunks.C27.valid, CoverageChunks.C28.valid, CoverageChunks.C29.valid, CoverageChunks.C30.valid, trivial⟩
   apply List.forall_iff_forall_mem.mpr
   intro p hp
-  obtain ⟨row, hr, hpr⟩ := List.mem_join.mp hp
+  obtain ⟨row, hr, hpr⟩ := List.mem_flatten.mp hp
   exact (List.forall_iff_forall_mem.mp
     ((List.forall_iff_forall_mem.mp hchunks) row hr)) p hpr
 
 /-- Every index in the public baseline family belongs to an explicit roster group. -/
 theorem inventory_covered (k : Fin 2184) (hk : k.val ∈ baselineIndices) :
     ∃ g : Group, k.val ∈ groupCases g := by
-  have h : k.val ∈ assignmentChunks.join.map Prod.fst := by
+  have h : k.val ∈ assignmentChunks.flatten.map Prod.fst := by
     rw [← baseline_array_assignments]
     exact List.mem_toFinset.mp hk
   obtain ⟨p, hp, hpk⟩ := List.mem_map.mp h

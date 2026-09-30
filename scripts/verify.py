@@ -11,7 +11,8 @@ import subprocess
 import sys
 sys.dont_write_bytecode = True
 import time
-from check_sources import ROOT, check, imports
+from check_sources import ROOT, check, code_only, imports
+from verify_support import priority_order, input_digest, reusable_inputs, audit_axioms
 
 ap = argparse.ArgumentParser(description=__doc__)
 ap.add_argument('--setup', action='store_true', help='Install the pinned public toolchain and dependency cache.')
@@ -38,7 +39,9 @@ if args.module:
         visit(m)
 else:
     visit('ElevenSquare.Verification')
-    order.remove('ElevenSquare.Verification'); order.append('ElevenSquare.Verification')
+selected = set(order)
+dependencies = {m: [d for d in imports(modules[m]) if d in selected] for m in selected}
+order = priority_order(dependencies, {m: modules[m].stat().st_size for m in selected})
 if args.plan:
     print('Serial local module checks:', len(order))
     print('\n'.join(order))
@@ -91,6 +94,16 @@ def sha(path):
 
 def object_path(m): return ROOT / '.lake/build/lib/lean' / (m.replace('.', '/') + '.olean')
 
+config_paths = [ROOT / p for p in ['lean-toolchain', 'lakefile.lean', 'lake-manifest.json']]
+build_context = {p.name: sha(p) for p in config_paths}
+config_modified_at = max(p.stat().st_mtime_ns for p in config_paths)
+historical = json.loads((ROOT / 'verification/wand125-integration.json').read_text())
+manifest = json.loads((ROOT / 'lake-manifest.json').read_text())
+legacy_baseline = (
+    historical.get('lean_toolchain') == (ROOT / 'lean-toolchain').read_text().strip()
+    and historical.get('mathlib_revision') == next(
+        (p.get('rev') for p in manifest['packages'] if p['name'] == 'mathlib'), None))
+input_ids = {}; checked_times = {}
 accepted = 0
 failed = []; blocked = {}
 for index, m in enumerate(order):
@@ -106,11 +119,24 @@ for index, m in enumerate(order):
     deps = {d: sha(object_path(d)) for d in local_deps}
     implicit = '-DautoImplicit=' + ('true' if (m == 'Sqpack' or m.startswith('Sqpack.')) else 'false')
     fingerprint = {'source': sha(src), 'local_dependency_objects': deps, 'compiler': version,
-                   'arguments': ['-j1', '-M0', '-s65536', implicit, '-DmaxHeartbeats=0']}
+                   'arguments': ['-j1', '-M0', '-s65536', implicit, '-DmaxHeartbeats=0'],
+                   'build_context': build_context,
+                   'local_dependency_inputs': {d: input_ids[d] for d in local_deps}}
     old = json.loads(receipt.read_text()) if receipt.is_file() else {}
+    old_checked_at = old.get('checked_at_ns', receipt.stat().st_mtime_ns if receipt.is_file() else 0)
+    dependency_checked_at = max([config_modified_at] + [checked_times[d] for d in local_deps])
+    old_files_modified_at = max([dependency_checked_at] +
+        [p.stat().st_mtime_ns for p in [target, log] if p.is_file()])
     if (not args.fresh and target.is_file() and old.get('status') == 'accepted'
-            and old.get('inputs') == fingerprint and old.get('object_sha256') == sha(target)
+            and reusable_inputs(old.get('inputs'), fingerprint, legacy_baseline=legacy_baseline,
+                                checked_at=old_checked_at, newest_input=old_files_modified_at)
+            and old.get('object_sha256') == sha(target)
             and log.is_file()):
+        if old.get('inputs') != fingerprint:
+            old.update(inputs=fingerprint, checked_at_ns=old_checked_at)
+            receipt.write_text(json.dumps(old, indent=2)+'\n')
+        input_ids[m] = input_digest(fingerprint)
+        checked_times[m] = max(old_checked_at, dependency_checked_at)
         print(f'[{index+1}/{len(order)}] cached {m}', flush=True)
         accepted += 1; continue
     tmp = target.with_name(target.name + '.checking')
@@ -130,8 +156,12 @@ for index, m in enumerate(order):
             print(f'[{index+1}/{len(order)}] failed {m}', flush=True)
             continue
         raise
+    checked_at = time.time_ns()
     receipt.write_text(json.dumps({'module':m, 'status':'accepted', 'inputs':fingerprint,
+                                  'checked_at_ns': checked_at,
                                   'object_sha256':sha(target), 'elapsed_seconds':round(time.monotonic()-started, 2)}, indent=2)+'\n')
+    input_ids[m] = input_digest(fingerprint)
+    checked_times[m] = max(checked_at, dependency_checked_at)
     accepted += 1
     print(f'[{index+1}/{len(order)}] accepted {m}', flush=True)
 
@@ -142,34 +172,33 @@ if failed or blocked:
     print(f'Incomplete build: {len(failed)} failed, {len(blocked)} blocked, {accepted} accepted.', flush=True)
     raise SystemExit(1)
 
-import re
 unfinished = {'ElevenSquare.Pending.'+n for n in ['baseline_certificate_exists','prior_certificate_exists',
               'returned_certificate_exists','global_lower_bound']} | {'ElevenSquare.optimality',
               'ElevenSquare.optimal_side_lower_bound'}
 allowed = {'propext','Classical.choice','Quot.sound'}
 
 def audit(module):
-    text = (state / (module + '.log')).read_text()
-    seen = {n:{a.strip() for a in ax.split(',') if a.strip()}
-            for n,ax in re.findall(r"'([^']+)' depends on axioms: \[([^]]*)\]", text)}
-    seen.update({n:set() for n in re.findall(r"'([^']+)' does not depend on any axioms", text)})
-    queries = re.findall(r'^#print axioms (\S+)', modules[module].read_text(), re.M)
-    for n in queries:
-        if n not in seen: raise SystemExit('Missing axiom output: '+n)
-        extra = seen[n] - allowed - ({'sorryAx'} if n in unfinished else set())
-        if extra: raise SystemExit('Unapproved axioms in '+n+': '+str(sorted(extra)))
-    return {n: sorted(seen[n]) for n in queries}
+    source = modules[module].read_text()
+    if '#print' not in source:
+        return {}
+    try:
+        return audit_axioms(code_only(source),
+                            (state / (module + '.log')).read_text(), allowed, unfinished)
+    except ValueError as error:
+        raise SystemExit(module + ': ' + str(error)) from error
+
+axioms = {}
+for m in order:
+    axioms.update(audit(m))
 
 if args.module:
-    axioms = {}
-    for m in args.module: axioms.update(audit(m))
     result = {'status': 'SELECTED_MODULES_COMPILE', 'checked_modules': accepted,
               'targets': args.module, 'axioms': axioms}
     (state / 'selected-result.json').write_text(json.dumps(result, indent=2)+'\n')
     print(json.dumps(result, indent=2))
     raise SystemExit(0)
 
-seen = audit('ElevenSquare.Verification')
+seen = axioms
 queries = list(seen)
 result = {'status':'PARTIAL_ASSEMBLY_COMPILES', 'checked_modules':accepted,
           'axioms':{n:sorted(seen[n]) for n in queries},

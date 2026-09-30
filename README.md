@@ -52,8 +52,13 @@ For every included source module, including progress outside the main chain:
 python3 scripts/verify.py --setup --all
 ```
 
+For a progress display and saved log, run `bash scripts/check_lean.sh`.
+It checks all modules and continues through independent failures.
+
 Once dependencies are installed, omit `--setup`. Accepted unchanged modules
-can be resumed using the script's source/object/dependency fingerprints. Use
+can be resumed using the script's source/object/dependency fingerprints. The
+serial checker prioritizes shared dependencies, records transitive input hashes,
+and audits every included explicit axiom query. Use
 `--keep-going` to collect independent compatibility failures in one run; it
 still rejects any incomplete build. Add
 `--fresh` to rebuild every selected local module. These are substantial exact

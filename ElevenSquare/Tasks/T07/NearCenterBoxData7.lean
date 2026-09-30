@@ -19,7 +19,7 @@ theorem nearCenterBox7_numeric :
   have hr1 : focusedRadii (coordinate (7 : Owner) (1 : Fin 3)) = (3232837/5000000000 : ℝ) := by rfl
   rw [hr0, hr1]
   dsimp only [nearBox7]
-  simp only [Rat.cast_mk]
+  simp only [Rat.cast_divInt]
   norm_num [nearCenter70Hi, nearCenter70Lo, nearCenter71Hi,
     nearCenter71Lo, nearBox7, fieldScale, coverCap]
 

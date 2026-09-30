@@ -28,7 +28,7 @@ private theorem closed_window_chain_sound (M : ℝ → Prop)
       · intro t ht0 hthi
         by_cases htf : t ≤ (frontier : ℝ)
         · exact hp t ht0 htf
-        · exact hr w (List.mem_cons_self _ _) t
+        · exact hr w (List.mem_cons_self) t
             ((by exact_mod_cast hc.1 : (w.1 : ℝ) ≤ (frontier : ℝ)).trans
               (le_of_lt (lt_of_not_ge htf))) hthi
       · intro v hv
@@ -44,7 +44,7 @@ theorem closed_window_cover_sound (windows : List (ℚ × ℚ))
   | cons w ws =>
       apply closed_window_chain_sound M w.2 ws hc.2 ?_ ?_ t ht0 ht1
       · intro u hu0 huu
-        exact hr w (List.mem_cons_self _ _) u
+        exact hr w (List.mem_cons_self) u
           ((by exact_mod_cast hc.1 : (w.1 : ℝ) ≤ 0).trans hu0) huu
       · intro v hv
         exact hr v (List.mem_cons_of_mem w hv)

@@ -19,7 +19,7 @@ theorem nearCenterBox5_numeric :
   have hr1 : focusedRadii (coordinate (5 : Owner) (1 : Fin 3)) = (534153/500000000 : ℝ) := by rfl
   rw [hr0, hr1]
   dsimp only [nearBox5]
-  simp only [Rat.cast_mk]
+  simp only [Rat.cast_divInt]
   norm_num [nearCenter50Hi, nearCenter50Lo, nearCenter51Hi,
     nearCenter51Lo, nearBox5, fieldScale, coverCap]
 

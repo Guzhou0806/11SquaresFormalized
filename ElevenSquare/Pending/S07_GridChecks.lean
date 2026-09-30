@@ -54,7 +54,7 @@ theorem related_mem {α β : Type*} {R : α → β → Prop} {as : List α} {bs 
   | @cons a b as bs hab habs ih =>
     intro x hx
     rcases List.mem_cons.mp hx with rfl | hx
-    · exact ⟨b, List.mem_cons_self b bs, hab⟩
+    · exact ⟨b, List.mem_cons_self, hab⟩
     · obtain ⟨y, hy, hxy⟩ := ih x hx
       exact ⟨y, List.mem_cons_of_mem b hy, hxy⟩
 

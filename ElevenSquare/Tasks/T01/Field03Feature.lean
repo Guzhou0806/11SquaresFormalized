@@ -11,7 +11,7 @@ def baselineField03Sites : Finset QPoint :=
     ((1869077312324257697242572506767 / 1910000000000000000000000000000), (3817124574884991823543842826703 / 1910000000000000000000000000000))}
 
 theorem baseline_field03_sites_card : baselineField03Sites.card = 3 := by
-  norm_num [baselineField03Sites, Finset.card_insert_of_not_mem]
+  norm_num [baselineField03Sites, Finset.card_insert_of_notMem]
 
 theorem baseline_field03_majority_capacity {S : ℝ} (P : Packing 11 S)
     (i j : Owner)

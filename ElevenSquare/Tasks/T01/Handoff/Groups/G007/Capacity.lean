@@ -27,7 +27,7 @@ def sites : Finset QPoint := {site0, site1, site2}
 
 theorem sites_card : sites.card = 3 := by
   norm_num [sites, site0, site1, site2, physicalToUnit,
-    Finset.card_insert_of_not_mem]
+    Finset.card_insert_of_notMem]
 
 def Captures (f : Fin 2) (q : UnitSquare) : Prop :=
   if f = 0 then OpenSquare q (realPoint point) else BaselineMajorityCapture sites 2 q

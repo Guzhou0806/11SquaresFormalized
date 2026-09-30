@@ -4,13 +4,13 @@ namespace ElevenSquare.Pending.GridDistance
 theorem lookup_left {α : Type} [Inhabited α] (as bs : Array α)
     (i : ℕ) (h : i < as.size) : (as ++ bs)[i]! = as[i]! := by
   rw [getElem!_pos (as ++ bs) i (by rw [Array.size_append]; omega), getElem!_pos as i h]
-  exact Array.get_append_left h
+  exact Array.getElem_append_left h
 
 theorem lookup_right {α : Type} [Inhabited α] (as bs : Array α)
     (i : ℕ) (ha : as.size ≤ i) (hb : i-as.size < bs.size) :
     (as ++ bs)[i]! = bs[i-as.size]! := by
   rw [getElem!_pos (as ++ bs) i (by rw [Array.size_append]; omega), getElem!_pos bs (i-as.size) hb]
-  exact Array.get_append_right ha
+  exact Array.getElem_append_right ha
 
 theorem grid_chunk_size0 : gridChunk0.size = 16 := rfl
 theorem grid_chunk_size1 : gridChunk1.size = 16 := rfl
