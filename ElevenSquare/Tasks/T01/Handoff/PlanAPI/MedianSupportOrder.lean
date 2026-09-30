@@ -42,7 +42,7 @@ theorem median_support_of_lower_bound {α β : Type*} [DecidableEq α]
   obtain ⟨p, hp, hprojection⟩ :=
     median_lower_bound_hits_subset sites subset k projection b
       hmedian hsubset hcard
-  exact ⟨p, hp, hcenter.trans (add_le_add_right hprojection coreSupport)⟩
+  exact ⟨p, hp, hcenter.trans (add_le_add hprojection le_rfl)⟩
 
 end ElevenSquare.Tasks.T01.Handoff.PlanAPI
 
