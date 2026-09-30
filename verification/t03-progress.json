@@ -1,5 +1,5 @@
 {
-  "status": "PARTIAL_COMMON_HELPERS_ONLY",
+  "status": "PARTIAL_COMMON_HELPERS_AND_ONE_COMPLETE_CASE",
   "snapshot_date": "2026-09-30",
   "meaning": "Independent returned compiler audits. This is not a fresh combined replay of the GitHub assembly.",
   "lean_version": "4.10.0-rc2",
@@ -274,8 +274,8 @@
   "external_case_progress": {
     "completed_case_audits": 150,
     "required_cases": 173,
-    "case_sources_included_here": false,
-    "meaning": "Progress outside this compact publication. The generated case collection is omitted; these records cannot be used as certificate proofs.",
+    "case_sources_included_here": "Only case2135 has its complete source closure included; the other 149 audited case source collections are omitted.",
+    "meaning": "The 150 audits report ongoing work at the original snapshot. Only the case2135 source checkpoint is supplied here; other records are informational.",
     "targets": [
       {
         "case": 1145,
@@ -1631,5 +1631,27 @@
   },
   "public_returned_certificate_still_admitted": true,
   "global_optimality_proved": false,
-  "source_normalization": "LF line endings; unchanged Lean tokens from independently audited common sources."
+  "source_normalization": "LF line endings; unchanged Lean tokens from independently audited common sources.",
+  "included_case_source_checkpoints": [
+    {
+      "case": 2135,
+      "target": "ElevenSquare.Pending.T03.Batch12.Case2135.Forward.Certificate.certificate_exists",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "complete_local_source_closure": true,
+      "manifest": "verification/t03-case2135.json"
+    }
+  ],
+  "full_150_case_checkpoint_measurement": {
+    "selected_case_count": 150,
+    "union_lean_modules": 98369,
+    "union_lean_bytes": 5350077814,
+    "new_lean_modules": 98315,
+    "new_lean_bytes": 5349623026,
+    "method": "Union of completed-check archive source manifests; no large source extraction or Lean rebuild.",
+    "published_in_full": false
+  }
 }

@@ -1,0 +1,14 @@
+import ElevenSquare.Tasks.T03.Batch12.Case2135.Node000.HullData
+
+namespace ElevenSquare.Pending.T03.Batch12.Case2135.Node000.Step005Data
+noncomputable section
+set_option maxRecDepth 16384
+set_option maxHeartbeats 8000000
+
+open HullData
+noncomputable def prior : Owner → List QPoint := ![Hullb33dd74a3959d19ba3ac,Hull72bf6eb2eb35793737b0,Hulla1db928e81d9673e96c9,Hulleebd40aabb5953f6048f,Hull938fec4756dbbd8f3850,Hullf5f1f2f78c28768c7e1e,Hull2baf8973e8c4b2ed8e82,Hulla115344b6890ee05fcf2,Hulld03e90ac6f0cc222ce40,Hull3f4bf7179289b12c314a,Hull895fb5170ea86a7cf77e]
+noncomputable def owner : Owner := 7
+noncomputable def chosen : List QPoint := Hulla115344b6890ee05fcf2
+
+end
+end ElevenSquare.Pending.T03.Batch12.Case2135.Node000.Step005Data

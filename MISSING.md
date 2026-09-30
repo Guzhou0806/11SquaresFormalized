@@ -52,13 +52,15 @@ useful components, not a complete case exclusion.
 
 `ElevenSquare/Pending/S06_Returned.lean:returned_certificate_exists` remains
 admitted for the 173 returned indices. The generic terminal-trace wrapper and
-checked common geometry/checker tools are present, but this repository still
-needs actual initialized certificates for every assigned index.
+checked common geometry/checker tools are present. Case2135's complete certificate
+source closure is also included; the other 172 assigned indices still need their
+complete source proofs integrated before the public family theorem can close.
 
-The compact common-tool update is documented in [T03_PROGRESS.md](T03_PROGRESS.md).
-Separate ongoing work reports 150 completed case audits; their generated case
-sources are not included here. That progress record does not discharge this
-admission, and no completed T03 case-family return is claimed.
+The checkpoint is documented in [T03_PROGRESS.md](T03_PROGRESS.md). Separate
+ongoing work had reported 150 completed case audits at the original progress
+snapshot. Only case2135's source collection is included here; the other records
+do not supply proofs in this repository. No completed T03 case-family return is
+claimed, and the exact public family admission remains open.
 
 ## 4. Complete case438 capture into the local rectangle
 

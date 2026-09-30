@@ -21,6 +21,9 @@ import ElevenSquare
 #print axioms ElevenSquare.Pending.T03.homUnitDistanceCheck_sound
 #print axioms ElevenSquare.Pending.T03.CollisionBand.ofUnitDistance
 
+-- Complete case2135 checkpoint, independently audited without admissions.
+#print axioms ElevenSquare.Pending.T03.Batch12.Case2135.Forward.Certificate.certificate_exists
+
 -- These targets still depend on the explicit remaining admissions.
 #print axioms ElevenSquare.Pending.baseline_certificate_exists
 #print axioms ElevenSquare.Pending.prior_certificate_exists
