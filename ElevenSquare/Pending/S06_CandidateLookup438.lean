@@ -1,0 +1,42 @@
+import ElevenSquare.Pending.S06_CandidateLookupSupport
+
+namespace ElevenSquare.Pending.CandidateLookup
+open TupleBounds
+
+theorem tuple_438 : recordedCaseTuples[438]! = [0, 1, 2, 3, 4, 8, 9, 10, 11, 13, 15] := by
+  rw [recorded_eq_prefix]
+  rw [prefix34, lookup_left prefix33 recordedCaseTuplesChunk34 438 (by rw [size_prefix33]; decide)]
+  rw [prefix33, lookup_left prefix32 recordedCaseTuplesChunk33 438 (by rw [size_prefix32]; decide)]
+  rw [prefix32, lookup_left prefix31 recordedCaseTuplesChunk32 438 (by rw [size_prefix31]; decide)]
+  rw [prefix31, lookup_left prefix30 recordedCaseTuplesChunk31 438 (by rw [size_prefix30]; decide)]
+  rw [prefix30, lookup_left prefix29 recordedCaseTuplesChunk30 438 (by rw [size_prefix29]; decide)]
+  rw [prefix29, lookup_left prefix28 recordedCaseTuplesChunk29 438 (by rw [size_prefix28]; decide)]
+  rw [prefix28, lookup_left prefix27 recordedCaseTuplesChunk28 438 (by rw [size_prefix27]; decide)]
+  rw [prefix27, lookup_left prefix26 recordedCaseTuplesChunk27 438 (by rw [size_prefix26]; decide)]
+  rw [prefix26, lookup_left prefix25 recordedCaseTuplesChunk26 438 (by rw [size_prefix25]; decide)]
+  rw [prefix25, lookup_left prefix24 recordedCaseTuplesChunk25 438 (by rw [size_prefix24]; decide)]
+  rw [prefix24, lookup_left prefix23 recordedCaseTuplesChunk24 438 (by rw [size_prefix23]; decide)]
+  rw [prefix23, lookup_left prefix22 recordedCaseTuplesChunk23 438 (by rw [size_prefix22]; decide)]
+  rw [prefix22, lookup_left prefix21 recordedCaseTuplesChunk22 438 (by rw [size_prefix21]; decide)]
+  rw [prefix21, lookup_left prefix20 recordedCaseTuplesChunk21 438 (by rw [size_prefix20]; decide)]
+  rw [prefix20, lookup_left prefix19 recordedCaseTuplesChunk20 438 (by rw [size_prefix19]; decide)]
+  rw [prefix19, lookup_left prefix18 recordedCaseTuplesChunk19 438 (by rw [size_prefix18]; decide)]
+  rw [prefix18, lookup_left prefix17 recordedCaseTuplesChunk18 438 (by rw [size_prefix17]; decide)]
+  rw [prefix17, lookup_left prefix16 recordedCaseTuplesChunk17 438 (by rw [size_prefix16]; decide)]
+  rw [prefix16, lookup_left prefix15 recordedCaseTuplesChunk16 438 (by rw [size_prefix15]; decide)]
+  rw [prefix15, lookup_left prefix14 recordedCaseTuplesChunk15 438 (by rw [size_prefix14]; decide)]
+  rw [prefix14, lookup_left prefix13 recordedCaseTuplesChunk14 438 (by rw [size_prefix13]; decide)]
+  rw [prefix13, lookup_left prefix12 recordedCaseTuplesChunk13 438 (by rw [size_prefix12]; decide)]
+  rw [prefix12, lookup_left prefix11 recordedCaseTuplesChunk12 438 (by rw [size_prefix11]; decide)]
+  rw [prefix11, lookup_left prefix10 recordedCaseTuplesChunk11 438 (by rw [size_prefix10]; decide)]
+  rw [prefix10, lookup_left prefix9 recordedCaseTuplesChunk10 438 (by rw [size_prefix9]; decide)]
+  rw [prefix9, lookup_left prefix8 recordedCaseTuplesChunk9 438 (by rw [size_prefix8]; decide)]
+  rw [prefix8, lookup_left prefix7 recordedCaseTuplesChunk8 438 (by rw [size_prefix7]; decide)]
+  rw [prefix7, lookup_left prefix6 recordedCaseTuplesChunk7 438 (by rw [size_prefix6]; decide)]
+  rw [prefix6, lookup_right prefix5 recordedCaseTuplesChunk6 438
+    (by rw [size_prefix5]; decide)
+    (by rw [size_prefix5, tuple_block6.1]; decide), size_prefix5]
+  rfl
+
+end ElevenSquare.Pending.CandidateLookup
+#print axioms ElevenSquare.Pending.CandidateLookup.tuple_438

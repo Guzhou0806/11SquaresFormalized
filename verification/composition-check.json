@@ -1,0 +1,34 @@
+{
+  "scope": "Fresh type checks of the final composition and named capture admission against the existing compiled shared interfaces. This is not a fresh replay of all imported certificates.",
+  "modules": [
+    {
+      "module": "ElevenSquare.Tasks.T07.CoordinateBridge",
+      "status": "accepted"
+    },
+    {
+      "module": "ElevenSquare.Tasks.T07.D4Transport",
+      "status": "accepted"
+    },
+    {
+      "module": "ElevenSquare.Tasks.T07.LocalRigidity",
+      "status": "accepted"
+    },
+    {
+      "module": "ElevenSquare.Tasks.T07.GlobalComposition",
+      "status": "accepted"
+    },
+    {
+      "module": "ElevenSquare.Tasks.T07.UnfinishedCapture",
+      "status": "accepted"
+    },
+    {
+      "module": "ElevenSquare.Pending.S09_GlobalLowerBound",
+      "status": "accepted"
+    },
+    {
+      "module": "ElevenSquare.Optimality",
+      "status": "accepted"
+    }
+  ],
+  "all_accepted": true
+}

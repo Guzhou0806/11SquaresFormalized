@@ -1,0 +1,6 @@
+/.lake/
+/build/
+/.verification/
+__pycache__/
+*.pyc
+.DS_Store
