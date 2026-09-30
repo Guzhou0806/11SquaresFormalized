@@ -19,20 +19,20 @@ theorem terminal1Triangle0_vertex_pairs :
   · apply List.mem_map.mpr
     refine ⟨(terminalPairOwner9[0]'(by decide), terminal1CoreField[4]'(by decide)), ?_, ?_⟩
     · exact List.mem_product.mpr
-        ⟨List.getElem_mem terminalPairOwner9 0 (by decide),
-         List.getElem_mem terminal1CoreField 4 (by decide)⟩
+        ⟨@List.getElem_mem _ terminalPairOwner9 0 (by decide),
+         @List.getElem_mem _ terminal1CoreField 4 (by decide)⟩
     · norm_num [qpointSub, terminalPairOwner9, terminal1CoreField]
   · apply List.mem_map.mpr
     refine ⟨(terminalPairOwner9[0]'(by decide), terminal1CoreField[5]'(by decide)), ?_, ?_⟩
     · exact List.mem_product.mpr
-        ⟨List.getElem_mem terminalPairOwner9 0 (by decide),
-         List.getElem_mem terminal1CoreField 5 (by decide)⟩
+        ⟨@List.getElem_mem _ terminalPairOwner9 0 (by decide),
+         @List.getElem_mem _ terminal1CoreField 5 (by decide)⟩
     · norm_num [qpointSub, terminalPairOwner9, terminal1CoreField]
   · apply List.mem_map.mpr
     refine ⟨(terminalPairOwner9[4]'(by decide), terminal1CoreField[4]'(by decide)), ?_, ?_⟩
     · exact List.mem_product.mpr
-        ⟨List.getElem_mem terminalPairOwner9 4 (by decide),
-         List.getElem_mem terminal1CoreField 4 (by decide)⟩
+        ⟨@List.getElem_mem _ terminalPairOwner9 4 (by decide),
+         @List.getElem_mem _ terminal1CoreField 4 (by decide)⟩
     · norm_num [qpointSub, terminalPairOwner9, terminal1CoreField]
 
 theorem terminal1Triangle1_vertex_pairs :
@@ -44,20 +44,20 @@ theorem terminal1Triangle1_vertex_pairs :
   · apply List.mem_map.mpr
     refine ⟨(terminalPairOwner13[0]'(by decide), terminal1CoreField[4]'(by decide)), ?_, ?_⟩
     · exact List.mem_product.mpr
-        ⟨List.getElem_mem terminalPairOwner13 0 (by decide),
-         List.getElem_mem terminal1CoreField 4 (by decide)⟩
+        ⟨@List.getElem_mem _ terminalPairOwner13 0 (by decide),
+         @List.getElem_mem _ terminal1CoreField 4 (by decide)⟩
     · norm_num [qpointSub, terminalPairOwner13, terminal1CoreField]
   · apply List.mem_map.mpr
     refine ⟨(terminalPairOwner13[0]'(by decide), terminal1CoreField[6]'(by decide)), ?_, ?_⟩
     · exact List.mem_product.mpr
-        ⟨List.getElem_mem terminalPairOwner13 0 (by decide),
-         List.getElem_mem terminal1CoreField 6 (by decide)⟩
+        ⟨@List.getElem_mem _ terminalPairOwner13 0 (by decide),
+         @List.getElem_mem _ terminal1CoreField 6 (by decide)⟩
     · norm_num [qpointSub, terminalPairOwner13, terminal1CoreField]
   · apply List.mem_map.mpr
     refine ⟨(terminalPairOwner13[1]'(by decide), terminal1CoreField[6]'(by decide)), ?_, ?_⟩
     · exact List.mem_product.mpr
-        ⟨List.getElem_mem terminalPairOwner13 1 (by decide),
-         List.getElem_mem terminal1CoreField 6 (by decide)⟩
+        ⟨@List.getElem_mem _ terminalPairOwner13 1 (by decide),
+         @List.getElem_mem _ terminal1CoreField 6 (by decide)⟩
     · norm_num [qpointSub, terminalPairOwner13, terminal1CoreField]
 
 end

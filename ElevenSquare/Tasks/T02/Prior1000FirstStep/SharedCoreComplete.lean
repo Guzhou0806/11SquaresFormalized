@@ -279,7 +279,7 @@ theorem integer_first_step_holds {S : ℝ} (P : Packing 11 S)
     (hs : StateHolds P Prior1000Initialization.archivedRoot) : StateHolds P nextState := by
   apply Prior1000Step000Ownership.packing_promotion_holds P prunedState
     (integer_pruned_state_holds P hs)
-  · simp only [prunedState, replaceRows, Function.update_same]
+  · simp only [prunedState, replaceRows, Function.update_self]
   · rfl
 
 theorem case1000_after_integer_first_step (P : Packing 11 coverCap)

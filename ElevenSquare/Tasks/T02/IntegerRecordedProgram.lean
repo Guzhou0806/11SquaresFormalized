@@ -39,9 +39,9 @@ theorem integer_rows_sound {S : ℝ} (P : Packing 11 S) (s : PoseState)
     obtain ⟨record, hm, rfl⟩ := List.mem_map.mp hr
     obtain ⟨out, hout, hcontains⟩ := integer_row_transition_keeps P s hs i
       record.predecessor record.transition record.cover (hc record hm) hq
-    simp only [replaceRows, Function.update_same]
+    simp only [replaceRows, Function.update_self]
     exact ⟨out, List.mem_bind.mpr ⟨record, hm, hout⟩, hcontains⟩
-  · simpa only [replaceRows, Function.update_noteq hji] using hs.1 j
+  · simpa only [replaceRows, Function.update_of_ne hji] using hs.1 j
 
 /-- Existing rational/self-cut/ownership instructions and integer row updates
 can be composed in one program without changing any shared trace interface. -/

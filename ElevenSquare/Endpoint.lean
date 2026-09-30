@@ -1,5 +1,5 @@
 import Mathlib.Analysis.Calculus.Deriv.Pow
-import Mathlib.Analysis.Calculus.MeanValue
+import Mathlib.Analysis.Calculus.Deriv.MeanValue
 import Mathlib.Topology.Order.IntermediateValue
 import Mathlib.Tactic.FunProp
 import Mathlib.Tactic.Linarith
@@ -23,7 +23,7 @@ theorem endpointPolynomial_continuous : Continuous endpointPolynomial := by
 
 theorem endpoint_hasDerivAt (x : ℝ) :
     HasDerivAt endpointPolynomial (endpointDerivative x) x := by
-  convert ((((((((((hasDerivAt_id x).pow 8).const_mul 5).sub (((hasDerivAt_id x).pow 7).const_mul 10)).sub (((hasDerivAt_id x).pow 6).const_mul 2)).add (((hasDerivAt_id x).pow 5).const_mul 14)).add (((hasDerivAt_id x).pow 4).const_mul 12)).sub (((hasDerivAt_id x).pow 3).const_mul 6)).add (((hasDerivAt_id x).pow 2).const_mul 2)).add ((hasDerivAt_id x).const_mul 2)).sub_const 1 using 1 <;> simp [endpointPolynomial, endpointDerivative] <;> ring
+  convert ((((((((((hasDerivAt_id x).pow 8).const_mul 5).sub (((hasDerivAt_id x).pow 7).const_mul 10)).sub (((hasDerivAt_id x).pow 6).const_mul 2)).add (((hasDerivAt_id x).pow 5).const_mul 14)).add (((hasDerivAt_id x).pow 4).const_mul 12)).sub (((hasDerivAt_id x).pow 3).const_mul 6)).add (((hasDerivAt_id x).pow 2).const_mul 2)).add ((hasDerivAt_id x).const_mul 2)).sub_const 1 using 1 <;> (try funext y) <;> simp [endpointPolynomial, endpointDerivative] <;> ring
 
 theorem endpointDerivative_pos {x : ℝ} (hx : x ∈ Set.Icc (9/25 : ℝ) (37/100)) :
     0 < endpointDerivative x := by

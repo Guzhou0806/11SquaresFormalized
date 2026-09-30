@@ -17,7 +17,7 @@ theorem g004_pair_cache_pilot : FixedMedianFacetCheck featureSites 3
   apply fixed_median_facet_of_cached_lower featureSites 3
     (referenceAxisQ referenceAngle) coreHalf medianTarget
     (pairWorldQ site00 site01) site04 medianTarget[4]
-    (List.getElem_mem _ _ hlen)
+    (@List.getElem_mem _ _ _ hlen)
   · norm_num [medianTarget, pairWorldQ, site00, site01,
       physicalToUnit]
   · norm_num [medianTarget, pairWorldQ, site00, site01,

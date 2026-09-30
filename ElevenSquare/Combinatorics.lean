@@ -1,6 +1,6 @@
 import Mathlib.Data.Finset.Powerset
 import Mathlib.Data.Fintype.Fin
-import Mathlib.Algebra.BigOperators.Group.Finset
+import Mathlib.Algebra.BigOperators.Group.Finset.Basic
 import Mathlib.Tactic.NormNum
 import Mathlib.Algebra.BigOperators.Fin
 import ElevenSquare.CaseCountSupport

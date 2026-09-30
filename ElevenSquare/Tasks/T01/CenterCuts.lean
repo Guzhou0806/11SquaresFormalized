@@ -46,22 +46,22 @@ theorem centerCut_holds {S : ℝ} (P : Packing 11 S) (s : PoseState)
   constructor
   · intro hs
     have hi : RowsContain (cutRows h (s.rows i)) (P.squares i) := by
-      simpa only [centerCut, replaceRows, Function.update_same] using hs.1 i
+      simpa only [centerCut, replaceRows, Function.update_self] using hs.1 i
     have hc := (cutRows_contains h (s.rows i) (P.squares i)).mp hi
     refine ⟨⟨?_, hs.2⟩, hc.2⟩
     intro j
     by_cases hji : j = i
     · subst j
       exact hc.1
-    · simpa only [centerCut, replaceRows, Function.update_noteq hji] using hs.1 j
+    · simpa only [centerCut, replaceRows, Function.update_of_ne hji] using hs.1 j
   · rintro ⟨hs, hh⟩
     refine ⟨?_, hs.2⟩
     intro j
     by_cases hji : j = i
     · subst j
-      simpa only [centerCut, replaceRows, Function.update_same] using
+      simpa only [centerCut, replaceRows, Function.update_self] using
         (cutRows_contains h (s.rows i) (P.squares i)).mpr ⟨hs.1 i, hh⟩
-    · simpa only [centerCut, replaceRows, Function.update_noteq hji] using hs.1 j
+    · simpa only [centerCut, replaceRows, Function.update_of_ne hji] using hs.1 j
 
 /-- Both branches include the cut boundary. -/
 theorem closed_halfplane_cases (h : Halfplane) (p : Point) :

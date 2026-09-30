@@ -160,7 +160,7 @@ theorem archived_rows_holds {S : ℝ} (P : Packing 11 S) (s : PoseState)
   apply state_rows_weaken P (nextState s) (6 : Owner) archivedRows _ hs
   intro q hq
   apply retained_rows_in_archive q
-  simpa only [nextState, replaceHull, replaceRows, Function.update_same] using hq
+  simpa only [nextState, replaceHull, replaceRows, Function.update_self] using hq
 
 theorem archived_step_holds {S : ℝ} (P : Packing 11 S) (s : PoseState)
     (hs : StateHolds P s) (hr : s.rows (6 : Owner) = predecessorRows)

@@ -3,7 +3,6 @@ import ElevenSquare.Pending.OrderedData
 namespace ElevenSquare.Pending.ExclusionCounts
 open OrderedData
 theorem returned_block2 : Block id returnedArrayChunk2.toList 45 1889 2135 := by
-  rw [Array.toList_eq]
   change Block id [
   1889,
   1891,

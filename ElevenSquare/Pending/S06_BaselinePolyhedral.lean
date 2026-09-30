@@ -1,7 +1,7 @@
 import ElevenSquare.Pending.Types
 import Mathlib.Analysis.LocallyConvex.WithSeminorms
 import Mathlib.Analysis.Convex.Topology
-import Mathlib.Analysis.NormedSpace.HahnBanach.Separation
+import Mathlib.Analysis.LocallyConvex.Separation
 import Mathlib.Data.List.GetD
 import Mathlib.Tactic.NormNum
 import Mathlib.Tactic.Linarith

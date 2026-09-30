@@ -61,10 +61,10 @@ theorem self_cut_rows_sound {S : ℝ} (P : Packing 11 S) (s : PoseState) (i : Ow
     obtain ⟨r, hr, hq⟩ := hs.1 i
     rw [← hinput] at hr
     obtain ⟨item, hm, rfl⟩ := List.mem_map.mp hr
-    simp only [replaceRows, Function.update_same]
+    simp only [replaceRows, Function.update_self]
     refine ⟨applySelfCuts (s.owned i) item.1 item.2, List.mem_map.mpr ⟨item, hm, rfl⟩, ?_⟩
     exact self_cut_row_keeps _ _ _ (hchecks item hm) _ hq (hs.2 i)
-  · simpa only [replaceRows, Function.update_noteq hji] using hs.1 j
+  · simpa only [replaceRows, Function.update_of_ne hji] using hs.1 j
 
 end
 end ElevenSquare.Tasks.T02

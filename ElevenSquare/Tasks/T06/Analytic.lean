@@ -38,7 +38,7 @@ theorem trigAffineDerivative_hasDerivAt (a b c d w t : ℝ) :
 theorem abs_affine_le (a b t : ℝ) (ht : |t| ≤ 1) :
     |a + b*t| ≤ |a| + |b| := by
   calc
-    |a + b*t| ≤ |a| + |b*t| := abs_add _ _
+    |a + b*t| ≤ |a| + |b*t| := abs_add_le _ _
     _ = |a| + |b| * |t| := by rw [abs_mul]
     _ ≤ |a| + |b| * 1 := add_le_add_left
       (mul_le_mul_of_nonneg_left ht (abs_nonneg _)) _
@@ -57,7 +57,7 @@ theorem trigAffine_abs_le (a b c d w t : ℝ) (ht : |t| ≤ 1) :
   unfold trigAffine
   calc
     |(a+b*t)*Real.cos (w*t) + (c+d*t)*Real.sin (w*t)| ≤
-        |(a+b*t)*Real.cos (w*t)| + |(c+d*t)*Real.sin (w*t)| := abs_add _ _
+        |(a+b*t)*Real.cos (w*t)| + |(c+d*t)*Real.sin (w*t)| := abs_add_le _ _
     _ ≤ |a+b*t| + |c+d*t| := add_le_add hc hs
     _ ≤ (|a| + |b|) + (|c| + |d|) :=
       add_le_add (abs_affine_le a b t ht) (abs_affine_le c d t ht)
@@ -94,7 +94,7 @@ theorem taylor_bound_add (f g : ℝ → ℝ) (a b K L τ : ℝ)
   calc
     |(f τ+g τ)-(f 0+g 0)-τ*(a+b)| =
         |(f τ-f 0-τ*a)+(g τ-g 0-τ*b)| := by congr 1 <;> ring
-    _ ≤ |f τ-f 0-τ*a| + |g τ-g 0-τ*b| := abs_add _ _
+    _ ≤ |f τ-f 0-τ*a| + |g τ-g 0-τ*b| := abs_add_le _ _
     _ ≤ τ^2*K/2 + τ^2*L/2 := add_le_add hf hg
     _ = τ^2*(K+L)/2 := by ring
 

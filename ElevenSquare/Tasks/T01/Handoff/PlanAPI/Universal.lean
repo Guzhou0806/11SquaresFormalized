@@ -401,10 +401,10 @@ theorem universal_program_sound {S : ℝ} (P : Packing 11 S)
     have hcheck := (List.forall_iff_forall_mem).mp hc.2 item hm
     obtain ⟨out, hout, hq⟩ :=
       universal_row_pruning_keeps P s i item.1 item.2 hcheck hs hcontains
-    simpa only [replaceRows, Function.update_same] using
+    simpa only [replaceRows, Function.update_self] using
       (show RowsContain (universalProgramOutput plan) (P.squares i) from
         ⟨out, List.mem_bind.mpr ⟨item, hm, hout⟩, hq⟩)
-  · simpa only [replaceRows, Function.update_noteq hj] using hs.1 j
+  · simpa only [replaceRows, Function.update_of_ne hj] using hs.1 j
 
 end
 end ElevenSquare.Tasks.T01.Handoff.PlanAPI

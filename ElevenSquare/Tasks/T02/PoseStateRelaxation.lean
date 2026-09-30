@@ -29,8 +29,8 @@ theorem state_rows_weaken {S : ℝ} (P : Packing 11 S) (s : PoseState)
   intro j
   by_cases hji : j = i
   · subst j
-    simpa only [replaceRows, Function.update_same] using h (P.squares i) (hs.1 i)
-  · simpa only [replaceRows, Function.update_noteq hji] using hs.1 j
+    simpa only [replaceRows, Function.update_self] using h (P.squares i) (hs.1 i)
+  · simpa only [replaceRows, Function.update_of_ne hji] using hs.1 j
 
 end
 end ElevenSquare.Tasks.T02

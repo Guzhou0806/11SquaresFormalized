@@ -363,7 +363,7 @@ theorem program_checked (s : PoseState)
   refine ⟨⟨hr.symm, records_checked s ho⟩, ?_, trivial⟩
   change ownershipCertificate.Check (replaceRows s (6 : Owner) (integerRowsOutput records)) (6 : Owner)
   apply ownership_checked
-  · simp only [replaceRows, Function.update_same, output_matches]
+  · simp only [replaceRows, Function.update_self, output_matches]
   · exact ho
 
 theorem program_output (s : PoseState) : integerRecordedProgramRun s program = nextState s := by

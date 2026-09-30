@@ -3,7 +3,6 @@ import ElevenSquare.Pending.OrderedData
 namespace ElevenSquare.Pending.ExclusionCounts
 open OrderedData
 theorem baseline_block5 : Block id baselineArrayChunk5.toList 64 325 388 := by
-  rw [Array.toList_eq]
   change Block id [
   325,
   326,
@@ -72,7 +71,6 @@ theorem baseline_block5 : Block id baselineArrayChunk5.toList 64 325 388 := by
   exact ⟨adjacent_sound id _ (by decide), rfl, rfl, rfl⟩
 #print axioms baseline_block5
 theorem baseline_block6 : Block id baselineArrayChunk6.toList 64 389 454 := by
-  rw [Array.toList_eq]
   change Block id [
   389,
   390,
@@ -141,7 +139,6 @@ theorem baseline_block6 : Block id baselineArrayChunk6.toList 64 389 454 := by
   exact ⟨adjacent_sound id _ (by decide), rfl, rfl, rfl⟩
 #print axioms baseline_block6
 theorem baseline_block7 : Block id baselineArrayChunk7.toList 64 457 520 := by
-  rw [Array.toList_eq]
   change Block id [
   457,
   458,
@@ -210,7 +207,6 @@ theorem baseline_block7 : Block id baselineArrayChunk7.toList 64 457 520 := by
   exact ⟨adjacent_sound id _ (by decide), rfl, rfl, rfl⟩
 #print axioms baseline_block7
 theorem baseline_block8 : Block id baselineArrayChunk8.toList 64 521 584 := by
-  rw [Array.toList_eq]
   change Block id [
   521,
   522,
@@ -279,7 +275,6 @@ theorem baseline_block8 : Block id baselineArrayChunk8.toList 64 521 584 := by
   exact ⟨adjacent_sound id _ (by decide), rfl, rfl, rfl⟩
 #print axioms baseline_block8
 theorem baseline_block9 : Block id baselineArrayChunk9.toList 64 585 653 := by
-  rw [Array.toList_eq]
   change Block id [
   585,
   586,

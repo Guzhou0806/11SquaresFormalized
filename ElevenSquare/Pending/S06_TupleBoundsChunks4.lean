@@ -5,7 +5,6 @@ namespace ElevenSquare.Pending.TupleBounds
 
 theorem tuple_block20 : Block recordedCaseTuplesChunk20 64 := by
   refine ⟨rfl, rowsCheck_sound _ ?_⟩
-  rw [Array.toList_eq]
   change rowsCheck [
   [0, 1, 3, 4, 5, 7, 8, 9, 10, 13, 15],
   [0, 1, 3, 4, 5, 7, 8, 9, 10, 14, 15],
@@ -76,7 +75,6 @@ theorem tuple_block20 : Block recordedCaseTuplesChunk20 64 := by
 
 theorem tuple_block21 : Block recordedCaseTuplesChunk21 64 := by
   refine ⟨rfl, rowsCheck_sound _ ?_⟩
-  rw [Array.toList_eq]
   change rowsCheck [
   [0, 1, 3, 4, 6, 7, 8, 9, 11, 12, 13],
   [0, 1, 3, 4, 6, 7, 8, 9, 11, 12, 14],
@@ -147,7 +145,6 @@ theorem tuple_block21 : Block recordedCaseTuplesChunk21 64 := by
 
 theorem tuple_block22 : Block recordedCaseTuplesChunk22 64 := by
   refine ⟨rfl, rowsCheck_sound _ ?_⟩
-  rw [Array.toList_eq]
   change rowsCheck [
   [0, 1, 3, 4, 7, 9, 10, 11, 12, 13, 15],
   [0, 1, 3, 4, 8, 9, 10, 11, 12, 13, 14],
@@ -218,7 +215,6 @@ theorem tuple_block22 : Block recordedCaseTuplesChunk22 64 := by
 
 theorem tuple_block23 : Block recordedCaseTuplesChunk23 64 := by
   refine ⟨rfl, rowsCheck_sound _ ?_⟩
-  rw [Array.toList_eq]
   change rowsCheck [
   [0, 1, 3, 5, 7, 8, 9, 10, 11, 13, 15],
   [0, 1, 3, 5, 7, 8, 9, 10, 11, 14, 15],
@@ -289,7 +285,6 @@ theorem tuple_block23 : Block recordedCaseTuplesChunk23 64 := by
 
 theorem tuple_block24 : Block recordedCaseTuplesChunk24 64 := by
   refine ⟨rfl, rowsCheck_sound _ ?_⟩
-  rw [Array.toList_eq]
   change rowsCheck [
   [0, 1, 4, 5, 6, 7, 9, 10, 12, 13, 14],
   [0, 1, 4, 5, 6, 7, 9, 10, 12, 13, 15],

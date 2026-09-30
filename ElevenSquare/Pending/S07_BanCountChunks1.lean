@@ -5,7 +5,6 @@ namespace ElevenSquare.Pending
 open OrderedData
 
 theorem ban_block5 : Block banKey bannedPairArrayChunk5.toList 64 (30, 81) (31, 89) := by
-  rw [Array.toList_eq]
   change Block banKey [
   (30, 81),
   (53, 81),
@@ -75,7 +74,6 @@ theorem ban_block5 : Block banKey bannedPairArrayChunk5.toList 64 (30, 81) (31, 
 #print axioms ban_block5
 
 theorem ban_block6 : Block banKey bannedPairArrayChunk6.toList 64 (33, 89) (38, 96) := by
-  rw [Array.toList_eq]
   change Block banKey [
   (33, 89),
   (39, 89),
@@ -145,7 +143,6 @@ theorem ban_block6 : Block banKey bannedPairArrayChunk6.toList 64 (33, 89) (38, 
 #print axioms ban_block6
 
 theorem ban_block7 : Block banKey bannedPairArrayChunk7.toList 64 (39, 96) (30, 105) := by
-  rw [Array.toList_eq]
   change Block banKey [
   (39, 96),
   (27, 97),
@@ -215,7 +212,6 @@ theorem ban_block7 : Block banKey bannedPairArrayChunk7.toList 64 (39, 96) (30, 
 #print axioms ban_block7
 
 theorem ban_block8 : Block banKey bannedPairArrayChunk8.toList 64 (31, 105) (41, 115) := by
-  rw [Array.toList_eq]
   change Block banKey [
   (31, 105),
   (32, 105),
@@ -285,7 +281,6 @@ theorem ban_block8 : Block banKey bannedPairArrayChunk8.toList 64 (31, 105) (41,
 #print axioms ban_block8
 
 theorem ban_block9 : Block banKey bannedPairArrayChunk9.toList 64 (43, 115) (56, 128) := by
-  rw [Array.toList_eq]
   change Block banKey [
   (43, 115),
   (45, 115),

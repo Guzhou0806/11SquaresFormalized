@@ -1,4 +1,7 @@
-import Mathlib
+import Mathlib.Data.Real.Basic
+import Mathlib.Algebra.Order.BigOperators.Group.Finset
+import Mathlib.Tactic.NormNum
+import Mathlib.Tactic.Linarith
 
 /-! A small interval evaluator for witness-coordinate polynomials. Every
 endpoint sum has only rational arithmetic when the interval endpoints are

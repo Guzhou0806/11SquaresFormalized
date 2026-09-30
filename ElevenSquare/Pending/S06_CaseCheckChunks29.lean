@@ -4,7 +4,6 @@ open OrderedData
 -- Local depth allowance for checking 64 eleven-entry masks; worker memory is capped.
 set_option maxRecDepth 4096 in
 theorem case_block29 : Block rowKey recordedCaseTuplesChunk29.toList 64 [0, 2, 3, 6, 7, 8, 9, 10, 11, 13, 15] [0, 2, 4, 7, 8, 9, 10, 11, 12, 13, 14] := by
-  rw [Array.toList_eq]
   change Block rowKey [
   [0, 2, 3, 6, 7, 8, 9, 10, 11, 13, 15],
   [0, 2, 3, 6, 7, 8, 9, 10, 12, 13, 14],
@@ -73,7 +72,6 @@ theorem case_block29 : Block rowKey recordedCaseTuplesChunk29.toList 64 [0, 2, 3
   exact ⟨adjacent_sound rowKey _ (by decide), rfl, rfl, rfl⟩
 set_option maxRecDepth 4096 in
 theorem case_good29 : ∀ row ∈ recordedCaseTuplesChunk29.toList, rowMask row ∈ canonicalMasks := by
-  rw [Array.toList_eq]
   change ∀ row ∈ [
   [0, 2, 3, 6, 7, 8, 9, 10, 11, 13, 15],
   [0, 2, 3, 6, 7, 8, 9, 10, 12, 13, 14],

@@ -203,7 +203,6 @@ theorem pair_check_157_178 : indexedCheck (157, 178) = true :=
   pair_lookup_check gridArray 157 178 gridRow157 gridRow178 grid_lookup157 grid_lookup178 (by decide)
 
 theorem bans_checked_chunk17 : ∀ pr ∈ bannedPairArrayChunk17.toList, indexedCheck pr = true := by
-  rw [Array.toList_eq]
   change ∀ pr ∈ [
   (92, 172),
   (75, 173),

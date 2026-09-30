@@ -198,7 +198,6 @@ theorem pair_check_8_58 : indexedCheck (8, 58) = true :=
   pair_lookup_check gridArray 8 58 gridRow8 gridRow58 grid_lookup8 grid_lookup58 (by decide)
 
 theorem bans_checked_chunk1 : ∀ pr ∈ bannedPairArrayChunk1.toList, indexedCheck pr = true := by
-  rw [Array.toList_eq]
   change ∀ pr ∈ [
   (10, 49),
   (11, 49),

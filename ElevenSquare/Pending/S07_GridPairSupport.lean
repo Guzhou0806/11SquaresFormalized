@@ -18,10 +18,10 @@ theorem checks_append {xs ys : Array (ℕ × ℕ)}
     (hy : ∀ pr ∈ ys.toList, indexedCheck pr = true) :
     ∀ pr ∈ (xs ++ ys).toList, indexedCheck pr = true := by
   intro pr hp
-  simp only [Array.toList_eq, Array.append_data, List.mem_append] at hp
+  simp only [Array.toList_append, List.mem_append] at hp
   rcases hp with hp | hp
-  · exact hx pr (by simpa only [Array.toList_eq] using hp)
-  · exact hy pr (by simpa only [Array.toList_eq] using hp)
+  · exact hx pr hp
+  · exact hy pr hp
 
 end ElevenSquare.Pending.GridDistance
 #print axioms ElevenSquare.Pending.GridDistance.pair_lookup_check

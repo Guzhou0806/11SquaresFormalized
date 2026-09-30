@@ -1,5 +1,5 @@
 import ElevenSquare.Tasks.T01.Handoff.PlanAPI.MedianAffineBreakpoints
-import Mathlib.Data.Finset.Pointwise
+import Mathlib.Algebra.Group.Pointwise.Finset.Basic
 import Mathlib.Analysis.Convex.Combination
 
 namespace ElevenSquare.Tasks.T01.Handoff.PlanAPI

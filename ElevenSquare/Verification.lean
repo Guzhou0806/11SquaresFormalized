@@ -1,3 +1,4 @@
+import ElevenSquare.Interop.Wand125.Coverage
 import ElevenSquare
 
 -- These targets are expected to have only the standard axioms.
@@ -18,4 +19,15 @@ import ElevenSquare
 #print axioms ElevenSquare.Pending.prior_certificate_exists
 #print axioms ElevenSquare.Pending.returned_certificate_exists
 #print axioms ElevenSquare.Pending.global_lower_bound
+#print axioms ElevenSquare.optimal_side_lower_bound
 #print axioms ElevenSquare.optimality
+
+#print axioms ElevenSquare.Interop.Wand125.packable_eleven_iff
+#print axioms ElevenSquare.Interop.Wand125.excludes_occupancy
+#print axioms ElevenSquare.Interop.Wand125.certificate
+#print axioms SquarePacking.S11Opt.ImportedFields.applicable_sound
+
+#print axioms ElevenSquare.Interop.Wand125.new_case_excluded
+#print axioms ElevenSquare.Interop.Wand125.newCases_disjoint
+
+#print axioms ElevenSquare.Interop.Wand125.newCases_baseline

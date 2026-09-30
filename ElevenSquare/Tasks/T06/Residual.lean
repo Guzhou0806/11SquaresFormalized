@@ -46,7 +46,7 @@ theorem weighted_residual_error_bound
       simp only [mul_sub, Finset.sum_sub_distrib]
       ring
     _ ≤ |∑ i, w i * (A i k - B i k)| + |(∑ i, w i * B i k) - v k| :=
-      abs_add _ _
+      abs_add_le _ _
     _ ≤ (∑ i, w i * D i k) + |(∑ i, w i * B i k) - v k| :=
       add_le_add_right herr _
     _ = |(∑ i, w i * B i k) - v k| + ∑ i, w i * D i k := add_comm _ _

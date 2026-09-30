@@ -34,8 +34,8 @@ arbitrary orientations, legal boundary contact, and disjoint open interiors.
 
 ## Verification
 
-Install Git and Lean's `elan` launcher. The project pins Lean `v4.10.0-rc2` and
-mathlib revision `3fef63ff3bda38478ba4364ff03999f0246745a2`.
+Install Git and Lean's `elan` launcher. The project pins Lean `v4.34.1` and
+mathlib revision `d13f23b723b8a846827a245b89c10fc7d3f11612`.
 Keep `lake-manifest.json`; do not update dependencies while reproducing this
 snapshot.
 
@@ -72,6 +72,16 @@ The verifier distinguishes clean milestones, which may use only `propext`,
 `Classical.choice`, and `Quot.sound`, from the explicit unfinished targets.
 Success with the current six admissions is **partial assembly success**, not a
 proof of optimality. Closing those admissions requires a fresh final audit.
+
+## Upstream proof integration
+
+The branch imports wand125's box-tree checker, field certificates 0, 3, 6, and
+19, and owned-hull induction/branching rules. The original packing model is
+connected to the imported model in `ElevenSquare/Interop/Wand125/`. See
+[integration details and validation requirements](integrations/wand125/README.md).
+The source comparison identifies 247 additional baseline cases; the concrete
+coverage theorem and the complete upgraded source tree must pass the verifier
+before this is treated as a completed upgrade.
 
 ## Assembly provenance
 

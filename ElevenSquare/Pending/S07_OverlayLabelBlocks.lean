@@ -9,7 +9,6 @@ def overlayLabelKey (a : Fin 4 → Fin 16) : ℕ :=
   4096*(a 0).val + 256*(a 1).val + 16*(a 2).val + (a 3).val
 
 theorem overlay_label_block0 : Block overlayLabelKey recordedOverlayLabelsChunk0.toList 32 (![0, 2, 7, 0]) (![2, 5, 11, 8]) := by
-  rw [Array.toList_eq]
   change Block overlayLabelKey [
   ![0, 2, 7, 0],
   ![0, 2, 7, 4],
@@ -46,7 +45,6 @@ theorem overlay_label_block0 : Block overlayLabelKey recordedOverlayLabelsChunk0
   exact ⟨adjacent_sound overlayLabelKey _ (by decide), rfl, rfl, rfl⟩
 
 theorem overlay_label_block1 : Block overlayLabelKey recordedOverlayLabelsChunk1.toList 32 (![2, 5, 11, 9]) (![5, 3, 7, 5]) := by
-  rw [Array.toList_eq]
   change Block overlayLabelKey [
   ![2, 5, 11, 9],
   ![2, 5, 15, 8],
@@ -83,7 +81,6 @@ theorem overlay_label_block1 : Block overlayLabelKey recordedOverlayLabelsChunk1
   exact ⟨adjacent_sound overlayLabelKey _ (by decide), rfl, rfl, rfl⟩
 
 theorem overlay_label_block2 : Block overlayLabelKey recordedOverlayLabelsChunk2.toList 32 (![5, 5, 6, 4]) (![7, 0, 10, 13]) := by
-  rw [Array.toList_eq]
   change Block overlayLabelKey [
   ![5, 5, 6, 4],
   ![5, 5, 6, 9],
@@ -120,7 +117,6 @@ theorem overlay_label_block2 : Block overlayLabelKey recordedOverlayLabelsChunk2
   exact ⟨adjacent_sound overlayLabelKey _ (by decide), rfl, rfl, rfl⟩
 
 theorem overlay_label_block3 : Block overlayLabelKey recordedOverlayLabelsChunk3.toList 32 (![7, 0, 14, 12]) (![9, 6, 2, 5]) := by
-  rw [Array.toList_eq]
   change Block overlayLabelKey [
   ![7, 0, 14, 12],
   ![7, 0, 14, 13],
@@ -157,7 +153,6 @@ theorem overlay_label_block3 : Block overlayLabelKey recordedOverlayLabelsChunk3
   exact ⟨adjacent_sound overlayLabelKey _ (by decide), rfl, rfl, rfl⟩
 
 theorem overlay_label_block4 : Block overlayLabelKey recordedOverlayLabelsChunk4.toList 32 (![9, 6, 5, 2]) (![10, 13, 8, 10]) := by
-  rw [Array.toList_eq]
   change Block overlayLabelKey [
   ![9, 6, 5, 2],
   ![9, 6, 5, 5],
@@ -194,7 +189,6 @@ theorem overlay_label_block4 : Block overlayLabelKey recordedOverlayLabelsChunk4
   exact ⟨adjacent_sound overlayLabelKey _ (by decide), rfl, rfl, rfl⟩
 
 theorem overlay_label_block5 : Block overlayLabelKey recordedOverlayLabelsChunk5.toList 32 (![10, 13, 8, 11]) (![13, 10, 5, 6]) := by
-  rw [Array.toList_eq]
   change Block overlayLabelKey [
   ![10, 13, 8, 11],
   ![10, 13, 8, 15],
@@ -231,7 +225,6 @@ theorem overlay_label_block5 : Block overlayLabelKey recordedOverlayLabelsChunk5
   exact ⟨adjacent_sound overlayLabelKey _ (by decide), rfl, rfl, rfl⟩
 
 theorem overlay_label_block6 : Block overlayLabelKey recordedOverlayLabelsChunk6.toList 28 (![13, 10, 5, 7]) (![15, 13, 8, 15]) := by
-  rw [Array.toList_eq]
   change Block overlayLabelKey [
   ![13, 10, 5, 7],
   ![13, 10, 9, 6],

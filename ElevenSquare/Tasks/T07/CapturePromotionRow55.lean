@@ -78,7 +78,7 @@ theorem step5_row55_hull_strict {p : Point}
       change c*(a*x)+s*(a*y) = a*(c*x+s*y)
       ring
   let C : Set Point := {p | f p < fieldScale/2+c*w.1+s*w.2}
-  have hconv : Convex ℝ C := convex_halfspace_lt hf _
+  have hconv : Convex ℝ C := convex_halfSpace_lt hf _
   have hbase : {p : Point | ∃ v ∈ step5Row55Vertices,
       p = realPoint v} ⊆ C := by
     rintro p ⟨v, hv, rfl⟩

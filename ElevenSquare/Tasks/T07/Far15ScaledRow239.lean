@@ -46,7 +46,7 @@ private theorem far15_row239_slanted_hull {p : Point}
   let H : Set Point := {p | L p ≤
     (far15Owner9Witness.1 : ℝ)/80 +
     (far15Owner9Witness.2 : ℝ) + 4925/10000}
-  have hconv : Convex ℝ H := convex_halfspace_le hlin _
+  have hconv : Convex ℝ H := convex_halfSpace_le hlin _
   have hbase : {p : Point | ∃ v ∈ far15Row239Vertices,
       p = realPoint v} ⊆ H := by
     rintro p ⟨v, hv, rfl⟩

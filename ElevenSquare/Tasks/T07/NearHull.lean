@@ -1,4 +1,6 @@
-import Mathlib
+import Mathlib.Analysis.Convex.Hull
+import Mathlib.Tactic.Linarith
+import Mathlib.Tactic.Tauto
 
 /-! Closed rectangle transport for the residual center polygons in the
 case-438 near leaf. The vertices of a polygon suffice: the certificate
