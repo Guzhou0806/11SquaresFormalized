@@ -1,5 +1,5 @@
 import ElevenSquare.Tasks.T01.Seeds
-import Mathlib.Data.Real.Archimedean
+import Mathlib.Algebra.Order.Archimedean.Real.Basic
 
 namespace ElevenSquare.Tasks.T01
 open ElevenSquare.Pending
