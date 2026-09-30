@@ -111,7 +111,7 @@ theorem quartic_sign_ref_sound (ref : QuarticSignRef)
   have hs : 0 < (ref.scale : ℝ) := by exact_mod_cast hscale
   cases strict with
   | false =>
-      simp only [↓reduceIte]
+      change 0 ≤ polynomial.eval t
       rw [hpoly, quartic_scale_eval]
       cases hentryStrict : (ref.entry cache).strict with
       | false =>
@@ -123,7 +123,7 @@ theorem quartic_sign_ref_sound (ref : QuarticSignRef)
   | true =>
       have hentryStrict : (ref.entry cache).strict = true := hstrict rfl
       simp only [hentryStrict, ↓reduceIte] at hsound
-      simp only [↓reduceIte]
+      change 0 < polynomial.eval t
       rw [hpoly, quartic_scale_eval]
       exact mul_pos hs hsound
 

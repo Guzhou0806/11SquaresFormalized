@@ -93,7 +93,7 @@ theorem refute_empty_domain (compatible supports : ℕ → ℕ → Bool)
     (D : Domains) (T : List ℕ) (v : ℕ) (hv : (v, []) ∈ D) :
     ¬ Sat compatible supports D T := by
   rintro ⟨f, t, h⟩
-  exact List.not_mem_nil (f v) (h.2.1 v [] hv).1
+  exact List.not_mem_nil (h.2.1 v [] hv).1
 
 theorem refute_no_targets (compatible supports : ℕ → ℕ → Bool) (D : Domains) :
     ¬ Sat compatible supports D [] := by

@@ -25,11 +25,9 @@ theorem increasing_segment_hits_closed_square
   have ht0 : 0 ≤ t := le_max_left _ _
   have hlx1 : lx ≤ 1 := by
     apply (div_le_iff₀ hdx).mpr
-    dsimp [lx]
     linarith
   have hly1 : ly ≤ 1 := by
     apply (div_le_iff₀ hdy).mpr
-    dsimp [ly]
     linarith
   have ht1 : t ≤ 1 := max_le (by norm_num) (max_le hlx1 hly1)
   have h0ux : 0 ≤ ux := div_nonneg (sub_nonneg.mpr hx0) hdx.le

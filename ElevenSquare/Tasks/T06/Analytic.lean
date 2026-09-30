@@ -26,7 +26,7 @@ theorem trigAffine_hasDerivAt (a b c d w t : ℝ) :
   have hx := (hasDerivAt_id t).const_mul w
   have hab := ((hasDerivAt_id t).const_mul b).const_add a
   have hcd := ((hasDerivAt_id t).const_mul d).const_add c
-  convert (hab.mul hx.cos).add (hcd.mul hx.sin) using 1 <;>
+  convert (hab.fun_mul hx.cos).fun_add (hcd.fun_mul hx.sin) using 1 <;>
     dsimp [trigAffine, trigAffineDerivative] <;> ring
 
 theorem trigAffineDerivative_hasDerivAt (a b c d w t : ℝ) :

@@ -179,7 +179,7 @@ theorem feature_gap_radial_hasDerivAt_zero (q₀ : Owner → UnitSquare)
     (dot (cornerOffset q₀ f.other v) (featureNormal q₀ f)) 0
     (dot (perp (cornerOffset q₀ f.other v)) (featureNormal q₀ f)) 0
     (h (coordinate f.other 2)-h (coordinate f.owner 2)) 0
-  convert ((hf.add hg).const_mul (radialFeatureSign f)).sub_const (1/2) using 1
+  convert ((hf.fun_add hg).const_mul (radialFeatureSign f)).sub_const (1/2) using 1
   · funext t
     exact feature_gap_radial q₀ f v h t
   · simp [trigAffineDerivative, trigAffine, featureRadialLinear] <;> ring

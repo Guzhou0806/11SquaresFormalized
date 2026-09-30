@@ -27,7 +27,7 @@ theorem finite_hull_of_all_linear_support (vertices : List Point) (center : Poin
     intro f
     obtain ⟨v, hv, hcv⟩ := hsupport f
     exact ⟨v, subset_convexHull ℝ _ hv, hcv⟩
-  rw [iInter_halfspaces_eq (convex_convexHull ℝ _) hclosed] at hinside
+  rw [iInter_halfSpaces_eq (convex_convexHull ℝ _) hclosed] at hinside
   exact hinside
 
 /-- The same support characterization for rational generators. -/
@@ -44,7 +44,7 @@ theorem rational_hull_of_all_linear_support (vertices : List QPoint) (center : P
   change center ∈ ⋂ f : Point →L[ℝ] ℝ,
     {x | ∃ y ∈ convexHull ℝ {p | ∃ v ∈ vertices, p = realPoint v},
       f x ≤ f y} at hinside
-  rw [iInter_halfspaces_eq (convex_convexHull ℝ _)
+  rw [iInter_halfSpaces_eq (convex_convexHull ℝ _)
     (baseline_rationalHull_isClosed vertices)] at hinside
   exact hinside
 
