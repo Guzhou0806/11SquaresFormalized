@@ -58,13 +58,13 @@ theorem positive_y_intervals (c s X Y U V : ℝ)
     · apply (lt_div_iff₀ hc).2; linarith only [hVm]
   · refine ⟨?_, ?_, ?_, ?_⟩
     · apply (div_lt_iff₀ hs).2; linarith only [hUp]
-    · apply (div_lt_div_right hs).2; linarith only [hc]
+    · apply (div_lt_div_iff_of_pos_right hs).2; linarith only [hc]
     · apply (div_lt_div_iff₀ hs hc).2; nlinarith only [hXi, hXp, hunit]
     · apply (div_lt_iff₀ hs).2; nlinarith only [hcXp, hU, hunit, sq_nonneg s]
   · refine ⟨?_, ?_, ?_, ?_⟩
     · apply (div_lt_iff₀ hc).2; linarith only [hVp]
     · apply (div_lt_div_iff₀ hc hs).2; nlinarith only [hXi, hXm, hunit]
-    · apply (div_lt_div_right hc).2; linarith only [hs]
+    · apply (div_lt_div_iff_of_pos_right hc).2; linarith only [hs]
     · apply (div_lt_iff₀ hc).2; nlinarith only [hsXm, hV, hunit, sq_nonneg c]
   · refine ⟨by linarith only [hYp], ?_, ?_, by linarith only [hc, hs]⟩
     · apply (lt_div_iff₀ hs).2; nlinarith only [hcXm, hU, hunit, sq_nonneg s]

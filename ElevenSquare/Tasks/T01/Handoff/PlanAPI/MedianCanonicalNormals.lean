@@ -68,7 +68,7 @@ theorem orthogonal_normal_real_scaled (d normal : Point)
     refine ⟨normal.1 / d.2, ?_⟩
     apply Prod.ext
     · dsimp [realPairNormal]
-      field_simp [hy]
+      field_simp [hy] <;> ring
     · simp [realPairNormal, hx, hn2]
   · refine ⟨-normal.2 / d.1, ?_⟩
     apply Prod.ext
@@ -76,7 +76,7 @@ theorem orthogonal_normal_real_scaled (d normal : Point)
       field_simp [hx]
       nlinarith [hn]
     · dsimp [realPairNormal]
-      field_simp [hx]
+      field_simp [hx] <;> ring
 
 theorem orthogonal_normal_real_positive_ray (d normal : Point)
     (hd : d ≠ (0,0)) (hn : dot normal d = 0)

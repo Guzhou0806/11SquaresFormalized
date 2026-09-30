@@ -39,11 +39,11 @@ theorem fieldHull_collision (q : UnitSquare)
   · dsimp [W, d, realPoint, physicalFieldVertex]
     push_cast
     rw [seedFieldScale_cast]
-    field_simp [fieldScale_ne_zero]
+    field_simp [fieldScale_ne_zero] <;> ring
   · dsimp [W, d, realPoint, physicalFieldVertex]
     push_cast
     rw [seedFieldScale_cast]
-    field_simp [fieldScale_ne_zero]
+    field_simp [fieldScale_ne_zero] <;> ring
 
 end
 end ElevenSquare.Tasks.T07

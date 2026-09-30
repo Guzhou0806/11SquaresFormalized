@@ -30,7 +30,7 @@ theorem orthogonal_normal_is_scaled_pair_normal (d n : QPoint)
       exact (mul_eq_zero.mp (by simpa [mul_comm] using hn)).resolve_right hy
     apply Prod.ext
     · dsimp [rationalScale, pairNormal]
-      field_simp [hy]
+      field_simp [hy] <;> ring
     · simp [rationalScale, pairNormal, hx, hn2]
   · refine ⟨-n.2/d.1, ?_⟩
     apply Prod.ext
@@ -38,7 +38,7 @@ theorem orthogonal_normal_is_scaled_pair_normal (d n : QPoint)
       field_simp [hx]
       nlinarith [hn]
     · dsimp [rationalScale, pairNormal]
-      field_simp [hx]
+      field_simp [hx] <;> ring
 
 /-- Including both orientations of every site/core pair suffices: any
 perpendicular rational facet normal is a nonnegative multiple of one of

@@ -245,7 +245,7 @@ theorem segment_hits_open_square
     have hm := mul_le_mul_of_nonneg_right (hr.trans hrinner.le) hs.le
     have he : (|a * dy - b * dx| / (|dx| + |dy|)) *
         (|dx| + |dy|) = |a * dy - b * dx| := by
-      field_simp [ne_of_gt hs]
+      field_simp [ne_of_gt hs] <;> ring
     rw [he] at hm
     exact hm
   obtain ⟨t, ht0, ht1, hxl, hxu, hyl, hyu⟩ :=

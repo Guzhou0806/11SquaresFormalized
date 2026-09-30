@@ -24,7 +24,7 @@ theorem chartAxis_trig (t : ℝ) :
     field_simp [hd] <;> ring
   · dsimp [chartAxis]
     rw [Real.sin_two_mul, Real.sin_arctan, Real.cos_arctan]
-    field_simp [hd, hs]
+    field_simp [hd, hs] <;> ring
 
 theorem construction_axis_chart (i : Owner) :
     (constructionSquare i).axis = chartAxis (if i.val < 6 then 0 else u) := by

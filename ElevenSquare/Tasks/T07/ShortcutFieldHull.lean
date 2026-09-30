@@ -35,7 +35,7 @@ theorem inverseFieldLinear_toField (p : Point) :
     inverseFieldLinear (toField p) = p := by
   apply Prod.ext <;>
     dsimp [inverseFieldLinear, toField] <;>
-    field_simp [fieldScale_ne_zero]
+    field_simp [fieldScale_ne_zero] <;> ring
 
 theorem fieldHull_to_physicalHull (vs : List QPoint) {p : Point}
     (hp : toField p ∈ rationalHull vs) :

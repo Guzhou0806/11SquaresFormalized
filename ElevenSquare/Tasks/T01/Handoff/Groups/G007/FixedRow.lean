@@ -73,7 +73,7 @@ theorem row_choice (cert : Certificate) (row : PoseRow)
   | blocker point piece =>
       have hp : point ∈ cert.blockerPoints := by
         unfold Certificate.blockerPoints
-        exact (List.mem_filterMap Target.blockerPoint cert.targets).mpr
+        exact List.mem_filterMap.mpr
           ⟨Target.blocker point piece, htarget, rfl⟩
       exact False.elim ((hblocked point hp)
         (singleton_capture point q

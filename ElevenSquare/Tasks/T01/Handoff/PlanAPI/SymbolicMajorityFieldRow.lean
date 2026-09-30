@@ -36,7 +36,7 @@ theorem symbolic_majority_field_row (P : Packing 11 coverCap)
       have hblock := hc.2.2 _ htarget
       have hp : p ∈ cert.blockerPoints := by
         unfold SymbolicFieldRowCertificate.blockerPoints
-        exact (List.mem_filterMap SymbolicFieldTarget.blockerPoint cert.targets).mpr
+        exact List.mem_filterMap.mpr
           ⟨.blocker polygon p h, htarget, rfl⟩
       obtain ⟨j, hij, hj⟩ := howned p hp
       exact False.elim (symbolic_point_block_impossible P i j hij p h

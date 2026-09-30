@@ -31,14 +31,14 @@ theorem positive_overlap (c s X Y U V : ℝ)
       (U-1-s*y)/c < (c*y-V+1)/s := by
     refine ⟨?_, ?_, ?_⟩
     · apply (div_lt_iff₀ hc).2; linarith only [hylU]
-    · apply (div_lt_div_right hc).2; linarith
+    · apply (div_lt_div_iff_of_pos_right hc).2; linarith
     · apply (div_lt_div_iff₀ hc hs).2; nlinarith only [hYi, hyunit, hl.2.2.2]
   have h₂ : (c*y-V-1)/s < 1 ∧ (c*y-V-1)/s < (U+1-s*y)/c ∧
       (c*y-V-1)/s < (c*y-V+1)/s := by
     refine ⟨?_, ?_, ?_⟩
     · apply (div_lt_iff₀ hs).2; linarith only [hyuV]
     · apply (div_lt_div_iff₀ hs hc).2; nlinarith only [hYi, hyunit, hu.2.2.2]
-    · apply (div_lt_div_right hs).2; linarith
+    · apply (div_lt_div_iff_of_pos_right hs).2; linarith
   obtain ⟨x, hxl, hxu⟩ := between_three _ _ _ _ _ _ h₀ h₁ h₂
   refine ⟨x, y, abs_lt.mpr ⟨hxl.1, hxu.1⟩, abs_lt.mpr ⟨hl.1, hu.1⟩, ?_, ?_⟩
   · have hlo := (div_lt_iff₀ hc).1 hxl.2.1

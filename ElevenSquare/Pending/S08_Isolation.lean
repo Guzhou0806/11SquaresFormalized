@@ -28,14 +28,14 @@ theorem packet_isolates (S : ℝ) (q₀ : Owner → UnitSquare) (p : LocalPacket
   have hscale : τ • u = h := by
     funext k
     dsimp [u]
-    field_simp
+    field_simp <;> ring
   have linear_scale (a : Fin 33 → ℝ) : τ*LinearForm a u = LinearForm a h := by
     unfold LinearForm
     rw [Finset.mul_sum]
     apply Finset.sum_congr rfl
     intro k hk
     dsimp [u]
-    field_simp
+    field_simp <;> ring
   obtain ⟨b, hb⟩ := hbranches h hrect hfeasible
   have hrows (i : Fin 42) : -(τ^2*(p.curvature b i : ℝ)/2) ≤
       LinearForm (gapGradient S q₀ (p.representative b i)) h := by

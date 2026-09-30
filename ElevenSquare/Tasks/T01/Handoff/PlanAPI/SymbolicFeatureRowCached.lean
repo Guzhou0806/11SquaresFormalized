@@ -45,7 +45,7 @@ theorem symbolic_feature_row_choice_of_cover {n : ℕ}
       have hblock := htargetCheck _ htarget
       have hp : p ∈ cert.blockerPoints := by
         unfold SymbolicFeatureRowCertificate.blockerPoints
-        exact (List.mem_filterMap SymbolicFeatureTarget.blockerPoint cert.targets).mpr
+        exact List.mem_filterMap.mpr
           ⟨.blocker polygon p h, htarget, rfl⟩
       obtain ⟨j, hij, hj⟩ := howned p hp
       exact False.elim (symbolic_point_block_impossible P i j hij p h

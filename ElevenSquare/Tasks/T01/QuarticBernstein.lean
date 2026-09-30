@@ -106,7 +106,7 @@ private theorem quartic_interval_parameter (l u : ℚ) (t : ℝ)
     linarith
   · dsimp [s]
     push_cast
-    field_simp [ne_of_gt hw]
+    field_simp [ne_of_gt hw] <;> ring
 
 /-- A five-coefficient rational check proves nonnegativity everywhere on an
 interval, including both endpoints. -/
