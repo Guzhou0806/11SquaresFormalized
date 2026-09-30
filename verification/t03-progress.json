@@ -1,5 +1,5 @@
 {
-  "status": "PARTIAL_COMMON_TOOLS_CASE2135_IN_GIT_AND_151_CASE_SOURCE_RELEASE",
+  "status": "PARTIAL_COMMON_TOOLS_CASE2135_IN_GIT_AND_153_CASE_SOURCE_RELEASE_ASSETS",
   "snapshot_date": "2026-09-30",
   "meaning": "Independent returned compiler audits. This is not a fresh combined replay of the GitHub assembly.",
   "lean_version": "4.10.0-rc2",
@@ -1652,7 +1652,9 @@
     "new_lean_modules": 98315,
     "new_lean_bytes": 5349623026,
     "method": "Union of completed-check archive source manifests; no large source extraction or Lean rebuild.",
-    "published_in_full": false
+    "published_in_full": false,
+    "later_published_in_source_release": true,
+    "publication_scope": "Historical pre-release measurement. The same 150 complete source closures and the next case1840 closure were later published in the standalone 151-case asset."
   },
   "source_release": {
     "tag": "t03-audited-151-20260930",
@@ -1663,6 +1665,22 @@
     "case_certificates": 151,
     "source_modules": 101494,
     "source_lean_bytes": 5499202925,
-    "meaning": "All151 exact source dependency collections are supplied in the standalone release asset; only case2135 is directly integrated into the Git source tree. No merged Lean replay or full-family completion is claimed."
-  }
+    "meaning": "All 151 exact source dependency collections remain supplied in the original standalone release asset; a separate standalone supplement adds cases 1484 and 2122, for 153 published case closures. Only case2135 is directly integrated into the Git source tree. No merged Lean replay or full-family completion is claimed."
+  },
+  "published_case_source_closures": 153,
+  "remaining_case_certificates": 20,
+  "source_supplements": [
+    {
+      "asset_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/T03-audited-cases1484-2122-source-supplement.zip",
+      "asset_bytes": 150038569,
+      "asset_sha256": "178d0d165a2c37fc0452b467605075f65abe6d859b5ceff0b0c400cc83b20610",
+      "supplement_cases": [
+        1484,
+        2122
+      ],
+      "case_certificates": 2,
+      "standalone": true,
+      "manifest": "verification/t03-source-supplement.json"
+    }
+  ]
 }

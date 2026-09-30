@@ -1838,5 +1838,28 @@
   ],
   "github_server_digest": "sha256:44fa1bf800965c2b511fb52195206c7ea3849e8e3073c180fa1896860216b4ca",
   "github_server_size_verified": true,
-  "release_is_prerelease": true
+  "release_is_prerelease": true,
+  "published_case_total_including_supplements": 153,
+  "remaining_cases_after_supplements": 20,
+  "supplements": [
+    {
+      "asset_name": "T03-audited-cases1484-2122-source-supplement.zip",
+      "asset_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/T03-audited-cases1484-2122-source-supplement.zip",
+      "checksum_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/T03-audited-cases1484-2122-source-supplement.zip.sha256",
+      "metadata_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/CHECKPOINT-supplement-public.json",
+      "asset_bytes": 150038569,
+      "asset_sha256": "178d0d165a2c37fc0452b467605075f65abe6d859b5ceff0b0c400cc83b20610",
+      "supplement_cases": [
+        1484,
+        2122
+      ],
+      "case_certificates": 2,
+      "source_modules": 14144,
+      "source_lean_bytes": 618524343,
+      "standalone": true,
+      "github_server_asset_digest_verified": true,
+      "github_server_asset_size_verified": true,
+      "manifest": "verification/t03-source-supplement.json"
+    }
+  ]
 }

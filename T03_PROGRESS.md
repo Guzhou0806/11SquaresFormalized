@@ -78,10 +78,43 @@ interfaces from the successful independent checks and should not overwrite the
 stronger interfaces already merged into this repository. It contains no build
 objects, machine logs, private handoff archives, account information, or chats.
 
-This is partial T03 progress. The other 22 cases, assembly and clean combined
-audits of both exact public returned targets, and the final return ZIP remain
-unfinished. A fresh Lean replay of the merged repository and a global optimality
-proof are not claimed. The source asset's README explains serial replay.
+At this 151-case checkpoint, 22 cases remained. The supplement below publishes
+two more complete source closures; 20 cases and the full public assembly,
+combined audits, and final return ZIP remain unfinished. A fresh Lean replay of
+the merged repository and a global optimality proof are not claimed. The source asset's README explains serial replay.
+
+## Additional audited cases 1484 and 2122
+
+A [standalone source supplement](https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/T03-audited-cases1484-2122-source-supplement.zip) now supplies the complete exact
+source closures of case1484 and case2122, together with their actual target-only
+HandoffAudit transcripts, pinned environment metadata, and original supplied
+serial checkers. The original 151-case asset is unchanged. Together these assets
+publish **153 of the 173** independently audited case certificates.
+
+The supplement contains 14,144 reachable Lean modules and 618,524,343 bytes of
+Lean source in a 150,038,569-byte ZIP. Its SHA-256 is
+`178d0d165a2c37fc0452b467605075f65abe6d859b5ceff0b0c400cc83b20610`; the [checksum sidecar](https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/T03-audited-cases1484-2122-source-supplement.zip.sha256) and compact
+[checkpoint metadata](https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/CHECKPOINT-supplement-public.json) are also available. GitHub's
+server-reported asset size and SHA-256 match the locally verified checkpoint.
+
+Both exact full certificate targets passed their accepted independent
+HandoffAudit with only `propext`, `Classical.choice`, and `Quot.sound`. Their
+original execution transport digests match the preserved input archives. Every
+selected original source and every output member was streamed and hash-checked;
+each full source import closure was checked separately. Portable bindings are
+recorded in `verification/t03-source-supplement.json` and in the archive's
+individual case source manifests.
+
+The supplement can be replayed independently without downloading the larger
+151-case asset. Extract it separately, using the archive README's serial replay
+instructions; preserve the stronger merged repository interfaces. It contains
+source and target-only audit transcripts, with no build objects, caches, machine
+logs, private handoff archives, account information, or conversation records.
+
+**20 cases remain**, along with assembly and clean combined audits of both exact
+public returned targets and the final return ZIP. Case1646 optimization attempts
+are unfinished and are excluded. No fresh merged repository Lean replay, full
+T03 completion, or global optimality proof is claimed.
 
 ## Audit scope
 
@@ -100,17 +133,18 @@ includes the case2135 target query so that a full checkout can reproduce it.
 
 Separate ongoing work had completed full audits for 150 of the 173 case
 certificates at the original progress snapshot. Case2135's complete source
-closure is now supplied. The other 149 audited case source collections remain
-outside this checkpoint; their declaration list is informational and supplies
-no certificate proofs here.
+closure is now supplied. The other 149 audited case source collections were
+outside that original one-case Git checkpoint. Their complete exact source closures are now supplied
+in the separately published release asset described above.
 
 A measurement of those 150 completed-check source manifests found 98,369
 distinct Lean source files, totaling 5,350,077,814 bytes before deduplication
 against the repository. The common-helper snapshot already supplied 54 of those
 files, leaving 98,315 files and 5,349,623,026 bytes to add for the entire snapshot.
 No conflicting source versions were found. This was a manifest-only measurement;
-the full collection was not extracted, rebuilt, or published. The one-case
-checkpoint keeps the added source manageable while supplying a complete proof
+the full collection was not extracted, rebuilt, or published at that stage.
+It was subsequently published in the standalone 151-case release asset. The
+one-case checkpoint keeps the added Git source manageable while supplying a complete proof
 that can be independently replayed.
 
 The remaining case work, assembly of both exact public returned targets, their

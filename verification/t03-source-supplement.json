@@ -1,0 +1,67 @@
+{
+  "actual_independent_axiom_audits_checked": 2,
+  "all_output_member_hashes_checked": true,
+  "all_source_archive_bindings_checked": true,
+  "asset_bytes": 150038569,
+  "asset_name": "T03-audited-cases1484-2122-source-supplement.zip",
+  "asset_sha256": "178d0d165a2c37fc0452b467605075f65abe6d859b5ceff0b0c400cc83b20610",
+  "case_certificates": 2,
+  "final_return_zip_complete": false,
+  "merged_repository_lean_replay_performed": false,
+  "privacy_findings": [],
+  "public_target_assembly_complete": false,
+  "published_case_total": 153,
+  "remaining_cases": 20,
+  "required_cases": 173,
+  "source_import_closures_complete": true,
+  "source_lean_bytes": 618524343,
+  "source_members": 14150,
+  "source_modules": 14144,
+  "status": "PUBLISHED_PARTIAL_T03_CASES1484_2122_SOURCE_SUPPLEMENT",
+  "supplement_cases": [
+    1484,
+    2122
+  ],
+  "tag": "t03-audited-151-20260930",
+  "release_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/tag/t03-audited-151-20260930",
+  "asset_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/T03-audited-cases1484-2122-source-supplement.zip",
+  "checksum_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/T03-audited-cases1484-2122-source-supplement.zip.sha256",
+  "metadata_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/CHECKPOINT-supplement-public.json",
+  "github_server_asset_size_verified": true,
+  "github_server_asset_digest_verified": true,
+  "standalone": true,
+  "case_audits": [
+    {
+      "accepted_transport_sha256": "af37a29f4f2352eef4f6647f48171f5ca8de9cf8a710d00b0c8661e069a8c27c",
+      "actual_independent_audit_status": "accepted",
+      "audit_elapsed_seconds": 62.8,
+      "case": 1484,
+      "module": "ElevenSquare.Tasks.T03.Batch04.Case1484.Forward.Certificate",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "source_binding_method": "exact_accepted_execution_transport_sha256",
+      "source_closure_manifest": "CASE_SOURCE_MANIFEST-1484.json",
+      "source_modules": 6421,
+      "target": "ElevenSquare.Pending.T03.Batch04.Case1484.Forward.Certificate.certificate_exists"
+    },
+    {
+      "accepted_transport_sha256": "1c372859f2b1e9d370b1b8f2ba2c307d5b82f7b939269d630ce0a7f048fa750f",
+      "actual_independent_audit_status": "accepted",
+      "audit_elapsed_seconds": 49.43,
+      "case": 2122,
+      "module": "ElevenSquare.Tasks.T03.Batch12.Case2122.Forward.Certificate",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "source_binding_method": "exact_accepted_execution_transport_sha256",
+      "source_closure_manifest": "CASE_SOURCE_MANIFEST-2122.json",
+      "source_modules": 8386,
+      "target": "ElevenSquare.Pending.T03.Batch12.Case2122.Forward.Certificate.certificate_exists"
+    }
+  ]
+}
