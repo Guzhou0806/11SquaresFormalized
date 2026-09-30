@@ -172,10 +172,11 @@ theorem featureGap_hasDerivAt (q₀ : Owner → UnitSquare) (f : SeparationFeatu
   have hn₂ := normal_snd_hasDerivAt q₀ f j
   convert (((hx.fun_mul hn₁).fun_add (hy.fun_mul hn₂)).const_mul (featureSign f)).sub_const
     ((1 : ℝ)/2) using 1
-  simp only [coordinateLine_zero, perturbedCenter_zero, perturbedAxis_zero,
-    perturbedCorner_zero, pairGradientFormula, baseNormal, dot, Prod.fst_sub,
-    Prod.snd_sub]
-  ring
+  · rfl
+  · simp only [coordinateLine_zero, perturbedCenter_zero, perturbedAxis_zero,
+      perturbedCorner_zero, pairGradientFormula, baseNormal, dot, Prod.fst_sub,
+      Prod.snd_sub]
+    ring
 
 theorem gapGradient_pair (S : ℝ) (q₀ : Owner → UnitSquare) (f : SeparationFeature)
     (v : Fin 4) (j : Fin 33) :
