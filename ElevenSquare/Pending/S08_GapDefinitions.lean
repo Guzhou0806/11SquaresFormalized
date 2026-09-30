@@ -1,5 +1,5 @@
 import ElevenSquare.Pending.GeometryTypes
-import Mathlib.Analysis.Complex.Exponential
+import Mathlib.Analysis.Complex.Trigonometric
 import Mathlib.Algebra.Module.Prod
 import Mathlib.Data.Fin.VecNotation
 

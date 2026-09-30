@@ -25,9 +25,9 @@ theorem polynomial_interval {n : ℕ} (c : Fin n → ℚ) {lo x hi : ℝ}
       polynomialAt c x ≤ polynomialUpper c lo hi := by
   have hx : 0 ≤ x := hlo.trans hlx
   have hxl (i : Fin n) : lo ^ i.val ≤ x ^ i.val :=
-    pow_le_pow_left hlo hlx i.val
+    pow_le_pow_left₀ hlo hlx i.val
   have hxu (i : Fin n) : x ^ i.val ≤ hi ^ i.val :=
-    pow_le_pow_left hx hxh i.val
+    pow_le_pow_left₀ hx hxh i.val
   constructor
   · unfold polynomialLower polynomialAt
     apply Finset.sum_le_sum

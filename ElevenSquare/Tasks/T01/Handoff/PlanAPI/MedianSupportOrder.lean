@@ -33,7 +33,7 @@ theorem median_lower_bound_hits_subset {α β : Type*} [DecidableEq α]
 /-- A certified median support bound implies the corresponding support
 inequality for each `k`-subset, using one of its sites as a witness. -/
 theorem median_support_of_lower_bound {α β : Type*} [DecidableEq α]
-    [LinearOrderedAddCommGroup β] (sites subset : Finset α) (k : ℕ)
+    [AddCommGroup β] [LinearOrder β] [IsOrderedAddMonoid β] (sites subset : Finset α) (k : ℕ)
     (projection : α → β) (b center coreSupport : β)
     (hmedian : MedianLowerBound sites k projection b)
     (hsubset : subset ⊆ sites) (hcard : subset.card = k)

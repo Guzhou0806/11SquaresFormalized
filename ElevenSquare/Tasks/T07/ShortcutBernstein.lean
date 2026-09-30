@@ -59,7 +59,7 @@ theorem quadratic_bernstein_pos_on (A B C a b t : ℝ)
   have hu1 : u ≤ 1 := (div_le_one hba).mpr (by linarith)
   have ht : a+(b-a)*u = t := by
     dsimp [u]
-    field_simp [ne_of_gt hba]
+    field_simp [ne_of_gt hba] <;> ring
   rw [← ht]
   exact quadratic_bernstein_pos A B C a b u hu0 hu1 ha hm hb
 

@@ -46,7 +46,8 @@ theorem openSquare_of_center_hull (q : UnitSquare) (vs : List QPoint)
   let f : Point →ᵃ[ℝ] Point :=
     AffineMap.const ℝ Point w - AffineMap.id ℝ Point
   have hconv : Convex ℝ C := by
-    simpa only [C, f] using
+    simpa only [C, f, AffineMap.coe_sub, Pi.sub_apply, AffineMap.const_apply,
+      AffineMap.id_apply, Set.preimage_setOf_eq] using
       (openSquare_convex (recenteredSquare q)).affine_preimage f
   have hbase : {c : Point | ∃ v ∈ vs, c = realPoint v} ⊆ C := by
     rintro c ⟨v, hv, rfl⟩
