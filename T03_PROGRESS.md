@@ -72,6 +72,51 @@ groups and a two-live-archive bound, but remains entirely pending; no fifth
 source asset or accepted case is added. The [continuity record](verification/t03-equality-efficiency-continuation.json)
 keeps that queue note separate from accepted proof evidence.
 
+## Frozen case1465 revision2 source supplement
+
+The next originally issued case1465 batch, `Chunk106`, failed generated equality
+elaboration. This frozen revision2 source supplement changes exactly one Lean
+module and 308 ordinary equality proof constructions. Its source is bound to
+the existing portable case1465 base ZIP SHA-256
+`2e94181e269002faa2ad6261526a954eebbbef3c038fe7afcd35da30c74d043e`.
+All other source, environment and individual full-task bytes are preserved.
+Later case1465 repairs are tracked as separate source versions.
+
+The new raw master digest is
+`c8cc656c45285bb67d76cd9b360aab43978cf70d49bba859d84d787584366a92`.
+The supplement ZIP is **3,928,954 bytes**, SHA-256
+`91e5360a56c6d00fe4c8ae9940444dc23af5a0fd7e45aed2faf7006a55eba46d`. Its only Lean member is `Chunk106.lean`;
+source/checkpoint manifests and explanatory metadata are refreshed to bind
+the changed bytes accurately. Every other original member binding agrees
+with the exact base. All 308 lexical rewrites were independently reproduced,
+and every new source import is available in that base. Full case1465 and
+the public family targets remain pending; the accepted count stays 157/173.
+Groups 107/108 retry01 have actual clean group target audits and unchanged
+source bindings; those group audits do not complete the full case.
+
+The [supplement recipe](verification/t03-case1465-retry02-source-supplement.json)
+records the exact base URL/digest, old/new member hashes, overlay metadata,
+original task/target and upload status. Apply it to a fresh source directory:
+
+```sh
+python scripts/t03_retry/apply_source_supplement.py --base BASE.zip --supplement SUPPLEMENT.zip --supplement-sha256 91e5360a56c6d00fe4c8ae9940444dc23af5a0fd7e45aed2faf7006a55eba46d --output fresh-case1465-retry02
+```
+
+The tool rejects a wrong base or supplement digest and existing output,
+preserves every unchanged member, and verifies the refreshed manifest.
+Only small isolated Python byte fixtures were replayed for publication;
+the full base was not extracted or recompressed again. Once applied, the
+unchanged original checker must still verify the full exact certificate.
+The [actual failure/group audit record](verification/t03-case1465-retry02-progress.json)
+preserves hashes and target axiom lists without private runtime paths.
+
+Iterative producer checkpoint/preparation/publication now take `--revision`.
+Preparation takes repeated `--failed-group GROUP:WORKER`; publication can
+optionally require the matching prepared failed-group set. The producer
+reads the named latest publication transition and its cumulative retry
+aliases, preserving earlier retries. These parameterized ports had Python
+parsing/help checks; no process controls, Lean builds or workers were run.
+
 ## Included source
 
 `ElevenSquare/Tasks/T03/Common.lean` imports two useful improvements and their

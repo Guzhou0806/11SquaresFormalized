@@ -13,20 +13,30 @@ ap.add_argument('--transport-dir')
 ap.add_argument('--scratch-root',required=True)
 ap.add_argument('--max-workers',type=int,default=1)
 ap.add_argument('--source-root')
-args=ap.parse_args();case=args.case
+ap.add_argument('--revision', type=int, default=1)
+ap.add_argument('--failed-group', action='append', default=[])
+args = ap.parse_args()
+case = args.case
 K,E,transport_root=kit_paths(args.kit,args.transport_dir)
 S=Path(args.source_root).resolve() if args.source_root else K/'eleven-square-lean'
 assert 1<=args.max_workers<=6
 low_priority_single_core()
+assert 1 <= args.revision <= 99
+revision_tag = '' if args.revision == 1 else f'-retry{args.revision:02d}'
 failed_settings = {1464: [(203, 'library-b'), (209, 'extra-a')],
                    1465: [(107, 'library-b'), (108, 'independent')]}
 assert case in failed_settings
-checkpoint = json.loads((E / f'case{case}-equality-repair-producer-checkpoint.json').read_text())
+if args.failed_group:
+    failed_settings[case] = [(int(item.split(':',1)[0]), item.split(':',1)[1]) for item in args.failed_group]
+    assert all(prefix in ['primary','independent','helper','extra-a','library-a','library-b','library-c'] for _,prefix in failed_settings[case])
+else:
+    assert args.revision == 1
+checkpoint = json.loads((E / f'case{case}-equality-repair-producer-checkpoint{revision_tag}.json').read_text())
 assert checkpoint['stopped_at_complete_file_boundary'] and checkpoint['proof_processes_signalled'] == []
 pilot = json.loads((E / 'equality-refl-benchmark.json').read_text())
 assert pilot['kernel_negative_control_rejected'] and pilot['measured_gain']
-record = E / f'case{case}-equality-refl-publication.json'
-ready = transport_root / f'.t03-equality-case{case}-ready.zip'
+record = E / f'case{case}-equality-refl{revision_tag}-publication.json'
+ready = transport_root / f'.t03-equality-case{case}{revision_tag}-ready.zip'
 assert not record.exists() and not ready.exists()
 publication_path = E / f'case{case}-packed-parallel-publication.json'
 publication = json.loads(publication_path.read_text())
@@ -60,6 +70,12 @@ old_sha = sha(master)
 assert old_sha == publication['grouped_archive_sha256']
 failed = {}
 aliases = {}
+prior_transition = publication.get('kernel_equality_refl_transition')
+if prior_transition:
+    prior = json.loads((E / prior_transition).read_text())
+    assert prior['status'] == 'FAILED_AND_UNPUBLISHED_GROUP_EQUALITY_PROOFS_CANONICALLY_PUBLISHED'
+    assert prior['new_grouped_archive_sha256'] == old_sha
+    aliases.update(prior.get('group_task_aliases', {}))
 for number, prefix in failed_settings[case]:
     row = next(r for r in rows if r['module'].endswith(f'.Chunk{number:03d}'))
     task_name = row['task']
@@ -79,7 +95,8 @@ for number, prefix in failed_settings[case]:
     archive = transport_root / ('.t03-runtime-sync-' + Path(task_name).stem + '.zip')
     assert archive.exists() and not (destination / archive.name).exists()
     assert sha(archive) == execution['transport_sha256']
-    retry = Path(task_name).stem.removesuffix('-task') + '-equality-retry01-task.json'
+    stem = re.sub(r'-equality-retry[0-9]+$', '', Path(task_name).stem.removesuffix('-task'))
+    retry = stem + f'-equality-retry{args.revision:02d}-task.json'
     assert retry.startswith(f'library-case{case}-node998-')
     assert not (E / retry).exists() and not (E / ('.prepared-' + retry)).exists()
     task_raw = (E / task_name).read_bytes()
@@ -163,10 +180,12 @@ for row in bindings:
     path = S / (row['module'].replace('.', '/') + '.lean')
     assert sha(path) == row['old_source_sha256']
     path.write_bytes((changed_dir / path.name).read_bytes())
-for module, retry in aliases.items():
+for module, failure in failed.items():
+    retry = failure['retry_task']
     (E / ('.prepared-' + retry)).write_bytes((backup / retry).read_bytes())
 p = dict(status='FAILED_AND_UNPUBLISHED_GROUP_EQUALITY_PROOFS_PREPARED_ALL_NEW_PROOFS_PENDING',
     case=case, utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),
+    repair_revision=args.revision, prior_equality_transition=prior_transition,
     previous_grouped_archive_sha256=old_sha, new_grouped_archive_sha256=new_sha,
     ready_archive=str(ready), backup_directory=str(backup), new_verified_archive=str(temporary),
     publication_file=publication_path.name, queue_file=queue_path.name,

@@ -8,18 +8,27 @@ ap.add_argument('--kit',required=True)
 ap.add_argument('--transport-dir')
 ap.add_argument('--scratch-root',required=True)
 ap.add_argument('--max-workers',type=int,default=1)
+ap.add_argument('--failed-group',action='append',default=[],help='Optional expected group number, optionally GROUP:WORKER, matching the prepared record')
 ap.add_argument('--dispatcher-name',default='run_unified_proof_pool_v7.py')
-args=ap.parse_args();case=args.case
+ap.add_argument('--revision', type=int, default=1)
+args = ap.parse_args()
+case = args.case
 K,E,transport_root=kit_paths(args.kit,args.transport_dir)
 scratch=Path(args.scratch_root).resolve();assert scratch.is_dir()
 assert 1<=args.max_workers<=6 and Path(args.dispatcher_name).name==args.dispatcher_name
 assert case in (1464, 1465)
+assert 1 <= args.revision <= 99
+revision_tag = '' if args.revision == 1 else f'-retry{args.revision:02d}'
 low_priority_single_core()
-record = E / f'case{case}-equality-refl-publication.json'
+record = E / f'case{case}-equality-refl{revision_tag}-publication.json'
 p = json.loads(record.read_text())
 assert p['status'] == 'FAILED_AND_UNPUBLISHED_GROUP_EQUALITY_PROOFS_PREPARED_ALL_NEW_PROOFS_PENDING'
 assert p['all_unaffected_published_and_running_group_source_closures_unchanged']
 assert p['maximum_running_lean_checks']==args.max_workers
+if args.failed_group:
+    expected={int(v.split(':',1)[0]) for v in args.failed_group}
+    actual={int(v.rsplit('.Chunk',1)[1]) for v in p['failed_groups']}
+    assert expected==actual, 'Requested failed-group scope differs from the prepared record'
 prep = json.loads((E / f'case{case}-packed-namespaced-publication.json').read_text())
 master = transport_root / ('.t03-runtime-sync-' + Path(prep['task']).stem + '.zip')
 def posix(path):
@@ -69,10 +78,11 @@ with zipfile.ZipFile(master) as old, zipfile.ZipFile(ready) as new:
                         assert hashlib.sha256((E / name).read_bytes()).hexdigest() == expected
                     else:
                         assert new_manifest[name] == expected, ('Changed a live/accepted closure', row['module'], name)
-for module, retry in p['group_task_aliases'].items():
+for module, failed in p['failed_groups'].items():
+    retry = failed['retry_task']
     prepared = E / ('.prepared-' + retry)
     assert prepared.read_bytes() == (backup / retry).read_bytes() and not (E / retry).exists()
-    assert hashlib.sha256(prepared.read_bytes()).hexdigest() == p['failed_groups'][module]['prepared_task_sha256']
+    assert hashlib.sha256(prepared.read_bytes()).hexdigest() == failed['prepared_task_sha256']
 failed_destination = backup / 'original-failed-transports'
 failed_destination.mkdir()
 for module, failed in p['failed_groups'].items():

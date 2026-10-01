@@ -188,5 +188,13 @@
     "personal_information_findings": [],
     "github_server_all9_asset_digests_and_sizes_verified": true,
     "prior18_accepted_and9_pending_assets_preserved": true
+  },
+  "case1465_retry02_supplement_review": {
+    "single_Lean_source_member": true,
+    "exact_base_and_new_master_digest_verified": true,
+    "all308_ordinary_rewrites_and_other_original_member_bindings_verified": true,
+    "updated_portable_metadata_and_manifests": true,
+    "private_paths_caches_logs_chats_or_account_data_included": false,
+    "personal_information_findings": []
   }
 }

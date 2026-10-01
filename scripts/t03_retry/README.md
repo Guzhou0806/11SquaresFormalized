@@ -161,3 +161,21 @@ Parameterized publication copies had parsing/help checks only; the recorded
 production measurements concern the exact original helper hash in the evidence.
 The producer accepts `--max-live` as an alias of `--max-live-archives`, 1–8,
 default 8. Changing preparation concurrency does not increase the Lean pool.
+
+
+Failed-group tools accept `--revision` 1–99 (default 1); later revisions require
+explicit preparation `--failed-group GROUP:WORKER` entries. Publication's
+optional repeated `--failed-group` validates the prepared group set before
+any publishing actions. Existing retry aliases accumulate through the named
+latest transition; earlier revision records/archives remain preserved.
+
+`apply_source_supplement.py` requires `--base`, `--supplement`, its exact
+`--supplement-sha256` and a fresh `--output`. It verifies both ZIP digests,
+safe members, changed-member bindings and the updated source manifest, then
+streams unchanged base members plus the explicitly bound overlay to a fresh
+source directory. Exactly one Lean module may change. Metadata changes are
+explicitly listed. All proof/source/environment/task acceptance still belongs
+to the unchanged original Lean checker. A small isolated fixture checked
+byte preservation, manifest application, existing-output refusal and wrong
+base/supplement digest rejection; no real bulk source extraction or Lean
+build was performed for this publication.

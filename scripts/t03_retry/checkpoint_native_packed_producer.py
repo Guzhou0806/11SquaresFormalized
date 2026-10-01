@@ -10,12 +10,15 @@ ap.add_argument('--kit',required=True)
 ap.add_argument('--transport-dir')
 ap.add_argument('--scratch-root',required=True)
 ap.add_argument('--producer-script',type=Path,required=True)
+ap.add_argument('--revision', type=int, default=1)
 a = ap.parse_args()
 K,E,transport_root=kit_paths(a.kit,a.transport_dir)
 scratch=Path(a.scratch_root).resolve();assert scratch.is_dir()
 assert a.producer_script.name=='parallel_packed_case_producer.py'
 assert a.case in (1464, 1465) and a.pid > 0
-record = E / f'case{a.case}-equality-repair-producer-checkpoint.json'
+assert 1 <= a.revision <= 99
+revision_tag = '' if a.revision == 1 else f'-retry{a.revision:02d}'
+record = E / f'case{a.case}-equality-repair-producer-checkpoint{revision_tag}.json'
 assert not record.exists()
 command = f"Get-CimInstance Win32_Process -Filter 'ProcessId={a.pid}' | Select-Object ProcessId,CommandLine,ExecutablePath | ConvertTo-Json -Compress"
 identity = json.loads(subprocess.check_output(['powershell.exe', '-NoProfile', '-Command', command], text=True))
@@ -66,7 +69,7 @@ try:
         assert time.monotonic() < deadline, ('Producer did not reach a file boundary', [str(p) for p in busy])
         time.sleep(1)
     snapshot = (E / f'case{a.case}-parallel-packed-status.json').read_bytes()
-    prior = E / f'case{a.case}-parallel-packed-status-before-equality-repair.json'
+    prior = E / f'case{a.case}-parallel-packed-status-before-equality-repair{revision_tag}.json'
     with prior.open('xb') as output:
         output.write(snapshot)
     assert kernel.TerminateProcess(handle, 0)
@@ -75,6 +78,7 @@ try:
     p = dict(status='OWNED_NATIVE_PRODUCER_CHECKPOINTED_COMPILER_JOBS_UNTOUCHED',
         case=a.case, utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),
         old_pid=a.pid, verified_command_line=identity['CommandLine'],
+        repair_revision=a.revision,
         stopped_at_complete_file_boundary=True, partial_transport_files=[],
         preserved_status=prior.name, preserved_status_sha256=hashlib.sha256(snapshot).hexdigest(),
         proof_processes_signalled=[], other_producers_untouched=True,

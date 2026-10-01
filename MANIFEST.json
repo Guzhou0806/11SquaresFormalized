@@ -42818,13 +42818,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 7862,
-      "sha256": "de84477559b62c4fe404a991963cdd2d41ff26a8dd003f5135bdb5107e13ffa5"
+      "bytes": 8011,
+      "sha256": "8f1cc3e65e9527bb7b4224d4a8bf7dc75163a7affa1483f1f817ac17b7ffb4a5"
     },
     {
       "path": "T03_PROGRESS.md",
-      "bytes": 46240,
-      "sha256": "f7c1fc9d98c5e1e2aea89bab91734a9709d5f5ac0c8979066c33e784fb1ae046"
+      "bytes": 48982,
+      "sha256": "0f589ad14a2350024ea7abf31ee9fe71ce6a8a5d41cd904d21c1bea2167a5738"
     },
     {
       "path": "lake-manifest.json",
@@ -42848,8 +42848,13 @@
     },
     {
       "path": "scripts/t03_retry/README.md",
-      "bytes": 11519,
-      "sha256": "393b8a327e2dad161b9009cbc2a6df45fcc03680bc2c6912df2830d9cd5facf4"
+      "bytes": 12619,
+      "sha256": "33fc722bd90c337e744bfa0e8fe2dd386b9996cc7551bb5c1fd88c2bd707ad5f"
+    },
+    {
+      "path": "scripts/t03_retry/apply_source_supplement.py",
+      "bytes": 4641,
+      "sha256": "93d79540c7559b43e3ac5d94143698625a22c771183fe6819ad4cbdf2ef0cdb6"
     },
     {
       "path": "scripts/t03_retry/benchmark_native_source_sync.py",
@@ -42858,8 +42863,8 @@
     },
     {
       "path": "scripts/t03_retry/checkpoint_native_packed_producer.py",
-      "bytes": 4488,
-      "sha256": "bc20e3c5aa0f99cec7a4cd17f87cebb2412fffd6d096fa9e48c9ad4eb2f80d1f"
+      "bytes": 4700,
+      "sha256": "3260b893a4f5193df1fd15354ff3beedc779deedc4ffac96348310d8c3a0622e"
     },
     {
       "path": "scripts/t03_retry/configure_runtime.py",
@@ -42868,8 +42873,8 @@
     },
     {
       "path": "scripts/t03_retry/parallel_packed_case_producer.py",
-      "bytes": 14127,
-      "sha256": "ae0358fa9ea4b012242b9026c72dbb1817612d630bb34eb901fafb36b2277f84"
+      "bytes": 14229,
+      "sha256": "31f6bc39a803af25d62f1cacc7f7e393fa5e2f4f2d5d895efddcc37fcbc5c407"
     },
     {
       "path": "scripts/t03_retry/prepare_coordinate_binding_retry.py",
@@ -42878,8 +42883,8 @@
     },
     {
       "path": "scripts/t03_retry/prepare_failed_packed_equality_repairs.py",
-      "bytes": 10692,
-      "sha256": "ec1affa6f7ebd69392a40ef68c578e35b6c42cde3602699cd47080c91864dea6"
+      "bytes": 11821,
+      "sha256": "47e4eb322b66624f7f99984e6efb1cbbb7a76f3f3c5326c6b526422d8b9d5485"
     },
     {
       "path": "scripts/t03_retry/publish_coordinate_binding_retry.py",
@@ -42888,8 +42893,8 @@
     },
     {
       "path": "scripts/t03_retry/publish_failed_packed_equality_repairs.py",
-      "bytes": 7886,
-      "sha256": "601af11d8f0cc6e1cf35048530ea10f125613b2c87b577255a53e9c295d1c0c4"
+      "bytes": 8474,
+      "sha256": "833944882d12d8cd3fd1b04342162383baa250d5d8ad8f0e92954d6ef21270d1"
     },
     {
       "path": "scripts/t03_retry/queue_failed_binding_pilot.py",
@@ -42963,8 +42968,8 @@
     },
     {
       "path": "verification/privacy-review.json",
-      "bytes": 8391,
-      "sha256": "a1a45545ba5bc954a8f6e8a77c618086f13815f8ae2f92996b59f1787a3f00bc"
+      "bytes": 8778,
+      "sha256": "3fc2d27abdeda4d2c153f65700003c40ef474eb53cf77d056f9053cccbc036e5"
     },
     {
       "path": "verification/source-check.json",
@@ -43020,6 +43025,16 @@
       "path": "verification/t03-case1465-operational-retry.json",
       "bytes": 8083,
       "sha256": "4cc5ecd979e04eea8a9a012b70d0a7bfcad645e5c86b4710f7502b6e3df66bb8"
+    },
+    {
+      "path": "verification/t03-case1465-retry02-progress.json",
+      "bytes": 4205,
+      "sha256": "294c965918c744c71b882da51841ee0b3967b01ecd448fd7ab23690d149cd921"
+    },
+    {
+      "path": "verification/t03-case1465-retry02-source-supplement.json",
+      "bytes": 4280,
+      "sha256": "75c963c9505cf72b9ae9ff1a448d8778c3272242368b8bfdf003bd7d1511e9b1"
     },
     {
       "path": "verification/t03-case1499-local-resume.json",
@@ -43088,8 +43103,8 @@
     },
     {
       "path": "verification/t03-progress.json",
-      "bytes": 62719,
-      "sha256": "8c1f138c0dce8ddf452645b8d1444723f5846e0567f6b2d01bc3c665f1bb15c5"
+      "bytes": 63290,
+      "sha256": "afbe96e0d26737299016005713e30e14d7c2fd192f51ce86963fc116c7d515c8"
     },
     {
       "path": "verification/t03-release-checkpoint.json",

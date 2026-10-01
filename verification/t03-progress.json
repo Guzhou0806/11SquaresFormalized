@@ -1938,5 +1938,15 @@
     "new_pending_source_release_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/tag/t03-pending-equality-retries-20261001",
     "github_server_all9_asset_digests_and_sizes_verified": true,
     "source_checkpoint_commit": "17fec5446c2ad775f101572169f14dbd980b5abd"
+  },
+  "case1465_frozen_retry02_supplement": {
+    "manifest": "verification/t03-case1465-retry02-source-supplement.json",
+    "changed_Lean_modules": 1,
+    "ordinary_equality_constructions_changed": 308,
+    "required_base_portable_zip_sha256": "2e94181e269002faa2ad6261526a954eebbbef3c038fe7afcd35da30c74d043e",
+    "frozen_raw_master_sha256": "c8cc656c45285bb67d76cd9b360aab43978cf70d49bba859d84d787584366a92",
+    "full_case_audit_accepted": false,
+    "accepted_full_cases": 157,
+    "source_version_scope": "Frozen revision2/Chunk106; later changes are separate."
   }
 }

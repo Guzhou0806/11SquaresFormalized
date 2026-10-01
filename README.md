@@ -14,6 +14,8 @@ case1464,1465,1372 and1731 source versions remain pending their full target audi
 The compact tools and exact source bindings are in [T03_PROGRESS.md](T03_PROGRESS.md).
 A [separate updated pending source release](https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/tag/t03-pending-equality-retries-20261001) now supplies
 all four frozen versions with verified GitHub asset hashes and sizes.
+A frozen one-module case1465 revision2 supplement additionally preserves the
+exact existing base while repairing 308 pending equality constructions.
 Native source synchronization measured 3.734 seconds versus 11.665 seconds on
 the same 381-member fixture, and has now run in an actual new proof job.
 

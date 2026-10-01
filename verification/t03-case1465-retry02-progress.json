@@ -1,0 +1,93 @@
+{
+  "status": "FAILED_AND_UNPUBLISHED_GROUP_EQUALITY_PROOFS_CANONICALLY_PUBLISHED",
+  "case": 1465,
+  "utc": "2026-10-01T07:46:03.298144+00:00",
+  "repair_revision": 2,
+  "previous_grouped_archive_sha256": "4cc487c93321773b474f621dded4020de76104d08fb80e0fb3c54c624343df5e",
+  "new_grouped_archive_sha256": "c8cc656c45285bb67d76cd9b360aab43978cf70d49bba859d84d787584366a92",
+  "modified_groups": 1,
+  "changed_equality_proof_constructions": 308,
+  "group_task_aliases": {
+    "ElevenSquare.Tasks.T03.Batch04.Case1465.PackedNamespaced.Chunk107": "library-case1465-node998-107-equality-retry01-task.json",
+    "ElevenSquare.Tasks.T03.Batch04.Case1465.PackedNamespaced.Chunk108": "library-case1465-node998-108-equality-retry01-task.json",
+    "ElevenSquare.Tasks.T03.Batch04.Case1465.PackedNamespaced.Chunk106": "library-case1465-node998-106-equality-retry02-task.json"
+  },
+  "modified_source_bindings": [
+    {
+      "module": "ElevenSquare.Tasks.T03.Batch04.Case1465.PackedNamespaced.Chunk106",
+      "old_source_sha256": "c5de1d8f500f773100d6dfca629b717a4d8a7f74746e700af18de8d9b97b851b",
+      "new_source_sha256": "cf3c8bb5186d0bb0dd9f83d068c384a7cfa1ef80dccbc078382ead158f55dd5c",
+      "equalities": 308
+    }
+  ],
+  "numeric_tokens_unchanged": true,
+  "all_unaffected_published_and_running_group_source_closures_unchanged": true,
+  "original_certificate_type_and_root_unchanged": true,
+  "full_case_and_final_audits_pending": true,
+  "running_proof_workers_unchanged": true,
+  "published_utc": "2026-10-01T07:47:54.997804+00:00",
+  "failed106_actual_CHECK": {
+    "status": "failed_or_resource_limited",
+    "source": "ElevenSquare/Tasks/T03/Batch04/Case1465/PackedNamespaced/Chunk106.lean",
+    "exit_code": 1,
+    "elapsed_seconds": 545.09,
+    "lean_threads": 1,
+    "lean_memory_limit_mb": 8192
+  },
+  "failed106_actual_CHECK_sha256": "f270584c190ac48a20b5b961f02190972d98536edafbfc7c0604ca2d1adf3c51",
+  "failed106_actual_log_sha256": "dd3403dd6b57e2db947a4825e280e8514be500c9c668bde152dc58facb01b84e",
+  "actual107_108_audits": [
+    {
+      "group": 107,
+      "task": "library-case1465-node998-107-equality-retry01-task.json",
+      "target_axioms": {
+        "ElevenSquare.Pending.T03.Certificates.UniversalCollision1c37249c8c42e93fe2528696.PackedCase1465.Coarsened.collision": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "actual_CHECK": {
+        "status": "accepted",
+        "source": "verification/HandoffAudit.lean",
+        "exit_code": 0,
+        "elapsed_seconds": 115.7,
+        "lean_threads": 1,
+        "lean_memory_limit_mb": 8192
+      },
+      "actual_CHECK_sha256": "2e0aafdcde1b141a11fd6919bc7bc5eda20003ba825312d24dbe3e632a23efd2",
+      "actual_audit_log_sha256": "756509738b37e94c1cbcb33db2bef3bf087d123d5a474cc7791ec1f3b21aa353",
+      "accepted_execution_transport_sha256": "ea382c8e3b15390d933bb0744ea11c082aba725f21d4b02719e98ef3bd007a30",
+      "full_case_audit": false
+    },
+    {
+      "group": 108,
+      "task": "library-case1465-node998-108-equality-retry01-task.json",
+      "target_axioms": {
+        "ElevenSquare.Pending.T03.Certificates.CoarsePartnera799413e295197340e64d636.PackedCase1465.contains123": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "actual_CHECK": {
+        "status": "accepted",
+        "source": "verification/HandoffAudit.lean",
+        "exit_code": 0,
+        "elapsed_seconds": 45.31,
+        "lean_threads": 1,
+        "lean_memory_limit_mb": 8192
+      },
+      "actual_CHECK_sha256": "e4f87e6044ffaf6bc74cd4aa943b54dd5ac8a3da1682f2270c6450fc69157908",
+      "actual_audit_log_sha256": "b131a4a487f721e70e85ffe18ff59fae3248e2d78a518898ff9f5da886a31cdb",
+      "accepted_execution_transport_sha256": "3eda89246d4fc7f1d935d5f85cca0d711925d0fc8527d05405cb0bff61cc46a4",
+      "full_case_audit": false
+    }
+  ],
+  "one_changed_module_exact_rewrite_independently_verified": true,
+  "base_portable_zip_digest_verified": true,
+  "new_raw_master_digest_verified": true,
+  "all_other_source_environment_task_manifest_bindings_verified": true,
+  "accepted_full_case_count": 157,
+  "new106_proofs_kernel_checks_pending": true
+}

@@ -43,13 +43,13 @@ def sha(path):
  return h.hexdigest()
 assert sha(master)==publication['grouped_archive_sha256']
 if previous and previous['source_archive_sha256']!=publication['grouped_archive_sha256']:
- transition=json.loads((E/f'case{case}-equality-refl-publication.json').read_text())
+ transition=json.loads((E/publication.get('kernel_equality_refl_transition',f'case{case}-equality-refl-publication.json')).read_text())
  assert transition['status'] in ['UNPUBLISHED_GROUP_EQUALITY_PROOFS_CANONICALLY_PUBLISHED','FAILED_AND_UNPUBLISHED_GROUP_EQUALITY_PROOFS_CANONICALLY_PUBLISHED']
  assert previous['source_archive_sha256']==transition['previous_grouped_archive_sha256']
  assert publication['grouped_archive_sha256']==transition['new_grouped_archive_sha256']
  assert transition.get('published_and_running_group_source_closures_unchanged',False) or transition.get('all_unaffected_published_and_running_group_source_closures_unchanged',False)
 task_aliases={}
-transition_path=E/f'case{case}-equality-refl-publication.json'
+transition_path=E/publication.get('kernel_equality_refl_transition',f'case{case}-equality-refl-publication.json')
 if transition_path.exists():
  task_aliases=json.loads(transition_path.read_text()).get('group_task_aliases',{})
 events=previous['events'] if previous else []
