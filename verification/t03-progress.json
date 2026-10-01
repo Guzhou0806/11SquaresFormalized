@@ -1,5 +1,5 @@
 {
-  "status": "PARTIAL_TESTED_COMMON_EQUALITY_HELPER_AND_156_CASE_SOURCE_RELEASE_ASSETS",
+  "status": "PARTIAL_TESTED_COMMON_TOOLS_AND_157_CASE_SOURCE_RELEASE_ASSETS",
   "snapshot_date": "2026-09-30",
   "meaning": "Independent returned compiler audits. This is not a fresh combined replay of the GitHub assembly.",
   "lean_version": "4.10.0-rc2",
@@ -1667,8 +1667,8 @@
     "source_lean_bytes": 5499202925,
     "meaning": "The original 151 exact source closures remain in the unchanged base release asset; standalone supplements add cases 1484, 2122, the accepted grouped case1646, case2047, and case1848, for 156 published case closures. Only case2135 is directly integrated into the Git source tree. No merged Lean replay or full-family completion is claimed."
   },
-  "published_case_source_closures": 156,
-  "remaining_case_certificates": 17,
+  "published_case_source_closures": 157,
+  "remaining_case_certificates": 16,
   "source_supplements": [
     {
       "asset_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/T03-audited-cases1484-2122-source-supplement.zip",
@@ -1714,6 +1714,60 @@
       "case_certificates": 1,
       "standalone": true,
       "manifest": "verification/t03-case1848-source-supplement.json"
+    },
+    {
+      "manifest": "verification/t03-case1311-source-supplement.json",
+      "actual_independent_axiom_audits_checked": 1,
+      "all_output_member_hashes_checked": true,
+      "all_source_archive_bindings_checked": true,
+      "asset_bytes": 81475063,
+      "asset_name": "T03-audited-case1311-source-supplement.zip",
+      "asset_sha256": "ec38aa9282d754deba768f79bd9baf559c8b4141112ca86fd63e7545602de5ba",
+      "case_certificates": 1,
+      "final_return_zip_complete": false,
+      "merged_repository_lean_replay_performed": false,
+      "privacy_findings": [],
+      "public_target_assembly_complete": false,
+      "published_case_total": 157,
+      "remaining_cases": 16,
+      "required_cases": 173,
+      "source_import_closures_complete": true,
+      "source_lean_bytes": 431689357,
+      "source_members": 2538,
+      "source_modules": 2532,
+      "status": "PUBLISHED_PARTIAL_T03_ACCEPTED_CASE1311_SOURCE_SUPPLEMENT",
+      "supplement_cases": [
+        1311
+      ],
+      "tag": "t03-audited-151-20260930",
+      "release_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/tag/t03-audited-151-20260930",
+      "asset_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/T03-audited-case1311-source-supplement.zip",
+      "checksum_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/T03-audited-case1311-source-supplement.zip.sha256",
+      "metadata_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/CHECKPOINT-case1311-public.json",
+      "standalone": true,
+      "github_server_asset_size_verified": true,
+      "github_server_asset_digest_verified": true,
+      "case_audits": [
+        {
+          "accepted_execution_record_sha256": "d11bc4398665fb4d7c07ef8b71670e6687a6c8df63e0f958aecc494d5f4ee5f9",
+          "accepted_transport_sha256": "467a2a9d8f56dc762b5801060962b5ad39f759506d91edd1739062fced78a8fb",
+          "actual_audit_check_sha256": "e991441be2e4bc3e336c767bccd26448d171deaf3e43c0dcd14e37195472413a",
+          "actual_audit_log_sha256": "980c2384445a92ffc3e779dd29c4626c89f4f03211e364c7c68ce9d6377f6471",
+          "actual_independent_audit_status": "accepted",
+          "audit_elapsed_seconds": 37.9,
+          "case": 1311,
+          "module": "ElevenSquare.Tasks.T03.Batch02.Case1311.PackedNamespaced.Chunk053",
+          "reported_axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "source_binding_method": "exact_accepted_execution_transport_sha256",
+          "source_closure_manifest": "CASE_SOURCE_MANIFEST-1311.json",
+          "source_modules": 2532,
+          "target": "ElevenSquare.Pending.T03.Batch02.Case1311.Forward.Certificate.certificate_exists"
+        }
+      ]
     }
   ],
   "additional_tested_common_helpers": [
@@ -1755,7 +1809,7 @@
       1848,
       2047
     ],
-    "potential_new_cases_after_exact_handoff": 13,
+    "potential_new_cases_after_exact_handoff": 12,
     "per_case_adapter": "ElevenSquare.Interop.Wand125.certificate_of_maskAt",
     "per_case_adapter_requires_full_family_theorem": false,
     "pr_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/pull/2",
@@ -1764,7 +1818,12 @@
     "inspected_integration_toolchain": "4.34.1",
     "checkpoint_toolchain": "4.10.0-rc2",
     "full_toolchain_upgrade_verified": false,
-    "meaning": "Progress reports are not accepted certificate artifacts. Exact generated source closures, immutable hashes, and matching full target audits are still needed."
+    "meaning": "Progress reports are not accepted certificate artifacts. Exact generated source closures, immutable hashes, and matching full target audits are still needed.",
+    "reported_finished_cases_already_independently_accepted_here": [
+      1311,
+      1848,
+      2047
+    ]
   },
   "operational_case1464_checkpoint": {
     "manifest": "verification/t03-case1464-parallel-retry.json",
@@ -1837,5 +1896,31 @@
     "case2069_group_snapshot_utc": "2026-10-01T04:54:45.632352+00:00",
     "case2069_full_case_audit_accepted": false,
     "normal_assembly_imports_unchanged": true
+  },
+  "pending_source_release": {
+    "manifest": "verification/t03-pending-source-release.json",
+    "release_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/tag/t03-pending-case-retries-20261001",
+    "cases": [
+      1464,
+      1465,
+      2069,
+      1372
+    ],
+    "all_full_case_audits_pending": true,
+    "server_asset_digests_and_sizes_verified": true,
+    "accepted_release_15_assets_unchanged": true,
+    "no_merged_lean_replay": true,
+    "accepted_full_cases_at_frozen_commit": 156
+  },
+  "latest_157_case_checkpoint": {
+    "accepted_case1311_manifest": "verification/t03-case1311-source-supplement.json",
+    "published_case_source_closures": 157,
+    "remaining_cases": 16,
+    "case1372_followup_manifest": "verification/t03-case1372-retry02-progress.json",
+    "case1372_full_case_audit_accepted": false,
+    "case1372_actual_repaired_Chunk009_elaboration_accepted": true,
+    "case1372_repaired_Chunk009_seconds": 528.87,
+    "four_pending_source_assets_published": true,
+    "new_source_replay_or_Lean_workers_started_for_publication": 0
   }
 }

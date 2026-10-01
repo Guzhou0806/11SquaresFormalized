@@ -143,5 +143,38 @@
     "full_case_count_unchanged": 156,
     "raw_machine_logs_transports_caches_process_ids_accounts_or_chats_included": false,
     "personal_information_findings": []
+  },
+  "four_pending_source_release_review": {
+    "cases": [
+      1464,
+      1465,
+      2069,
+      1372
+    ],
+    "source_members_inspected": 32010,
+    "original_source_task_environment_checker_bytes_unchanged": true,
+    "private_resource_history_replaced": true,
+    "broader_packet_task_omitted": true,
+    "original_transport_and_every_source_member_hash_bound": true,
+    "all_output_members_hash_verified": true,
+    "complete_local_import_closures_verified": true,
+    "personal_information_findings": [],
+    "raw_original_transports_private_logs_caches_chats_credentials_included": false,
+    "full_case_count_unchanged": 156,
+    "git_large_source_blobs_added": false
+  },
+  "case1311_and_retry02_publication_review": {
+    "accepted_case1311_full_source_modules": 2532,
+    "accepted_source_transport_and_every_member_verified": true,
+    "actual_full_target_audit_checked": true,
+    "all_output_member_hashes_checked": true,
+    "github_server_asset_size_and_digest_checked": true,
+    "prior15_accepted_assets_unchanged": true,
+    "retry02_member_hashes_and49_rewrites_checked": true,
+    "actual_Chunk009_failure_and_later_elaboration_source_binding_checked": true,
+    "portable_new_script_paths_are_parameters": true,
+    "genuine_receipt_copier_hash_gate_fixture_passed": true,
+    "raw_machine_logs_paths_caches_accounts_or_chats_included": false,
+    "personal_information_findings": []
   }
 }

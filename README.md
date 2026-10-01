@@ -19,15 +19,28 @@ progress document for the exact evidence and unfinished-case status.
 
 A [partial T03 release](https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/tag/t03-audited-151-20260930) supplies the complete exact source
 checkpoint for 151 independently audited cases, plus standalone supplements
-for cases 1484, 2122, 1646, 2047, and 1848: **156 of 173** cases now have
+for cases 1484, 2122, 1646, 2047, 1848, and 1311: **157 of 173** cases now have
 published complete source closures. The public family assembly and its clean
-combined target audits are still unfinished; 17 case certificates remain.
+combined target audits are still unfinished; 16 case certificates remain.
 
 Case 1372's two isolated binding statements now pass the original Lean
 checker with only `propext`; their exact source and audit are included. Its
 full-case retry is queued and remains pending. Case 2069 has 13 of 120 accepted
 dependency groups at the 04:54 UTC snapshot. These do not add completed cases;
 see the progress document for the precise evidence and limits.
+
+A separate [pending source release](https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/tag/t03-pending-case-retries-20261001) supplies the immutable prepared
+source closures for cases 1464, 1465, 2069 and 1372. All four full-case
+audits remain pending at this checkpoint; these assets add no accepted cases.
+Every source member is hash-bound to its original transport, with portable
+serial metadata. The earlier 15 accepted release assets remain unchanged; the
+new case1311 supplement adds its separately accepted source and metadata.
+
+The latest case1372 retry preserves the checked first nine chunks and repairs
+8,813 remaining generated equality proof constructions. Its full Chunk009
+now elaborates successfully; the full certificate audit remains pending.
+Genuine receipt sharing now includes both source-workspace locations and the
+separate primary scratch donor, with object hashes checked before copying.
 
 The target side length is the exact real number
 

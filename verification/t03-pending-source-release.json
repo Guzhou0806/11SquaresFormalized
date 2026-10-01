@@ -1,0 +1,274 @@
+{
+  "accepted_cases": 156,
+  "cases": [
+    {
+      "accepted_case_count_at_checkpoint": 156,
+      "asset_bytes": 232089137,
+      "asset_name": "T03-pending-case1464-source-checkpoint.zip",
+      "asset_sha256": "3674d6d61aa41af9c221832e0ef1a4dc88fb0da2ac0c3f2d8f01769059804e93",
+      "case": 1464,
+      "final_return_zip_complete": false,
+      "format": "T03-pending-source-checkpoint-v1",
+      "frozen_progress_commit": "86ed1351628b75e2508f26a56281c722df68697a",
+      "full_case_accepted": false,
+      "lean_source_bytes_included": 1389317428,
+      "maximum_lean_source_bytes": 9269262,
+      "merged_repository_lean_replay_performed": false,
+      "metadata_changes": [
+        {
+          "action": "omitted",
+          "member": "TASK.json",
+          "reason": "Broader packet assignment does not describe this standalone case checkpoint."
+        },
+        {
+          "action": "replaced",
+          "member": "project/verification/LOW_RESOURCE_MODE.json",
+          "original_sha256": "ece1da78fe6bb583938815993e153afbcb569fabc13df74d0e6dfb2b9d5b2cc1",
+          "reason": "Portable serial replay limits replace private resource-request history.",
+          "replacement_sha256": "00cbe342254dbb205ba115d7e433af4ed512fc1197f81350d5274b0a2f7533f3"
+        },
+        {
+          "action": "rebuilt",
+          "member": "source-sync-manifest.json",
+          "reason": "Bind only the members in this portable checkpoint."
+        }
+      ],
+      "original_transport_bytes": 231820618,
+      "original_transport_sha256": "d1eb0da8dc2a1b467abd8a6821d5264e1e1151f8ce1952578bb40bfb935f1bdf",
+      "output_all_member_hashes_verified": true,
+      "output_privacy_scan_passed": true,
+      "packaged_utc": "2026-10-01T05:37:38.605093+00:00",
+      "pinned_toolchain": "leanprover/lean4:v4.10.0-rc2",
+      "public_combined_targets_complete": false,
+      "required_case_count": 173,
+      "scope": "Prepared source retry, including warm support modules. Partial dependency group and pilot checks do not constitute a completed case audit.",
+      "source_dependency_closure_complete": true,
+      "source_manifest_sha256": "1b897739c4b6e35ef8998ec230af1413658c25cace98f50b964e577fdb110b8f",
+      "source_members_byte_preserved": true,
+      "source_modules_included": 3470,
+      "source_sync_manifest_sha256": "913cfeb7a4f6e3847a80895555b51f48394b92cdf667463a9ea547972f33c673",
+      "status": "FULL_CASE_AUDIT_PENDING",
+      "target_root_reachable_source_modules": 3470,
+      "task": {
+        "axiom_targets": [
+          "ElevenSquare.Pending.T03.Batch04.Case1464.Forward.Certificate.certificate_exists"
+        ],
+        "id": "T03_compact_full_trace",
+        "modules": [
+          "ElevenSquare.Tasks.T03.Batch04.Case1464.PackedNamespaced.Chunk369"
+        ]
+      },
+      "task_file": "forward-case1464-packed-namespaced-retry-assembly-task.json",
+      "verification": "Archive/member SHA256, portable metadata, supplied local import closure and output byte verification only. No compiler or proof regeneration was run.",
+      "asset_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-pending-case-retries-20261001/T03-pending-case1464-source-checkpoint.zip",
+      "server_asset_id": 602527231,
+      "server_digest": "sha256:3674d6d61aa41af9c221832e0ef1a4dc88fb0da2ac0c3f2d8f01769059804e93"
+    },
+    {
+      "accepted_case_count_at_checkpoint": 156,
+      "asset_bytes": 384807050,
+      "asset_name": "T03-pending-case1465-source-checkpoint.zip",
+      "asset_sha256": "e7fe3af6d4210a7708829de25db09a1b7db48ba4ff066bafcfd889a817810bd9",
+      "case": 1465,
+      "final_return_zip_complete": false,
+      "format": "T03-pending-source-checkpoint-v1",
+      "frozen_progress_commit": "86ed1351628b75e2508f26a56281c722df68697a",
+      "full_case_accepted": false,
+      "lean_source_bytes_included": 1479235181,
+      "maximum_lean_source_bytes": 8491641,
+      "merged_repository_lean_replay_performed": false,
+      "metadata_changes": [
+        {
+          "action": "omitted",
+          "member": "TASK.json",
+          "reason": "Broader packet assignment does not describe this standalone case checkpoint."
+        },
+        {
+          "action": "replaced",
+          "member": "project/verification/LOW_RESOURCE_MODE.json",
+          "original_sha256": "ece1da78fe6bb583938815993e153afbcb569fabc13df74d0e6dfb2b9d5b2cc1",
+          "reason": "Portable serial replay limits replace private resource-request history.",
+          "replacement_sha256": "00cbe342254dbb205ba115d7e433af4ed512fc1197f81350d5274b0a2f7533f3"
+        },
+        {
+          "action": "rebuilt",
+          "member": "source-sync-manifest.json",
+          "reason": "Bind only the members in this portable checkpoint."
+        }
+      ],
+      "original_transport_bytes": 382924464,
+      "original_transport_sha256": "813c053a004178772509dfe2deb977b02585c26bdf22bc37ce84c75104ae09dc",
+      "output_all_member_hashes_verified": true,
+      "output_privacy_scan_passed": true,
+      "packaged_utc": "2026-10-01T05:45:25.958125+00:00",
+      "pinned_toolchain": "leanprover/lean4:v4.10.0-rc2",
+      "public_combined_targets_complete": false,
+      "required_case_count": 173,
+      "scope": "Prepared source retry, including warm support modules. Partial dependency group and pilot checks do not constitute a completed case audit.",
+      "source_dependency_closure_complete": true,
+      "source_manifest_sha256": "fcdd672b1593541813cc97f0ce4aac503ba7ec366d2f95c458cec46fbf07b3fb",
+      "source_members_byte_preserved": true,
+      "source_modules_included": 21098,
+      "source_sync_manifest_sha256": "9d64f622590ff4f982aba808f3873adb18aba3646d871f2797c46d3dd4852581",
+      "status": "FULL_CASE_AUDIT_PENDING",
+      "target_root_reachable_source_modules": 21098,
+      "task": {
+        "axiom_targets": [
+          "ElevenSquare.Pending.T03.Batch04.Case1465.Forward.Certificate.certificate_exists"
+        ],
+        "id": "T03_compact_full_trace",
+        "modules": [
+          "ElevenSquare.Tasks.T03.Batch04.Case1465.PackedNamespaced.Chunk252"
+        ]
+      },
+      "task_file": "forward-case1465-packed-namespaced-retry-assembly-task.json",
+      "verification": "Archive/member SHA256, portable metadata, supplied local import closure and output byte verification only. No compiler or proof regeneration was run.",
+      "asset_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-pending-case-retries-20261001/T03-pending-case1465-source-checkpoint.zip",
+      "server_asset_id": 602538485,
+      "server_digest": "sha256:e7fe3af6d4210a7708829de25db09a1b7db48ba4ff066bafcfd889a817810bd9"
+    },
+    {
+      "accepted_case_count_at_checkpoint": 156,
+      "asset_bytes": 51123443,
+      "asset_name": "T03-pending-case2069-source-checkpoint.zip",
+      "asset_sha256": "0809155bd25a870aaf8f47aae575f30917d79a714f1660c719f89e98fbf38204",
+      "case": 2069,
+      "final_return_zip_complete": false,
+      "format": "T03-pending-source-checkpoint-v1",
+      "frozen_progress_commit": "86ed1351628b75e2508f26a56281c722df68697a",
+      "full_case_accepted": false,
+      "lean_source_bytes_included": 172976785,
+      "maximum_lean_source_bytes": 6447628,
+      "merged_repository_lean_replay_performed": false,
+      "metadata_changes": [
+        {
+          "action": "omitted",
+          "member": "TASK.json",
+          "reason": "Broader packet assignment does not describe this standalone case checkpoint."
+        },
+        {
+          "action": "replaced",
+          "member": "project/verification/LOW_RESOURCE_MODE.json",
+          "original_sha256": "ece1da78fe6bb583938815993e153afbcb569fabc13df74d0e6dfb2b9d5b2cc1",
+          "reason": "Portable serial replay limits replace private resource-request history.",
+          "replacement_sha256": "00cbe342254dbb205ba115d7e433af4ed512fc1197f81350d5274b0a2f7533f3"
+        },
+        {
+          "action": "rebuilt",
+          "member": "source-sync-manifest.json",
+          "reason": "Bind only the members in this portable checkpoint."
+        }
+      ],
+      "original_transport_bytes": 50690804,
+      "original_transport_sha256": "e9be51f8d9dff430971bbcb95a7e5689517ce999355a1471ff5a7855fbbfe1b4",
+      "output_all_member_hashes_verified": true,
+      "output_privacy_scan_passed": true,
+      "packaged_utc": "2026-10-01T05:45:53.565568+00:00",
+      "pinned_toolchain": "leanprover/lean4:v4.10.0-rc2",
+      "public_combined_targets_complete": false,
+      "required_case_count": 173,
+      "scope": "Prepared source retry, including warm support modules. Partial dependency group and pilot checks do not constitute a completed case audit.",
+      "source_dependency_closure_complete": true,
+      "source_manifest_sha256": "3ab7bf7eaf8313047f39e778cd6f520066474cea3b932741ec1d5f42bad9d9a7",
+      "source_members_byte_preserved": true,
+      "source_modules_included": 5091,
+      "source_sync_manifest_sha256": "5141c1f7d86e0de4ab082cf48a38848c316f9b8e2aff6883b06cb28e80ec788d",
+      "status": "FULL_CASE_AUDIT_PENDING",
+      "target_root_reachable_source_modules": 5091,
+      "task": {
+        "axiom_targets": [
+          "ElevenSquare.Pending.T03.Batch10.Case2069.Forward.Certificate.certificate_exists"
+        ],
+        "id": "T03_compact_full_trace",
+        "modules": [
+          "ElevenSquare.Tasks.T03.Batch10.Case2069.PackedNamespaced.Chunk119"
+        ]
+      },
+      "task_file": "forward-case2069-packed-namespaced-retry-assembly-task.json",
+      "verification": "Archive/member SHA256, portable metadata, supplied local import closure and output byte verification only. No compiler or proof regeneration was run.",
+      "asset_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-pending-case-retries-20261001/T03-pending-case2069-source-checkpoint.zip",
+      "server_asset_id": 602542291,
+      "server_digest": "sha256:0809155bd25a870aaf8f47aae575f30917d79a714f1660c719f89e98fbf38204"
+    },
+    {
+      "accepted_case_count_at_checkpoint": 156,
+      "asset_bytes": 89064678,
+      "asset_name": "T03-pending-case1372-source-checkpoint.zip",
+      "asset_sha256": "4aa322883abecd688518d9d492c92c63ed268c9c3b0135715f1b168aa336202f",
+      "case": 1372,
+      "final_return_zip_complete": false,
+      "format": "T03-pending-source-checkpoint-v1",
+      "frozen_progress_commit": "86ed1351628b75e2508f26a56281c722df68697a",
+      "full_case_accepted": false,
+      "lean_source_bytes_included": 412410782,
+      "maximum_lean_source_bytes": 8676312,
+      "merged_repository_lean_replay_performed": false,
+      "metadata_changes": [
+        {
+          "action": "omitted",
+          "member": "TASK.json",
+          "reason": "Broader packet assignment does not describe this standalone case checkpoint."
+        },
+        {
+          "action": "replaced",
+          "member": "project/verification/LOW_RESOURCE_MODE.json",
+          "original_sha256": "ece1da78fe6bb583938815993e153afbcb569fabc13df74d0e6dfb2b9d5b2cc1",
+          "reason": "Portable serial replay limits replace private resource-request history.",
+          "replacement_sha256": "00cbe342254dbb205ba115d7e433af4ed512fc1197f81350d5274b0a2f7533f3"
+        },
+        {
+          "action": "rebuilt",
+          "member": "source-sync-manifest.json",
+          "reason": "Bind only the members in this portable checkpoint."
+        }
+      ],
+      "original_transport_bytes": 88881441,
+      "original_transport_sha256": "0758094e915ecd9a45279e425df77b924f088949d8ebd68a387d893ac5d3787f",
+      "output_all_member_hashes_verified": true,
+      "output_privacy_scan_passed": true,
+      "packaged_utc": "2026-10-01T05:47:07.451201+00:00",
+      "pinned_toolchain": "leanprover/lean4:v4.10.0-rc2",
+      "public_combined_targets_complete": false,
+      "required_case_count": 173,
+      "scope": "Prepared source retry, including warm support modules. Partial dependency group and pilot checks do not constitute a completed case audit.",
+      "source_dependency_closure_complete": true,
+      "source_manifest_sha256": "c37c1354b8e727083193b19f935c2cdc7acb9131da9b43124cbaf15695c2513f",
+      "source_members_byte_preserved": true,
+      "source_modules_included": 2351,
+      "source_sync_manifest_sha256": "cf009cdb20ae6ed17e6763a15198a05a2a6d39d7fe838d3f417d49db7ad34793",
+      "status": "FULL_CASE_AUDIT_PENDING",
+      "target_root_reachable_source_modules": 2351,
+      "task": {
+        "axiom_targets": [
+          "ElevenSquare.Pending.T03.Batch03.Case1372.Forward.Certificate.certificate_exists"
+        ],
+        "id": "T03_compact_full_trace",
+        "modules": [
+          "ElevenSquare.Tasks.T03.Batch03.Case1372.PackedNamespaced.Chunk057"
+        ]
+      },
+      "task_file": "forward-case1372-coordinate-binding-retry-assembly-task.json",
+      "verification": "Archive/member SHA256, portable metadata, supplied local import closure and output byte verification only. No compiler or proof regeneration was run.",
+      "asset_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-pending-case-retries-20261001/T03-pending-case1372-source-checkpoint.zip",
+      "server_asset_id": 602542633,
+      "server_digest": "sha256:4aa322883abecd688518d9d492c92c63ed268c9c3b0135715f1b168aa336202f"
+    }
+  ],
+  "created_utc": "2026-10-01T05:47:07.457281+00:00",
+  "format": "T03-four-pending-source-retries-v1",
+  "frozen_progress_commit": "86ed1351628b75e2508f26a56281c722df68697a",
+  "no_compiler_replay_or_proof_regeneration": true,
+  "packaging_resources": {
+    "cpu_affinity_count": 1,
+    "priority": "BelowNormal",
+    "processes": 1,
+    "stream_buffer_bytes": 1048576
+  },
+  "required_cases": 173,
+  "status": "FOUR_FULL_CASE_AUDITS_PENDING",
+  "release_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/tag/t03-pending-case-retries-20261001",
+  "release_tag": "t03-pending-case-retries-20261001",
+  "remote_tag_commit": "86ed1351628b75e2508f26a56281c722df68697a",
+  "server_asset_sha256_and_sizes_verified": true,
+  "accepted_release_15_assets_unchanged": true
+}

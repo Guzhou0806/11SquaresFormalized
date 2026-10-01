@@ -1,0 +1,318 @@
+{
+  "status": "REMAINING_COORDINATE_PROOF_CONSTRUCTIONS_QUEUED_ALL_NEW_PROOFS_PENDING",
+  "case": 1372,
+  "utc": "2026-10-01T05:44:13.472029+00:00",
+  "published_utc": "2026-10-01T05:45:20.917593+00:00",
+  "retry_task": "forward-case1372-coordinate-binding-retry02-assembly-task.json",
+  "retry_archive_sha256": "0dfeadd595bdbadd79ed191a4760ac50bbf2bea742d046d8c66a9d0d0d37871e",
+  "old_failed_archive_sha256": "0758094e915ecd9a45279e425df77b924f088949d8ebd68a387d893ac5d3787f",
+  "changed_modules": {
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk009.lean": {
+      "old_sha256": "61b77fc06c3c2b9a064832439258013ee57716aa54aa96d31b5ec7e6741a1e16",
+      "new_sha256": "c52aaf7dc2aec9d82f3319fa6121144974f411cc4f35b175d37c9f638260d419",
+      "proof_constructions_changed": 205
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk010.lean": {
+      "old_sha256": "0349518354f06f13a7d12d17b8cad49684183dcd5d6f84037869f49d008b8a86",
+      "new_sha256": "0f2d92df936961c04e65b1e340020607bed39b69f84e663909fa2567583df43a",
+      "proof_constructions_changed": 787
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk011.lean": {
+      "old_sha256": "c059597323965a5450d091baca67f4ffeb55b7c994c28c00c79052067a035680",
+      "new_sha256": "3017cc5dc1d4a5aaced471bcac87afb3cc191659eb010b300a42c9e6222dd00c",
+      "proof_constructions_changed": 535
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk012.lean": {
+      "old_sha256": "8faeeaed1c23dc7041ff3c98a00be16e1c12f2aadfe19145c906227afc41ccae",
+      "new_sha256": "371e2ce2591e6711d9b8cc6035b1e9f62b7c7e35805feda5bb4ad95e0ebcd1b5",
+      "proof_constructions_changed": 448
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk013.lean": {
+      "old_sha256": "a8fdc8dbb75ab9485370ac0dfd85b9f56072fbe533d080426ce5d2c333bf2ee2",
+      "new_sha256": "0d979be56feac0ba6d199ed6861b0fb7b2ddcb9482f9d24e555804c3d60f17d4",
+      "proof_constructions_changed": 412
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk014.lean": {
+      "old_sha256": "a3a5c6730c54d6a389aada1a7d47bc72f45b3dbb428f3e81a7c98bf43dc8b554",
+      "new_sha256": "e5fedff7c8cfe406a677085166336ab9ebda7edeffd09158269aa12e85964e75",
+      "proof_constructions_changed": 380
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk015.lean": {
+      "old_sha256": "64c784b42337bc4572e388790a94f61b83e696d18e025a85e798dd3fbf54170f",
+      "new_sha256": "43e41180a0705051c7bd2e82f650fd3ccd01c339803311a5686f784f88613e96",
+      "proof_constructions_changed": 289
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk016.lean": {
+      "old_sha256": "bf50b04cb2c7b2fc2c2261ffffe4a8ea6afc9f1b07f76fefe69d03c35bcd0c3d",
+      "new_sha256": "545d97de8d03ffecc479a0e8048c17349f29ef30b19efd77d58bad1d1f341763",
+      "proof_constructions_changed": 115
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk017.lean": {
+      "old_sha256": "043bd12b1c18705be4e326a260387b97e3c2d94e041f8cf440852cb62365625a",
+      "new_sha256": "6c60e48730875674e4ff61203fe63906b950bafc97c8e499deb44d04a9b7a878",
+      "proof_constructions_changed": 172
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk018.lean": {
+      "old_sha256": "5a822ffd21a18d00130171b9c9b303e0a9e069d1309938785edb41c57e3af2ed",
+      "new_sha256": "d2a36a94dc6e1ff585b62cfe82094f39dbe71f40e933dba012b35cd9776f87b2",
+      "proof_constructions_changed": 109
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk019.lean": {
+      "old_sha256": "718a37cf26ac1e24a9a478d86ad8c4fa12674bd32af1464859df10f7413d6c8e",
+      "new_sha256": "4d721b9aa5ceab16527c292562c3994163615f5c20196ce784334ba869ecd619",
+      "proof_constructions_changed": 186
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk020.lean": {
+      "old_sha256": "de77ed4464efd26d0f9d5e213135f4816ec04ac57ab1899c398256284edfbd00",
+      "new_sha256": "e7b459a5590953b94e85c0fad142717c3d71d6723c3bd9e227e6a08e6b02b127",
+      "proof_constructions_changed": 121
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk021.lean": {
+      "old_sha256": "b1227e738873e98bdcc0b4d64d3c439d82530bfb071146e89a2ca36dee734617",
+      "new_sha256": "ed401a8e2b0d005dd9d87fa4e069e1af3391b956fa8563e9e96e9486b1c50535",
+      "proof_constructions_changed": 128
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk022.lean": {
+      "old_sha256": "8725286a2e3bd0fe9ee98b2249db17898e9a6c5d602c1c20a896d70f486b72a3",
+      "new_sha256": "aedb721c7ccdd28e4d53c2991654d1f89fcf9fe0e00245d481ac41c59a7c7e53",
+      "proof_constructions_changed": 88
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk023.lean": {
+      "old_sha256": "8b557b38772c575ce24d25d5fd4b278cdaa5744440ac65e338085df93cd01449",
+      "new_sha256": "612e9495d563496be861a4a9a7bfbe583b5f7d37608f9bff9400460dc4c522fa",
+      "proof_constructions_changed": 411
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk024.lean": {
+      "old_sha256": "fae8222e3215a2dfaa9bf0ea05d81cf46c649fa25a4e4e828c567f791870ba5b",
+      "new_sha256": "af261879e41c4ac061a86336c7db188c228e0e6de5c366f933059b5c17be15c2",
+      "proof_constructions_changed": 167
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk025.lean": {
+      "old_sha256": "e9f3762db17e0b102e77222caa1905cc9b58e2a7f0929b1c6e5073f67d32832f",
+      "new_sha256": "c622211f7fd51f5c3f7ff104ef0ded78227072e97e810835933d45a966ad9c90",
+      "proof_constructions_changed": 242
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk026.lean": {
+      "old_sha256": "51bfd5653f76eec349e699b14f81bd5d5274df525553f59c3c1d5ea5628ed484",
+      "new_sha256": "cd9cbcc1b7a9a9cfecadd24ce6285ae878e1b283a9990a67603cc560c779537b",
+      "proof_constructions_changed": 332
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk027.lean": {
+      "old_sha256": "196483ede4619bb2fb0bae008206a1c7027302b8c00fdee01fa267efffe25983",
+      "new_sha256": "1377ca89fd611a36de9fa5d913beb85dd038e18e59385839c52a9187ee2137fd",
+      "proof_constructions_changed": 130
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk028.lean": {
+      "old_sha256": "d540cc6cd26de9d3c42bac051b034dd955d96c9343070bbc60811ab312e018b5",
+      "new_sha256": "9c9b6600aa95dda91962e4979190cfdea8ce42ac74f0673b302f1ac4543780cf",
+      "proof_constructions_changed": 42
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk029.lean": {
+      "old_sha256": "c646832209aceac8b5deb9bbe3c3b429b43dd0b10cf806fdeb004f4c2d3f0fe7",
+      "new_sha256": "d8ca94bd9304134194ebab22c3b1e481098683c3580f268074a8b9c660075fa8",
+      "proof_constructions_changed": 82
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk030.lean": {
+      "old_sha256": "30534a0e0adf092a0679fea8a6ef2b12dfc6e6b1f2119943e8b070a863a0b358",
+      "new_sha256": "060871b7a410eb82e3c8d10d1100d625b7df4a3025983e6b1b47e7ad32f9fcf6",
+      "proof_constructions_changed": 71
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk031.lean": {
+      "old_sha256": "89a127c436ae01f4ec6a74a952b37e6d453f1ece5905b5900ca32b09c9e331df",
+      "new_sha256": "6e0ac65870e7b398a8790947956f062b32480faddf188f54c0aa89a122418442",
+      "proof_constructions_changed": 133
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk032.lean": {
+      "old_sha256": "a66576fa5b34f76750e1562036f2b2e88a2270ee411522b5153d146ce6f61f22",
+      "new_sha256": "a50a63497ddc6314cb7248bfd7905cd0b049bed1908dbb6006ad5c5896c67a44",
+      "proof_constructions_changed": 92
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk033.lean": {
+      "old_sha256": "8b7b7dff9895d1e48521dd96c291b7ad0339d9128b71b147ff54856e23c4bffb",
+      "new_sha256": "52d85f95a74d2327b51cfc28d366b515086e8d02bc653dd2847cb5bb15b3f756",
+      "proof_constructions_changed": 92
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk034.lean": {
+      "old_sha256": "fd0629bedf20592834a9d720c976b62457db8fdf5a600a2e3a943bf26d5e72cf",
+      "new_sha256": "b87afd73be58a32b38f0c62c0a9ceeee7788fc9dffec751bc13186599d40f92c",
+      "proof_constructions_changed": 75
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk035.lean": {
+      "old_sha256": "8a4b9388d45209cf9edbbcd142cb796db37f6a5120c8549bb84afb77b895b2b1",
+      "new_sha256": "667c3a2d437620a95334aaa01864cac4e056ad91b26a4f68d33dff1ab99a0d9e",
+      "proof_constructions_changed": 124
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk036.lean": {
+      "old_sha256": "b93bf82ddb50c5dd2986d760274350b1cf7e115129a0793a55e4cdcde599012d",
+      "new_sha256": "c96d5ec1cdca4cb70ec458888757b0d95f17b497327312c8da9d1d8a9e5abcfa",
+      "proof_constructions_changed": 70
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk037.lean": {
+      "old_sha256": "84f9306696ff8f1602428593b53ec838694d008578299b310c6b4f2d2725a57e",
+      "new_sha256": "17082a1a356d319cef07f6c541374dc92adddca153df4d2a1d919f1bd6e13b57",
+      "proof_constructions_changed": 192
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk038.lean": {
+      "old_sha256": "171d7a7cfd1e4d09ae7c5aabd683b373165596284159b14a475efb88e9941882",
+      "new_sha256": "c01e2d0618349a8c40edfd93dfe1187841917e80a283c6ea126ca8c31be73b66",
+      "proof_constructions_changed": 70
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk039.lean": {
+      "old_sha256": "02be28501d0dfe48d30bae391b599f333edf8b5754becb56ea01c5bfbf7b3baf",
+      "new_sha256": "b248bccd40381f9729008b7522e5a4d5e9c2b6396f824ffbba8f446b851166b7",
+      "proof_constructions_changed": 64
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk040.lean": {
+      "old_sha256": "9dcaea1038426f6e4885de5d06ce6c7b7d11af44e2f5219fa01df44ddbf7714f",
+      "new_sha256": "8c06b76cee7d2496534236d6990391481de4451f57913abca883b01db65ff556",
+      "proof_constructions_changed": 86
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk041.lean": {
+      "old_sha256": "c44d839caa29935bb60d7d253e9343d1beb82ee41b24b3bc6b5b93aaae15c6cd",
+      "new_sha256": "5963a7e7f3c5b77edc40dbe6576be56947758b711e652a65a5fcfa1d7d3e5c4d",
+      "proof_constructions_changed": 226
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk042.lean": {
+      "old_sha256": "1bbc779f7632fbeca0ddb27f126618ff971873968ccd2f732f07eca2d528eabd",
+      "new_sha256": "e2ee4b5e7f21ed500621a8596495e71749307987598db567d8e0c01b88831806",
+      "proof_constructions_changed": 274
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk043.lean": {
+      "old_sha256": "3e9370db1284558a4c18fc33c55dbc5ade96da1a5bc452099e6298c851133c96",
+      "new_sha256": "5bdcf90fa37d3a4b21c71633ec3ad33eeb06c6afffbb49d638f339713d783521",
+      "proof_constructions_changed": 146
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk044.lean": {
+      "old_sha256": "838db2f8879ff957c919f93140f97f82e2a039a3b7dc83c1c2bb0061307b091d",
+      "new_sha256": "664a2cbb6dfa59daf83f32340db0a8c09da8dc3ade4cd7fc8802195b37ff3c3a",
+      "proof_constructions_changed": 100
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk045.lean": {
+      "old_sha256": "4e2f0e5a3d71474a19cc317011f25651ecfe0e02e65fcee2482067ff2b398b48",
+      "new_sha256": "8fa9ac1a91afd1e701ac24ac47017054cbe1690b6878d7512d207027f9620376",
+      "proof_constructions_changed": 46
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk046.lean": {
+      "old_sha256": "2ea5bcc55ec3585bbf3338b63dabda603a949f38e7b10313401b8185a57834fe",
+      "new_sha256": "5e4d4199d497df2e0592169f2999bd98ce4ee13148b4cecd5174e2b9974e0657",
+      "proof_constructions_changed": 173
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk047.lean": {
+      "old_sha256": "473432a97033b5bdc7924bc00d995be8c8c54abf6cf1079aeb7fbd12e3878fdf",
+      "new_sha256": "c18b8118cc750c85f8c92a44675c09d6d97325bad84d1cc822bda49a275ee403",
+      "proof_constructions_changed": 71
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk048.lean": {
+      "old_sha256": "ebc679e016b119dc02ab36408a0af8b7103255e111dbe71cb3efd306bec0f127",
+      "new_sha256": "def013758522fc8f877835187a9bf004bd1075205ac3bfd7e6d3e7681ca84cd5",
+      "proof_constructions_changed": 76
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk049.lean": {
+      "old_sha256": "0255833e367ad6a11f01e72d69b22ef64ccb55489f0f074f83698be68d08f83f",
+      "new_sha256": "aaa6b38024c39369bada67538cd512d4feeacc7ab06754c06accaa1cdee966ef",
+      "proof_constructions_changed": 108
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk050.lean": {
+      "old_sha256": "516c64eddd954c085ba84588fcd5a380aac107db21001eb2123ed33257d08d57",
+      "new_sha256": "bce0f0806206ce780eee066d4979224d98c4ebe6d55a801ae3bca66086083710",
+      "proof_constructions_changed": 151
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk051.lean": {
+      "old_sha256": "5a7b42f7af2003496c81ee0d1e22e3f6b22e7e5e5e88515090d73369cfa16bd9",
+      "new_sha256": "c2179c3a2bdae4924de0d1ff6d56abd82dae373ab80b0f857928d75b4fb6caa2",
+      "proof_constructions_changed": 345
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk052.lean": {
+      "old_sha256": "8a4a0dda7770e2237ca4f8c8d4bd16c5eaf13e3b3d60c84a649891ecde03da58",
+      "new_sha256": "b58fc6ef08c381ca7e36cf49597816f5a491c138ab836f6b53e01a61f4c4bfbc",
+      "proof_constructions_changed": 105
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk053.lean": {
+      "old_sha256": "55d1467e9953cb4e6e282d93cc552dde8bc1f4202b897499ef0d648bd1c9550b",
+      "new_sha256": "0eb000a4c9f9a33efdb1d5b83d8b85e26e2459c9f3ec3ef736b76351df257007",
+      "proof_constructions_changed": 135
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk054.lean": {
+      "old_sha256": "e06bf5b8b4883d9fccbd7c0ebd98d98f24c2801498e54eb36487e1c20b38acd5",
+      "new_sha256": "f7806c9d60c84dd176a062fa06a82256348994a075f8c97dd4de97d28d34e569",
+      "proof_constructions_changed": 181
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk055.lean": {
+      "old_sha256": "49ddf540230466ae34337eac14a5b527e1d9c5c784d0187f4af57a2ba319f5ef",
+      "new_sha256": "d7865411d3f050fd3bc23cecccf0f9159df994084b335444c36fb17acefdefde",
+      "proof_constructions_changed": 79
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk056.lean": {
+      "old_sha256": "db674dae15c3ecb142a5b04dacb3b7542a27cb0d17edc11530f6a7ac64158c3e",
+      "new_sha256": "19aaed4a94f6c936a7488aa8f4a99e741753f96cf83dc8c81f6c227a424723f8",
+      "proof_constructions_changed": 111
+    },
+    "project/ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk057.lean": {
+      "old_sha256": "884936f03f8a3333e1ea8a714b1d5d395c9bc6d81f0c47ee54d50bd72fda6be7",
+      "new_sha256": "45e8031c552aee18746a4b473a66456ff342432d9853b876755c1b87dd10a001",
+      "proof_constructions_changed": 36
+    }
+  },
+  "changed_proofs": 8813,
+  "exact_certificate_target_unchanged": true,
+  "numeric_data_unchanged": true,
+  "previously_accepted_chunks_000_through_008_unchanged": true,
+  "old_archive_preserved": true,
+  "maximum_running_lean_checks": 6,
+  "full_case_and_final_audits_pending": true,
+  "lean_processes_started_by_preparation": 0,
+  "original_targets": [
+    "ElevenSquare.Pending.T03.Batch03.Case1372.Forward.Certificate.certificate_exists"
+  ],
+  "actual_new_failure_log_sha256": "7eaf78ee94a239876b68f544197ae4e3170caa1a98aab7427f580af8979858a6",
+  "actual_new_failed_rfl_goals": 47,
+  "actual_new_failed_source_locations": 27,
+  "proof_meaning": "Eq.refl of the unchanged right side; every changed declaration still needs original kernel checking.",
+  "running_proof_workers_unchanged": true,
+  "independent_retry_transport_sha256_verified": true,
+  "all_retry_member_sha256_verified": true,
+  "all49_source_rewrites_match_exact_preparer_output": true,
+  "new_proof_acceptance_claimed": false,
+  "retry02_source_asset_published": false,
+  "source_archive_in_pending_release_is_previous_0758094e_retry": true,
+  "receipt_sharing": {
+    "status": "GENUINE_RECEIPT_COPIER_REFRESHED_FOR_BOTH_WORKSPACE_LOCATIONS",
+    "utc": "2026-10-01T05:49:43.792810+00:00",
+    "previous_script_sha256": "6dba82e47d3017a67ab57b9ea2a02ebdc4a547ab4584f3a24cfd7c9a6e31c171",
+    "new_script_sha256": "cac01b1d6740a14880a3eafcd25ae47bd8ed91212210e78fe6acb2caba4e3f26",
+    "genuine_receipts_only": true,
+    "copied_receipts_require_current_object_sha256": true,
+    "original_checker_still_validates_source_closure_and_object_sha256": true,
+    "creates_proof_receipts": false,
+    "proof_processes_signalled": 0,
+    "portable_worker_defaults_include_primary": true,
+    "portable_fixture_hash_gate_idempotence_and_mismatch_rejection_passed": true
+  },
+  "actual_repaired_Chunk009_elaboration": {
+    "status": "accepted",
+    "source": "ElevenSquare/Tasks/T03/Batch03/Case1372/PackedNamespaced/Chunk009.lean",
+    "exit_code": 0,
+    "elapsed_seconds": 528.87,
+    "lean_threads": 1,
+    "lean_memory_limit_mb": 4096,
+    "source_sha256": "c52aaf7dc2aec9d82f3319fa6121144974f411cc4f35b175d37c9f638260d419",
+    "original_check_sha256": "6cde839718312054c5dead0d6e2699944527f3795999a76e3c06d629ef15dfda",
+    "actual_lean_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "actual_log_empty": true,
+    "full_case_target_axiom_audit_accepted": false,
+    "meaning": "Actual whole-group elaboration only; full case target audit remains pending."
+  },
+  "receipt_sharing_primary_followup": {
+    "status": "GENUINE_RECEIPT_COPIER_REFRESHED_FOR_BOTH_WORKSPACE_LOCATIONS",
+    "utc": "2026-10-01T05:56:30.380357+00:00",
+    "new_script_sha256": "ab4a4e1b31e8de74bfe5d9ad3e79306dad5c90b79a7f8bb9aaa118f22181f00b",
+    "genuine_receipts_only": true,
+    "copied_receipts_require_current_object_sha256": true,
+    "original_checker_still_validates_source_closure_and_object_sha256": true,
+    "creates_proof_receipts": false,
+    "current_source_hash_verified": true,
+    "primary_scratch_donor_included": true,
+    "proof_processes_signalled": 0,
+    "initial_metadata_logging_failure_recovered_without_another_service_restart": true
+  }
+}

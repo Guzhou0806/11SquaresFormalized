@@ -48,16 +48,16 @@ less elapsed time in that sample. Both actual target audits contain only
 target axiom sets, and sanitized positive and negative check evidence. The
 merged GitHub source tree has not been freshly replayed in Lean.
 
-The accepted source checkpoint is now **156/173**, with 17 cases unfinished.
+The accepted source checkpoint is now **157/173**, with 16 cases unfinished.
 The following optimization figures describe the earlier helper benchmark snapshot.
 Case1393's ongoing local source migration replaces 5,601 coordinate equality
 proof expressions across 178 still unaccepted groups while preserving their
 exact data. The last observed dependency progress was 37/523 groups; this is
-not a full certificate audit. Neither that source collection nor case1311 is
-published as an accepted case. Case1311's full grouped attempt failed eight
-`homRetained_binding` reflexivity proofs and is under repair; its rational
-diagnostic does not replace a Lean proof. Public target assembly and the final
-return ZIP remain incomplete. Earlier accepted release assets are unchanged.
+not a full certificate audit. At that helper snapshot, case1311's grouped
+attempt had failed eight `homRetained_binding` reflexivity proofs; its rational
+diagnostic did not replace a Lean proof. Case1311 has since passed its complete
+actual Lean target audit and is published in the standalone supplement below.
+Public target assembly and the final return ZIP remain incomplete. Earlier accepted release assets are unchanged.
 
 ## Complete case2135 checkpoint
 
@@ -106,7 +106,7 @@ stronger interfaces already merged into this repository. It contains no build
 objects, machine logs, private handoff archives, account information, or chats.
 
 At this 151-case checkpoint, 22 cases remained. The supplements below add
-five complete source closures; 17 cases and the full public assembly,
+six complete source closures; 16 cases and the full public assembly,
 combined audits, and final return ZIP remain unfinished. A fresh merged
 repository Lean replay and global optimality proof are not claimed.
 The source asset's README explains serial replay.
@@ -216,8 +216,9 @@ proof remain incomplete.
 ## Accepted case1848 source checkpoint
 
 The [standalone case1848 supplement](https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/T03-audited-case1848-source-supplement.zip) supplies the newly accepted
-complete source closure. Together all five named source assets now publish
-**156 of the 173** independently audited case certificates; **17 cases remain**.
+complete source closure. At that checkpoint, all five named source assets
+published **156 of the 173** independently audited case certificates, with
+**17 cases remaining**; case1311 is the subsequent addition below.
 All earlier source assets are unchanged.
 
 The accepted import root is
@@ -244,6 +245,37 @@ preserve the stronger merged repository interfaces. No fresh merged repository
 Lean replay was performed. Case1464, the remaining full certificates, assembly
 and clean combined audits of both public targets, and the final return ZIP
 remain unfinished.
+
+## Accepted case1311 source checkpoint
+
+The [standalone case1311 supplement](https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/T03-audited-case1311-source-supplement.zip) supplies the complete
+source closure of the newly accepted certificate. The accepted source release
+now contains **157/173** full audited case closures; **16 cases remain**.
+All earlier source assets are preserved.
+
+The exact accepted task imports
+`ElevenSquare.Tasks.T03.Batch02.Case1311.PackedNamespaced.Chunk053` and audits
+`ElevenSquare.Pending.T03.Batch02.Case1311.Forward.Certificate.certificate_exists`.
+Its actual full HandoffAudit accepted in **37.90 seconds**, with only `propext`,
+`Classical.choice` and `Quot.sound`. The accepted execution transport SHA-256 is
+`467a2a9d8f56dc762b5801060962b5ad39f759506d91edd1739062fced78a8fb`.
+
+The supplement contains **2,532 reachable Lean modules** and 431,689,357 bytes
+of Lean source including Lake's source file, in an **81,475,063-byte ZIP**.
+Its SHA-256 is
+`ec38aa9282d754deba768f79bd9baf559c8b4141112ca86fd63e7545602de5ba`.
+Every source member and output byte binding, full local import closure and
+GitHub server asset digest/size were verified. The actual target-only audit
+and sanitized accepted CHECK are included, with their original hashes.
+The [checksum](https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/T03-audited-case1311-source-supplement.zip.sha256) and [checkpoint metadata](https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/CHECKPOINT-case1311-public.json)
+are published beside the ZIP.
+
+[`verification/t03-case1311-source-supplement.json`](verification/t03-case1311-source-supplement.json)
+records the exact target, source root, accepted transport and actual audit.
+The earlier failed-binding status is historical; this acceptance comes from
+the original full target's actual clean axiom audit. Extract the frozen
+source snapshot separately and preserve the stronger merged interfaces.
+No fresh merged repository Lean replay or final T03 completion is claimed.
 
 ## Case1464 operational retry checkpoint
 
@@ -287,13 +319,15 @@ pool ceiling; these tools do not create a worker pool.
 `verification/t03-case1464-parallel-retry.json` records the sanitized actual
 audits, source bindings, transition and corrected manual precheck. The large
 pending generated Lean closure and runtime logs/caches are excluded. Complete
-published case source closures are now **156/173**, with **17 cases remaining**;
+published case source closures at that operational snapshot were **156/173**,
+with **17 cases remaining**;
 case1464, public target assembly, combined audits and the final return ZIP are
 still pending. This checkpoint adds no new release asset or completed case.
 
 ## Case1465 operational retry and scheduling
 
-The published full-case count remains **156/173**, with **17 cases remaining**.
+At this operational snapshot, the published full-case count was **156/173**,
+with **17 cases remaining**.
 Case1465's retry has 12,841 cold modules: 12,840 generated modules are grouped
 into 253 chunks across 82 dependency levels, with 87 groups initially
 independent. The exact original `DistanceCollision` helper is retained as an
@@ -345,10 +379,11 @@ This update adds no full case, release asset, or pending generated Lean source
 collection. Both public target assembly audits and the final return ZIP remain
 unfinished. Main and all accepted source release assets are preserved.
 
-## Latest operational snapshot: 04:30 UTC, 2026-10-01
+## Dependency-group snapshot: 04:30 UTC, 2026-10-01
 
-The accepted complete source checkpoint remains **156/173**, with **17 full
-cases remaining**. Refreshed actual dependency-group audits give:
+At the 04:30 UTC snapshot, the accepted complete source checkpoint was
+**156/173**, with **17 full cases remaining**. Refreshed actual dependency-group
+audits give:
 
 | Case | Accepted dependency groups | Total groups | Full-case target |
 | --- | ---: | ---: | --- |
@@ -458,18 +493,111 @@ recorded dispatcher source.
 [`verification/t03-case1372-binding-repair.json`](verification/t03-case1372-binding-repair.json)
 records the precise pilot targets, source/dependency bindings, full retry,
 portable validation and thirteen case2069 group audits. Complete accepted case
-closures remain **156/173**, with **17 full cases remaining**. This compact
-checkpoint adds no release asset or pending bulk full-case Lean collection.
+closures at that compact checkpoint were **156/173**, with **17 full cases
+remaining**. The compact commit added no release asset or pending bulk
+full-case Lean collection.
+The following separate pending release now supplies all four prepared retries.
 Earlier pending-pilot records remain historical queue snapshots. The existing
 15 source release assets, main, and all stronger upstream proofs are preserved.
+
+## Pending prepared source retries
+
+The [separate pending prerelease](https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/tag/t03-pending-case-retries-20261001) makes all four immutable prepared
+case retries reviewable without putting generated source blobs into Git history.
+Its tag is tied to progress commit `86ed1351628b75e2508f26a56281c722df68697a`. These are
+**pending sources**, not four accepted certificates. The frozen commit records
+**156/173**; the later case1311 supplement brings the current count to
+**157/173**. Neither public combined target nor the final return ZIP is complete.
+
+| Case | Included Lean modules | Reachable from exact task root | ZIP size | Audit status |
+| --- | ---: | ---: | ---: | --- |
+| 1464 | 3,470 | 3,470 | 221.3 MiB | full case audit pending |
+| 1465 | 21,098 | 21,098 | 367.0 MiB | full case audit pending |
+| 2069 | 5,091 | 5,091 | 48.8 MiB | full case audit pending |
+| 1372 | 2,351 | 2,351 | 84.9 MiB | full case audit pending |
+
+Every included Lean source, individual task, pinned Lean/Lake environment and
+checker script retains its original bytes. Each archive records the original
+raw transport SHA-256 and every unchanged member's hash and size. The private
+resource-request history was replaced by the established portable single-thread
+serial profile; the broader packet task was omitted. The output member manifest
+was rebuilt to bind those metadata changes. All local imports are supplied;
+unreachable warm support modules are explicitly distinguished from the exact
+task-root closure.
+
+The four ZIPs were streamed, hashed and reread serially in one BelowNormal
+process on one CPU. Every output member, source binding and local import
+closure was verified. GitHub's server SHA-256 digests and sizes match all nine
+new assets. All 15 earlier accepted assets, main and stronger upstream proofs
+are unchanged; case1311 adds a separate supplement to the accepted release.
+No Lean replay, proof regeneration or new compiler worker was performed
+for publication.
+
+Extract each archive into a separate disposable folder and follow its README
+for the pinned serial plan/replay command. Frozen interfaces must not replace
+the stronger merged repository interfaces.
+[`verification/t03-pending-source-release.json`](verification/t03-pending-source-release.json)
+links each asset and records its source target, original transport binding,
+output digest, size, metadata changes and explicit pending status. The full
+per-source manifests are inside the assets.
+
+## Case1372 remaining equality constructions and receipt sharing
+
+The first repaired full retry later failed in `Chunk009`: the actual complete
+Lean log records **47 failed equality goals at 27 source locations**, including
+row/state equalities and coordinate bindings. The genuine isolated pilot and
+previous `Chunk006` elaboration remain valid. The frozen pending source release
+preserves that first retry; it does not silently substitute later source versions.
+
+The follow-up immutable retry has SHA-256
+`0dfeadd595bdbadd79ed191a4760ac50bbf2bea742d046d8c66a9d0d0d37871e`.
+It replaces **8,813** remaining generated `by rfl` / `fin_cases ... rfl`
+constructions in 49 modules with the tested ordinary `Eq.refl` tactic. The
+original statements, numeric tokens, exact full task and checked chunks
+000–008 are unchanged. Both old/new archive digests, every new member hash
+and all 49 exact source rewrites were independently verified. This retry is
+queued through the existing pool; its new proof constructions require kernel
+checks, and its full certificate target audit remains pending.
+
+The repaired whole `Chunk009` subsequently passed actual Lean elaboration in
+**528.87 seconds**, with one thread, a 4 GiB Lean memory limit and an empty
+error log. Its actual source hash matches the immutable follow-up. This is
+a whole-group elaboration check, not a full case target axiom audit.
+
+Genuine receipt sharing now scans both traditional and disposable source
+workspaces, including the separate `primary` scratch donor. Each new copy
+requires the current compiled object's SHA-256; the original handoff checker
+still verifies source closure and object hashes before reuse. The copier
+generates no proof receipts and its service refresh signalled no proof jobs.
+The primary-donor transition transparently records recovery from a metadata
+logging failure without another service restart.
+
+Two [portable tools](scripts/t03_retry/README.md) expose the exact generated
+proof rewrite and the receipt copier with explicit paths. The rewrite matched
+all 49 actual old-to-new source pairs and rejected repeated rewriting. An
+isolated receipt fixture checked primary-donor copying, byte preservation,
+idempotence, invalid input and mismatched-object rejection. Python source/help
+checks passed. No Lean process or runtime service was started for publication.
+[`verification/t03-case1372-retry02-progress.json`](verification/t03-case1372-retry02-progress.json)
+contains the sanitized source/failure/elaboration bindings and receipt-sharing
+records. The follow-up bulk source archive is not another published asset.
+
+The already prepared case1499 task is eligible for the existing six-slot pool
+when a slot frees. Its 84 groups, original task/source bytes and backed-up
+external-reuse hold are preserved. The immutable transport and hold hashes
+were independently checked; this transition started no worker or proof
+regeneration. Its full audit remains pending; no case1499 asset is added.
+[`verification/t03-case1499-local-resume.json`](verification/t03-case1499-local-resume.json)
+records the bounded queue continuation.
 
 ## External returned-case handoff
 
 External progress reports name fifteen finished cases, but the inspected public
 branches do not supply their generated per-case source closures or matching
 individual target audits. These reports add no accepted cases to this count.
-Cases 1848 and 2047 are two of those fifteen and are now independently accepted
-here, leaving thirteen possible additions once exact sources and audits are delivered.
+Cases 1311, 1848 and 2047 are three of those fifteen and are now independently
+accepted here, leaving twelve possible additions once exact sources and
+audits are delivered.
 
 [PR 2](https://github.com/Queuingtheorydotcom/11SquaresFormalized/pull/2) provides
 the conditional per-case adapter

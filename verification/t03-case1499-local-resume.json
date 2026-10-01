@@ -1,0 +1,23 @@
+{
+  "status": "PREPARED_LOCAL_CASE_ALLOWED_IN_EXISTING_POOL_FULL_AUDIT_PENDING",
+  "case": 1499,
+  "utc": "2026-10-01T06:00:17.415520+00:00",
+  "task": "forward-case1499-assembly-task.json",
+  "archive_sha256": "6bd84daf12076d11f62ade52aa2149f1d7ea379cd7fcf285454066a3edf56495",
+  "original_target": [
+    "ElevenSquare.Pending.T03.Batch05.Case1499.Forward.Certificate.certificate_exists"
+  ],
+  "groups": 84,
+  "grouped_modules": 5348,
+  "source_and_task_bytes_unchanged": true,
+  "previous_external_reuse_hold_preserved": "case1499-external-reuse-hold-before-local-resume.json",
+  "previous_external_reuse_hold_sha256": "c260def713f3879c331e76d2fafec55b5ccf5bb33d268fc0b688af4fa3a0d2e5",
+  "reason": "The externally reported source handoff is still unavailable; use an already prepared short local case when a slot frees.",
+  "maximum_parallel_lean_checks": 6,
+  "running_proof_workers_unchanged": true,
+  "lean_processes_started_by_transition": 0,
+  "full_case_and_final_audits_pending": true,
+  "archive_sha256_independently_verified": true,
+  "task_bytes_match_immutable_archive": true,
+  "preserved_hold_sha256_independently_verified": true
+}

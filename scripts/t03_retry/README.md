@@ -110,3 +110,20 @@ controller while replacing the case's preserved reuse guard. It refuses active
 jobs for that case, and resumes the controller in a `finally` block. It neither
 creates a dispatcher nor launches a compiler. All three tools have Python
 source/help validation and bounded fixtures, not a portable Lean/pool replay.
+
+`rewrite_generated_rfl.py` is a source-only helper for these exact generated
+proof files. Supply `--source`, its exact `--source-sha256`, and a fresh
+`--output`. It performs the same lexical tactic replacement as the verified
+49-module retry, adds the tested helper import, and preserves numeric tokens.
+It is not a general Lean parser: use only reviewed generated source templates.
+It refuses a wrong input hash, repeated rewriting and an existing output.
+Every resulting declaration still requires the original kernel check.
+
+`share_completed_receipts.py` is a Linux copier with explicit `--runtime-root`,
+optional `--scratch-root`, `--destination`, `--object-root`, repeated `--worker`
+and `--once` arguments. Defaults include the separate primary scratch donor.
+It copies existing receipt bytes only when the current object hash matches;
+the unchanged original checker must independently validate source closure
+and objects before reuse. A process lock and atomic JSON replacement avoid
+concurrent partial writes. No compiler or pool is created. Only isolated
+Python fixtures were replayed for this portable copy, not the production service.
