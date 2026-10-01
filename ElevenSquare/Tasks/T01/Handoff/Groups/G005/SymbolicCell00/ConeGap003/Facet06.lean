@@ -7,17 +7,7 @@ noncomputable section
 
 theorem witness06_checked :
     (witness06).Check source facet06 left right := by
-  norm_num [SymbolicFarkasWitness.Check,
-    SymbolicFarkasWitness.margin,
-    Quartic.BernsteinPosCheck, Quartic.BernsteinNonnegCheck,
-    Quartic.bernsteinOn, Quartic.toBernstein, Quartic.shift,
-    SymbolicQuadratic.quartic, SymbolicQuadratic.mul,
-    quarticAdd, quarticSub, List.getD,
-    source, symbolicWallScaledSlab, symbolicWallSlab,
-    scaledWallFacet, SymbolicQuadratic.scaleByChart,
-    SymbolicWallFacet.ofHalfplane, baselineCellPolygon,
-    baselineCenterBox, baselineBisector, baselineRationalSite,
-    baselineRationalCap, witness06, facet06, left, right]
+  decide_cbv
 
 end
 end ElevenSquare.Tasks.T01.Handoff.Groups.G005.SymbolicCell00.ConeGap003
