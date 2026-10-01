@@ -1,0 +1,27 @@
+{
+  "status": "NATIVE_SOURCE_SYNC_USED_BY_ACTUAL_NEW_PROOF_JOB",
+  "utc": "2026-10-01T07:20:06.108186+00:00",
+  "actual_new_job_source_sync_sha256": "cb5aa5bf1c529669a442bf5a7da1b9402f20f2ae31aa60f8271d8a84ef08a8e0",
+  "helper_source_sha256": "4f1aa50ad26f8a73fca876ce2d95295c960959151c18f1db40f8ab3f52cac6ed",
+  "actual_new_job_metadata": {
+    "status": "EXACT_NATIVE_SOURCE_AND_PROVISIONAL_GENUINE_RECEIPT_SYNC_COMPLETE",
+    "utc": "2026-10-01T07:13:31.136988+00:00",
+    "archive_sha256": "ce097c4ece1c6508127232b90b90b6e671253561ae3f7e9c1d95cad387e8c851",
+    "verified_members": 116,
+    "verified_source_bytes": 37663510,
+    "source_files_written": 15,
+    "source_files_reused": 101,
+    "obsolete_matching_sources_removed": 8,
+    "source_sync_seconds": 0.453,
+    "total_seconds": 1.265,
+    "genuine_receipts_copied": 6,
+    "existing_genuine_receipts_preserved": 100,
+    "proof_receipts_created": 0,
+    "lean_processes_started": 0,
+    "supplied_checker_still_validates_sources_objects_and_actual_proofs": true
+  },
+  "actual_transport_and_all_member_hashes_verified": true,
+  "running_jobs_unchanged": true,
+  "maximum_lean_workers": 6,
+  "original_checker_sources_and_object_validation_unchanged": true
+}

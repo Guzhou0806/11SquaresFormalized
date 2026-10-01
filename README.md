@@ -6,6 +6,15 @@ still unfinished.** Six explicit `sorry` sites record the remaining obligations.
 A build that accepts those sites checks the surrounding code but does not prove
 the final optimality theorem. See [MISSING.md](MISSING.md).
 
+At the latest checkpoint, **157/173** full case source closures remain
+published and 16 case certificates remain. The new equality repairs preserve
+already issued source closures. Case1464 groups 203/209 have clean actual target
+audits; case1731's repaired Chunk009 elaborates successfully. All four updated
+case1464,1465,1372 and1731 source versions remain pending their full target audits.
+The compact tools and exact source bindings are in [T03_PROGRESS.md](T03_PROGRESS.md).
+Native source synchronization measured 3.734 seconds versus 11.665 seconds on
+the same 381-member fixture, and has now run in an actual new proof job.
+
 The returned-case common tools now include a proved center-distance collision
 shortcut, an ordinary kernel-checked Boolean tactic, and the complete source
 closure of the independently audited case2135 certificate. The supplied

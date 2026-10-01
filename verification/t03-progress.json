@@ -1922,5 +1922,17 @@
     "case1372_repaired_Chunk009_seconds": 528.87,
     "four_pending_source_assets_published": true,
     "new_source_replay_or_Lean_workers_started_for_publication": 0
+  },
+  "latest_equality_checkpoint": {
+    "snapshot_utc": "2026-10-01T07:20:06.112728+00:00",
+    "accepted_full_cases": 157,
+    "remaining_cases": 16,
+    "all_four_updated_full_case_target_audits_pending": true,
+    "actual1464_retry203_209_target_audits_accepted": true,
+    "actual1731_repaired_Chunk009_elaboration_seconds": 562.01,
+    "source_manifest": "verification/t03-pending-equality-source-release.json",
+    "evidence": "verification/t03-equality-repair-progress.json",
+    "native_source_sync_fixture_gain_seconds": 7.931,
+    "new_Lean_workers_or_builds_started_for_publication": 0
   }
 }

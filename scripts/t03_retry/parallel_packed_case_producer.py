@@ -12,7 +12,7 @@ ap.add_argument('--case',type=int,required=True);ap.add_argument('--publication'
 ap.add_argument('--kit',required=True);ap.add_argument('--transport-dir')
 ap.add_argument('--scratch-root',required=True);ap.add_argument('--receipt-root',required=True)
 ap.add_argument('--object-root',required=True);ap.add_argument('--max-workers',type=int,default=1)
-ap.add_argument('--max-live-archives',type=int,default=8)
+ap.add_argument('--max-live-archives', '--max-live',type=int,default=8)
 args=ap.parse_args();case=args.case
 K,E,transport_root=kit_paths(args.kit,args.transport_dir)
 assert 1<=args.max_workers<=6 and 1<=args.max_live_archives<=8
@@ -44,10 +44,14 @@ def sha(path):
 assert sha(master)==publication['grouped_archive_sha256']
 if previous and previous['source_archive_sha256']!=publication['grouped_archive_sha256']:
  transition=json.loads((E/f'case{case}-equality-refl-publication.json').read_text())
- assert transition['status']=='UNPUBLISHED_GROUP_EQUALITY_PROOFS_CANONICALLY_PUBLISHED'
+ assert transition['status'] in ['UNPUBLISHED_GROUP_EQUALITY_PROOFS_CANONICALLY_PUBLISHED','FAILED_AND_UNPUBLISHED_GROUP_EQUALITY_PROOFS_CANONICALLY_PUBLISHED']
  assert previous['source_archive_sha256']==transition['previous_grouped_archive_sha256']
  assert publication['grouped_archive_sha256']==transition['new_grouped_archive_sha256']
- assert transition['published_and_running_group_source_closures_unchanged']
+ assert transition.get('published_and_running_group_source_closures_unchanged',False) or transition.get('all_unaffected_published_and_running_group_source_closures_unchanged',False)
+task_aliases={}
+transition_path=E/f'case{case}-equality-refl-publication.json'
+if transition_path.exists():
+ task_aliases=json.loads(transition_path.read_text()).get('group_task_aliases',{})
 events=previous['events'] if previous else []
 def event(**row):
  row['utc']=datetime.datetime.now(datetime.timezone.utc).isoformat();events.append(row)
@@ -107,7 +111,7 @@ with zipfile.ZipFile(master) as z:
  visit(full_task['modules'][0]);assert set(modules)<=set(keys)
  rows=[];module_set=set(modules)
  for i,module in enumerate(modules):
-  task_name=f'library-case{case}-node998-{i:03d}-task.json'
+  task_name=task_aliases.get(module,f'library-case{case}-node998-{i:03d}-task.json')
   task=dict(full_task);task['modules']=[module];task['axiom_targets']=[last_declaration(raw(module))]
   target=E/task_name;task_bytes=(json.dumps(task,indent=2)+'\n').encode()
   if args.resume:assert json.loads(target.read_bytes())==task

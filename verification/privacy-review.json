@@ -176,5 +176,15 @@
     "genuine_receipt_copier_hash_gate_fixture_passed": true,
     "raw_machine_logs_paths_caches_accounts_or_chats_included": false,
     "personal_information_findings": []
+  },
+  "latest_equality_retry_review": {
+    "source_packages": 4,
+    "all_original_transport_and_output_member_hashes_verified": true,
+    "all_source_local_import_closures_verified": true,
+    "all_full_case_audits_pending": true,
+    "actual1464_group_audits_verified": 2,
+    "new_tools_paths_parameterized": true,
+    "private_paths_raw_logs_caches_chats_or_account_data_included": false,
+    "personal_information_findings": []
   }
 }

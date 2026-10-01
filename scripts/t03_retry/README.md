@@ -127,3 +127,37 @@ the unchanged original checker must independently validate source closure
 and objects before reuse. A process lock and atomic JSON replacement avoid
 concurrent partial writes. No compiler or pool is created. Only isolated
 Python fixtures were replayed for this portable copy, not the production service.
+
+
+The generalized failed-group tools require explicit `--kit`, `--case`,
+`--transport-dir` and `--scratch-root`. `prepare_failed_packed_equality_repairs.py`
+accepts reviewed 1464/1465 generated source formats, preserves old archives and
+issued closures, repairs failed/never-issued modules, and validates bytes
+before publishing the immutable source version. `publish_failed_packed_equality_repairs.py`
+retains the existing full-case guard, records distinct task aliases and resumes
+only its identified controller in a `finally` block. Neither accepts a proof.
+`checkpoint_native_packed_producer.py` additionally requires an explicit owned
+`--pid` and `--producer-script`, checks executable/script identity and waits
+for a complete publication boundary. Do not point it at a compiler. Publication
+validated only parsing/help, with no process control or live pool replay.
+
+`sync_native_runtime_sources.py` runs on Windows with explicit `--scratch-root`,
+`--archive`, `--runtime` and `--expected-sha256`. The runtime must be an allowed
+disposable child of `grouped-source-runtimes`; the caller must already hold its
+ordinary runtime lock. Supply `--main-receipts`, `--object-root` and
+`--other-object-root` for provisional genuine record copying. The original
+checker must validate source/object closure before reuse. `--skip-receipts`
+is restricted to isolated validation directories. No compiler or proof record
+is created. It hashes the archive before/after and every extracted member.
+
+`benchmark_native_source_sync.py` takes the same exact archive/hash plus
+`--scratch-root`, `--native-python`, `--helper` and a fresh `--output`. Run it
+from WSL with fresh disposable validation directories on a mounted drive.
+It compares source synchronization, verifies repair of a corrupted fixture
+and wrong-digest rejection. `record_native_source_sync_validation.py` uses
+explicit `--record`, `--runtime`, `--main-receipts` and `--helper` to bind any
+subsequent genuine record-copy fixture to byte-identical original records.
+Parameterized publication copies had parsing/help checks only; the recorded
+production measurements concern the exact original helper hash in the evidence.
+The producer accepts `--max-live` as an alias of `--max-live-archives`, 1–8,
+default 8. Changing preparation concurrency does not increase the Lean pool.

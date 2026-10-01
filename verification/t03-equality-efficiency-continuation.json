@@ -1,0 +1,18 @@
+{
+  "status": "PARTIAL_ACTUAL_REPAIRS_AND_SOURCE_SYNC_SPEEDUP_RECORDED",
+  "utc": "2026-10-01T07:20:06.112728+00:00",
+  "completed_case_certificates": 157,
+  "remaining_cases": 16,
+  "case1887_guard_retained": true,
+  "case1887_dependency_groups": 294,
+  "case1887_maximum_live_transports": 2,
+  "maximum_running_lean_workers": 6,
+  "lean_threads_per_check": 1,
+  "full_exact_public_targets_and_original_return_export_pending": true,
+  "final_return_zip_created": false,
+  "proof_processes_signalled": 0,
+  "case1887_source_record_sha256": "4990395a288ef3696790f5790dbbc7e9ac7c38b4ee2f9ee80fd205374008f5d9",
+  "case1887_pending_transport_sha256": "289117cc4c737492fd0a2f3c5fa3d3b45140e38b8ca4e272dfbc987dcfd3c368",
+  "case1887_source_asset_added": false,
+  "case1887_full_case_audit_accepted": false
+}

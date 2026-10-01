@@ -24,3 +24,16 @@ def low_priority_single_core():
         os.nice(10)
         allowed = os.sched_getaffinity(0)
         os.sched_setaffinity(0, {min(allowed)})
+
+
+def metadata_path(value):
+    """Resolve a recorded drive path on Windows or its mounted path on Linux."""
+    import re
+    text=str(value).replace(chr(92),'/')
+    if os.name=='nt':
+        match=re.match(r'^/mnt/([a-zA-Z])/(.*)$',text)
+        if match:text=match[1].upper()+':/'+match[2]
+    else:
+        match=re.match(r'^([a-zA-Z]):/+(.*)$',text)
+        if match:text='/mnt/'+match[1].lower()+'/'+match[2]
+    return Path(text)

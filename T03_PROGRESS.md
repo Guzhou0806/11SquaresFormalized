@@ -6,6 +6,70 @@ repository, and global optimality remains unfinished. This branch supplies
 checked common tools and the complete source closure of one audited certificate,
 case2135. It does not discharge the full-family obligation.
 
+## Latest equality repair checkpoint
+
+The full accepted count remains **157/173**, with **16 cases remaining**. The
+full public returned-family targets, merged repository replay and final return
+ZIP remain unfinished. No additional Lean worker or replay was started for
+publication. All source snapshots below are pending full certificate audits.
+
+| Frozen source version | Changed generated equality constructions | Preserved scope | Actual new check |
+| --- | ---: | --- | --- |
+| case1464 equality retry01 | 45,393 in 291 modules | Every unaffected issued/running source closure | Groups 203 and 209: exact target audits, standard three axioms only |
+| case1465 equality retry01 | 6,444 in 160 groups | Every unaffected issued/running source closure | New constructions pending checks at this source snapshot |
+| case1372 binding retry02 | 8,813 in 49 modules | Accepted chunks 000–008, original exact task/data | Whole Chunk009 elaboration: 528.87 seconds; full target pending |
+| case1731 binding retry01 | 8,928 in 47 modules | Accepted chunks 000–008, original exact task/data | Whole Chunk009 elaboration: 562.01 seconds, empty error log; full target pending |
+
+The case1464 repairs change only failed 203/209 and never-issued groups. Their
+actual target audits accepted in 33.48 and 28.65 seconds. Each uses only `propext`,
+`Classical.choice` and `Quot.sound`. The accepted execution transports, every
+member hash and complete local import closures were independently checked;
+all included Lean bytes match the new frozen case1464 master. These are complete
+dependency-group audits, not completed case certificates. The case1465 source
+version similarly repairs failed 107/108 and never-issued groups; it does not
+alter unaffected issued sources. Original masters/failures are preserved.
+
+[`verification/t03-equality-repair-progress.json`](verification/t03-equality-repair-progress.json)
+contains the exact old/new member bindings, preserved groups, actual CHECK
+and audit hashes, target axiom lists, and the source preparation records.
+Proof-statement/numeric preservation is recorded by the preparer; publication
+independently checks the immutable inputs, source-member bytes, changes in the
+manifest and complete supplied local import graph. Newly constructed proofs
+still require the original Lean kernel checks.
+
+Four distinct portable source packages are prepared with exact raw source
+bytes, pinned Lake files, original checkers and individual tasks. Each includes
+all source-member hashes and a pending full-case label. Private resource-history
+metadata is replaced with portable serial limits; the unrelated packet task
+is omitted and the transport manifest rebuilt. No proof source is regenerated
+for packaging. Each output member is reread and hash-checked; every Lean source
+is below 16 MiB. The total compressed source checkpoint is 812,538,822 bytes.
+[`verification/t03-pending-equality-source-release.json`](verification/t03-pending-equality-source-release.json)
+records packaging hashes and upload status. Earlier frozen source assets are
+preserved; these new versions must be extracted separately from stronger
+merged interfaces. A GitHub source upload does not constitute a merged replay.
+
+The native source-sync comparison used the same 381-member transport: first
+native sync 3.734 seconds, WSL sync 11.665 seconds, repeated native sync 0.953
+seconds. Corrupted fixture bytes were restored, a wrong archive digest was
+rejected before mutations, and 372 provisional receipt copies were independently
+byte-checked against genuine records. This measures source I/O, not compiler
+time or total proof completion. An actual new proof job subsequently used
+native sync for 116 members/37,663,510 bytes in 1.265 seconds, copying 6 genuine
+records and fabricating none. The unchanged original checker still validates
+source/object bindings and every proof. See the [benchmark](verification/t03-native-source-sync-benchmark.json)
+and [actual application](verification/t03-native-source-sync-application.json).
+
+The portable retry tools now expose failed-group repair, an owned producer
+checkpoint, distinct retry task aliases and `--max-live` (alias of the existing
+archive bound). Defaults retain one preparation core and conservative compiler
+limits. The tools were parameterized and checked with Python parsing/help;
+their process controls and live production actions were not replayed for this
+publication. An existing case1887 preparation is locally eligible with 294
+groups and a two-live-archive bound, but remains entirely pending; no fifth
+source asset or accepted case is added. The [continuity record](verification/t03-equality-efficiency-continuation.json)
+keeps that queue note separate from accepted proof evidence.
+
 ## Included source
 
 `ElevenSquare/Tasks/T03/Common.lean` imports two useful improvements and their
