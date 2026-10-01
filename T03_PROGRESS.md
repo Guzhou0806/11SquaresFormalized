@@ -345,6 +345,55 @@ This update adds no full case, release asset, or pending generated Lean source
 collection. Both public target assembly audits and the final return ZIP remain
 unfinished. Main and all accepted source release assets are preserved.
 
+## Latest operational snapshot: 04:30 UTC, 2026-10-01
+
+The accepted complete source checkpoint remains **156/173**, with **17 full
+cases remaining**. Refreshed actual dependency-group audits give:
+
+| Case | Accepted dependency groups | Total groups | Full-case target |
+| --- | ---: | ---: | --- |
+| 1464 | 48 | 370 | Pending |
+| 1465 | 15 | 253 | Pending |
+
+These counts come from the 04:30:06 and 04:30:07 UTC audit snapshots. Every
+counted group has an accepted actual HandoffAudit and execution record, with
+its exact targets using only the standard three axioms. All 63 accepted
+transport digests, every transport member hash, and their grouped master
+source bindings were independently verified. Dependency-group acceptance
+does not complete either case.
+
+Case 2069's remaining-work plan groups 4,314 cold modules into 120 groups across
+69 dependency levels. Its source archive SHA-256 is
+`e9be51f8d9dff430971bbcb95a7e5689517ce999355a1471ff5a7855fbbfe1b4`.
+The new root, `Batch10.Case2069.PackedNamespaced.Chunk119`, reexports the exact
+original full certificate target. The archive digest, final bridge source
+binding, and plan's dependency-depth invariants were checked. The retry changes
+1,815 coordinate equality and 2,290 Boolean proof constructions using the
+existing helpers; numeric tokens and canonical sources remain unchanged.
+At 04:31:41 UTC the serial wrapper was deliberately retired with exit 130 after
+its current compiler finished. No Lean process was interrupted. The guarded
+group retry retains genuine receipts and the existing ceiling of six checks.
+Its full certificate audit remains pending.
+
+Case 1372's actual failed group has two `homRetained_binding` reflexivity
+failures. Python exact rational comparisons report the same four ordered
+points at both bindings, but this diagnostic does not prove the Lean statements.
+The failed source, execution transport, actual failed log and error locations
+were independently bound by their hashes. At 04:33:21 UTC a separate two-binding
+Lean pilot was queued with 25 source modules in a 58,849-byte transport.
+Its transport and member hashes were verified; the pilot audit was pending at
+that queue snapshot. Production case sources were unchanged, and a successful
+pilot alone would not complete the full case.
+
+[`verification/t03-operational-progress-20261001-0430.json`](verification/t03-operational-progress-20261001-0430.json)
+records all 63 exact group target audits, source bindings, the guarded 2069
+transition, and the explicitly non-Lean 1372 diagnostic. Earlier operational
+records remain historical snapshots. This publication adds only compact
+metadata and documentation: no pending generated Lean closure, release asset,
+compiler worker or merged Lean replay. Both public combined target audits and
+the final return ZIP remain unfinished. Main and all 15 prior release assets
+are preserved.
+
 ## External returned-case handoff
 
 External progress reports name fifteen finished cases, but the inspected public

@@ -118,5 +118,17 @@
     "bulk_pending_generated_lean_sources_published": false,
     "raw_transports_machine_logs_caches_process_ids_accounts_or_chats_included": false,
     "personal_information_findings": []
+  },
+  "operational_0430_checkpoint_review": {
+    "sanitized_actual_dependency_group_audits": 63,
+    "all_accepted_group_transport_member_hashes_verified": true,
+    "grouped_master_source_bindings_verified": true,
+    "case2069_final_bridge_binding_verified": true,
+    "case1372_actual_failure_and_diagnostic_source_bindings_verified": true,
+    "fraction_diagnostic_labelled_not_a_lean_proof": true,
+    "full_case_count_unchanged": 156,
+    "raw_transports_machine_logs_caches_process_ids_accounts_or_chats_included": false,
+    "pending_generated_lean_sources_published": false,
+    "personal_information_findings": []
   }
 }

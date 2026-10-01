@@ -23,10 +23,10 @@ for cases 1484, 2122, 1646, 2047, and 1848: **156 of 173** cases now have
 published complete source closures. The public family assembly and its clean
 combined target audits are still unfinished; 17 case certificates remain.
 
-Cases 1464 and 1465 have guarded dependency-group retries with portable
-scheduling tools. Two case 1465 group audits now pass; its complete case target
-remains pending. Fair scheduling and deferred aggregate reporting reduce
-observed refill delays. See the progress document for the measured scope.
+The 04:30 UTC operational snapshot records 48 of 370 accepted dependency
+groups for case 1464 and 15 of 253 for case 1465. Case 2069 has an exact grouped
+retry; case 1372 has a queued binding-repair pilot. Their full-case audits
+remain pending. See the progress document for the precise evidence and limits.
 
 The target side length is the exact real number
 

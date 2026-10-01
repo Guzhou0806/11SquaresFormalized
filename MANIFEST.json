@@ -42818,13 +42818,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 5986,
-      "sha256": "5b85c28abf121bb0e3a8a1ed5ed81b453567b7db6b17cc4ed78b5b420c0c4452"
+      "bytes": 5995,
+      "sha256": "55d3cf7a97fff17b54088fe760c9bc281bee988b1b53714d672f5e1e4a426155"
     },
     {
       "path": "T03_PROGRESS.md",
-      "bytes": 26045,
-      "sha256": "10ff178fc1a1d3037d29295647297e711b2aa813e2788395ffff971c6abec64a"
+      "bytes": 28923,
+      "sha256": "e66377cf2c5184d92c77ea6a756908fcb3cefb09b526ce536baf97813249e2cc"
     },
     {
       "path": "lake-manifest.json",
@@ -42908,8 +42908,8 @@
     },
     {
       "path": "verification/privacy-review.json",
-      "bytes": 5189,
-      "sha256": "2d5473aeec63bd1e1e7b84420079080d85c95fb2dfa80a2dbb282425bd1ee012"
+      "bytes": 5815,
+      "sha256": "884bc76e28db82187dadd49ed52838f729c18a44a34eed334acde58772ad93de"
     },
     {
       "path": "verification/source-check.json",
@@ -42957,9 +42957,14 @@
       "sha256": "3e9c14490397260ae93720efb070108a4cc403aa2635b80a2579d4c419db17d8"
     },
     {
+      "path": "verification/t03-operational-progress-20261001-0430.json",
+      "bytes": 53734,
+      "sha256": "c608d731b89c60d8e7c18257e7c4cb85d28282da4f26b3b9175f09125b63b994"
+    },
+    {
       "path": "verification/t03-progress.json",
-      "bytes": 56126,
-      "sha256": "414cfebb5faaaed00b1c0ffe5e7b7517f079a38ca79fc6d0b742be7e136b3ec9"
+      "bytes": 57062,
+      "sha256": "53219f426506d740c7c07d7d01f198231659483894d33f28c4ee96519e0d508e"
     },
     {
       "path": "verification/t03-release-checkpoint.json",

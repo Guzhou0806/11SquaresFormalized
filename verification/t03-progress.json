@@ -1796,5 +1796,30 @@
     "new_release_assets": 0,
     "published_case_count_unchanged": 156,
     "meaning": "Guarded dependency-group retry, two actual group target audits, fair scheduling and observational reporting evidence. Full case1465 remains pending."
+  },
+  "latest_operational_progress": {
+    "manifest": "verification/t03-operational-progress-20261001-0430.json",
+    "published_full_cases_unchanged": 156,
+    "new_release_assets": 0,
+    "dependency_groups": [
+      {
+        "case": 1464,
+        "snapshot_utc": "2026-10-01T04:30:06.209835+00:00",
+        "accepted": 48,
+        "total": 370,
+        "full_case_audit_accepted": false
+      },
+      {
+        "case": 1465,
+        "snapshot_utc": "2026-10-01T04:30:07.176085+00:00",
+        "accepted": 15,
+        "total": 253,
+        "full_case_audit_accepted": false
+      }
+    ],
+    "case2069_exact_retry_queued_full_audit_pending": true,
+    "case1372_fraction_diagnostic_is_not_a_lean_proof": true,
+    "case1372_binding_pilot_pending_at_queue_snapshot": true,
+    "meaning": "Timestamped operational source/audit checkpoint; dependency groups, preparation and rational diagnostics add no complete case certificates."
   }
 }
