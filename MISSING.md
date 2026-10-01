@@ -60,11 +60,13 @@ The checkpoints are documented in [T03_PROGRESS.md](T03_PROGRESS.md). The
 [partial T03 release](https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/tag/t03-audited-151-20260930) supplies a standalone exact source collection
 for 151 independently audited case certificates. Their actual target audits have
 only the three standard axioms. A standalone source supplement adds the fully
-audited case1484 and case2122 closures, for **153 published cases** in total.
+audited case1484 and case2122 closures. The accepted grouped case1646 source
+closure is also published as a standalone supplement: **154 published cases**
+in total.
 The Git source tree contains case2135 directly; the full generated source
 collections are distributed as release assets.
 
-The other 20 cases and assembly of all 173 certificates into the exact public
+The other 19 cases and assembly of all 173 certificates into the exact public
 family theorem remain unfinished. Its clean combined target audit and the final
 return package are also pending. No fresh merged repository Lean replay or
 completed T03 case-family return is claimed; the public admission remains open.

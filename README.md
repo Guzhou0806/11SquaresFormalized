@@ -13,10 +13,10 @@ checkpoint and the precise limits of the ongoing case progress are described in
 [T03_PROGRESS.md](T03_PROGRESS.md). The public 173-case obligation remains open.
 
 A [partial T03 release](https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/tag/t03-audited-151-20260930) supplies the complete exact source
-checkpoint for 151 independently audited cases, plus a standalone supplement
-for cases 1484 and 2122: **153 of 173** cases now have published complete source
-closures. The public family assembly and its clean combined target audits
-are still unfinished; 20 case certificates remain.
+checkpoint for 151 independently audited cases, plus standalone supplements
+for cases 1484, 2122, and 1646: **154 of 173** cases now have published complete
+source closures. The public family assembly and its clean combined target
+audits are still unfinished; 19 case certificates remain.
 
 The target side length is the exact real number
 

@@ -42808,18 +42808,18 @@
     },
     {
       "path": "MISSING.md",
-      "bytes": 6595,
-      "sha256": "fe1842c6225b81798ed6a3bf71d5074de5cc532e0d7951e3975d5d769166396d"
+      "bytes": 6682,
+      "sha256": "7eea3584803515413c3f79eef9a8011a0567038bf10f2e0dc10d55370fa030de"
     },
     {
       "path": "README.md",
-      "bytes": 5377,
-      "sha256": "9fbf9c4975a4affe93448f97a7edc90fc1c16a2ebc8db6521d3cbf1886d2203f"
+      "bytes": 5383,
+      "sha256": "049a791e4a4c94b9ab98090d393bb20605844e343f89e10c4820ef3765342dd9"
     },
     {
       "path": "T03_PROGRESS.md",
-      "bytes": 10082,
-      "sha256": "610f4ce8ab6fda9061a35aa161652c8968de4f726326b9243a8f9b03658d08b9"
+      "bytes": 12525,
+      "sha256": "b34bbfcb007d8096f6f443e1f667924e29b4e63a1da23a5c9ccbf2253ed57fbd"
     },
     {
       "path": "lake-manifest.json",
@@ -42863,8 +42863,8 @@
     },
     {
       "path": "verification/privacy-review.json",
-      "bytes": 2055,
-      "sha256": "8f23d9c2e15b8e174aee19e54f082e7a5d67dc682cabdd3d0b9c3ed22087e5a0"
+      "bytes": 2601,
+      "sha256": "e6248906dc1fb62b8388d8adb9afc8cbd0d3666538ee48601b09245320ffe0ac"
     },
     {
       "path": "verification/source-check.json",
@@ -42877,19 +42877,24 @@
       "sha256": "1bdb0f8a68c10000103ab1d6705a087437e5f1cf8ed7d571e04e0eb9de1db4bd"
     },
     {
+      "path": "verification/t03-case1646-source-supplement.json",
+      "bytes": 2308,
+      "sha256": "d4cf520f3f6208e65be2abd466fdd6faa5d69a79a4b446422ed8b3b605a685ef"
+    },
+    {
       "path": "verification/t03-case2135.json",
       "bytes": 280281,
       "sha256": "10b2cbe61ea5a0cfd1e59fe1adf9917b74fbde500fdb62929945cd97c61513b7"
     },
     {
       "path": "verification/t03-progress.json",
-      "bytes": 51175,
-      "sha256": "e5e51ac702f7286165bc635ba66c84ff207d010998f69b95a8899e51b83e5453"
+      "bytes": 51653,
+      "sha256": "dcabd323f82b8e72d187a49a1d1c65409b410abf3a282fedc1bb01c7a96bf07a"
     },
     {
       "path": "verification/t03-release-checkpoint.json",
-      "bytes": 69258,
-      "sha256": "358e931e9c3516f8d9123f30a48cddacda61d22e678915f13bdb261d271d8dd7"
+      "bytes": 70304,
+      "sha256": "d8b13c0c15ee85e33f0eeb94fc5f3271270dbcd0310614d8f2c1c3a58bc0cdec"
     },
     {
       "path": "verification/t03-source-supplement.json",

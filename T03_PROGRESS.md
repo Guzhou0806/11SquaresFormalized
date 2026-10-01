@@ -78,10 +78,11 @@ interfaces from the successful independent checks and should not overwrite the
 stronger interfaces already merged into this repository. It contains no build
 objects, machine logs, private handoff archives, account information, or chats.
 
-At this 151-case checkpoint, 22 cases remained. The supplement below publishes
-two more complete source closures; 20 cases and the full public assembly,
-combined audits, and final return ZIP remain unfinished. A fresh Lean replay of
-the merged repository and a global optimality proof are not claimed. The source asset's README explains serial replay.
+At this 151-case checkpoint, 22 cases remained. The supplements below add
+three complete source closures; 19 cases and the full public assembly,
+combined audits, and final return ZIP remain unfinished. A fresh merged
+repository Lean replay and global optimality proof are not claimed.
+The source asset's README explains serial replay.
 
 ## Additional audited cases 1484 and 2122
 
@@ -111,10 +112,46 @@ instructions; preserve the stronger merged repository interfaces. It contains
 source and target-only audit transcripts, with no build objects, caches, machine
 logs, private handoff archives, account information, or conversation records.
 
-**20 cases remain**, along with assembly and clean combined audits of both exact
-public returned targets and the final return ZIP. Case1646 optimization attempts
-are unfinished and are excluded. No fresh merged repository Lean replay, full
-T03 completion, or global optimality proof is claimed.
+At this 153-case checkpoint, 20 cases remained and case1646 was still
+unfinished. Its subsequently accepted grouped closure is published below.
+The public target assembly, combined audits, and final return ZIP remain
+unfinished; no full T03 completion or global optimality proof is claimed.
+
+## Accepted grouped case1646 source checkpoint
+
+The [standalone case1646 supplement](https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/T03-audited-case1646-source-supplement.zip) supplies its newly accepted full
+source closure and target-only HandoffAudit transcript. The original 151-case
+asset and the cases 1484 / 2122 supplement remain unchanged. Together the three
+source assets now publish **154 of the 173** audited case certificates.
+
+The accepted import root is
+`ElevenSquare.Tasks.T03.Batch06.Case1646.PackedNamespacedRetry01.Chunk045`.
+It reexports the exact original target
+`ElevenSquare.Pending.T03.Batch06.Case1646.Forward.Certificate.certificate_exists`.
+That complete target passed its actual supplied HandoffAudit with only
+`propext`, `Classical.choice`, and `Quot.sound`. This checkpoint contains the
+accepted reachable grouped sources; the earlier unverified canonical source
+chain is not substituted for them.
+
+The archive contains 5,077 reachable Lean modules and 299,370,933 bytes of Lean
+source, compressed into 72,655,539 bytes. Its SHA-256 is
+`2d6aa87cbbcbae21c0a291bfc740b97b3611bdc1d3b0077b4b8396ae5c4d7ef5`. The [checksum sidecar](https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/T03-audited-case1646-source-supplement.zip.sha256) and
+[portable audit metadata](https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/CHECKPOINT-case1646-public.json) are available. The exact
+accepted execution transport digest, all source-member hashes, the full import
+closure, and every completed output member were verified. GitHub's asset size
+and SHA-256 match the locally verified ZIP.
+
+`verification/t03-case1646-source-supplement.json` records the declaration,
+grouped source root, accepted transport digest, and audit. The archive README
+explains standalone serial replay. Extract it separately; preserve the stronger
+merged repository interfaces. It includes exact pinned metadata, the original
+supplied checkers, and a neutral one-thread replay profile. No cache, build
+objects, machine logs, private transports, account information, or chats are
+included.
+
+**19 cases remain**, along with assembly and clean combined audits of both exact
+public returned targets and the final return ZIP. No fresh merged repository
+Lean replay, full T03 completion, or global optimality proof is claimed.
 
 ## Audit scope
 

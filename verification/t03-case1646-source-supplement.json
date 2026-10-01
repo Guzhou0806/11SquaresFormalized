@@ -1,0 +1,50 @@
+{
+  "actual_independent_axiom_audits_checked": 1,
+  "all_output_member_hashes_checked": true,
+  "all_source_archive_bindings_checked": true,
+  "asset_bytes": 72655539,
+  "asset_name": "T03-audited-case1646-source-supplement.zip",
+  "asset_sha256": "2d6aa87cbbcbae21c0a291bfc740b97b3611bdc1d3b0077b4b8396ae5c4d7ef5",
+  "case_certificates": 1,
+  "final_return_zip_complete": false,
+  "merged_repository_lean_replay_performed": false,
+  "privacy_findings": [],
+  "public_target_assembly_complete": false,
+  "published_case_total": 154,
+  "remaining_cases": 19,
+  "required_cases": 173,
+  "source_import_closures_complete": true,
+  "source_lean_bytes": 299370933,
+  "source_members": 5083,
+  "source_modules": 5077,
+  "status": "PUBLISHED_PARTIAL_T03_ACCEPTED_GROUPED_CASE1646_SOURCE_SUPPLEMENT",
+  "supplement_cases": [
+    1646
+  ],
+  "tag": "t03-audited-151-20260930",
+  "release_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/tag/t03-audited-151-20260930",
+  "asset_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/T03-audited-case1646-source-supplement.zip",
+  "checksum_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/T03-audited-case1646-source-supplement.zip.sha256",
+  "metadata_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/CHECKPOINT-case1646-public.json",
+  "github_server_asset_size_verified": true,
+  "github_server_asset_digest_verified": true,
+  "standalone": true,
+  "case_audits": [
+    {
+      "accepted_transport_sha256": "9c710cc4a33315e660f1dff5b223b0907aeefb238a58bd4db79309b24eca8318",
+      "actual_independent_audit_status": "accepted",
+      "audit_elapsed_seconds": 66.0,
+      "case": 1646,
+      "module": "ElevenSquare.Tasks.T03.Batch06.Case1646.PackedNamespacedRetry01.Chunk045",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "source_binding_method": "exact_accepted_execution_transport_sha256",
+      "source_closure_manifest": "CASE_SOURCE_MANIFEST-1646.json",
+      "source_modules": 5077,
+      "target": "ElevenSquare.Pending.T03.Batch06.Case1646.Forward.Certificate.certificate_exists"
+    }
+  ]
+}

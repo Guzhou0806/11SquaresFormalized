@@ -44,5 +44,19 @@
     "raw_handoff_archives_machine_logs_caches_or_chats_included": false,
     "target_only_audit_transcripts_included": true,
     "neutral_serial_profile_replaces_private_resource_history": true
+  },
+  "case1646_supplement_asset_review": {
+    "cases": [
+      1646
+    ],
+    "source_members_inspected": 5083,
+    "metadata_members_inspected": 7,
+    "exact_accepted_transport_bindings_verified": 1,
+    "accepted_grouped_source_import_closure_verified": true,
+    "output_member_hash_verification": true,
+    "personal_information_findings": [],
+    "raw_handoff_archives_machine_logs_caches_or_chats_included": false,
+    "target_only_audit_transcript_included": true,
+    "neutral_serial_profile_replaces_private_resource_history": true
   }
 }
