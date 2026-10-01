@@ -68,5 +68,20 @@
     "raw_logs_transports_worker_ids_private_paths_or_accounts_included": false,
     "sanitized_actual_benchmark_evidence_included": true,
     "personal_information_findings": []
+  },
+  "case2047_supplement_asset_review": {
+    "cases": [
+      2047
+    ],
+    "source_members_inspected": 9759,
+    "metadata_members_inspected": 7,
+    "exact_accepted_transport_bindings_verified": 1,
+    "full_reachable_source_import_closure_verified": true,
+    "unused_unreachable_modules_excluded": 14,
+    "output_member_hash_verification": true,
+    "personal_information_findings": [],
+    "raw_handoff_archives_machine_logs_caches_or_chats_included": false,
+    "target_only_audit_transcript_included": true,
+    "neutral_serial_profile_replaces_private_resource_history": true
   }
 }

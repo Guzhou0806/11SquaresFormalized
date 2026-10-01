@@ -1,0 +1,50 @@
+{
+  "actual_independent_axiom_audits_checked": 1,
+  "all_output_member_hashes_checked": true,
+  "all_source_archive_bindings_checked": true,
+  "asset_bytes": 35899608,
+  "asset_name": "T03-audited-case2047-source-supplement.zip",
+  "asset_sha256": "066c9e2bc6d29ccc24a946117f6d9b018d36d4ed667026ca40c6442020d49504",
+  "case_certificates": 1,
+  "final_return_zip_complete": false,
+  "merged_repository_lean_replay_performed": false,
+  "privacy_findings": [],
+  "public_target_assembly_complete": false,
+  "published_case_total": 155,
+  "remaining_cases": 18,
+  "required_cases": 173,
+  "source_import_closures_complete": true,
+  "source_lean_bytes": 114655948,
+  "source_members": 9759,
+  "source_modules": 9753,
+  "status": "PUBLISHED_PARTIAL_T03_ACCEPTED_CASE2047_SOURCE_SUPPLEMENT",
+  "supplement_cases": [
+    2047
+  ],
+  "tag": "t03-audited-151-20260930",
+  "release_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/tag/t03-audited-151-20260930",
+  "asset_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/T03-audited-case2047-source-supplement.zip",
+  "checksum_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/T03-audited-case2047-source-supplement.zip.sha256",
+  "metadata_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/CHECKPOINT-case2047-public.json",
+  "github_server_asset_size_verified": true,
+  "github_server_asset_digest_verified": true,
+  "standalone": true,
+  "case_audits": [
+    {
+      "accepted_transport_sha256": "e05fd4875a3ef90f8cf91f392849be333d04fea036bfa8e350984d7e12d55394",
+      "actual_independent_audit_status": "accepted",
+      "audit_elapsed_seconds": 60.34,
+      "case": 2047,
+      "module": "ElevenSquare.Tasks.T03.Batch10.Case2047.Forward.Certificate",
+      "reported_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "source_binding_method": "exact_accepted_execution_transport_sha256",
+      "source_closure_manifest": "CASE_SOURCE_MANIFEST-2047.json",
+      "source_modules": 9753,
+      "target": "ElevenSquare.Pending.T03.Batch10.Case2047.Forward.Certificate.certificate_exists"
+    }
+  ]
+}

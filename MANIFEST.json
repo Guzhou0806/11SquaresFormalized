@@ -42813,18 +42813,18 @@
     },
     {
       "path": "MISSING.md",
-      "bytes": 6682,
-      "sha256": "7eea3584803515413c3f79eef9a8011a0567038bf10f2e0dc10d55370fa030de"
+      "bytes": 6721,
+      "sha256": "13e5c9c9b7f8e6acc3a0e2758961c85f7556bef8da166c1d424938742b9226b3"
     },
     {
       "path": "README.md",
-      "bytes": 5674,
-      "sha256": "4962360124eba21fbf6a6c30f9cb22ac3f9d4d5a2d2dbdcb9ceed2fec6b3f0f0"
+      "bytes": 5680,
+      "sha256": "a5b7dfdc8011e36d8bea8a0143f5d2245861046f9044913931b21e3fcddbd381"
     },
     {
       "path": "T03_PROGRESS.md",
-      "bytes": 14198,
-      "sha256": "0ed4279e54f446ad06edb93f2d5db4daaafee9f31bf63e2e9ce01b3d2645f7c5"
+      "bytes": 17532,
+      "sha256": "2d738cfdb91d2596e8dfe4dcd79b7922807556a3906b1ed9ed09ed749a564ecb"
     },
     {
       "path": "lake-manifest.json",
@@ -42868,8 +42868,8 @@
     },
     {
       "path": "verification/privacy-review.json",
-      "bytes": 3041,
-      "sha256": "bafab57cb650ef2639838cace8dc3ae553a6e13476f97f6c3c041d337dc1bd70"
+      "bytes": 3632,
+      "sha256": "438e559d575030c5ff28cd3575787f299770f21ec68342e2adc0dded754bfbfc"
     },
     {
       "path": "verification/source-check.json",
@@ -42887,6 +42887,11 @@
       "sha256": "d4cf520f3f6208e65be2abd466fdd6faa5d69a79a4b446422ed8b3b605a685ef"
     },
     {
+      "path": "verification/t03-case2047-source-supplement.json",
+      "bytes": 2288,
+      "sha256": "a5074899fc3afef32d5b97fa820c8f070d6f9b1bc8b527943a336d43ec3bfa11"
+    },
+    {
       "path": "verification/t03-case2135.json",
       "bytes": 280281,
       "sha256": "10b2cbe61ea5a0cfd1e59fe1adf9917b74fbde500fdb62929945cd97c61513b7"
@@ -42898,13 +42903,13 @@
     },
     {
       "path": "verification/t03-progress.json",
-      "bytes": 52220,
-      "sha256": "3b8575d4e2eec5e09c9ad173f2c110697823ce8ce5707fa27a1f5b70a583a579"
+      "bytes": 54067,
+      "sha256": "2524a2be838cf07bd7d576218e34fc40bfe2717d36bb0f9d878717b26b01f825"
     },
     {
       "path": "verification/t03-release-checkpoint.json",
-      "bytes": 70304,
-      "sha256": "d8b13c0c15ee85e33f0eeb94fc5f3271270dbcd0310614d8f2c1c3a58bc0cdec"
+      "bytes": 71350,
+      "sha256": "b45cc15ce78bd12d2e6f8732983c915bbb2aa5fcf1635bff5f03300a1ea30dc2"
     },
     {
       "path": "verification/t03-source-supplement.json",
