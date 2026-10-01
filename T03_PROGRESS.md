@@ -47,7 +47,18 @@ limits, the unrelated packet task omitted, and manifests explicitly rebuilt.
 The accepted count inside the frozen package is the historical 157 at packaging;
 case1372's later audit updates this document to 158. No source proof was
 regenerated for packaging. [Packaging/publication metadata](verification/t03-case1499-source-release.json)
-records the immutable version and upload status.
+records the immutable version and verified server hashes/sizes. The [new
+progress release](https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/tag/t03-progress-158-case1499-remainder-20261001) publishes the pending source ZIP, checksum and
+source-target record plus case1372's accepted sidecar. It is frozen at source
+checkpoint commit `10de6fef`; all 42 older assets, their metadata and `main`
+remain unchanged. Case1499's first new group, `Chunk015`, subsequently passed
+its actual exact group target audit in 27.44 seconds with only the standard
+three axioms, after 123.10 seconds of source elaboration. Its 61 source modules
+and pinned environment/checker members match this published source snapshot;
+all accepted execution transport members were independently hashed.
+The [group evidence](verification/t03-case1499-first-group-audit.json) records
+the CHECK/log bindings. This is one dependency-group audit; the full original
+case1499 target remains pending, and no measured end-to-end speedup is claimed.
 
 Case2051 has an exact prepared 291-group source task, with 10,564 original
 modules grouped and a two-live-archive storage bound. Its exact raw master

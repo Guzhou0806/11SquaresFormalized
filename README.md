@@ -23,9 +23,11 @@ Case1499's remainder is prepared as 72 dependency groups across 22 levels after
 exact target and numeric data are preserved. Its new ordinary equality proof
 constructions and full certificate audit remain pending. The 22 levels are a
 dependency plan, not a measured speedup. A separate portable source snapshot
-has been prepared with all 3,010 local source modules, exact original checkers
+is published with all 3,010 local source modules, exact original checkers
 and pinned Lake files; publication details are in [T03_PROGRESS.md](T03_PROGRESS.md).
-Case2051's 291-group preparation is also locally eligible with a two-live-archive
+The [new progress release](https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/tag/t03-progress-158-case1499-remainder-20261001) also supplies case1372's accepted audit sidecar. Case1499's first new group,
+`Chunk015`, has since passed its exact group target audit; this partial check
+does not complete case1499. Case2051's 291-group preparation is also locally eligible with a two-live-archive
 bound in the existing six-worker pool; this checkpoint includes compact pending
 metadata only, without another case2051 source asset or acceptance claim.
 

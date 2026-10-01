@@ -1,6 +1,6 @@
 {
   "format": "T03-pending-remaining-source-release-v1",
-  "status": "PREPARED_IMMUTABLE_SOURCE_ASSET_FULL_CASE1499_AUDIT_PENDING",
+  "status": "PUBLISHED_IMMUTABLE_SOURCE_ASSET_FULL_CASE1499_AUDIT_PENDING",
   "tag": "t03-progress-158-case1499-remainder-20261001",
   "accepted_full_case_count": 158,
   "required_cases": 173,
@@ -65,5 +65,41 @@
     "version": "remaining-parallel-retry01"
   },
   "new_Lean_workers_or_builds": 0,
-  "Git_large_source_blobs_added": false
+  "Git_large_source_blobs_added": false,
+  "release_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/tag/t03-progress-158-case1499-remainder-20261001",
+  "source_checkpoint_commit": "10de6fef8d6e820981d51d9a71fa089afa5f3ee9",
+  "release_id": 400793045,
+  "github_server_all4_asset_digests_and_sizes_verified": true,
+  "prior42_assets_and_frozen_metadata_and_main_unchanged": true,
+  "server_asset_receipts": [
+    {
+      "name": "CHECKPOINT-case1372-accepted-public.json",
+      "size": 2908,
+      "digest": "sha256:031392601ee55081c3ce94751817234b2e9b57b008252625f249526fc8e3a9cd",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-progress-158-case1499-remainder-20261001/CHECKPOINT-case1372-accepted-public.json"
+    },
+    {
+      "name": "CHECKPOINT-case1499-pending-public.json",
+      "size": 3403,
+      "digest": "sha256:934358fed852bbf1ffc8b48f79a94492b0d2a3fc93c581f6c1afdacac7a911fa",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-progress-158-case1499-remainder-20261001/CHECKPOINT-case1499-pending-public.json"
+    },
+    {
+      "name": "T03-pending-case1499-remaining-parallel-retry01-source-checkpoint.zip",
+      "size": 116767158,
+      "digest": "sha256:4f0372214f60f84c7d1199241e526261e1ae6a618cea40d2d847ba36f8172899",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-progress-158-case1499-remainder-20261001/T03-pending-case1499-remaining-parallel-retry01-source-checkpoint.zip"
+    },
+    {
+      "name": "T03-pending-case1499-remaining-parallel-retry01-source-checkpoint.zip.sha256",
+      "size": 136,
+      "digest": "sha256:530800520019d0dd0c36680e0a8d5e61c948c583bae3828cfc5086521722c593",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-progress-158-case1499-remainder-20261001/T03-pending-case1499-remaining-parallel-retry01-source-checkpoint.zip.sha256"
+    }
+  ],
+  "source_asset_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-progress-158-case1499-remainder-20261001/T03-pending-case1499-remaining-parallel-retry01-source-checkpoint.zip"
 }

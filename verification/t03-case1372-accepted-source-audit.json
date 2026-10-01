@@ -52,5 +52,9 @@
   "merged_repository_Lean_replay_performed": false,
   "public_family_targets_complete": false,
   "final_return_ZIP_complete": false,
-  "Lean_builds_or_worker_controls_for_publication": 0
+  "Lean_builds_or_worker_controls_for_publication": 0,
+  "accepted_sidecar_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-progress-158-case1499-remainder-20261001/CHECKPOINT-case1372-accepted-public.json",
+  "accepted_sidecar_asset_sha256": "031392601ee55081c3ce94751817234b2e9b57b008252625f249526fc8e3a9cd",
+  "accepted_sidecar_server_size_and_digest_verified": true,
+  "original_source_asset_and_its_pending_metadata_unchanged": true
 }

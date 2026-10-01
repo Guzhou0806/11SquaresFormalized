@@ -1992,6 +1992,12 @@
     "case2051_pending_metadata": "verification/t03-case2051-prepared-progress.json",
     "case2051_full_case_audit_accepted": false,
     "waiting_case_rotation": "verification/t03-waiting-case-rotation.json",
-    "Lean_workers_or_builds_started_for_publication": 0
+    "Lean_workers_or_builds_started_for_publication": 0,
+    "source_release_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/tag/t03-progress-158-case1499-remainder-20261001",
+    "github_server_all4_asset_digests_and_sizes_verified": true,
+    "prior42_assets_and_main_unchanged": true,
+    "first_new1499_group_actual_audit": "verification/t03-case1499-first-group-audit.json",
+    "first_new1499_group_audit_seconds": 27.44,
+    "first_new1499_group_scope": "A single dependency group, not the original full certificate target."
   }
 }
