@@ -83,5 +83,14 @@
     "raw_handoff_archives_machine_logs_caches_or_chats_included": false,
     "target_only_audit_transcript_included": true,
     "neutral_serial_profile_replaces_private_resource_history": true
+  },
+  "case1464_operational_checkpoint_review": {
+    "portable_orchestration_sources": 6,
+    "machine_paths_are_explicit_parameters": true,
+    "sanitized_actual_dependency_group_audits": 4,
+    "bulk_pending_generated_lean_sources_published": false,
+    "raw_transports_machine_logs_caches_process_ids_accounts_or_chats_included": false,
+    "manual_precheck_correction_preserved_in_summary": true,
+    "personal_information_findings": []
   }
 }

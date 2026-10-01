@@ -1,0 +1,178 @@
+{
+  "status": "OPERATIONAL_CASE1464_GROUP_RETRY_FIRST_ACTUAL_AUDIT_ACCEPTED_FULL_CASE_PENDING",
+  "case": 1464,
+  "published_full_case_source_closures": 155,
+  "required_cases": 173,
+  "remaining_cases": 18,
+  "grouped_source_archive_sha256": "d1eb0da8dc2a1b467abd8a6821d5264e1e1151f8ce1952578bb40bfb935f1bdf",
+  "original_source_archive_sha256": "19bc2e922fab47f37078c071f597cf6a84680e8ba68f1140bc35fde3281365d6",
+  "cold_modules_grouped": 19662,
+  "dependency_groups": 370,
+  "dependency_levels": 91,
+  "initial_independent_group_frontier": 151,
+  "source_numeric_tokens_unchanged": true,
+  "canonical_source_files_unchanged": true,
+  "root_module": "ElevenSquare.Tasks.T03.Batch04.Case1464.PackedNamespaced.Chunk369",
+  "full_case_target": "ElevenSquare.Pending.T03.Batch04.Case1464.Forward.Certificate.certificate_exists",
+  "finite_boolean_proof_constructions_changed": 99335,
+  "coordinate_equality_proof_constructions_changed": 8122,
+  "transition": {
+    "event_statuses": [
+      "CURRENT_COMPILER_ALLOWED_TO_FINISH",
+      "COMPILER_BOUNDARY_REACHED_NO_LEAN_PROCESS_INTERRUPTED",
+      "ORIGINAL_SERIAL_CASE_RETIRED_AT_COMPILER_BOUNDARY",
+      "PARALLEL_GROUP_PRODUCER_MAY_START"
+    ],
+    "original_transport_and_genuine_receipts_preserved": true,
+    "no_lean_compiler_interrupted": true
+  },
+  "scheduling": "READY_GROUPS_WITH_LONGEST_REMAINING_DEPENDENCY_PATH_FIRST",
+  "maximum_live_group_transports": 8,
+  "maximum_global_lean_checks": 6,
+  "first_group": {
+    "module": "ElevenSquare.Tasks.T03.Batch04.Case1464.PackedNamespaced.Chunk036",
+    "source_sha256": "0e06cb68bd925d85c86301dca36e0e82ae24d7b31fd785768b96227ba8881ff1",
+    "transport_sha256": "cf0f6759c9953ca917b5e46dbd66971ea29a3e6c0269893facbe6247f3abbbd0",
+    "source_member_hash_matches_grouped_archive_manifest": true,
+    "compilation_elapsed_seconds": 198.63,
+    "audit_elapsed_seconds": 23.77,
+    "actual_audit_exit_code": 0,
+    "target": "ElevenSquare.Pending.T03.Certificates.Minkowski239fb0d9e7e642ca1b10cf83.PackedCase1464.contained",
+    "actual_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "source_workspace": "Disposable scratch source workspace",
+    "threads_per_checker": 1,
+    "full_case_acceptance": false
+  },
+  "extra_manual_test": {
+    "status": "PRECHECK_FOUND_AUTOMATIC_GROUP_CHECK_ALREADY_RUNNING_NO_EXTRA_CHECK_STARTED",
+    "slot_borrowed": false,
+    "extra_compiler_started": false,
+    "proof_failure": false,
+    "original_precheck_record_preserved": true
+  },
+  "full_case_audit_accepted": false,
+  "new_case_count_claimed": false,
+  "public_target_assembly_complete": false,
+  "final_return_zip_complete": false,
+  "merged_repository_lean_replay_performed": false,
+  "pending_generated_lean_sources_published": false,
+  "original_live_script_sha256": {
+    "parallel_packed_case_producer.py": "59646a03aed0ce0cf5f56a40e125762186043ffc48bb451128d74781c17d0755",
+    "regroup_packed_case_by_depth.py": "15035d78cf3da76f720ea81fcbf6a4a64292ef975e8ee995b27d3cb100060c78",
+    "queue_parallel_case_retry.py": "c1948e321c746f24b59d8da82aa432788d825a19f1f4bf45af916a45f9222915",
+    "configure_runtime.py": "c775e509b5f11a8c0c5e7d1df4618b41a53e97e4cd50307e73fdea22242a2d90",
+    "run_independent_probe.py": "3eae06016bc88fff91b516bfab5e048d65b4933b082a316fafc8242e31c5e5ce"
+  },
+  "portable_script_copies": [
+    {
+      "path": "scripts/t03_retry/configure_runtime.py",
+      "sha256": "74f12bb9e545eac9c59a90a1f670b9db4d9a9ad612ac26fedb561ca617cf6f0f"
+    },
+    {
+      "path": "scripts/t03_retry/parallel_packed_case_producer.py",
+      "sha256": "0967914fb1086243035106e7dc2614c420625fea6778578a10ddc2e20f56de3c"
+    },
+    {
+      "path": "scripts/t03_retry/queue_parallel_case_retry.py",
+      "sha256": "1830b19551f6857a8e2d1fcf3de095ac96b091fd12586e1b72b7b244d6e9dd86"
+    },
+    {
+      "path": "scripts/t03_retry/regroup_packed_case_by_depth.py",
+      "sha256": "db0c45cf5a1f35ca832c3ad1b212bb2fac6c8ccac6599c7420cb03c4597951dc"
+    },
+    {
+      "path": "scripts/t03_retry/retry_paths.py",
+      "sha256": "e300a720332b57a478547137fdfe054faeb6bdd2a37546e63ead5130fedc8160"
+    },
+    {
+      "path": "scripts/t03_retry/run_independent_probe.py",
+      "sha256": "6f4bc3cf2b298163e928ca23145d02efb64ddbf812e34bfc209d42abd08e5414"
+    }
+  ],
+  "portable_copy_changes": [
+    "Explicit kit, runtime, scratch, receipt and object paths replace private machine paths.",
+    "Preparation uses low priority and one available CPU.",
+    "One worker is the portable default; the observed live pool ceiling remained six.",
+    "Source workspaces can be selected independently of the compiler/object cache location."
+  ],
+  "portable_copies_lean_replayed": false,
+  "meaning": "Actual first dependency-group audit is historical evidence for the live runtime. Portable parameterized script copies are source tools, not a proof or a replay of the pending full case.",
+  "independently_inspected_dependency_group_audits": 4,
+  "dependency_group_audit_snapshot_utc": "2026-10-01T03:08:00.693776+00:00",
+  "dependency_group_audits": [
+    {
+      "module": "ElevenSquare.Tasks.T03.Batch04.Case1464.PackedNamespaced.Chunk036",
+      "accepted_transport_sha256": "cf0f6759c9953ca917b5e46dbd66971ea29a3e6c0269893facbe6247f3abbbd0",
+      "actual_audit_log_sha256": "af367c36d55c7111ae8566da079228f30c7f6f2e3c88bb2b4f9f9884ba4b4d40",
+      "actual_target_axioms": {
+        "ElevenSquare.Pending.T03.Certificates.Minkowski239fb0d9e7e642ca1b10cf83.PackedCase1464.contained": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "audit_elapsed_seconds": 23.77,
+      "audit_exit_code": 0,
+      "source_sha256": "0e06cb68bd925d85c86301dca36e0e82ae24d7b31fd785768b96227ba8881ff1",
+      "all_group_transport_members_hash_verified": true
+    },
+    {
+      "module": "ElevenSquare.Tasks.T03.Batch04.Case1464.PackedNamespaced.Chunk002",
+      "accepted_transport_sha256": "8914083f925558159f7f58f5f07804a7bdec5c1627baf97fc1f63e662d4a85bc",
+      "actual_audit_log_sha256": "a3061ceceb1b8e761f618a7f3b371729bd6db7a1980894303f94bc29a21f65dc",
+      "actual_target_axioms": {
+        "ElevenSquare.Pending.T03.Certificates.Polygon062ed826a6e4ee5a707514ab.PackedCase1464.contained": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "audit_elapsed_seconds": 24.69,
+      "audit_exit_code": 0,
+      "source_sha256": "541c27e504b86b7d60240350dc3ee8fa4835e9f900bfc1f5e8f5b7f110270eee",
+      "all_group_transport_members_hash_verified": true
+    },
+    {
+      "module": "ElevenSquare.Tasks.T03.Batch04.Case1464.PackedNamespaced.Chunk009",
+      "accepted_transport_sha256": "e1bed4c1c36795d849855e9eab0b10ae09404edaafaa51875e2aa7daeb78a98b",
+      "actual_audit_log_sha256": "e5054702853b20afaacbdc17fa36cf21b2d1925325d36aa8ee3a598bca48ed37",
+      "actual_target_axioms": {
+        "ElevenSquare.Pending.T03.Certificates.UniversalCollision5206b5b460fef36a10806483.PackedCase1464.hi": [
+          "propext"
+        ]
+      },
+      "audit_elapsed_seconds": 25.25,
+      "audit_exit_code": 0,
+      "source_sha256": "1d16662185599c050e82956a55f116341854c9e1e97dcf588eb6d12b5d3be2b2",
+      "all_group_transport_members_hash_verified": true
+    },
+    {
+      "module": "ElevenSquare.Tasks.T03.Batch04.Case1464.PackedNamespaced.Chunk007",
+      "accepted_transport_sha256": "29ec3b62abf0e26635e0d9d98bc5e16118b2f6d531dc7fe88e145362c97ce0a6",
+      "actual_audit_log_sha256": "218a9029d21eaa575b39f28e43e471d11c3ce6e4c7d5a71dde23b7e09409375d",
+      "actual_target_axioms": {
+        "ElevenSquare.Pending.T03.Certificates.PartnerCovera5e196656f8f9ef3adbdf928.PackedCase1464.Band055.band": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "audit_elapsed_seconds": 23.36,
+      "audit_exit_code": 0,
+      "source_sha256": "2242310dfd45df4b5bf3689ec45a9104f694434fb749e131ad6c1ca9ed9e9326",
+      "all_group_transport_members_hash_verified": true
+    }
+  ],
+  "portable_script_validation": {
+    "all_six_python_sources_compile": true,
+    "side_effect_free_help_checks": 3,
+    "dependency_depth_fixture_preserves_warm_imports_and_original_plan": true,
+    "source_and_object_receipt_mismatch_negative_controls_rejected": true,
+    "declaration_parser_matches_four_actual_audited_targets": true,
+    "lean_invocations_started_for_publication": 0
+  }
+}

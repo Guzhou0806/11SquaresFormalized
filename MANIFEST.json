@@ -42818,13 +42818,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 5680,
-      "sha256": "a5b7dfdc8011e36d8bea8a0143f5d2245861046f9044913931b21e3fcddbd381"
+      "bytes": 5889,
+      "sha256": "a551fa538a9edd0b606a141083ad8a89f82a16658c41b96a52dd2fa928abef5e"
     },
     {
       "path": "T03_PROGRESS.md",
-      "bytes": 17532,
-      "sha256": "2d738cfdb91d2596e8dfe4dcd79b7922807556a3906b1ed9ed09ed749a564ecb"
+      "bytes": 20412,
+      "sha256": "e6102976c57ec35268c5a5d647692a4d2c8bc70a1500a654e6c562a7712a3100"
     },
     {
       "path": "lake-manifest.json",
@@ -42845,6 +42845,41 @@
       "path": "scripts/check_sources.py",
       "bytes": 3435,
       "sha256": "5b17e4bec056d3daa28633b817cb9cfac336a7ff7d3517197eb197f948ff5f23"
+    },
+    {
+      "path": "scripts/t03_retry/README.md",
+      "bytes": 4393,
+      "sha256": "e4c2c34e04d120a6349318ac769ab51c67e014f373eb151b5a949e527eb76e1f"
+    },
+    {
+      "path": "scripts/t03_retry/configure_runtime.py",
+      "bytes": 7384,
+      "sha256": "74f12bb9e545eac9c59a90a1f670b9db4d9a9ad612ac26fedb561ca617cf6f0f"
+    },
+    {
+      "path": "scripts/t03_retry/parallel_packed_case_producer.py",
+      "bytes": 13718,
+      "sha256": "0967914fb1086243035106e7dc2614c420625fea6778578a10ddc2e20f56de3c"
+    },
+    {
+      "path": "scripts/t03_retry/queue_parallel_case_retry.py",
+      "bytes": 8369,
+      "sha256": "1830b19551f6857a8e2d1fcf3de095ac96b091fd12586e1b72b7b244d6e9dd86"
+    },
+    {
+      "path": "scripts/t03_retry/regroup_packed_case_by_depth.py",
+      "bytes": 2684,
+      "sha256": "db0c45cf5a1f35ca832c3ad1b212bb2fac6c8ccac6599c7420cb03c4597951dc"
+    },
+    {
+      "path": "scripts/t03_retry/retry_paths.py",
+      "bytes": 1078,
+      "sha256": "e300a720332b57a478547137fdfe054faeb6bdd2a37546e63ead5130fedc8160"
+    },
+    {
+      "path": "scripts/t03_retry/run_independent_probe.py",
+      "bytes": 8604,
+      "sha256": "6f4bc3cf2b298163e928ca23145d02efb64ddbf812e34bfc209d42abd08e5414"
     },
     {
       "path": "scripts/verify.py",
@@ -42868,8 +42903,8 @@
     },
     {
       "path": "verification/privacy-review.json",
-      "bytes": 3632,
-      "sha256": "438e559d575030c5ff28cd3575787f299770f21ec68342e2adc0dded754bfbfc"
+      "bytes": 4075,
+      "sha256": "4add183b2b18fc7c7873a811a2604fc98f4d13a591c86368f1efe07b14b3bf6c"
     },
     {
       "path": "verification/source-check.json",
@@ -42880,6 +42915,11 @@
       "path": "verification/source-inventory.json",
       "bytes": 2200453,
       "sha256": "87fcd2c541be687b0949a597f32ac288a2272a69aab3232a755573bbf8dc04a0"
+    },
+    {
+      "path": "verification/t03-case1464-parallel-retry.json",
+      "bytes": 8435,
+      "sha256": "19dcc36eeb02bc5f1dcd6309b8390b9a67b3545f6cd488e342ecc6d54ca74e74"
     },
     {
       "path": "verification/t03-case1646-source-supplement.json",
@@ -42903,8 +42943,8 @@
     },
     {
       "path": "verification/t03-progress.json",
-      "bytes": 54067,
-      "sha256": "2524a2be838cf07bd7d576218e34fc40bfe2717d36bb0f9d878717b26b01f825"
+      "bytes": 54705,
+      "sha256": "bfbe6efb22d5b6af5971f6028ebf305106b0c63f6935d568846b60ff1bb94551"
     },
     {
       "path": "verification/t03-release-checkpoint.json",

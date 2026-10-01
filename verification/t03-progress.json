@@ -1753,5 +1753,19 @@
     "checkpoint_toolchain": "4.10.0-rc2",
     "full_toolchain_upgrade_verified": false,
     "meaning": "Progress reports are not accepted certificate artifacts. Exact generated source closures, immutable hashes, and matching full target audits are still needed."
+  },
+  "operational_case1464_checkpoint": {
+    "manifest": "verification/t03-case1464-parallel-retry.json",
+    "tools": "scripts/t03_retry/README.md",
+    "cold_modules": 19662,
+    "groups": 370,
+    "dependency_levels": 91,
+    "initial_independent_group_frontier": 151,
+    "independently_inspected_group_target_audits": 4,
+    "full_case_audit_accepted": false,
+    "pending_generated_case_sources_published": false,
+    "new_release_assets": 0,
+    "published_case_count_unchanged": 155,
+    "meaning": "Guarded operational retry and actual dependency-group audits. Full case1464 and public combined target audits remain pending."
   }
 }

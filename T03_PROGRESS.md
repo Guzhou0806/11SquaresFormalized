@@ -213,6 +213,52 @@ The exact public returned targets still require the remaining certificates,
 assembly, and clean combined audits. The final return ZIP and global optimality
 proof remain incomplete.
 
+## Case1464 operational retry checkpoint
+
+Case1464 remains unfinished. Its retry groups 19,662 cold source modules into
+370 groups across 91 dependency levels, with 151 groups initially independent.
+The producer prioritizes ready groups on the longest remaining dependency path
+and holds the exact full-case task until every required group audit and genuine
+source/object receipt matches. The original serial checker was retired at a
+compiler boundary; its current Lean process finished, and original transports,
+sources, objects and registered receipts were preserved.
+
+The grouped source archive SHA-256 is
+`d1eb0da8dc2a1b467abd8a6821d5264e1e1151f8ce1952578bb40bfb935f1bdf`.
+This is a local pending-source binding, not a newly published source asset.
+Canonical numeric data remains unchanged. The retry changes 99,335 finite
+Boolean and 8,122 coordinate equality proof constructions to the existing
+kernel-checked helpers; those helper sources themselves are unchanged.
+
+Four actual dependency-group target audits were independently inspected at
+the 2026-10-01 03:08:00 UTC snapshot. Their exact targets use only the standard
+allowed axioms. The first group, `PackedNamespaced.Chunk036`, compiled in 198.63
+seconds and passed HandoffAudit in 23.77 seconds in a disposable scratch source
+workspace. Its transport and every source member were hash-checked. This
+confirms a dependency group, not the full case1464 certificate.
+
+The guarded live pool retains its ceiling of six single-threaded checks and
+eight live group transports. Source copies use a separate scratch workspace;
+the pinned compiler, supplied target checker and genuine receipt validation are
+retained. A proposed extra manual test found the automatic checker already
+running: it borrowed no slot, started no extra compiler, and was not a proof
+failure. The original precheck metadata was preserved beside its correction.
+
+Small portable tools are in [`scripts/t03_retry/`](scripts/t03_retry/README.md).
+They include the depth planner, generalized producer, compiler-boundary queue
+transition, scratch source worker and one-thread runtime defaults. Machine
+paths are explicit arguments. Python source/help checks, a dependency-depth
+fixture, and receipt mismatch negative controls passed. The portable copies
+have not been replayed in Lean. The existing dispatcher must enforce the global
+pool ceiling; these tools do not create a worker pool.
+
+`verification/t03-case1464-parallel-retry.json` records the sanitized actual
+audits, source bindings, transition and corrected manual precheck. The large
+pending generated Lean closure and runtime logs/caches are excluded. Complete
+published case source closures remain **155/173**, with **18 cases remaining**;
+case1464, public target assembly, combined audits and the final return ZIP are
+still pending. This checkpoint adds no new release asset or completed case.
+
 ## External returned-case handoff
 
 External progress reports name fifteen finished cases, but the inspected public
