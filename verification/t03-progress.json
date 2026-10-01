@@ -1821,5 +1821,21 @@
     "case1372_fraction_diagnostic_is_not_a_lean_proof": true,
     "case1372_binding_pilot_pending_at_queue_snapshot": true,
     "meaning": "Timestamped operational source/audit checkpoint; dependency groups, preparation and rational diagnostics add no complete case certificates."
+  },
+  "latest_binding_repair_checkpoint": {
+    "manifest": "verification/t03-case1372-binding-repair.json",
+    "published_full_cases_unchanged": 156,
+    "new_release_assets_for_compact_commit": 0,
+    "case1372_isolated_binding_targets_accepted": 2,
+    "exact_pilot_target_axioms": [
+      "propext"
+    ],
+    "case1372_full_retry_queued": true,
+    "case1372_full_case_audit_accepted": false,
+    "case2069_actual_groups": 13,
+    "case2069_total_groups": 120,
+    "case2069_group_snapshot_utc": "2026-10-01T04:54:45.632352+00:00",
+    "case2069_full_case_audit_accepted": false,
+    "normal_assembly_imports_unchanged": true
   }
 }

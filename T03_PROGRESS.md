@@ -394,6 +394,75 @@ compiler worker or merged Lean replay. Both public combined target audits and
 the final return ZIP remain unfinished. Main and all 15 prior release assets
 are preserved.
 
+## Accepted case1372 binding pilot and guarded full retry
+
+The two isolated `homRetained_binding` statements passed the original supplied
+Lean checker. Their actual target audit accepted in **26.05 seconds**, with
+only **`propext`** for each exact target. The source copies the original retained,
+homogeneous-point and vertex definitions without changing their coordinate
+data. This replaces the earlier diagnostic-only status with an actual Lean
+proof of the two isolated bindings; the full case1372 certificate is still pending.
+
+The [exact source snapshot](verification/t03-case1372-binding-pilot-source.lean)
+is 8,592 bytes, SHA-256
+`866a5e0ef728beaf451c916bfa97643c0b5e613fbff88044383ecdc74a99a0f3`.
+Its accepted transport, every member hash, actual audit log, CHECK and execution
+record were independently verified. Of its 24 local dependencies already in
+the repository, 22 are byte-identical and two differ only in whitespace.
+Existing geometry, helper files and normal assembly imports are preserved.
+
+The [standalone audit source](verification/t03-case1372-binding-pilot-audit.lean)
+contains that exact source followed by its two axiom queries. The
+[actual target-only transcript](verification/t03-case1372-binding-pilot-audit.txt)
+and [sanitized CHECK](verification/t03-case1372-binding-pilot-check.json) preserve
+the accepted result and original file hashes. After the normal serial dependency
+setup/check, it can be inspected with:
+
+```sh
+lake env lean verification/t03-case1372-binding-pilot-audit.lean
+```
+
+This source snapshot is separate from normal assembly imports. The complete
+merged repository and this portable audit file have not been freshly replayed
+in Lean during publication.
+
+At **04:46:30 UTC**, the full production retry was queued with archive SHA-256
+`0758094e915ecd9a45279e425df77b924f088949d8ebd68a387d893ac5d3787f`.
+It changes exactly the two failed proof constructions and adds the existing
+`KernelEqualityRefl` import. The complete retry archive, every member hash,
+unchanged numeric tokens and all other source bytes were verified. The exact
+original full certificate task is unchanged. Six previously checked source
+groups and their genuine receipts are retained; 52 groups remained unverified
+at the retry's start. The previous external-reuse guard was saved byte-for-byte
+before queuing. The repaired whole `Chunk006` subsequently passed actual Lean
+elaboration in 832.63 seconds with one compiler thread. This is a group
+elaboration result, not a full certificate target axiom audit. The full
+certificate and both public target audits remain pending.
+
+Three new [portable tools](scripts/t03_retry/README.md) construct the isolated
+pilot, prepare its checked proof rewrite, and queue the immutable retry through
+an existing dispatcher. Paths are explicit; the declared worker ceiling defaults
+to one and may match an existing pool up to six. Python source/help checks,
+the exact old-to-new production source rewrite, repeated-rewrite rejection,
+and rejection of a wrong transport digest before controller/task mutation passed.
+No Lean worker or build was started for publication; the portable pool workflow
+has not been replayed.
+
+At **04:54:45 UTC**, case2069 had **13/120** accepted dependency-group target
+audits. All their exact target axiom sets, accepted transports, member hashes
+and grouped master source bindings were independently verified. Its full case
+remains pending. The latest controller transition adopted six existing workers
+with zero compiler interruptions; its actual boot source hash matches the
+recorded dispatcher source.
+
+[`verification/t03-case1372-binding-repair.json`](verification/t03-case1372-binding-repair.json)
+records the precise pilot targets, source/dependency bindings, full retry,
+portable validation and thirteen case2069 group audits. Complete accepted case
+closures remain **156/173**, with **17 full cases remaining**. This compact
+checkpoint adds no release asset or pending bulk full-case Lean collection.
+Earlier pending-pilot records remain historical queue snapshots. The existing
+15 source release assets, main, and all stronger upstream proofs are preserved.
+
 ## External returned-case handoff
 
 External progress reports name fifteen finished cases, but the inspected public

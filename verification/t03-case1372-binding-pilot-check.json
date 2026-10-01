@@ -1,0 +1,9 @@
+{
+  "status": "accepted",
+  "source": "verification/HandoffAudit.lean",
+  "exit_code": 0,
+  "elapsed_seconds": 26.05,
+  "lean_threads": 1,
+  "lean_memory_limit_mb": 8192,
+  "actual_original_check_sha256": "0e550022c1af2a746090706316a24d2857d22d7c0d7a576ee0cb1557133a3641"
+}

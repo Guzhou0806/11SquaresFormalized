@@ -23,10 +23,11 @@ for cases 1484, 2122, 1646, 2047, and 1848: **156 of 173** cases now have
 published complete source closures. The public family assembly and its clean
 combined target audits are still unfinished; 17 case certificates remain.
 
-The 04:30 UTC operational snapshot records 48 of 370 accepted dependency
-groups for case 1464 and 15 of 253 for case 1465. Case 2069 has an exact grouped
-retry; case 1372 has a queued binding-repair pilot. Their full-case audits
-remain pending. See the progress document for the precise evidence and limits.
+Case 1372's two isolated binding statements now pass the original Lean
+checker with only `propext`; their exact source and audit are included. Its
+full-case retry is queued and remains pending. Case 2069 has 13 of 120 accepted
+dependency groups at the 04:54 UTC snapshot. These do not add completed cases;
+see the progress document for the precise evidence and limits.
 
 The target side length is the exact real number
 

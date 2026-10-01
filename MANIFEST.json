@@ -42818,13 +42818,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 5995,
-      "sha256": "55d3cf7a97fff17b54088fe760c9bc281bee988b1b53714d672f5e1e4a426155"
+      "bytes": 6056,
+      "sha256": "70c011b7a15747d6171da6d28a773263f234ddadf62a49f0df56d59ce7140b44"
     },
     {
       "path": "T03_PROGRESS.md",
-      "bytes": 28923,
-      "sha256": "e66377cf2c5184d92c77ea6a756908fcb3cefb09b526ce536baf97813249e2cc"
+      "bytes": 33074,
+      "sha256": "286b24e3b631bcd2beb22241e2bd12626c478d1add708278db463022c1a1697b"
     },
     {
       "path": "lake-manifest.json",
@@ -42848,8 +42848,8 @@
     },
     {
       "path": "scripts/t03_retry/README.md",
-      "bytes": 5825,
-      "sha256": "8ae36c96ae0574932c71e3254e65a1443f2cda3b8402f386cf18cfec04976c40"
+      "bytes": 8042,
+      "sha256": "c49a3362af8ecc7deb2ca55cd99238d357dcdafdacf651bbc3aef235cb2a9cdf"
     },
     {
       "path": "scripts/t03_retry/configure_runtime.py",
@@ -42860,6 +42860,21 @@
       "path": "scripts/t03_retry/parallel_packed_case_producer.py",
       "bytes": 13718,
       "sha256": "0967914fb1086243035106e7dc2614c420625fea6778578a10ddc2e20f56de3c"
+    },
+    {
+      "path": "scripts/t03_retry/prepare_coordinate_binding_retry.py",
+      "bytes": 7496,
+      "sha256": "36bc49e16e65d51ab7cee39a8c669e4b6267404a677efee48c85bc98b9fc0b94"
+    },
+    {
+      "path": "scripts/t03_retry/publish_coordinate_binding_retry.py",
+      "bytes": 3604,
+      "sha256": "401a6dfaa80060325da2d314148f3f32fcaf07f7ed366f519830c1256e0a3e68"
+    },
+    {
+      "path": "scripts/t03_retry/queue_failed_binding_pilot.py",
+      "bytes": 5805,
+      "sha256": "5d439e984478829540ee411d1f6d7bfa6e4d9b54fe76fec61461a31e6e2bdc77"
     },
     {
       "path": "scripts/t03_retry/queue_parallel_case_retry.py",
@@ -42908,8 +42923,8 @@
     },
     {
       "path": "verification/privacy-review.json",
-      "bytes": 5815,
-      "sha256": "884bc76e28db82187dadd49ed52838f729c18a44a34eed334acde58772ad93de"
+      "bytes": 6416,
+      "sha256": "b1b270aa58c06b4763fd9cf84b4c74594887b0e2de303e95cb8012fa543ca28b"
     },
     {
       "path": "verification/source-check.json",
@@ -42920,6 +42935,31 @@
       "path": "verification/source-inventory.json",
       "bytes": 2200453,
       "sha256": "87fcd2c541be687b0949a597f32ac288a2272a69aab3232a755573bbf8dc04a0"
+    },
+    {
+      "path": "verification/t03-case1372-binding-pilot-audit.lean",
+      "bytes": 8873,
+      "sha256": "d3ac7b4b52cab8d56e56afbe9975c5236b2aebd39d027321397a5097da84fb0f"
+    },
+    {
+      "path": "verification/t03-case1372-binding-pilot-audit.txt",
+      "bytes": 314,
+      "sha256": "6bd0438eeea475bc14962a15b15436fc0208821bf9dcc98901b4cade2032b698"
+    },
+    {
+      "path": "verification/t03-case1372-binding-pilot-check.json",
+      "bytes": 274,
+      "sha256": "42d44111c0bb446dce14e269f8dd17c684b84a225bd36a343f17eef7e63f5ee5"
+    },
+    {
+      "path": "verification/t03-case1372-binding-pilot-source.lean",
+      "bytes": 8592,
+      "sha256": "866a5e0ef728beaf451c916bfa97643c0b5e613fbff88044383ecdc74a99a0f3"
+    },
+    {
+      "path": "verification/t03-case1372-binding-repair.json",
+      "bytes": 23110,
+      "sha256": "a210c71aabbe3323180d09e6e7a7d7a979b423528ed438f6ea8c7364582a5493"
     },
     {
       "path": "verification/t03-case1464-parallel-retry.json",
@@ -42963,8 +43003,8 @@
     },
     {
       "path": "verification/t03-progress.json",
-      "bytes": 57062,
-      "sha256": "53219f426506d740c7c07d7d01f198231659483894d33f28c4ee96519e0d508e"
+      "bytes": 57695,
+      "sha256": "f3d860e1b096fd4baffa83e1dc820731a7edf02f58f38bdeebf0121cfa5f93ef"
     },
     {
       "path": "verification/t03-release-checkpoint.json",

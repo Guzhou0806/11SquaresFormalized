@@ -130,5 +130,18 @@
     "raw_transports_machine_logs_caches_process_ids_accounts_or_chats_included": false,
     "pending_generated_lean_sources_published": false,
     "personal_information_findings": []
+  },
+  "case1372_binding_repair_checkpoint_review": {
+    "exact_small_pilot_source_bytes": 8592,
+    "sanitized_actual_pilot_targets": 2,
+    "target_only_actual_transcript_included": true,
+    "actual_check_sanitized_and_original_hash_preserved": true,
+    "portable_new_scripts": 3,
+    "machine_paths_are_explicit_parameters": true,
+    "pending_full_case_archives_in_git": false,
+    "case2069_sanitized_actual_group_audits": 13,
+    "full_case_count_unchanged": 156,
+    "raw_machine_logs_transports_caches_process_ids_accounts_or_chats_included": false,
+    "personal_information_findings": []
   }
 }

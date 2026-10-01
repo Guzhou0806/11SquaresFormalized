@@ -21,6 +21,9 @@ their complete proofs.
 | `parallel_packed_case_producer.py` | Create bounded exact-source group transports, prioritize ready groups on the longest remaining dependency path, and release the full case only after all required group audits and genuine source/object receipts match. |
 | `run_independent_probe.py` | Run one supplied serial checker in an allocated worker slot, with hash-verified source extraction into a separate scratch workspace. |
 | `scheduling.py` | Pure full-case/fair-group priority and aggregate-refresh deferral policies; read-only dispatch-delay observation CLI. The caller must validate readiness, source reservations, worker ownership and its concurrency ceiling. |
+| `queue_failed_binding_pilot.py` | Copy exact failed binding data into an isolated pilot and queue it through the supplied source packer and existing pool; diagnostic rational equality does not accept the proof. |
+| `prepare_coordinate_binding_retry.py` | Require accepted exact-data pilot evidence, rewrite only those failed proof constructions, verify an immutable retry archive, then update the single canonical grouped source. |
+| `publish_coordinate_binding_retry.py` | Verify the prepared immutable retry, preserve its old guard, and queue it through an existing Linux dispatcher with no active job for that case. |
 | `configure_runtime.py` | Configure only a disposable runtime: pin the exact compiler/environment, use one Lean thread, and allocate unique check-log directories. |
 
 Every machine path is supplied explicitly. `--kit` identifies the checker kit;
@@ -83,3 +86,27 @@ group-completion rescans while full cases remain unfinished; individual audit,
 receipt and execution records must always be retained. The read-only CLI takes
 `--events`, `--cut`, optional `--snapshot`, and `--window` (default 20). Its
 observations describe scheduling and polling delays, not Lean compiler timing.
+
+The latest case1372 checkpoint supplies an actually accepted two-binding pilot
+and an immutable full retry, not a complete case certificate. The pilot tool
+requires `--kit` and `--packer`, an existing compatible kit source packer that
+accepts `TASK --named`. It creates a source/task/queue candidate; only the
+unchanged supplied Lean checker can accept it. The packer must use that kit's
+evidence and source directories. It is not included in these experimental tools.
+
+The preparation tool requires `--kit` and `--scratch-root`; optionally supply
+`--transport-dir` and `--failed-execution` (an existing execution-record filename).
+It requires a matching actual accepted pilot record and the tested exact helper
+hash. It preserves the old archive, changes only the checked failed proof
+constructions plus the helper import, verifies every output member, and updates
+the single canonical grouped source only after all validations. It refuses a
+case with an active full-case or library job. This is a source preparation action,
+not a proof acceptance step.
+
+The queue publisher requires `--kit` and optionally `--transport-dir`,
+`--dispatcher-name` and `--max-workers` (default one, maximum six, matching the
+prepared record). It uses Linux process control to pause only the existing
+controller while replacing the case's preserved reuse guard. It refuses active
+jobs for that case, and resumes the controller in a `finally` block. It neither
+creates a dispatcher nor launches a compiler. All three tools have Python
+source/help validation and bounded fixtures, not a portable Lean/pool replay.
