@@ -291,6 +291,60 @@ published case source closures are now **156/173**, with **17 cases remaining**;
 case1464, public target assembly, combined audits and the final return ZIP are
 still pending. This checkpoint adds no new release asset or completed case.
 
+## Case1465 operational retry and scheduling
+
+The published full-case count remains **156/173**, with **17 cases remaining**.
+Case1465's retry has 12,841 cold modules: 12,840 generated modules are grouped
+into 253 chunks across 82 dependency levels, with 87 groups initially
+independent. The exact original `DistanceCollision` helper is retained as an
+import because it has no grouped ancestor. The supplied checker validates its
+cold original receipt. Canonical numeric data and common Lean helper sources
+are unchanged.
+
+The pending grouped source archive SHA-256 is
+`813c053a004178772509dfe2deb977b02585c26bdf22bc37ce84c75104ae09dc`.
+Its bulk generated sources are not published in this operational checkpoint.
+Two packaging grammar prechecks were resolved before output generation;
+neither was a failed Lean proof check. The idle case transition preserved its
+full-case guard and every already-running proof worker.
+
+At **2026-10-01 03:57:02 UTC**, the actual target audits for
+`PackedNamespaced.Chunk009` and `Chunk010` passed in disposable scratch source
+workspaces, in 40.18 and 39.93 seconds respectively. Both exact targets use only
+`propext`, `Classical.choice`, and `Quot.sound`. Each accepted transport digest,
+every source member hash, and its source binding to the grouped master archive
+were independently checked. These are dependency-group audits; the full
+`Case1465.Forward.Certificate.certificate_exists` target remains pending.
+`verification/t03-case1465-operational-retry.json` records the precise targets
+and source bindings without machine paths or raw logs.
+
+The scheduler prioritizes full cases, then grouped cases with fewer active
+group checks, then the longest remaining dependency path. Two controller
+transitions each adopted six already-running single-threaded workers with
+zero compiler interruptions. Group completion retains every actual audit,
+receipt, and execution record while deferring the aggregate history rescan;
+full-case completions and manual refreshes still refresh that history.
+
+At the **03:57:09 UTC** observation snapshot, the last 20 eligible worker
+refill delays had a median of **26.881 seconds before** the reporting change
+and **5.6435 seconds after**, from 139 and 31 eligible observations respectively.
+These numbers were recomputed from actual dispatch events. They include dispatch
+work and polling and are not a controlled compiler timing comparison.
+
+The updated portable depth planner can retain an original helper only when it
+has no grouped ancestor. `scripts/t03_retry/scheduling.py` provides pure ready-job
+priority, aggregate-refresh deferral, and read-only observation functions.
+It does not create workers, validate receipt readiness, or accept a proof;
+those checks remain the caller's responsibility. Python source/help checks,
+priority and deferral boundary fixtures, and positive/negative helper-retention
+fixtures passed. No Lean invocation was started for this publication, and the
+portable copies have not been replayed in Lean. The earlier case1464 evidence
+is a timestamped historical snapshot and retains its original tool hashes.
+
+This update adds no full case, release asset, or pending generated Lean source
+collection. Both public target assembly audits and the final return ZIP remain
+unfinished. Main and all accepted source release assets are preserved.
+
 ## External returned-case handoff
 
 External progress reports name fifteen finished cases, but the inspected public

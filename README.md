@@ -23,9 +23,10 @@ for cases 1484, 2122, 1646, 2047, and 1848: **156 of 173** cases now have
 published complete source closures. The public family assembly and its clean
 combined target audits are still unfinished; 17 case certificates remain.
 
-Case1464 now has a guarded dependency-group retry with portable scheduling
-tools and four inspected group target audits. This operational checkpoint
-does not complete another case; see the progress document.
+Cases 1464 and 1465 have guarded dependency-group retries with portable
+scheduling tools. Two case 1465 group audits now pass; its complete case target
+remains pending. Fair scheduling and deferred aggregate reporting reduce
+observed refill delays. See the progress document for the measured scope.
 
 The target side length is the exact real number
 

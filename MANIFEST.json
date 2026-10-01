@@ -42818,13 +42818,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 5895,
-      "sha256": "3bff6a69d68a8683a49a938ef161e558dc6259aaf6ee8e473e6c1ddc7e7ccd27"
+      "bytes": 5986,
+      "sha256": "5b85c28abf121bb0e3a8a1ed5ed81b453567b7db6b17cc4ed78b5b420c0c4452"
     },
     {
       "path": "T03_PROGRESS.md",
-      "bytes": 22704,
-      "sha256": "1d10999907aa1f1926920bc1801dd078890d87f06e8f510ce92d0043fe67cd93"
+      "bytes": 26045,
+      "sha256": "10ff178fc1a1d3037d29295647297e711b2aa813e2788395ffff971c6abec64a"
     },
     {
       "path": "lake-manifest.json",
@@ -42848,8 +42848,8 @@
     },
     {
       "path": "scripts/t03_retry/README.md",
-      "bytes": 4480,
-      "sha256": "2e0736f0b08b12ec65c0385a430d596cdc2f41a2c6cc3ebfd3860f3c6d6bedea"
+      "bytes": 5825,
+      "sha256": "8ae36c96ae0574932c71e3254e65a1443f2cda3b8402f386cf18cfec04976c40"
     },
     {
       "path": "scripts/t03_retry/configure_runtime.py",
@@ -42868,8 +42868,8 @@
     },
     {
       "path": "scripts/t03_retry/regroup_packed_case_by_depth.py",
-      "bytes": 2684,
-      "sha256": "db0c45cf5a1f35ca832c3ad1b212bb2fac6c8ccac6599c7420cb03c4597951dc"
+      "bytes": 3926,
+      "sha256": "2f45bbaeb7e3ffd2c445618825a40e7555916d377b65f596f9765ff71d414d63"
     },
     {
       "path": "scripts/t03_retry/retry_paths.py",
@@ -42880,6 +42880,11 @@
       "path": "scripts/t03_retry/run_independent_probe.py",
       "bytes": 8604,
       "sha256": "6f4bc3cf2b298163e928ca23145d02efb64ddbf812e34bfc209d42abd08e5414"
+    },
+    {
+      "path": "scripts/t03_retry/scheduling.py",
+      "bytes": 4210,
+      "sha256": "7e948d6f0b3e728311b8e7d6fe7458bd699b7d4fd9949191352b604690b268e4"
     },
     {
       "path": "scripts/verify.py",
@@ -42903,8 +42908,8 @@
     },
     {
       "path": "verification/privacy-review.json",
-      "bytes": 4597,
-      "sha256": "f0905a89f1dd2beff37886d01d07b22c4616bb65d0a42bfbda8b02bbe21d8050"
+      "bytes": 5189,
+      "sha256": "2d5473aeec63bd1e1e7b84420079080d85c95fb2dfa80a2dbb282425bd1ee012"
     },
     {
       "path": "verification/source-check.json",
@@ -42920,6 +42925,11 @@
       "path": "verification/t03-case1464-parallel-retry.json",
       "bytes": 8435,
       "sha256": "19dcc36eeb02bc5f1dcd6309b8390b9a67b3545f6cd488e342ecc6d54ca74e74"
+    },
+    {
+      "path": "verification/t03-case1465-operational-retry.json",
+      "bytes": 8083,
+      "sha256": "4cc5ecd979e04eea8a9a012b70d0a7bfcad645e5c86b4710f7502b6e3df66bb8"
     },
     {
       "path": "verification/t03-case1646-source-supplement.json",
@@ -42948,8 +42958,8 @@
     },
     {
       "path": "verification/t03-progress.json",
-      "bytes": 55286,
-      "sha256": "e2a3d006ef23b5382afe74593b25ea21768d45b82e727bf332c586ad9d25d11a"
+      "bytes": 56126,
+      "sha256": "414cfebb5faaaed00b1c0ffe5e7b7517f079a38ca79fc6d0b742be7e136b3ec9"
     },
     {
       "path": "verification/t03-release-checkpoint.json",

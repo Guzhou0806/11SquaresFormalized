@@ -1,23 +1,26 @@
 # Experimental T03 retry tools
 
-These portable copies record the operational retry used for unfinished case
-1464. The live originals produced the actual dependency-group audit described
-in `verification/t03-case1464-parallel-retry.json`. Parameterized copies have
+These portable copies record operational retries for unfinished cases 1464
+and 1465. The live originals produced the actual dependency-group audits in
+`verification/t03-case1464-parallel-retry.json` and
+`verification/t03-case1465-operational-retry.json`. Parameterized copies have
 Python source validation; they have not been replayed in Lean. They do not add
 a completed case or replace the repository's serial `scripts/verify.py`.
 
 The tools require an existing T03 checker kit with `eleven-square-lean/` and
 `agent-evidence/`, exact source transports, a compatible pool dispatcher, and
-genuine source/object receipts. The pending case1464 generated source closure
-is not included in this Git checkpoint. These scripts alone cannot reproduce
-its complete proof.
+genuine source/object receipts. The pending cases 1464 and 1465 generated source
+closures
+are not included in this Git checkpoint. These scripts alone cannot reproduce
+their complete proofs.
 
 | Tool | Role |
 | --- | --- |
-| `regroup_packed_case_by_depth.py` | Regroup an existing exact cold-source plan by dependency depth, with up to 64 modules and 8 MiB of source per group. Preserve the earlier plan. |
+| `regroup_packed_case_by_depth.py` | Regroup an existing exact cold-source plan by dependency depth, with up to 64 modules and 8 MiB of source per group. Preserve earlier plans; optionally retain an exact original helper with no grouped ancestor. |
 | `queue_parallel_case_retry.py` | Hold the full-case retry, let the active compiler finish, retire its serial wrapper at a compiler boundary, and retain the original sources, transport and receipts. |
 | `parallel_packed_case_producer.py` | Create bounded exact-source group transports, prioritize ready groups on the longest remaining dependency path, and release the full case only after all required group audits and genuine source/object receipts match. |
 | `run_independent_probe.py` | Run one supplied serial checker in an allocated worker slot, with hash-verified source extraction into a separate scratch workspace. |
+| `scheduling.py` | Pure full-case/fair-group priority and aggregate-refresh deferral policies; read-only dispatch-delay observation CLI. The caller must validate readiness, source reservations, worker ownership and its concurrency ceiling. |
 | `configure_runtime.py` | Configure only a disposable runtime: pin the exact compiler/environment, use one Lean thread, and allocate unique check-log directories. |
 
 Every machine path is supplied explicitly. `--kit` identifies the checker kit;
@@ -65,3 +68,18 @@ extra manual test found the automatic checker already running and started no
 extra compiler or borrowed worker slot. Full case1464 and both public returned
 target audits remain pending. This operational snapshot had 155/173 published
 complete cases; subsequent accepted case supplements are tracked in T03_PROGRESS.md.
+
+The latest operational update keeps the full published count at **156/173**.
+Case1465 has two independently inspected group audits and a retained exact
+original `DistanceCollision` import; neither grouped case is fully accepted.
+Use repeatable `--preserve-original-module MODULE` on the depth planner to
+retain such a helper. It rejects helpers that import a grouped ancestor and
+preserves the preceding plan before regrouping.
+
+The public scheduling module contains policy functions rather than a pool
+controller. Integrate its priority only after the caller's ordinary readiness
+and receipt checks. Its aggregate-refresh predicate defers only dispatcher
+group-completion rescans while full cases remain unfinished; individual audit,
+receipt and execution records must always be retained. The read-only CLI takes
+`--events`, `--cut`, optional `--snapshot`, and `--window` (default 20). Its
+observations describe scheduling and polling delays, not Lean compiler timing.

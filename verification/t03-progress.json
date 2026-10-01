@@ -1779,5 +1779,22 @@
     "new_release_assets": 0,
     "published_case_count_unchanged": 155,
     "meaning": "Historical 155-case operational snapshot: guarded retry and four actual dependency-group audits. Full case1464 and public combined audits remain pending; subsequent full accepted cases are counted separately."
+  },
+  "operational_case1465_checkpoint": {
+    "manifest": "verification/t03-case1465-operational-retry.json",
+    "tools": "scripts/t03_retry/README.md",
+    "snapshot_utc": "2026-10-01T03:57:02.582378+00:00",
+    "original_cold_modules": 12841,
+    "grouped_modules": 12840,
+    "groups": 253,
+    "dependency_levels": 82,
+    "initial_independent_group_frontier": 87,
+    "retained_exact_original_helper": "ElevenSquare.Tasks.T03.DistanceCollision",
+    "independently_inspected_group_target_audits": 2,
+    "full_case_audit_accepted": false,
+    "pending_generated_case_sources_published": false,
+    "new_release_assets": 0,
+    "published_case_count_unchanged": 156,
+    "meaning": "Guarded dependency-group retry, two actual group target audits, fair scheduling and observational reporting evidence. Full case1465 remains pending."
   }
 }

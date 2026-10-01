@@ -106,5 +106,17 @@
     "personal_information_findings": [],
     "raw_handoff_archives_machine_logs_caches_or_chats_included": false,
     "target_only_audit_transcript_included": true
+  },
+  "case1465_operational_checkpoint_review": {
+    "updated_or_new_portable_orchestration_sources": 2,
+    "machine_paths_are_explicit_parameters": true,
+    "sanitized_actual_dependency_group_audits": 2,
+    "accepted_group_transport_member_hashes_verified": true,
+    "master_source_bindings_verified": true,
+    "observed_reporting_metrics_recomputed": true,
+    "full_case_count_unchanged": 156,
+    "bulk_pending_generated_lean_sources_published": false,
+    "raw_transports_machine_logs_caches_process_ids_accounts_or_chats_included": false,
+    "personal_information_findings": []
   }
 }
