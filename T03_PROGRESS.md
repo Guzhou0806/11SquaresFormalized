@@ -37,7 +37,7 @@ independently checks the immutable inputs, source-member bytes, changes in the
 manifest and complete supplied local import graph. Newly constructed proofs
 still require the original Lean kernel checks.
 
-Four distinct portable source packages are prepared with exact raw source
+Four distinct portable source packages are published with exact raw source
 bytes, pinned Lake files, original checkers and individual tasks. Each includes
 all source-member hashes and a pending full-case label. Private resource-history
 metadata is replaced with portable serial limits; the unrelated packet task
@@ -45,7 +45,9 @@ is omitted and the transport manifest rebuilt. No proof source is regenerated
 for packaging. Each output member is reread and hash-checked; every Lean source
 is below 16 MiB. The total compressed source checkpoint is 812,538,822 bytes.
 [`verification/t03-pending-equality-source-release.json`](verification/t03-pending-equality-source-release.json)
-records packaging hashes and upload status. Earlier frozen source assets are
+records packaging and verified GitHub server hashes/sizes. The [updated pending
+source release](https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/tag/t03-pending-equality-retries-20261001) contains four ZIPs, four checksums and a
+source-target manifest, bound to commit `17fec544`. Earlier frozen source assets are
 preserved; these new versions must be extracted separately from stronger
 merged interfaces. A GitHub source upload does not constitute a merged replay.
 
@@ -644,7 +646,8 @@ idempotence, invalid input and mismatched-object rejection. Python source/help
 checks passed. No Lean process or runtime service was started for publication.
 [`verification/t03-case1372-retry02-progress.json`](verification/t03-case1372-retry02-progress.json)
 contains the sanitized source/failure/elaboration bindings and receipt-sharing
-records. The follow-up bulk source archive is not another published asset.
+records. The follow-up bulk source archive is now a distinct frozen pending asset in
+the updated source release described at the beginning of this document.
 
 The already prepared case1499 task is eligible for the existing six-slot pool
 when a slot frees. Its 84 groups, original task/source bytes and backed-up

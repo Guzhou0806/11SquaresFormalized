@@ -3539,7 +3539,12 @@
       "error_log_empty": true,
       "source_sha256": "cb573fc1da755097dc6768a781fa5e7614a12a506965f80b90ee807b6b957950",
       "immutable_transport_sha256": "34c1b3d9f69fc62be9a2c59688eee32f7b5881129eada090f3bf1011028c3fe0",
-      "scope": "Whole-group elaboration only; full certificate and target axiom audit remain pending."
+      "scope": "Whole-group elaboration only; full certificate and target axiom audit remain pending.",
+      "actual_retained_source_bytes_match_frozen_archive": true,
+      "actual_genuine_receipt_sha256": "15cc7a05bcbc01ed248ad53c87829a428e2be1db6c41078fc6a108f0b9665049",
+      "actual_genuine_receipt_object_sha256": "f21cb04d5669a4720e781b96e91a73659a04059493ca6bcf29eaad1d0c72c8a4",
+      "actual_genuine_receipt_source_closure_sha256": "6262c00cd18f85e8147223568ee59bb889b69a1dd56fbb6aab20eb81e306afc4",
+      "receipt_scope": "Retained actual supplied-checker receipt; full-case audit remains pending."
     }
   },
   "status": "PARTIAL_EQUALITY_REPAIR_GROUP_AUDITS_AND_SOURCE_VERSION_BINDINGS_VERIFIED",

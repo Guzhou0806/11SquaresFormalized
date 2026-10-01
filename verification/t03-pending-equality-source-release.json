@@ -1,6 +1,6 @@
 {
   "format": "T03-pending-equality-retries-v1",
-  "status": "FOUR_SOURCE_ASSETS_VERIFIED_PENDING_UPLOAD",
+  "status": "PUBLISHED_PRERELEASE_FOUR_FROZEN_SOURCES_FULL_CASE_TARGET_AUDITS_PENDING",
   "tag": "t03-pending-equality-retries-20261001",
   "accepted_case_count": 157,
   "required_cases": 173,
@@ -64,7 +64,11 @@
       "task_file": "forward-case1464-packed-namespaced-retry-assembly-task.json",
       "verification_scope": "Source transport/member hashes, supplied local dependency closure, portable privacy metadata and output member reread only; no compiler replay or proof regeneration.",
       "version": "equality-retry01",
-      "publication_status": "LOCAL_VERIFIED_SOURCE_ASSET_PENDING_UPLOAD"
+      "publication_status": "PUBLISHED_SOURCES_FULL_CASE_TARGET_AUDITS_PENDING",
+      "asset_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-pending-equality-retries-20261001/T03-pending-case1464-equality-retry01-source-checkpoint.zip",
+      "checksum_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-pending-equality-retries-20261001/T03-pending-case1464-equality-retry01-source-checkpoint.zip.sha256",
+      "github_server_asset_digest_verified": true,
+      "github_server_asset_size_verified": true
     },
     {
       "accepted_case_count_at_packaging": 157,
@@ -124,7 +128,11 @@
       "task_file": "forward-case1372-coordinate-binding-retry02-assembly-task.json",
       "verification_scope": "Source transport/member hashes, supplied local dependency closure, portable privacy metadata and output member reread only; no compiler replay or proof regeneration.",
       "version": "binding-retry02",
-      "publication_status": "LOCAL_VERIFIED_SOURCE_ASSET_PENDING_UPLOAD"
+      "publication_status": "PUBLISHED_SOURCES_FULL_CASE_TARGET_AUDITS_PENDING",
+      "asset_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-pending-equality-retries-20261001/T03-pending-case1372-binding-retry02-source-checkpoint.zip",
+      "checksum_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-pending-equality-retries-20261001/T03-pending-case1372-binding-retry02-source-checkpoint.zip.sha256",
+      "github_server_asset_digest_verified": true,
+      "github_server_asset_size_verified": true
     },
     {
       "accepted_case_count_at_packaging": 157,
@@ -184,7 +192,11 @@
       "task_file": "forward-case1731-coordinate-binding-retry01-assembly-task.json",
       "verification_scope": "Source transport/member hashes, supplied local dependency closure, portable privacy metadata and output member reread only; no compiler replay or proof regeneration.",
       "version": "binding-retry01",
-      "publication_status": "LOCAL_VERIFIED_SOURCE_ASSET_PENDING_UPLOAD"
+      "publication_status": "PUBLISHED_SOURCES_FULL_CASE_TARGET_AUDITS_PENDING",
+      "asset_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-pending-equality-retries-20261001/T03-pending-case1731-binding-retry01-source-checkpoint.zip",
+      "checksum_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-pending-equality-retries-20261001/T03-pending-case1731-binding-retry01-source-checkpoint.zip.sha256",
+      "github_server_asset_digest_verified": true,
+      "github_server_asset_size_verified": true
     },
     {
       "accepted_case_count_at_packaging": 157,
@@ -244,7 +256,11 @@
       "task_file": "forward-case1465-packed-namespaced-retry-assembly-task.json",
       "verification_scope": "Source transport/member hashes, supplied local dependency closure, portable privacy metadata and output member reread only; no compiler replay or proof regeneration.",
       "version": "equality-retry01",
-      "publication_status": "LOCAL_VERIFIED_SOURCE_ASSET_PENDING_UPLOAD"
+      "publication_status": "PUBLISHED_SOURCES_FULL_CASE_TARGET_AUDITS_PENDING",
+      "asset_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-pending-equality-retries-20261001/T03-pending-case1465-equality-retry01-source-checkpoint.zip",
+      "checksum_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-pending-equality-retries-20261001/T03-pending-case1465-equality-retry01-source-checkpoint.zip.sha256",
+      "github_server_asset_digest_verified": true,
+      "github_server_asset_size_verified": true
     }
   ],
   "total_zip_asset_bytes": 812538822,
@@ -253,5 +269,77 @@
   "final_return_zip_complete": false,
   "proof_regeneration_or_merged_Lean_replay_performed": false,
   "source_manifest_inside_each_zip": "SOURCE-MANIFEST.json",
-  "packaging_resource_scope": "One low-priority single-core native process; exact compressed source-member copy and hash validation."
+  "packaging_resource_scope": "One low-priority single-core native process; exact compressed source-member copy and hash validation.",
+  "release_id": 400734920,
+  "release_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/tag/t03-pending-equality-retries-20261001",
+  "source_checkpoint_commit": "17fec5446c2ad775f101572169f14dbd980b5abd",
+  "published_utc": "2026-10-01T07:35:22Z",
+  "github_server_all9_asset_digests_and_sizes_verified": true,
+  "server_assets": [
+    {
+      "name": "PENDING-EQUALITY-CHECKPOINT-public.json",
+      "size": 14172,
+      "digest": "sha256:5475a9114afa34e39bca18e78b3a488754eeb1a1680f15ab8d49ccafb010f9f0",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-pending-equality-retries-20261001/PENDING-EQUALITY-CHECKPOINT-public.json"
+    },
+    {
+      "name": "T03-pending-case1372-binding-retry02-source-checkpoint.zip",
+      "size": 88989946,
+      "digest": "sha256:2b62863a6bfff5104139369cdd5ded3cc1831082bed45393ab6851e5fa3a34ae",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-pending-equality-retries-20261001/T03-pending-case1372-binding-retry02-source-checkpoint.zip"
+    },
+    {
+      "name": "T03-pending-case1372-binding-retry02-source-checkpoint.zip.sha256",
+      "size": 125,
+      "digest": "sha256:0ee4216caf64663078e772386384f7daa19bd9ef83f24729fa4cc03b9c29b952",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-pending-equality-retries-20261001/T03-pending-case1372-binding-retry02-source-checkpoint.zip.sha256"
+    },
+    {
+      "name": "T03-pending-case1464-equality-retry01-source-checkpoint.zip",
+      "size": 231814209,
+      "digest": "sha256:6ba9aca3b9a04e6a5133013b37466f175d24c3be1c9fc4dc700599ff05e6c001",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-pending-equality-retries-20261001/T03-pending-case1464-equality-retry01-source-checkpoint.zip"
+    },
+    {
+      "name": "T03-pending-case1464-equality-retry01-source-checkpoint.zip.sha256",
+      "size": 126,
+      "digest": "sha256:a6dd3361c37d565aff632eb8fb274072edfb18807a06ba269b975a0072c12072",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-pending-equality-retries-20261001/T03-pending-case1464-equality-retry01-source-checkpoint.zip.sha256"
+    },
+    {
+      "name": "T03-pending-case1465-equality-retry01-source-checkpoint.zip",
+      "size": 384214202,
+      "digest": "sha256:2e94181e269002faa2ad6261526a954eebbbef3c038fe7afcd35da30c74d043e",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-pending-equality-retries-20261001/T03-pending-case1465-equality-retry01-source-checkpoint.zip"
+    },
+    {
+      "name": "T03-pending-case1465-equality-retry01-source-checkpoint.zip.sha256",
+      "size": 126,
+      "digest": "sha256:2721ab2c11ef85d392cea4fc9796afe117461ac97f2782dc934261d6b61de656",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-pending-equality-retries-20261001/T03-pending-case1465-equality-retry01-source-checkpoint.zip.sha256"
+    },
+    {
+      "name": "T03-pending-case1731-binding-retry01-source-checkpoint.zip",
+      "size": 107520465,
+      "digest": "sha256:9a957821c2d6dc8da22d10b4b21c6de072318e873f77d6ea0068838dad10d595",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-pending-equality-retries-20261001/T03-pending-case1731-binding-retry01-source-checkpoint.zip"
+    },
+    {
+      "name": "T03-pending-case1731-binding-retry01-source-checkpoint.zip.sha256",
+      "size": 125,
+      "digest": "sha256:473d6508065aa3c1fb6a603ec0e1e6e44d90342a3073d60d53560ec3379e86b6",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-pending-equality-retries-20261001/T03-pending-case1731-binding-retry01-source-checkpoint.zip.sha256"
+    }
+  ],
+  "prior18_accepted_and9_pending_assets_preserved": true,
+  "main_preserved": true
 }

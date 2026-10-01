@@ -12,6 +12,8 @@ already issued source closures. Case1464 groups 203/209 have clean actual target
 audits; case1731's repaired Chunk009 elaborates successfully. All four updated
 case1464,1465,1372 and1731 source versions remain pending their full target audits.
 The compact tools and exact source bindings are in [T03_PROGRESS.md](T03_PROGRESS.md).
+A [separate updated pending source release](https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/tag/t03-pending-equality-retries-20261001) now supplies
+all four frozen versions with verified GitHub asset hashes and sizes.
 Native source synchronization measured 3.734 seconds versus 11.665 seconds on
 the same 381-member fixture, and has now run in an actual new proof job.
 

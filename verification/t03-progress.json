@@ -1933,6 +1933,10 @@
     "source_manifest": "verification/t03-pending-equality-source-release.json",
     "evidence": "verification/t03-equality-repair-progress.json",
     "native_source_sync_fixture_gain_seconds": 7.931,
-    "new_Lean_workers_or_builds_started_for_publication": 0
+    "new_Lean_workers_or_builds_started_for_publication": 0,
+    "four_new_pending_source_assets_published": true,
+    "new_pending_source_release_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/tag/t03-pending-equality-retries-20261001",
+    "github_server_all9_asset_digests_and_sizes_verified": true,
+    "source_checkpoint_commit": "17fec5446c2ad775f101572169f14dbd980b5abd"
   }
 }

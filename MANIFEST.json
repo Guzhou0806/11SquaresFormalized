@@ -42818,13 +42818,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 7624,
-      "sha256": "9d8a5bac9b80795e1a415f5afbf0b9362ce2de4127cd2b19098319c59d530c06"
+      "bytes": 7862,
+      "sha256": "de84477559b62c4fe404a991963cdd2d41ff26a8dd003f5135bdb5107e13ffa5"
     },
     {
       "path": "T03_PROGRESS.md",
-      "bytes": 45901,
-      "sha256": "80a51870fcdcde8cef728b4cb8cf3c05c13e7e30ad9782ab73951746d184ea08"
+      "bytes": 46240,
+      "sha256": "f7c1fc9d98c5e1e2aea89bab91734a9709d5f5ac0c8979066c33e784fb1ae046"
     },
     {
       "path": "lake-manifest.json",
@@ -42963,8 +42963,8 @@
     },
     {
       "path": "verification/privacy-review.json",
-      "bytes": 8266,
-      "sha256": "b3916645f666651e6be616c664a7a211c03ab248ba257d07cf3a12ecc193014f"
+      "bytes": 8391,
+      "sha256": "a1a45545ba5bc954a8f6e8a77c618086f13815f8ae2f92996b59f1787a3f00bc"
     },
     {
       "path": "verification/source-check.json",
@@ -43058,8 +43058,8 @@
     },
     {
       "path": "verification/t03-equality-repair-progress.json",
-      "bytes": 198020,
-      "sha256": "58db060d14143165b810af06a972f2b4ecc812d76d4de4a7fee00585bca74b10"
+      "bytes": 198529,
+      "sha256": "509a650e34764aad2f1021e0428e3bc7d7c3e2769e9fd2b2ca2ce8e73791b475"
     },
     {
       "path": "verification/t03-native-source-sync-application.json",
@@ -43078,8 +43078,8 @@
     },
     {
       "path": "verification/t03-pending-equality-source-release.json",
-      "bytes": 12357,
-      "sha256": "910f7d5e6ee002ff5c75693d9c335b1da9ba504754f644e4e5433be5e17b08e8"
+      "bytes": 18812,
+      "sha256": "68dc78c5e1d4f3bf929f33fdfaf8af92985b5bf9691ee33e353d85d6c55c3bd8"
     },
     {
       "path": "verification/t03-pending-source-release.json",
@@ -43088,8 +43088,8 @@
     },
     {
       "path": "verification/t03-progress.json",
-      "bytes": 62373,
-      "sha256": "4dc4ebeea9b5a70c64b68e0eb2b8d34391edbefa38af3234fb4d5c8a826ccc7e"
+      "bytes": 62719,
+      "sha256": "8c1f138c0dce8ddf452645b8d1444723f5846e0567f6b2d01bc3c665f1bb15c5"
     },
     {
       "path": "verification/t03-release-checkpoint.json",

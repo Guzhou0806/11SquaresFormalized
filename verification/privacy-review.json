@@ -185,6 +185,8 @@
     "actual1464_group_audits_verified": 2,
     "new_tools_paths_parameterized": true,
     "private_paths_raw_logs_caches_chats_or_account_data_included": false,
-    "personal_information_findings": []
+    "personal_information_findings": [],
+    "github_server_all9_asset_digests_and_sizes_verified": true,
+    "prior18_accepted_and9_pending_assets_preserved": true
   }
 }
