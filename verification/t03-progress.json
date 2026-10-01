@@ -1947,6 +1947,9 @@
     "frozen_raw_master_sha256": "c8cc656c45285bb67d76cd9b360aab43978cf70d49bba859d84d787584366a92",
     "full_case_audit_accepted": false,
     "accepted_full_cases": 157,
-    "source_version_scope": "Frozen revision2/Chunk106; later changes are separate."
+    "source_version_scope": "Frozen revision2/Chunk106; later changes are separate.",
+    "release_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/tag/t03-pending-case1465-retry02-20261001",
+    "github_server_all3_asset_digests_and_sizes_verified": true,
+    "actual106_group_target_audit_accepted": true
   }
 }

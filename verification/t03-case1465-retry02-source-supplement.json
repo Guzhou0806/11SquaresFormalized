@@ -63,7 +63,7 @@
   "all_supplement_member_bytes_reread_verified": true,
   "packaged_utc": "2026-10-01T08:01:40.247850+00:00",
   "full_case_audit_pending": true,
-  "publication_status": "VERIFIED_PENDING_SOURCE_SUPPLEMENT_AWAITING_UPLOAD",
+  "publication_status": "PUBLISHED_FROZEN_REVISION2_SOURCE_SUPPLEMENT_FULL_CASE_AUDIT_PENDING",
   "tag": "t03-pending-case1465-retry02-20261001",
   "case1465_source_version_scope": "Frozen revision2/Chunk106 only. Subsequent case1465 changes are separate source versions.",
   "changed_source_imports_available_in_exact_base": true,
@@ -78,5 +78,33 @@
     "wrong_base_digest_rejected_before_output_creation": true,
     "Lean_processes_started": 0,
     "real_multi_gigabyte_base_extracted": false
-  }
+  },
+  "release_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/tag/t03-pending-case1465-retry02-20261001",
+  "asset_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-pending-case1465-retry02-20261001/T03-pending-case1465-equality-retry02-Chunk106-source-supplement.zip",
+  "checksum_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-pending-case1465-retry02-20261001/T03-pending-case1465-equality-retry02-Chunk106-source-supplement.zip.sha256",
+  "source_checkpoint_commit": "1930e6051a4ed54c9cae6b3aabe5a25bf41d9f64",
+  "github_server_all3_asset_digests_and_sizes_verified": true,
+  "server_assets": [
+    {
+      "name": "SUPPLEMENT-case1465-retry02-public.json",
+      "size": 4502,
+      "digest": "sha256:cc7f4b75fd183cc30df15f3f016460464e616c0f222d868246019d388310c595",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-pending-case1465-retry02-20261001/SUPPLEMENT-case1465-retry02-public.json"
+    },
+    {
+      "name": "T03-pending-case1465-equality-retry02-Chunk106-source-supplement.zip",
+      "size": 3928954,
+      "digest": "sha256:91e5360a56c6d00fe4c8ae9940444dc23af5a0fd7e45aed2faf7006a55eba46d",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-pending-case1465-retry02-20261001/T03-pending-case1465-equality-retry02-Chunk106-source-supplement.zip"
+    },
+    {
+      "name": "T03-pending-case1465-equality-retry02-Chunk106-source-supplement.zip.sha256",
+      "size": 136,
+      "digest": "sha256:fdb6a48f4e2881af1b6aebb56e75185aca125734f617c51a254e2ab0c75797eb",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-pending-case1465-retry02-20261001/T03-pending-case1465-equality-retry02-Chunk106-source-supplement.zip.sha256"
+    }
+  ]
 }

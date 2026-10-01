@@ -93,10 +93,15 @@ and every new source import is available in that base. Full case1465 and
 the public family targets remain pending; the accepted count stays 157/173.
 Groups 107/108 retry01 have actual clean group target audits and unchanged
 source bindings; those group audits do not complete the full case.
+The frozen Chunk106 subsequently passed its actual exact target audit in
+43.41 seconds, with only `propext`, `Classical.choice` and `Quot.sound`.
+Its accepted execution transport and changed source bytes match this
+supplement; this is a dependency-group audit, with full case1465 still pending.
 
 The [supplement recipe](verification/t03-case1465-retry02-source-supplement.json)
 records the exact base URL/digest, old/new member hashes, overlay metadata,
-original task/target and upload status. Apply it to a fresh source directory:
+original task/target and verified server digests. The [frozen revision2 release](https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/tag/t03-pending-case1465-retry02-20261001)
+publishes the supplement, checksum and recipe. Apply it to a fresh source directory:
 
 ```sh
 python scripts/t03_retry/apply_source_supplement.py --base BASE.zip --supplement SUPPLEMENT.zip --supplement-sha256 91e5360a56c6d00fe4c8ae9940444dc23af5a0fd7e45aed2faf7006a55eba46d --output fresh-case1465-retry02

@@ -89,5 +89,29 @@
   "new_raw_master_digest_verified": true,
   "all_other_source_environment_task_manifest_bindings_verified": true,
   "accepted_full_case_count": 157,
-  "new106_proofs_kernel_checks_pending": true
+  "new106_proofs_kernel_checks_pending": false,
+  "actual106_target_audit": {
+    "status": "ACTUAL_CHUNK106_TARGET_AXIOM_AUDIT_ACCEPTED",
+    "task": "library-case1465-node998-106-equality-retry02-task.json",
+    "actual_CHECK": {
+      "status": "accepted",
+      "source": "verification/HandoffAudit.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 43.41,
+      "lean_threads": 1,
+      "lean_memory_limit_mb": 8192
+    },
+    "actual_CHECK_sha256": "b9489b397f346a7a2065d0feeef2c37822ac6e3bff3be45cd9297b67a51657dd",
+    "actual_audit_log_sha256": "43c62bc47a5a7947e0dc63c7e4863a6d3131bc9227889d7d62b08daba46e5eeb",
+    "target_axioms": {
+      "ElevenSquare.Pending.T03.Certificates.CoarsePartner94b25e3d5379194a1fd8ffd3.PackedCase1465.contains013": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "accepted_execution_transport_sha256": "eabf4d95b1d78b6d25f7152bfb3114c77b9285a5951fea8c15afefe8669168fc",
+    "actual_transport_digest_and_changed_source_bytes_verified": true,
+    "full_case_audit": false
+  }
 }
