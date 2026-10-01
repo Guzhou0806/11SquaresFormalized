@@ -42818,13 +42818,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 8240,
-      "sha256": "8d14a8e5723a22daf97185631f12ec1e6eab4dd6d51282eac448126a4c8fda41"
+      "bytes": 8353,
+      "sha256": "6e5aaf43d4c5378abd5ad79fbb24ee7eccd9f6f172fc880ee860d187100fa0cb"
     },
     {
       "path": "T03_PROGRESS.md",
-      "bytes": 51603,
-      "sha256": "d0cac1172b4ea892273d97c22b224d1a31c2a02f7600476a7ba8674105d7a4b1"
+      "bytes": 51859,
+      "sha256": "4e10d5da18d9185bb1a2e2ee057b20188ac10411d53cd08ed69d5046f70fd6da"
     },
     {
       "path": "lake-manifest.json",
@@ -42968,8 +42968,8 @@
     },
     {
       "path": "verification/privacy-review.json",
-      "bytes": 9166,
-      "sha256": "f8db60ca3c5bf88bdeb2ba70c051b5b0fc02bb2341d3a5768bba40267f14ddc2"
+      "bytes": 9382,
+      "sha256": "9618f6c730a272a4043589bc5c06f6ecec029822910ab405a484b71e4a3a95a1"
     },
     {
       "path": "verification/source-check.json",
@@ -43043,8 +43043,8 @@
     },
     {
       "path": "verification/t03-case1465-retry03-source-supplement.json",
-      "bytes": 4757,
-      "sha256": "d1460013cb55eceb464e69031a0a1c0e209212952257dd57899de710b797b6d9"
+      "bytes": 6789,
+      "sha256": "1adc433e34e3c79b35d5985947504800deb931635abb58f627a7bdf6dbfcd652"
     },
     {
       "path": "verification/t03-case1499-local-resume.json",
@@ -43113,8 +43113,8 @@
     },
     {
       "path": "verification/t03-progress.json",
-      "bytes": 64152,
-      "sha256": "320dee3e74339fb68082cca3b405ccb7bc59f28702d58cc2dd7e41cf1d749869"
+      "bytes": 64349,
+      "sha256": "73a46079aab226fa77d3b31e955a7b19c1222e92349d6ddf11130813c6ac8b4e"
     },
     {
       "path": "verification/t03-release-checkpoint.json",

@@ -131,7 +131,9 @@ and the published frozen revision2/Chunk106 supplement. It preserves all
 other source, environment and task bytes relative to those two input layers.
 The raw master digest is `5ee177b78311b92b3e6a0eb4992d56340e1421fe354c4b0f7ef7bc1ae9455cc5`.
 
-This supplement is **3,977,887 bytes**, SHA-256
+The [frozen revision3 release](https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/tag/t03-pending-case1465-retry03-20261001) publishes the source supplement,
+checksum and exact predecessor recipe; all three server digests and sizes
+match. This supplement is **3,977,887 bytes**, SHA-256
 `26fa942f3928fb4f1d3c6c94cc38a2c40fcc4817dd358d24fb0f9646f85cbdbc`. The [recipe](verification/t03-case1465-retry03-source-supplement.json)
 binds the required base digest, predecessor supplement digest, changed member
 old/new hashes, refreshed manifests and original exact task/target. Every
