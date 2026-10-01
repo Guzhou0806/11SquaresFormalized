@@ -61,12 +61,12 @@ The checkpoints are documented in [T03_PROGRESS.md](T03_PROGRESS.md). The
 for 151 independently audited case certificates. Their actual target audits have
 only the three standard axioms. A standalone source supplement adds the fully
 audited case1484 and case2122 closures. The accepted grouped case1646 source
-closure and the newly audited case2047 closure are also published as standalone
-supplements: **155 published cases** in total.
+closure and the audited case2047 and case1848 closures are also published as
+standalone supplements: **156 published cases** in total.
 The Git source tree contains case2135 directly; the full generated source
 collections are distributed as release assets.
 
-The other 18 cases and assembly of all 173 certificates into the exact public
+The other 17 cases and assembly of all 173 certificates into the exact public
 family theorem remain unfinished. Its clean combined target audit and the final
 return package are also pending. No fresh merged repository Lean replay or
 completed T03 case-family return is claimed; the public admission remains open.

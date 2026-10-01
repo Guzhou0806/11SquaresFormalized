@@ -48,7 +48,7 @@ less elapsed time in that sample. Both actual target audits contain only
 target axiom sets, and sanitized positive and negative check evidence. The
 merged GitHub source tree has not been freshly replayed in Lean.
 
-The accepted source checkpoint is now **155/173**, with 18 cases unfinished.
+The accepted source checkpoint is now **156/173**, with 17 cases unfinished.
 The following optimization figures describe the earlier helper benchmark snapshot.
 Case1393's ongoing local source migration replaces 5,601 coordinate equality
 proof expressions across 178 still unaccepted groups while preserving their
@@ -106,7 +106,7 @@ stronger interfaces already merged into this repository. It contains no build
 objects, machine logs, private handoff archives, account information, or chats.
 
 At this 151-case checkpoint, 22 cases remained. The supplements below add
-four complete source closures; 18 cases and the full public assembly,
+five complete source closures; 17 cases and the full public assembly,
 combined audits, and final return ZIP remain unfinished. A fresh merged
 repository Lean replay and global optimality proof are not claimed.
 The source asset's README explains serial replay.
@@ -184,8 +184,8 @@ combined audits, and final return ZIP remain unfinished.
 
 The [standalone case2047 supplement](https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/T03-audited-case2047-source-supplement.zip) adds its complete exact source
 closure and actual target-only HandoffAudit transcript. All earlier source
-assets remain unchanged. Together the four named source assets publish
-**155 of the 173** independently audited case certificates; **18 cases remain**.
+assets remain unchanged. Together these four source assets published
+**155 of the 173** independently audited case certificates at this checkpoint.
 
 The accepted source root is
 `ElevenSquare.Tasks.T03.Batch10.Case2047.Forward.Certificate`, and its exact target
@@ -212,6 +212,38 @@ interfaces. No new merged repository Lean replay was performed.
 The exact public returned targets still require the remaining certificates,
 assembly, and clean combined audits. The final return ZIP and global optimality
 proof remain incomplete.
+
+## Accepted case1848 source checkpoint
+
+The [standalone case1848 supplement](https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/T03-audited-case1848-source-supplement.zip) supplies the newly accepted
+complete source closure. Together all five named source assets now publish
+**156 of the 173** independently audited case certificates; **17 cases remain**.
+All earlier source assets are unchanged.
+
+The accepted import root is
+`ElevenSquare.Tasks.T03.Batch09.Case1848.Forward.Certificate`, and its exact target
+is `ElevenSquare.Pending.T03.Batch09.Case1848.Forward.Certificate.certificate_exists`.
+Its actual supplied full HandoffAudit accepted the target in 90.27 seconds with
+only `propext`, `Classical.choice`, and `Quot.sound`. The accepted transport
+SHA-256 is `477eba64c8e24c6b3bbca4111ad2d086070c33fd01ed4d34899f0c280800b8cf`.
+
+The archive contains 4,479 reachable Lean modules and 221,134,643 bytes of Lean
+source, including the pinned Lake source, in a 42,435,321-byte ZIP. Its SHA-256 is
+`ae5f57e138ca429e1d619a7abcd22791936ced830bc1fc0abab3f1f607c8fb58`. The [checksum sidecar](https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/T03-audited-case1848-source-supplement.zip.sha256) and
+[portable audit metadata](https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/CHECKPOINT-case1848-public.json) are also available.
+Every included source and output member was hash-checked, and the full import
+graph was verified. The 205 transport modules outside the accepted target's
+reachable closure are excluded. GitHub's asset size and digest match the
+verified checkpoint.
+
+`verification/t03-case1848-source-supplement.json` binds the accepted execution
+transport, exact declaration, source root and actual target audit. The ZIP
+includes target-only audit text, exact pinned environment metadata, original
+serial checkers and standalone replay instructions. Extract it separately to
+preserve the stronger merged repository interfaces. No fresh merged repository
+Lean replay was performed. Case1464, the remaining full certificates, assembly
+and clean combined audits of both public targets, and the final return ZIP
+remain unfinished.
 
 ## Case1464 operational retry checkpoint
 
@@ -255,7 +287,7 @@ pool ceiling; these tools do not create a worker pool.
 `verification/t03-case1464-parallel-retry.json` records the sanitized actual
 audits, source bindings, transition and corrected manual precheck. The large
 pending generated Lean closure and runtime logs/caches are excluded. Complete
-published case source closures remain **155/173**, with **18 cases remaining**;
+published case source closures are now **156/173**, with **17 cases remaining**;
 case1464, public target assembly, combined audits and the final return ZIP are
 still pending. This checkpoint adds no new release asset or completed case.
 
@@ -264,8 +296,8 @@ still pending. This checkpoint adds no new release asset or completed case.
 External progress reports name fifteen finished cases, but the inspected public
 branches do not supply their generated per-case source closures or matching
 individual target audits. These reports add no accepted cases to this count.
-Case2047 is one of those fifteen and is now independently accepted here, leaving
-fourteen possible additions once their exact sources and audits are delivered.
+Cases 1848 and 2047 are two of those fifteen and are now independently accepted
+here, leaving thirteen possible additions once exact sources and audits are delivered.
 
 [PR 2](https://github.com/Queuingtheorydotcom/11SquaresFormalized/pull/2) provides
 the conditional per-case adapter

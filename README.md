@@ -19,9 +19,9 @@ progress document for the exact evidence and unfinished-case status.
 
 A [partial T03 release](https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/tag/t03-audited-151-20260930) supplies the complete exact source
 checkpoint for 151 independently audited cases, plus standalone supplements
-for cases 1484, 2122, 1646, and 2047: **155 of 173** cases now have published
-complete source closures. The public family assembly and its clean combined
-target audits are still unfinished; 18 case certificates remain.
+for cases 1484, 2122, 1646, 2047, and 1848: **156 of 173** cases now have
+published complete source closures. The public family assembly and its clean
+combined target audits are still unfinished; 17 case certificates remain.
 
 Case1464 now has a guarded dependency-group retry with portable scheduling
 tools and four inspected group target audits. This operational checkpoint

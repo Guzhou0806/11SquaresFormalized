@@ -92,5 +92,19 @@
     "raw_transports_machine_logs_caches_process_ids_accounts_or_chats_included": false,
     "manual_precheck_correction_preserved_in_summary": true,
     "personal_information_findings": []
+  },
+  "case1848_supplement_asset_review": {
+    "cases": [
+      1848
+    ],
+    "source_members_inspected": 4485,
+    "metadata_members_inspected": 7,
+    "exact_accepted_transport_bindings_verified": 1,
+    "full_reachable_source_import_closure_verified": true,
+    "unused_unreachable_modules_excluded": 205,
+    "output_member_hash_verification": true,
+    "personal_information_findings": [],
+    "raw_handoff_archives_machine_logs_caches_or_chats_included": false,
+    "target_only_audit_transcript_included": true
   }
 }

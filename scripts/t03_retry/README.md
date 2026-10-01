@@ -63,4 +63,5 @@ python3 scripts/verify.py --setup
 The actual first group passed in a disposable scratch workspace. The proposed
 extra manual test found the automatic checker already running and started no
 extra compiler or borrowed worker slot. Full case1464 and both public returned
-target audits remain pending; the published complete-case count is 155/173.
+target audits remain pending. This operational snapshot had 155/173 published
+complete cases; subsequent accepted case supplements are tracked in T03_PROGRESS.md.

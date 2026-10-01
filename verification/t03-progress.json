@@ -1,5 +1,5 @@
 {
-  "status": "PARTIAL_TESTED_COMMON_EQUALITY_HELPER_AND_155_CASE_SOURCE_RELEASE_ASSETS",
+  "status": "PARTIAL_TESTED_COMMON_EQUALITY_HELPER_AND_156_CASE_SOURCE_RELEASE_ASSETS",
   "snapshot_date": "2026-09-30",
   "meaning": "Independent returned compiler audits. This is not a fresh combined replay of the GitHub assembly.",
   "lean_version": "4.10.0-rc2",
@@ -1665,10 +1665,10 @@
     "case_certificates": 151,
     "source_modules": 101494,
     "source_lean_bytes": 5499202925,
-    "meaning": "The original 151 exact source closures remain in the unchanged base release asset; standalone supplements add cases 1484, 2122, the accepted grouped case1646, and case2047, for 155 published case closures. Only case2135 is directly integrated into the Git source tree. No merged Lean replay or full-family completion is claimed."
+    "meaning": "The original 151 exact source closures remain in the unchanged base release asset; standalone supplements add cases 1484, 2122, the accepted grouped case1646, case2047, and case1848, for 156 published case closures. Only case2135 is directly integrated into the Git source tree. No merged Lean replay or full-family completion is claimed."
   },
-  "published_case_source_closures": 155,
-  "remaining_case_certificates": 18,
+  "published_case_source_closures": 156,
+  "remaining_case_certificates": 17,
   "source_supplements": [
     {
       "asset_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/T03-audited-cases1484-2122-source-supplement.zip",
@@ -1703,6 +1703,17 @@
       "case_certificates": 1,
       "standalone": true,
       "manifest": "verification/t03-case2047-source-supplement.json"
+    },
+    {
+      "asset_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/T03-audited-case1848-source-supplement.zip",
+      "asset_bytes": 42435321,
+      "asset_sha256": "ae5f57e138ca429e1d619a7abcd22791936ced830bc1fc0abab3f1f607c8fb58",
+      "supplement_cases": [
+        1848
+      ],
+      "case_certificates": 1,
+      "standalone": true,
+      "manifest": "verification/t03-case1848-source-supplement.json"
     }
   ],
   "additional_tested_common_helpers": [
@@ -1741,9 +1752,10 @@
     "matching_individual_case_target_audits_available": false,
     "cases_added_from_external_reports": 0,
     "already_independently_accepted_overlap": [
+      1848,
       2047
     ],
-    "potential_new_cases_after_exact_handoff": 14,
+    "potential_new_cases_after_exact_handoff": 13,
     "per_case_adapter": "ElevenSquare.Interop.Wand125.certificate_of_maskAt",
     "per_case_adapter_requires_full_family_theorem": false,
     "pr_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/pull/2",
@@ -1766,6 +1778,6 @@
     "pending_generated_case_sources_published": false,
     "new_release_assets": 0,
     "published_case_count_unchanged": 155,
-    "meaning": "Guarded operational retry and actual dependency-group audits. Full case1464 and public combined target audits remain pending."
+    "meaning": "Historical 155-case operational snapshot: guarded retry and four actual dependency-group audits. Full case1464 and public combined audits remain pending; subsequent full accepted cases are counted separately."
   }
 }

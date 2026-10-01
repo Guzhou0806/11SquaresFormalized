@@ -42813,18 +42813,18 @@
     },
     {
       "path": "MISSING.md",
-      "bytes": 6721,
-      "sha256": "13e5c9c9b7f8e6acc3a0e2758961c85f7556bef8da166c1d424938742b9226b3"
+      "bytes": 6729,
+      "sha256": "a554fa1929301f1eb00564860a96b9ab5177025465bb4f0ca41667eac81934b8"
     },
     {
       "path": "README.md",
-      "bytes": 5889,
-      "sha256": "a551fa538a9edd0b606a141083ad8a89f82a16658c41b96a52dd2fa928abef5e"
+      "bytes": 5895,
+      "sha256": "3bff6a69d68a8683a49a938ef161e558dc6259aaf6ee8e473e6c1ddc7e7ccd27"
     },
     {
       "path": "T03_PROGRESS.md",
-      "bytes": 20412,
-      "sha256": "e6102976c57ec35268c5a5d647692a4d2c8bc70a1500a654e6c562a7712a3100"
+      "bytes": 22704,
+      "sha256": "1d10999907aa1f1926920bc1801dd078890d87f06e8f510ce92d0043fe67cd93"
     },
     {
       "path": "lake-manifest.json",
@@ -42848,8 +42848,8 @@
     },
     {
       "path": "scripts/t03_retry/README.md",
-      "bytes": 4393,
-      "sha256": "e4c2c34e04d120a6349318ac769ab51c67e014f373eb151b5a949e527eb76e1f"
+      "bytes": 4480,
+      "sha256": "2e0736f0b08b12ec65c0385a430d596cdc2f41a2c6cc3ebfd3860f3c6d6bedea"
     },
     {
       "path": "scripts/t03_retry/configure_runtime.py",
@@ -42903,8 +42903,8 @@
     },
     {
       "path": "verification/privacy-review.json",
-      "bytes": 4075,
-      "sha256": "4add183b2b18fc7c7873a811a2604fc98f4d13a591c86368f1efe07b14b3bf6c"
+      "bytes": 4597,
+      "sha256": "f0905a89f1dd2beff37886d01d07b22c4616bb65d0a42bfbda8b02bbe21d8050"
     },
     {
       "path": "verification/source-check.json",
@@ -42927,6 +42927,11 @@
       "sha256": "d4cf520f3f6208e65be2abd466fdd6faa5d69a79a4b446422ed8b3b605a685ef"
     },
     {
+      "path": "verification/t03-case1848-source-supplement.json",
+      "bytes": 2288,
+      "sha256": "039030dff956746934b2da4d19731ad91cb2b72faa08200cdf4112ca641fb656"
+    },
+    {
       "path": "verification/t03-case2047-source-supplement.json",
       "bytes": 2288,
       "sha256": "a5074899fc3afef32d5b97fa820c8f070d6f9b1bc8b527943a336d43ec3bfa11"
@@ -42943,13 +42948,13 @@
     },
     {
       "path": "verification/t03-progress.json",
-      "bytes": 54705,
-      "sha256": "bfbe6efb22d5b6af5971f6028ebf305106b0c63f6935d568846b60ff1bb94551"
+      "bytes": 55286,
+      "sha256": "e2a3d006ef23b5382afe74593b25ea21768d45b82e727bf332c586ad9d25d11a"
     },
     {
       "path": "verification/t03-release-checkpoint.json",
-      "bytes": 71350,
-      "sha256": "b45cc15ce78bd12d2e6f8732983c915bbb2aa5fcf1635bff5f03300a1ea30dc2"
+      "bytes": 72396,
+      "sha256": "8ae7638924857b3f57cc7bdf1db99c5efdfa0f0557fadb5c3e277879dc240dd8"
     },
     {
       "path": "verification/t03-source-supplement.json",
