@@ -58,5 +58,15 @@
     "raw_handoff_archives_machine_logs_caches_or_chats_included": false,
     "target_only_audit_transcript_included": true,
     "neutral_serial_profile_replaces_private_resource_history": true
+  },
+  "equality_helper_checkpoint_review": {
+    "source_path": "ElevenSquare/Tasks/T03/KernelEqualityRefl.lean",
+    "source_sha256": "579aba76120723d18a2d3ee1464e136612cca06ef76f9547a67ae183b2c92200",
+    "external_imports": [
+      "Lean.Elab.Tactic"
+    ],
+    "raw_logs_transports_worker_ids_private_paths_or_accounts_included": false,
+    "sanitized_actual_benchmark_evidence_included": true,
+    "personal_information_findings": []
   }
 }

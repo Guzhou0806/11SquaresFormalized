@@ -26,11 +26,37 @@ partial returns. No new admission is introduced.
   computation. A pinned-compiler negative control rejected its attempted use
   for `false = true`; it is not a proof oracle.
 
-The common helper closure adds 39 Lean modules, approximately 117 KiB. Its 15
+The common helper closure adds 40 Lean modules, approximately 117 KiB. Its 15
 existing local geometry/interface dependencies have the same Lean tokens as
 the independently audited dependency snapshot. Those upstream files are not
 replaced. `ElevenSquare/Progress.lean` imports this closure, and the normal target
 audit now queries the six distance/collision results.
+
+## Checked equality helper and ongoing case work
+
+`KernelEqualityRefl.lean` adds `t03_eq_refl`, which constructs ordinary `Eq.refl`
+on an equality's right-hand expression. The declaration kernel still checks
+that this term proves the original equality. It avoids repeating some expensive
+coordinate reductions in the tactic elaborator and imports only `Lean.Elab.Tactic`.
+
+An independent comparison of the same eight coordinate equality proofs took
+**7.039 seconds with the baseline and 4.368 seconds with the helper**, about 38%
+less elapsed time in that sample. Both actual target audits contain only
+`propext`, and the declaration kernel rejected its attempted proof of
+`(1 : Rat) = 2`. This is a measured sample, not a whole-case completion estimate.
+`verification/t03-equality-refl.json` supplies the exact helper hash, input hashes,
+target axiom sets, and sanitized positive and negative check evidence. The
+merged GitHub source tree has not been freshly replayed in Lean.
+
+The accepted source checkpoint remains **154/173**, with 19 cases unfinished.
+Case1393's ongoing local source migration replaces 5,601 coordinate equality
+proof expressions across 178 still unaccepted groups while preserving their
+exact data. The last observed dependency progress was 37/523 groups; this is
+not a full certificate audit. Neither that source collection nor case1311 is
+published as an accepted case. Case1311's full grouped attempt failed eight
+`homRetained_binding` reflexivity proofs and is under repair; its rational
+diagnostic does not replace a Lean proof. Public target assembly and the final
+return ZIP remain incomplete. Earlier accepted release assets are unchanged.
 
 ## Complete case2135 checkpoint
 

@@ -41537,8 +41537,8 @@
     },
     {
       "path": "ElevenSquare/Tasks/T03/Common.lean",
-      "sha256": "029842cf84e2da7000dc3daf2d10a3cfbfa21478f9796ecee91aec368c9ac043",
-      "origin": "T03 common proof tools",
+      "sha256": "d47f545c6603b3404359f72bf26da455da1914f2388025ef416ada38fe48882f",
+      "origin": "Common tool entrypoint with independently tested equality helper",
       "matches_return_compile_record": false
     },
     {
@@ -45839,6 +45839,12 @@
       "path": "ElevenSquare/Tasks/T03/KernelBoolRefl.lean",
       "sha256": "90111f1782484d93843ab7e8ec6789744ebf90afdd8deb6fa2d3ddf3880513ce",
       "origin": "T03 common proof tools",
+      "matches_return_compile_record": false
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/KernelEqualityRefl.lean",
+      "sha256": "579aba76120723d18a2d3ee1464e136612cca06ef76f9547a67ae183b2c92200",
+      "origin": "Exact independently tested equality tactic helper",
       "matches_return_compile_record": false
     },
     {

@@ -1,5 +1,5 @@
 {
-  "status": "PARTIAL_COMMON_TOOLS_CASE2135_IN_GIT_AND_154_CASE_SOURCE_RELEASE_ASSETS",
+  "status": "PARTIAL_TESTED_COMMON_EQUALITY_HELPER_AND_154_CASE_SOURCE_RELEASE_ASSETS",
   "snapshot_date": "2026-09-30",
   "meaning": "Independent returned compiler audits. This is not a fresh combined replay of the GitHub assembly.",
   "lean_version": "4.10.0-rc2",
@@ -1693,5 +1693,18 @@
       "standalone": true,
       "manifest": "verification/t03-case1646-source-supplement.json"
     }
-  ]
+  ],
+  "additional_tested_common_helpers": [
+    {
+      "module": "ElevenSquare.Tasks.T03.KernelEqualityRefl",
+      "source_sha256": "579aba76120723d18a2d3ee1464e136612cca06ef76f9547a67ae183b2c92200",
+      "evidence": "verification/t03-equality-refl.json"
+    }
+  ],
+  "latest_unfinished_case_checkpoint": {
+    "case1393": "Last observed 37/523 dependency groups; full target audit not accepted.",
+    "case1311": "Eight binding proofs failed in the grouped attempt; repair underway.",
+    "accepted_case_count_unchanged": 154,
+    "full_return_complete": false
+  }
 }

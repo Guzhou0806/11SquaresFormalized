@@ -12,6 +12,11 @@ closure of the independently audited case2135 certificate. The supplied
 checkpoint and the precise limits of the ongoing case progress are described in
 [T03_PROGRESS.md](T03_PROGRESS.md). The public 173-case obligation remains open.
 
+The common tools also include an independently tested equality-reflexivity
+helper that reduced one eight-proof coordinate sample from 7.039 to 4.368
+seconds. Its kernel negative control rejected a false equality; see the
+progress document for the exact evidence and unfinished-case status.
+
 A [partial T03 release](https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/tag/t03-audited-151-20260930) supplies the complete exact source
 checkpoint for 151 independently audited cases, plus standalone supplements
 for cases 1484, 2122, and 1646: **154 of 173** cases now have published complete

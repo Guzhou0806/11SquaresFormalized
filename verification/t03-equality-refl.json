@@ -1,0 +1,174 @@
+{
+  "status": "INDEPENDENTLY_TESTED_KERNEL_EQUALITY_REFLEXIVITY_HELPER",
+  "module": "ElevenSquare.Tasks.T03.KernelEqualityRefl",
+  "source_path": "ElevenSquare/Tasks/T03/KernelEqualityRefl.lean",
+  "source_sha256": "579aba76120723d18a2d3ee1464e136612cca06ef76f9547a67ae183b2c92200",
+  "source_bytes": 581,
+  "local_source_dependencies": [],
+  "external_imports": [
+    "Lean.Elab.Tactic"
+  ],
+  "tactic": "t03_eq_refl",
+  "meaning": "Constructs ordinary equality reflexivity on the right-hand expression; the declaration kernel still checks equality with the left-hand expression.",
+  "lean_version": "4.10.0-rc2",
+  "compiler_sha256": "c2059c8da4034467e5f391cfd07b81c4a7b32a7e04ff7e50c7c385993cd77010",
+  "mathlib_revision": "3fef63ff3bda38478ba4364ff03999f0246745a2",
+  "comparison": {
+    "sample_coordinate_equality_proofs": 8,
+    "mathematical_types_equal_by_lean": true,
+    "baseline_elapsed_seconds": 7.039,
+    "helper_elapsed_seconds": 4.368,
+    "elapsed_time_reduction_percent": 37.95,
+    "scope": "One independently run eight-proof sample; no whole-case or overall completion speed claim.",
+    "inputs": [
+      {
+        "module": "ElevenSquare.Tasks.T03.Certificates.UniversalCollision8c053b796b719470294aeff2Data",
+        "sha256": "ea9c5d54fecd421573c378ff60b138253f0b8caf543703a4191cd3f49c992d12",
+        "bytes": 5785
+      },
+      {
+        "module": "ElevenSquare.Tasks.T03.Certificates.UniversalCollision49b05fe0ca8179ff5d549fe7Data",
+        "sha256": "6c4a74ee85ebc48a7dfb0287668f2de6dc822d3cd239f866e64d70ab45d83b5b",
+        "bytes": 5736
+      },
+      {
+        "module": "ElevenSquare.Tasks.T03.Certificates.UniversalCollision96d8961ffc8ef7b4939fa288Data",
+        "sha256": "1744512040a5ff1909d8d61a8c8f4e756361caa12e1dad022a5565f0ad6d3212",
+        "bytes": 5622
+      },
+      {
+        "module": "ElevenSquare.Tasks.T03.Certificates.UniversalCollisionadf87a286568d70f130988e4Data",
+        "sha256": "f0ade3e608777cd1997d1114b01e708ff01b0f5a82efc65f89784563ebffbbf1",
+        "bytes": 5616
+      },
+      {
+        "module": "ElevenSquare.Tasks.T03.Certificates.UniversalCollision0c30050d3b4bd561ca9b36eeData",
+        "sha256": "d40773fc214fd8e107b657cc7827602c56bc793b4430c637731f4e03bd730e25",
+        "bytes": 5601
+      },
+      {
+        "module": "ElevenSquare.Tasks.T03.Certificates.UniversalCollision0fef9abb2cf8259d33f50ce0Data",
+        "sha256": "f2ba8539cac09849aa74d32554c900f80a9bc8eb1214452709ca2872d10fac57",
+        "bytes": 5600
+      },
+      {
+        "module": "ElevenSquare.Tasks.T03.Certificates.UniversalCollision57050811bf81f296ef3a8369Data",
+        "sha256": "5be18fed002da48c0c8345fdbbf7f7e7ee4a01be4b39c125b6fe3e6da0ffe45c",
+        "bytes": 5332
+      },
+      {
+        "module": "ElevenSquare.Tasks.T03.Certificates.UniversalCollisionb08b8df5b4ad71c2fa854d40Data",
+        "sha256": "87a9d7640df6323c4707114770d90b1ba6243e79c4cc7c2fac474d2cdeeb399d",
+        "bytes": 5070
+      }
+    ],
+    "checks": [
+      {
+        "label": "baseline",
+        "elapsed_seconds": 7.039,
+        "exit_code": 0,
+        "status": "ACTUAL_IDENTICAL_TYPE_CLEAN_AXIOM_AUDIT",
+        "target_axioms": {
+          "ElevenSquare.Pending.T03.Certificates.UniversalCollision8c053b796b719470294aeff2.EqualityReflPilot.hom_binding": [
+            "propext"
+          ],
+          "ElevenSquare.Pending.T03.Certificates.UniversalCollision49b05fe0ca8179ff5d549fe7.EqualityReflPilot.hom_binding": [
+            "propext"
+          ],
+          "ElevenSquare.Pending.T03.Certificates.UniversalCollision96d8961ffc8ef7b4939fa288.EqualityReflPilot.hom_binding": [
+            "propext"
+          ],
+          "ElevenSquare.Pending.T03.Certificates.UniversalCollisionadf87a286568d70f130988e4.EqualityReflPilot.hom_binding": [
+            "propext"
+          ],
+          "ElevenSquare.Pending.T03.Certificates.UniversalCollision0c30050d3b4bd561ca9b36ee.EqualityReflPilot.hom_binding": [
+            "propext"
+          ],
+          "ElevenSquare.Pending.T03.Certificates.UniversalCollision0fef9abb2cf8259d33f50ce0.EqualityReflPilot.hom_binding": [
+            "propext"
+          ],
+          "ElevenSquare.Pending.T03.Certificates.UniversalCollision57050811bf81f296ef3a8369.EqualityReflPilot.hom_binding": [
+            "propext"
+          ],
+          "ElevenSquare.Pending.T03.Certificates.UniversalCollisionb08b8df5b4ad71c2fa854d40.EqualityReflPilot.hom_binding": [
+            "propext"
+          ]
+        }
+      },
+      {
+        "label": "kernel_eq_refl",
+        "elapsed_seconds": 4.368,
+        "exit_code": 0,
+        "status": "ACTUAL_IDENTICAL_TYPE_CLEAN_AXIOM_AUDIT",
+        "target_axioms": {
+          "ElevenSquare.Pending.T03.Certificates.UniversalCollision8c053b796b719470294aeff2.EqualityReflPilot.hom_binding": [
+            "propext"
+          ],
+          "ElevenSquare.Pending.T03.Certificates.UniversalCollision49b05fe0ca8179ff5d549fe7.EqualityReflPilot.hom_binding": [
+            "propext"
+          ],
+          "ElevenSquare.Pending.T03.Certificates.UniversalCollision96d8961ffc8ef7b4939fa288.EqualityReflPilot.hom_binding": [
+            "propext"
+          ],
+          "ElevenSquare.Pending.T03.Certificates.UniversalCollisionadf87a286568d70f130988e4.EqualityReflPilot.hom_binding": [
+            "propext"
+          ],
+          "ElevenSquare.Pending.T03.Certificates.UniversalCollision0c30050d3b4bd561ca9b36ee.EqualityReflPilot.hom_binding": [
+            "propext"
+          ],
+          "ElevenSquare.Pending.T03.Certificates.UniversalCollision0fef9abb2cf8259d33f50ce0.EqualityReflPilot.hom_binding": [
+            "propext"
+          ],
+          "ElevenSquare.Pending.T03.Certificates.UniversalCollision57050811bf81f296ef3a8369.EqualityReflPilot.hom_binding": [
+            "propext"
+          ],
+          "ElevenSquare.Pending.T03.Certificates.UniversalCollisionb08b8df5b4ad71c2fa854d40.EqualityReflPilot.hom_binding": [
+            "propext"
+          ]
+        }
+      },
+      {
+        "label": "false_rational_negative_control",
+        "elapsed_seconds": 2.039,
+        "exit_code": 1,
+        "status": "FALSE_EQUALITY_REJECTED_BY_DECLARATION_KERNEL",
+        "rejected_goal": "(1 : Rat) = 2",
+        "diagnostic": "Declaration type mismatch: constructed proof has type 2 = 2; expected 1 = 2."
+      }
+    ]
+  },
+  "ongoing_local_case1393_migration": {
+    "status": "INCOMPLETE_NOT_PUBLISHED_AS_ACCEPTED_CASE",
+    "grouped_source_transport_sha256": "ad8af4f1b2e820fc08086e7450fb55200a846b8daff1497484e008952fbb8cd9",
+    "coordinate_equality_proof_source_edits": 5601,
+    "changed_dependency_groups": 178,
+    "exact_coordinate_data_preservation_recorded": true,
+    "last_observed_dependency_group_progress": {
+      "checked": 37,
+      "total": 523
+    },
+    "last_observed_progress_is_not_a_full_target_audit": true,
+    "full_accepted_case_published": false
+  },
+  "case1311": {
+    "status": "FULL_GROUPED_ATTEMPT_FAILED_AND_UNDER_REPAIR",
+    "failed_homRetained_binding_proofs": 8,
+    "rational_diagnostic_is_not_a_lean_proof": true,
+    "full_accepted_case_published": false
+  },
+  "published_accepted_case_source_closures": 154,
+  "required_cases": 173,
+  "remaining_cases": 19,
+  "public_returned_target_assembly_complete": false,
+  "final_return_zip_complete": false,
+  "merged_repository_lean_replay_performed": false,
+  "publication_source_validation": {
+    "status": "SOURCE_ASSEMBLY_PASS",
+    "local_modules": 8559,
+    "explicit_admissions": 6,
+    "global_optimality_proved": false,
+    "serial_plan_modules": 6508,
+    "helper_in_main_audit_dependency_order": true,
+    "lean_compiler_invocations_during_publication": 0
+  }
+}
