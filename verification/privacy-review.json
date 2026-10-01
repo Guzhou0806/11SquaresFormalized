@@ -241,6 +241,8 @@
     "portable_tools_AST_help_checked_without_live_actions": true,
     "private_machine_paths_caches_chats_credentials_included": false,
     "personal_information_findings": [],
-    "Lean_jobs_or_worker_controls_for_publication": 0
+    "Lean_jobs_or_worker_controls_for_publication": 0,
+    "github_all2new_sidecar_asset_digests_sizes_verified": true,
+    "prior46assets_and_main_unchanged": true
   }
 }

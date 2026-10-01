@@ -1,0 +1,36 @@
+{
+  "format": "T03-accepted-metadata-release-v1",
+  "status": "PUBLIC_PRERELEASE_ALL_TWO_ASSET_SERVER_DIGESTS_AND_SIZES_VERIFIED",
+  "release_id": 400886470,
+  "tag": "t03-audited159-case1731-20261001",
+  "release_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/tag/t03-audited159-case1731-20261001",
+  "release_source_commit": "a32a3706128de1701dcf79d53ab856e0b5246cd5",
+  "accepted_full_cases": 159,
+  "remaining_cases": 14,
+  "source_asset_uploaded_again": false,
+  "existing_source_asset_sha256": "9a957821c2d6dc8da22d10b4b21c6de072318e873f77d6ea0068838dad10d595",
+  "source_asset_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-pending-equality-retries-20261001/T03-pending-case1731-binding-retry01-source-checkpoint.zip",
+  "existing_source_server_digest_size_independently_verified": true,
+  "assets": [
+    {
+      "id": 603069882,
+      "name": "CHECKPOINT-case1731-accepted-public.json",
+      "size": 3699,
+      "digest": "sha256:1fd766dd28869560988f1e9f4eec0ae6819ff651245a8b067eee90ca9864669d",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited159-case1731-20261001/CHECKPOINT-case1731-accepted-public.json"
+    },
+    {
+      "id": 603069944,
+      "name": "CHECKPOINT-case1731-accepted-public.json.sha256",
+      "size": 107,
+      "digest": "sha256:327277622ddaba38d6146690a07d48e56b3b2d99cfedca5bdb10899be3a7e319",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited159-case1731-20261001/CHECKPOINT-case1731-accepted-public.json.sha256"
+    }
+  ],
+  "prior46assets_and_release_metadata_preserved": true,
+  "main_unchanged": true,
+  "merged_Lean_replay_or_family_targets_or_final_ZIP_complete": false,
+  "Lean_jobs_or_worker_controls_for_publication": 0
+}

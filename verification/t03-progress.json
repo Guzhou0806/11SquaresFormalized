@@ -2032,6 +2032,8 @@
     "local_queue_manifest": "verification/t03-local-queues-checkpoint-20261001.json",
     "scheduler_manifest": "verification/t03-ready-archive-prefilter-checkpoint-20261001.json",
     "full_remaining_certificates_pending": true,
-    "merged_replay_family_targets_and_final_ZIP_complete": false
+    "merged_replay_family_targets_and_final_ZIP_complete": false,
+    "release_metadata": "verification/t03-case1731-accepted-release.json",
+    "all_two_new_asset_server_digests_sizes_verified": true
   }
 }
