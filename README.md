@@ -49,6 +49,16 @@ fixture; this measures source I/O. Actual proof-job source sync and exact limits
 are documented in [T03_PROGRESS.md](T03_PROGRESS.md). Publication itself started
 no Lean replay or worker and left all existing proof jobs untouched.
 
+A new [homogeneous polygon fan helper](ElevenSquare/Tasks/T03/HomogeneousPolygonFan.lean)
+proves that positive-denominator integer checks imply the same original rational
+`polygonFanCheck`. Its three generic targets passed actual standard-three axiom
+audits. Both proofs in an identical 56-vertex comparison also passed: rational
+module 33.28 seconds, integer module 34.23 seconds. This sample showed no saving;
+the optional helper has not been applied to pending case sources. See its
+[source and audit provenance](verification/t03-homogeneous-fan-helper.json).
+The frozen case1465 Chunk105 supplement has now passed its group target audit;
+its full case remains pending. The accepted full-case count stays **158/173**.
+
 The target side length is the exact real number
 
 \[

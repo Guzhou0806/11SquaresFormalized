@@ -1,0 +1,507 @@
+{
+  "status": "GENERIC_INTEGER_FAN_BRIDGE_AND_IDENTICAL_POLYGON_PROOFS_ACTUALLY_ACCEPTED_NO_SAVING_IN_SAMPLE",
+  "accepted_full_case_count": 158,
+  "required_cases": 173,
+  "remaining_cases": 15,
+  "helper": {
+    "task": "library-case1499-node996-homogeneous-fan-helper-probe-task.json",
+    "accepted_transport_sha256": "b56cbb009b0d21d557c82e28dc0af49c704e77823c9922667a55ee9bd0f96ef7",
+    "accepted_execution_record_sha256": "8b2ce1d16078c9c1add465f55b68c7a621c0134686c6367d337c402cc8cd0f4d",
+    "actual_wrapper_log_sha256": "cb071064bf9729ab48dee4e3fa9b7d963021e0e871ee0ce19cd727cd0dfb29c0",
+    "actual_audit_CHECK": {
+      "status": "accepted",
+      "source": "verification/HandoffAudit.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 24.88,
+      "lean_memory_limit_mb": 8192,
+      "lean_threads": 1,
+      "lean_thread_stack_kb": 32768,
+      "lean_main_stack_kb": 65536,
+      "cpu_seconds_limit": 1800,
+      "wall_seconds_limit": 2100,
+      "nice_increment": 0,
+      "emitted_olean": null,
+      "meaning": "Elaboration check only; inspect axioms and admissions before marking a proof complete."
+    },
+    "actual_audit_CHECK_sha256": "a11f749fc10b584f9f17fa9ca78bb3b74b8356cb64eee3cf53c79cd1c046dd24",
+    "actual_audit_log": "'ElevenSquare.Pending.T03.HomPoint.fanCrossCheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ElevenSquare.Pending.T03.HomEdgeCertificate.check_sound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ElevenSquare.Pending.T03.homogeneousPolygonFanCheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+    "actual_audit_log_sha256": "9550f0795ff3045b43804dd0070f0f8d78e766cb83da85e06e2940a35bae56cf",
+    "target_axioms": {
+      "ElevenSquare.Pending.T03.HomPoint.fanCrossCheck_sound": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ElevenSquare.Pending.T03.HomEdgeCertificate.check_sound": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ElevenSquare.Pending.T03.homogeneousPolygonFanCheck_sound": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "module_compile_CHECKs": [
+      {
+        "CHECK": {
+          "status": "accepted",
+          "source": "ElevenSquare/Tasks/T03/HomogeneousPolygonFan.lean",
+          "exit_code": 0,
+          "elapsed_seconds": 28.81,
+          "lean_memory_limit_mb": 8192,
+          "lean_threads": 1,
+          "lean_thread_stack_kb": 32768,
+          "lean_main_stack_kb": 65536,
+          "cpu_seconds_limit": 1800,
+          "wall_seconds_limit": 2100,
+          "nice_increment": 0,
+          "emitted_olean": ".lake/build/lib/ElevenSquare/Tasks/T03/HomogeneousPolygonFan.olean",
+          "meaning": "Elaboration check only; inspect axioms and admissions before marking a proof complete."
+        },
+        "CHECK_sha256": "f84dd2e8359b453847e33b60d1380499c040633fee6a6245b9f13d9e56426545",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "all_transport_member_hashes_verified": true,
+    "complete_local_import_closure_verified": true,
+    "new_exact_source_files": [
+      {
+        "path": "ElevenSquare/Tasks/T03/HomogeneousPolygonFan.lean",
+        "sha256": "83bf800f64dea8e5de542bdf6a8af53cc8403121480223c4d3109e661cb117f3",
+        "bytes": 8126
+      }
+    ],
+    "unchanged_dependency_bindings": [
+      {
+        "path": "ElevenSquare/Geometry.lean",
+        "transport_sha256": "fa8ff2c666453b56f04b22c164ef063cbd46dc85fb4afd7ed6fbb01b7c4f641a",
+        "Git_source_sha256": "fa8ff2c666453b56f04b22c164ef063cbd46dc85fb4afd7ed6fbb01b7c4f641a",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/Pending/GeometryTypes.lean",
+        "transport_sha256": "a7bf5e2a537e0b81a7d874c35c769f605b61da9e3fef28feb07390736690502a",
+        "Git_source_sha256": "a7bf5e2a537e0b81a7d874c35c769f605b61da9e3fef28feb07390736690502a",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/CoverData.lean",
+        "transport_sha256": "d3ed474b9f3b8c88ffffcfa1c1005b98be709dd5443198088e94e659a299906d",
+        "Git_source_sha256": "d3ed474b9f3b8c88ffffcfa1c1005b98be709dd5443198088e94e659a299906d",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/Pending/Types.lean",
+        "transport_sha256": "a08828e4674559871cfa7ee6e5321d008b43ff66baf2fa6906b3225e59e6dd7a",
+        "Git_source_sha256": "a08828e4674559871cfa7ee6e5321d008b43ff66baf2fa6906b3225e59e6dd7a",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/Tasks/T03/LinearCertificates.lean",
+        "transport_sha256": "c24f3d50ad393d00d0a1d6650f853f419a3612f957b75cad881184517e1ac66d",
+        "Git_source_sha256": "8dcb73f29c784385b6b2b331534b11c2875973122cd05c3a350b4d073222e52f",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/Tasks/T03/LinearCover.lean",
+        "transport_sha256": "07a06e2af16eba8f1ab5c1874fb30b81eb6e625cffcf24ad7874c2f2bd6d94e8",
+        "Git_source_sha256": "07a06e2af16eba8f1ab5c1874fb30b81eb6e625cffcf24ad7874c2f2bd6d94e8",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/Tasks/T03/TriangleCover.lean",
+        "transport_sha256": "085f602a90d0935ae1294a65f063505a15d231b8dcbf39b8bdda23067cbef245",
+        "Git_source_sha256": "085f602a90d0935ae1294a65f063505a15d231b8dcbf39b8bdda23067cbef245",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/Tasks/T03/TriangleCertificates.lean",
+        "transport_sha256": "3fca75c845e23778f2c940325b8d19b0d43515553d2fa4c8e7bfd09bfdf81808",
+        "Git_source_sha256": "3fca75c845e23778f2c940325b8d19b0d43515553d2fa4c8e7bfd09bfdf81808",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/Tasks/T03/SimplePolygonFan.lean",
+        "transport_sha256": "c09f1cc57f742f234031494ef5478d6691e66839b37c9622215552e97299f512",
+        "Git_source_sha256": "c09f1cc57f742f234031494ef5478d6691e66839b37c9622215552e97299f512",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/Tasks/T03/FiniteConvex.lean",
+        "transport_sha256": "46d56b6a62c2711b301c8b02088fa4da7d45229fb5e5d2d9d10a7bf19e35b46f",
+        "Git_source_sha256": "46d56b6a62c2711b301c8b02088fa4da7d45229fb5e5d2d9d10a7bf19e35b46f",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/Pending/S05_Minkowski.lean",
+        "transport_sha256": "e39dcfc51ad822fffbd76414e140f476baf3d5f0e55f7790e273362ce5484e71",
+        "Git_source_sha256": "e39dcfc51ad822fffbd76414e140f476baf3d5f0e55f7790e273362ce5484e71",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/BasicGeometry.lean",
+        "transport_sha256": "0e291c05b9fa7670ed3bac5c605e5cdb3666994715c9f7e4a16786881d020c72",
+        "Git_source_sha256": "0e291c05b9fa7670ed3bac5c605e5cdb3666994715c9f7e4a16786881d020c72",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/Pending/S05_OwnedHull.lean",
+        "transport_sha256": "237234a0a57234a0fe6ca3d421758550b50266b6b1411b04ad07c49339a7db42",
+        "Git_source_sha256": "237234a0a57234a0fe6ca3d421758550b50266b6b1411b04ad07c49339a7db42",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/Pending/S05_Trace.lean",
+        "transport_sha256": "c28d11831b4130263f31e046d4165e942ce15d6662b1902875e1de2b7c2f7a92",
+        "Git_source_sha256": "c28d11831b4130263f31e046d4165e942ce15d6662b1902875e1de2b7c2f7a92",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/Tasks/T03/UniversalCollision.lean",
+        "transport_sha256": "bdec0c56b98f0b9c30ff5ba0c041ff1b1341554b52ea06b950d5a1d173176c74",
+        "Git_source_sha256": "bdec0c56b98f0b9c30ff5ba0c041ff1b1341554b52ea06b950d5a1d173176c74",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/CoverChecks.lean",
+        "transport_sha256": "cfb1ac4a0bbd79e078519e7d9df2e04892458a87cc309a6aa520a0cff2e4e68d",
+        "Git_source_sha256": "cfb1ac4a0bbd79e078519e7d9df2e04892458a87cc309a6aa520a0cff2e4e68d",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/GeneratedCover0.lean",
+        "transport_sha256": "4936cc6f454137d9509976002e3c719de0dd28441e99ae8fbd0343ab7c2fba99",
+        "Git_source_sha256": "4936cc6f454137d9509976002e3c719de0dd28441e99ae8fbd0343ab7c2fba99",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/GeneratedCover1.lean",
+        "transport_sha256": "e72e09742bd6a4d17a8152f6b69c9cdb94933d15829193e88ec52ba85c6c6d27",
+        "Git_source_sha256": "e72e09742bd6a4d17a8152f6b69c9cdb94933d15829193e88ec52ba85c6c6d27",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/GeneratedCover2.lean",
+        "transport_sha256": "f9d6ccc5aa2ae6c16140dcf8d474f869448c83d965a7644f16fb59b3d2c020b5",
+        "Git_source_sha256": "f9d6ccc5aa2ae6c16140dcf8d474f869448c83d965a7644f16fb59b3d2c020b5",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/GeneratedCover3.lean",
+        "transport_sha256": "973ed8e31b101004f93e72347411e153c6283022219cfcc5d5846ee1f65a9f0f",
+        "Git_source_sha256": "973ed8e31b101004f93e72347411e153c6283022219cfcc5d5846ee1f65a9f0f",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/Cover.lean",
+        "transport_sha256": "fe57460a07b6acd1561be1d63a9e93c27560716fd1af8df94f65fb7321f7cd1e",
+        "Git_source_sha256": "fe57460a07b6acd1561be1d63a9e93c27560716fd1af8df94f65fb7321f7cd1e",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/Tasks/T03/CellLinear.lean",
+        "transport_sha256": "0ebf5ea519b79817f0a56b500ff2fbb240e583dbcf0d54c1402fa64c21a6c18c",
+        "Git_source_sha256": "ff7bff9d2a2fd7c14a1a454695baffa67b5999877a2a9a809899db6a6a7f41ec",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/Tasks/T03/HullLinearCertificates.lean",
+        "transport_sha256": "42ff42008512d9405b91d795724336fa896814ec2c92e68318d7e9c541643f28",
+        "Git_source_sha256": "42ff42008512d9405b91d795724336fa896814ec2c92e68318d7e9c541643f28",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/Tasks/T03/CollisionPlanes.lean",
+        "transport_sha256": "532b63b79b981655657a1e627557999f1d3e10f6845297d841f80ca743f40186",
+        "Git_source_sha256": "532b63b79b981655657a1e627557999f1d3e10f6845297d841f80ca743f40186",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/Tasks/T03/HomogeneousPoints.lean",
+        "transport_sha256": "fe77dc3e920c429e391da1998c0e066f7ead9df610db2cbcc20479718a61daa5",
+        "Git_source_sha256": "fe77dc3e920c429e391da1998c0e066f7ead9df610db2cbcc20479718a61daa5",
+        "same_Lean_bytes_except_optional_line_endings": true
+      }
+    ],
+    "pinned_Lake_and_toolchain_bytes_match_publication": true,
+    "merged_repository_Lean_replay_performed": false,
+    "Lean_jobs_or_worker_controls_for_publication": 0
+  },
+  "comparison": {
+    "task": "library-case1499-node996-homogeneous-fan-comparison-task.json",
+    "accepted_transport_sha256": "99e9e1493d975fbf07cace7afbe326096ba9c67741e7d8fd990028908425008e",
+    "accepted_execution_record_sha256": "4286a1bb5462a35215f2c5e51396be2f14b5e0c4b40893f39f7956735f328f40",
+    "actual_wrapper_log_sha256": "28a51ac6e7e08f2eb13c2573912e72574142c8f03cb3331be8ba5045cca32d78",
+    "actual_audit_CHECK": {
+      "status": "accepted",
+      "source": "verification/HandoffAudit.lean",
+      "exit_code": 0,
+      "elapsed_seconds": 23.11,
+      "lean_memory_limit_mb": 8192,
+      "lean_threads": 1,
+      "lean_thread_stack_kb": 32768,
+      "lean_main_stack_kb": 65536,
+      "cpu_seconds_limit": 1800,
+      "wall_seconds_limit": 2100,
+      "nice_increment": 0,
+      "emitted_olean": null,
+      "meaning": "Elaboration check only; inspect axioms and admissions before marking a proof complete."
+    },
+    "actual_audit_CHECK_sha256": "beeaeeaa40ae912a576e59ab47d300c68d84503bea41ef49e98c5fd7de7e9882",
+    "actual_audit_log": "'ElevenSquare.Pending.T03.HomogeneousFanComparisonRational.shapeChecked' depends on axioms: [propext]\n'ElevenSquare.Pending.T03.HomogeneousFanComparisonInteger.zeroDenominatorRejected' depends on axioms: [propext]\n'ElevenSquare.Pending.T03.HomogeneousFanComparisonInteger.shapeChecked' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+    "actual_audit_log_sha256": "d354e62e628b6b69d414a9dfa21274dd0d5a85f8ded066d319efd846e1b57179",
+    "target_axioms": {
+      "ElevenSquare.Pending.T03.HomogeneousFanComparisonRational.shapeChecked": [
+        "propext"
+      ],
+      "ElevenSquare.Pending.T03.HomogeneousFanComparisonInteger.zeroDenominatorRejected": [
+        "propext"
+      ],
+      "ElevenSquare.Pending.T03.HomogeneousFanComparisonInteger.shapeChecked": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "module_compile_CHECKs": [
+      {
+        "CHECK": {
+          "status": "accepted",
+          "source": "ElevenSquare/Tasks/T03/HomogeneousFanComparisonRational.lean",
+          "exit_code": 0,
+          "elapsed_seconds": 33.28,
+          "lean_memory_limit_mb": 8192,
+          "lean_threads": 1,
+          "lean_thread_stack_kb": 32768,
+          "lean_main_stack_kb": 65536,
+          "cpu_seconds_limit": 1800,
+          "wall_seconds_limit": 2100,
+          "nice_increment": 0,
+          "emitted_olean": ".lake/build/lib/ElevenSquare/Tasks/T03/HomogeneousFanComparisonRational.olean",
+          "meaning": "Elaboration check only; inspect axioms and admissions before marking a proof complete."
+        },
+        "CHECK_sha256": "5f47d659c61b09389a38fdfaefbf94c10ebe10fe574073cea722a7ae186aba1f",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "CHECK": {
+          "status": "accepted",
+          "source": "ElevenSquare/Tasks/T03/HomogeneousFanComparisonInteger.lean",
+          "exit_code": 0,
+          "elapsed_seconds": 34.23,
+          "lean_memory_limit_mb": 8192,
+          "lean_threads": 1,
+          "lean_thread_stack_kb": 32768,
+          "lean_main_stack_kb": 65536,
+          "cpu_seconds_limit": 1800,
+          "wall_seconds_limit": 2100,
+          "nice_increment": 0,
+          "emitted_olean": ".lake/build/lib/ElevenSquare/Tasks/T03/HomogeneousFanComparisonInteger.olean",
+          "meaning": "Elaboration check only; inspect axioms and admissions before marking a proof complete."
+        },
+        "CHECK_sha256": "0ec85eb7ff22b9669c73773884031dd78fd03f4050c146da88bbf80ae6436bdd",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "all_transport_member_hashes_verified": true,
+    "complete_local_import_closure_verified": true,
+    "new_exact_source_files": [
+      {
+        "path": "ElevenSquare/Tasks/T03/HomogeneousPolygonFan.lean",
+        "sha256": "83bf800f64dea8e5de542bdf6a8af53cc8403121480223c4d3109e661cb117f3",
+        "bytes": 8126
+      },
+      {
+        "path": "ElevenSquare/Tasks/T03/HomogeneousFanComparisonRational.lean",
+        "sha256": "97ab6fa982c9e1878e1fbd031fffbdf0f8e2e4fb26eb03ca225a37fc5f91839c",
+        "bytes": 67394
+      },
+      {
+        "path": "ElevenSquare/Tasks/T03/HomogeneousFanComparisonInteger.lean",
+        "sha256": "8104cd1d096a3fb93dba2a82d7b94d845b0763796b93b335cc5fb1270a0bb96a",
+        "bytes": 113022
+      }
+    ],
+    "unchanged_dependency_bindings": [
+      {
+        "path": "ElevenSquare/Geometry.lean",
+        "transport_sha256": "fa8ff2c666453b56f04b22c164ef063cbd46dc85fb4afd7ed6fbb01b7c4f641a",
+        "Git_source_sha256": "fa8ff2c666453b56f04b22c164ef063cbd46dc85fb4afd7ed6fbb01b7c4f641a",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/Pending/GeometryTypes.lean",
+        "transport_sha256": "a7bf5e2a537e0b81a7d874c35c769f605b61da9e3fef28feb07390736690502a",
+        "Git_source_sha256": "a7bf5e2a537e0b81a7d874c35c769f605b61da9e3fef28feb07390736690502a",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/CoverData.lean",
+        "transport_sha256": "d3ed474b9f3b8c88ffffcfa1c1005b98be709dd5443198088e94e659a299906d",
+        "Git_source_sha256": "d3ed474b9f3b8c88ffffcfa1c1005b98be709dd5443198088e94e659a299906d",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/Pending/Types.lean",
+        "transport_sha256": "a08828e4674559871cfa7ee6e5321d008b43ff66baf2fa6906b3225e59e6dd7a",
+        "Git_source_sha256": "a08828e4674559871cfa7ee6e5321d008b43ff66baf2fa6906b3225e59e6dd7a",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/Tasks/T03/LinearCertificates.lean",
+        "transport_sha256": "c24f3d50ad393d00d0a1d6650f853f419a3612f957b75cad881184517e1ac66d",
+        "Git_source_sha256": "8dcb73f29c784385b6b2b331534b11c2875973122cd05c3a350b4d073222e52f",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/Tasks/T03/LinearCover.lean",
+        "transport_sha256": "07a06e2af16eba8f1ab5c1874fb30b81eb6e625cffcf24ad7874c2f2bd6d94e8",
+        "Git_source_sha256": "07a06e2af16eba8f1ab5c1874fb30b81eb6e625cffcf24ad7874c2f2bd6d94e8",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/Tasks/T03/TriangleCover.lean",
+        "transport_sha256": "085f602a90d0935ae1294a65f063505a15d231b8dcbf39b8bdda23067cbef245",
+        "Git_source_sha256": "085f602a90d0935ae1294a65f063505a15d231b8dcbf39b8bdda23067cbef245",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/Tasks/T03/TriangleCertificates.lean",
+        "transport_sha256": "3fca75c845e23778f2c940325b8d19b0d43515553d2fa4c8e7bfd09bfdf81808",
+        "Git_source_sha256": "3fca75c845e23778f2c940325b8d19b0d43515553d2fa4c8e7bfd09bfdf81808",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/Tasks/T03/SimplePolygonFan.lean",
+        "transport_sha256": "c09f1cc57f742f234031494ef5478d6691e66839b37c9622215552e97299f512",
+        "Git_source_sha256": "c09f1cc57f742f234031494ef5478d6691e66839b37c9622215552e97299f512",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/Tasks/T03/FiniteConvex.lean",
+        "transport_sha256": "46d56b6a62c2711b301c8b02088fa4da7d45229fb5e5d2d9d10a7bf19e35b46f",
+        "Git_source_sha256": "46d56b6a62c2711b301c8b02088fa4da7d45229fb5e5d2d9d10a7bf19e35b46f",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/Pending/S05_Minkowski.lean",
+        "transport_sha256": "e39dcfc51ad822fffbd76414e140f476baf3d5f0e55f7790e273362ce5484e71",
+        "Git_source_sha256": "e39dcfc51ad822fffbd76414e140f476baf3d5f0e55f7790e273362ce5484e71",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/BasicGeometry.lean",
+        "transport_sha256": "0e291c05b9fa7670ed3bac5c605e5cdb3666994715c9f7e4a16786881d020c72",
+        "Git_source_sha256": "0e291c05b9fa7670ed3bac5c605e5cdb3666994715c9f7e4a16786881d020c72",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/Pending/S05_OwnedHull.lean",
+        "transport_sha256": "237234a0a57234a0fe6ca3d421758550b50266b6b1411b04ad07c49339a7db42",
+        "Git_source_sha256": "237234a0a57234a0fe6ca3d421758550b50266b6b1411b04ad07c49339a7db42",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/Pending/S05_Trace.lean",
+        "transport_sha256": "c28d11831b4130263f31e046d4165e942ce15d6662b1902875e1de2b7c2f7a92",
+        "Git_source_sha256": "c28d11831b4130263f31e046d4165e942ce15d6662b1902875e1de2b7c2f7a92",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/Tasks/T03/UniversalCollision.lean",
+        "transport_sha256": "bdec0c56b98f0b9c30ff5ba0c041ff1b1341554b52ea06b950d5a1d173176c74",
+        "Git_source_sha256": "bdec0c56b98f0b9c30ff5ba0c041ff1b1341554b52ea06b950d5a1d173176c74",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/CoverChecks.lean",
+        "transport_sha256": "cfb1ac4a0bbd79e078519e7d9df2e04892458a87cc309a6aa520a0cff2e4e68d",
+        "Git_source_sha256": "cfb1ac4a0bbd79e078519e7d9df2e04892458a87cc309a6aa520a0cff2e4e68d",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/GeneratedCover0.lean",
+        "transport_sha256": "4936cc6f454137d9509976002e3c719de0dd28441e99ae8fbd0343ab7c2fba99",
+        "Git_source_sha256": "4936cc6f454137d9509976002e3c719de0dd28441e99ae8fbd0343ab7c2fba99",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/GeneratedCover1.lean",
+        "transport_sha256": "e72e09742bd6a4d17a8152f6b69c9cdb94933d15829193e88ec52ba85c6c6d27",
+        "Git_source_sha256": "e72e09742bd6a4d17a8152f6b69c9cdb94933d15829193e88ec52ba85c6c6d27",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/GeneratedCover2.lean",
+        "transport_sha256": "f9d6ccc5aa2ae6c16140dcf8d474f869448c83d965a7644f16fb59b3d2c020b5",
+        "Git_source_sha256": "f9d6ccc5aa2ae6c16140dcf8d474f869448c83d965a7644f16fb59b3d2c020b5",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/GeneratedCover3.lean",
+        "transport_sha256": "973ed8e31b101004f93e72347411e153c6283022219cfcc5d5846ee1f65a9f0f",
+        "Git_source_sha256": "973ed8e31b101004f93e72347411e153c6283022219cfcc5d5846ee1f65a9f0f",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/Cover.lean",
+        "transport_sha256": "fe57460a07b6acd1561be1d63a9e93c27560716fd1af8df94f65fb7321f7cd1e",
+        "Git_source_sha256": "fe57460a07b6acd1561be1d63a9e93c27560716fd1af8df94f65fb7321f7cd1e",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/Tasks/T03/CellLinear.lean",
+        "transport_sha256": "0ebf5ea519b79817f0a56b500ff2fbb240e583dbcf0d54c1402fa64c21a6c18c",
+        "Git_source_sha256": "ff7bff9d2a2fd7c14a1a454695baffa67b5999877a2a9a809899db6a6a7f41ec",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/Tasks/T03/HullLinearCertificates.lean",
+        "transport_sha256": "42ff42008512d9405b91d795724336fa896814ec2c92e68318d7e9c541643f28",
+        "Git_source_sha256": "42ff42008512d9405b91d795724336fa896814ec2c92e68318d7e9c541643f28",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/Tasks/T03/CollisionPlanes.lean",
+        "transport_sha256": "532b63b79b981655657a1e627557999f1d3e10f6845297d841f80ca743f40186",
+        "Git_source_sha256": "532b63b79b981655657a1e627557999f1d3e10f6845297d841f80ca743f40186",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/Tasks/T03/HomogeneousPoints.lean",
+        "transport_sha256": "fe77dc3e920c429e391da1998c0e066f7ead9df610db2cbcc20479718a61daa5",
+        "Git_source_sha256": "fe77dc3e920c429e391da1998c0e066f7ead9df610db2cbcc20479718a61daa5",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/Tasks/T03/KernelBoolRefl.lean",
+        "transport_sha256": "90111f1782484d93843ab7e8ec6789744ebf90afdd8deb6fa2d3ddf3880513ce",
+        "Git_source_sha256": "90111f1782484d93843ab7e8ec6789744ebf90afdd8deb6fa2d3ddf3880513ce",
+        "same_Lean_bytes_except_optional_line_endings": true
+      },
+      {
+        "path": "ElevenSquare/Tasks/T03/KernelEqualityRefl.lean",
+        "transport_sha256": "579aba76120723d18a2d3ee1464e136612cca06ef76f9547a67ae183b2c92200",
+        "Git_source_sha256": "579aba76120723d18a2d3ee1464e136612cca06ef76f9547a67ae183b2c92200",
+        "same_Lean_bytes_except_optional_line_endings": true
+      }
+    ],
+    "pinned_Lake_and_toolchain_bytes_match_publication": true,
+    "merged_repository_Lean_replay_performed": false,
+    "Lean_jobs_or_worker_controls_for_publication": 0
+  },
+  "identical_original_polygon_definition_sha256": "ff397c97b36a02427ee7dabf73ebd772a980ffba4c21f70729b3d9a42ef25489",
+  "identical_vertices_planes_and_factors_byte_verified": true,
+  "vertices": 56,
+  "rational_module_compile_seconds": 33.28,
+  "integer_module_compile_seconds": 34.23,
+  "comparison_actual_audit_seconds": 23.11,
+  "comparison_is_one_observation_not_controlled_benchmark": true,
+  "measured_compile_time_saving_in_this_sample": false,
+  "new_generic_helper_is_not_a_full_case_certificate": true,
+  "case_data_or_running_source_changes_for_publication": false,
+  "new_bulk_assets": 0,
+  "public_family_and_final_return_ZIP_complete": false
+}

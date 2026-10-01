@@ -1788,6 +1788,12 @@
       "module": "ElevenSquare.Tasks.T03.KernelEqualityRefl",
       "source_sha256": "579aba76120723d18a2d3ee1464e136612cca06ef76f9547a67ae183b2c92200",
       "evidence": "verification/t03-equality-refl.json"
+    },
+    {
+      "module": "ElevenSquare.Tasks.T03.HomogeneousPolygonFan",
+      "source_sha256": "83bf800f64dea8e5de542bdf6a8af53cc8403121480223c4d3109e661cb117f3",
+      "evidence": "verification/t03-homogeneous-fan-helper.json",
+      "generic_helper_only_not_full_case_certificate": true
     }
   ],
   "latest_unfinished_case_checkpoint": {
@@ -1999,5 +2005,22 @@
     "first_new1499_group_actual_audit": "verification/t03-case1499-first-group-audit.json",
     "first_new1499_group_audit_seconds": 27.44,
     "first_new1499_group_scope": "A single dependency group, not the original full certificate target."
+  },
+  "latest_homogeneous_fan_helper_checkpoint": {
+    "manifest": "verification/t03-homogeneous-fan-helper.json",
+    "actual_generic_soundness_targets_accepted": 3,
+    "actual_identical_polygon_targets_accepted": 3,
+    "vertices": 56,
+    "rational_module_seconds": 33.28,
+    "integer_module_seconds": 34.23,
+    "single_observation_compile_time_saving_demonstrated": false,
+    "pending_case_source_application": false,
+    "accepted_full_cases_unchanged": 158,
+    "remaining_cases": 15,
+    "case1465_actual_Chunk105_group_audit": "verification/t03-case1465-retry03-group-audit.json",
+    "case1465_full_case_audit_accepted": false,
+    "new_bulk_assets": 0,
+    "merged_repository_Lean_replay_performed": false,
+    "Lean_workers_or_process_controls_started_for_publication": 0
   }
 }

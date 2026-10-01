@@ -6,6 +6,55 @@ repository, and global optimality remains unfinished. This branch supplies
 checked common tools and the complete source closure of one audited certificate,
 case2135. It does not discharge the full-family obligation.
 
+## Checked homogeneous polygon fan helper
+
+The new `HomogeneousPolygonFan.lean` helper writes point coordinates as integer
+numerators over positive denominators. Multiplying oriented area by the product
+of those denominators preserves its sign; a proved identity reduces that sign
+check to integer arithmetic. The original edge plane and rational factor are
+retained, with their concrete equations checked after clearing positive
+denominators. The generic soundness theorem concludes the **same original
+`polygonFanCheck ... = true`**. It changes no polygon data, ownership rule,
+packing definition or public case statement.
+
+Its exact source SHA-256 is
+`83bf800f64dea8e5de542bdf6a8af53cc8403121480223c4d3109e661cb117f3`.
+The three generic targets `HomPoint.fanCrossCheck_sound`,
+`HomEdgeCertificate.check_sound` and `homogeneousPolygonFanCheck_sound` passed
+the original checker: 28.81 seconds for module elaboration and 24.88 seconds
+for the actual target audit. Each uses only `propext`, `Classical.choice` and
+`Quot.sound`. Publication independently checked actual immutable CHECK/logs,
+all accepted transport member hashes and the complete local import closure.
+Its 25 dependency sources already match this checkout, allowing the exact small
+helper source to be added without replacing stronger upstream code. Pinned
+Lake/toolchain bytes also match. These are generic helper proofs, not new full
+case certificates, and no merged repository replay was run for publication.
+
+The included `HomogeneousFanComparisonRational.lean` and
+`HomogeneousFanComparisonInteger.lean` retain byte-identical points, planes,
+factors and edge definitions for the same 56-vertex polygon. Both conclude the
+same original rational Boolean claim. Their actual module checks took
+**33.28 seconds rational, 34.23 seconds integer**; the final target audit took
+23.11 seconds. The rational target and zero-denominator rejection control use
+only `propext`; the integer bridge result uses the standard three axioms.
+This single observation demonstrates **no compile-time saving**. The optional
+bridge has not been applied to pending case sources. Exact sources, original
+transport/member bindings, CHECK/log hashes and the shared definition digest
+are in the [provenance record](verification/t03-homogeneous-fan-helper.json).
+The shared definition digest is recorded with LF line endings; the accepted
+module files retain their exact transport bytes.
+
+The frozen case1465 revision3/`Chunk105` source has independently passed its
+actual group target audit in **45.66 seconds**, after **500.52 seconds** of source
+elaboration. Its accepted transport members, every group source/environment
+binding to the published stacked recipe, and the exact Chunk105 bytes were
+checked. See [actual group evidence](verification/t03-case1465-retry03-group-audit.json).
+This does not complete case1465. All **158/173** full accepted case sources,
+15 remaining cases, prior release assets, `main` and live proof jobs are unchanged.
+The three portable preparation/provenance tools were parameterized and checked
+with Python parsing/help; no live queue/source-generation action or compiler
+was started by publication. No new bulk asset was uploaded.
+
 ## Accepted case1372 and pending remainder checkpoint
 
 The full accepted count is now **158/173**, with **15 cases remaining**.

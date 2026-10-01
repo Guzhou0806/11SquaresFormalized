@@ -1,0 +1,57 @@
+{
+  "status": "FROZEN_CASE1465_CHUNK105_REVISION3_ACTUAL_GROUP_AUDIT_ACCEPTED",
+  "accepted_full_case_count": 158,
+  "case1465_full_case_audit_accepted": false,
+  "accepted_execution_transport_sha256": "93452669eb2683cf7614f36b0710c65637d73d467bde18f6449f9ee5e411553b",
+  "all_execution_transport_members_verified": true,
+  "published_frozen_Chunk105_source_bytes_exact_match": true,
+  "source_sha256": "79b644c036e195b4e0a44ea7507dfbbc69b5f53cb1319cceb966807bc7db0ba8",
+  "actual_audit_CHECK": {
+    "status": "accepted",
+    "source": "verification/HandoffAudit.lean",
+    "exit_code": 0,
+    "elapsed_seconds": 45.66,
+    "lean_memory_limit_mb": 8192,
+    "lean_threads": 1,
+    "lean_thread_stack_kb": 32768,
+    "lean_main_stack_kb": 65536,
+    "cpu_seconds_limit": 1800,
+    "wall_seconds_limit": 2100,
+    "nice_increment": 0,
+    "emitted_olean": null,
+    "meaning": "Elaboration check only; inspect axioms and admissions before marking a proof complete."
+  },
+  "actual_audit_CHECK_sha256": "ad3b06cfe20a5cda4b43eb5c74bd4e23a9c19e89885098325464459008f66439",
+  "actual_audit_log": "'ElevenSquare.Pending.T03.Certificates.UniversalCollision5afc4f2d6bb633ada1f47076.PackedCase1465.Coarsened.collision' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+  "actual_audit_log_sha256": "5ee017a66d74546dc097de7b409689c400c80c70a2eb86b09d28ee7be3531f16",
+  "target_axioms": {
+    "ElevenSquare.Pending.T03.Certificates.UniversalCollision5afc4f2d6bb633ada1f47076.PackedCase1465.Coarsened.collision": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "audit_seconds": 45.66,
+  "compile_seconds": 500.52,
+  "scope": "A dependency-group audit, not the full original case1465 certificate target.",
+  "original_frozen_supplement_unchanged": true,
+  "all_group_source_members_and_pinned_environment_match_frozen_stacked_recipe": true,
+  "group_source_member_count": 1168,
+  "actual_compile_CHECK": {
+    "status": "accepted",
+    "source": "ElevenSquare/Tasks/T03/Batch04/Case1465/PackedNamespaced/Chunk105.lean",
+    "exit_code": 0,
+    "elapsed_seconds": 500.52,
+    "lean_memory_limit_mb": 8192,
+    "lean_threads": 1,
+    "lean_thread_stack_kb": 32768,
+    "lean_main_stack_kb": 65536,
+    "cpu_seconds_limit": 1800,
+    "wall_seconds_limit": 2100,
+    "nice_increment": 0,
+    "emitted_olean": ".lake/build/lib/ElevenSquare/Tasks/T03/Batch04/Case1465/PackedNamespaced/Chunk105.olean",
+    "meaning": "Elaboration check only; inspect axioms and admissions before marking a proof complete."
+  },
+  "actual_compile_CHECK_sha256": "d115947a8ca0d774731b2568945f414d7e6455d0a0923c64b29dcd84e18e1f01",
+  "actual_compile_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -225,3 +225,29 @@ assignment and then longest dependency path. Recompute after every successful
 assignment with current active jobs and timestamps so simultaneous free slots
 rotate fairly. Isolated decision fixtures checked rotation and priority without
 starting jobs. No audit timing probe is evidence of mathematical correctness.
+
+
+`prepare_homogeneous_fan_probe.py` prepares only the reviewed abstract arithmetic
+helper task, using explicit `--kit`, `--scratch-root`, optional source/transport
+roots and a conservative `--max-workers` default of one. It preserves exact
+reachable source/environment/checker bytes and refuses existing task/queue
+paths. It starts no compiler and accepts no full case.
+
+`prepare_homogeneous_fan_comparison.py` additionally requires `--polygon-source`
+pointing to the reviewed generated source block format. The helper must already
+have passed its actual supplied-checker audit. Exact rational literals produce
+integer witnesses, while both comparison modules retain the same original
+definitions and prove the original rational Boolean claim. Python arithmetic
+checks only prepare data; ordinary Lean proofs and the original audit are still
+required. It refuses existing fixture modules/tasks/queues. The included fixture
+sources are the exact actually checked 56-vertex modules, not a claimed speedup.
+
+`record_homogeneous_fan_helper_acceptance.py` reads actual wrapper/execution,
+CHECK/log and source hashes with explicit kit/source roots, helper prefix and
+an output basename. Optional `--include-group105` collects that specific group
+audit with `--group-prefix`; it never counts it as a full case.
+`--reported-accepted-cases` is caller-provided informational metadata, not a
+proof count calculated by this collector. Portable tools had parsing/help
+checks only; publication did not replay source generation, queue writes or
+runtime checks. The independent published provenance contains the actual
+accepted source-member and checker bindings.

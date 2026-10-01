@@ -34632,9 +34632,24 @@
       "sha256": "224afe04b130dd78376147df8a8762461cc22260f82e6174325bc0064c2b87b0"
     },
     {
+      "path": "ElevenSquare/Tasks/T03/HomogeneousFanComparisonInteger.lean",
+      "bytes": 113022,
+      "sha256": "8104cd1d096a3fb93dba2a82d7b94d845b0763796b93b335cc5fb1270a0bb96a"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/HomogeneousFanComparisonRational.lean",
+      "bytes": 67394,
+      "sha256": "97ab6fa982c9e1878e1fbd031fffbdf0f8e2e4fb26eb03ca225a37fc5f91839c"
+    },
+    {
       "path": "ElevenSquare/Tasks/T03/HomogeneousPoints.lean",
       "bytes": 3343,
       "sha256": "fe77dc3e920c429e391da1998c0e066f7ead9df610db2cbcc20479718a61daa5"
+    },
+    {
+      "path": "ElevenSquare/Tasks/T03/HomogeneousPolygonFan.lean",
+      "bytes": 8126,
+      "sha256": "83bf800f64dea8e5de542bdf6a8af53cc8403121480223c4d3109e661cb117f3"
     },
     {
       "path": "ElevenSquare/Tasks/T03/HomogeneousSupport.lean",
@@ -42818,13 +42833,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 8277,
-      "sha256": "59923e9c8d2e391d6af9247fe56f679a9a645ce5cbaf10e04bacdd39d3fa1669"
+      "bytes": 8999,
+      "sha256": "1202939f14ec8eb515794ae852e1ffa8e595ffab6e47dd6f6e97ff4e8ce97c2d"
     },
     {
       "path": "T03_PROGRESS.md",
-      "bytes": 57317,
-      "sha256": "b9ce03a6fb5d98612ff549662f025f588d49838c0edfc529b82e627d97b0a8b9"
+      "bytes": 60524,
+      "sha256": "f4c1696a0e5f7af0d4c8f6d81a246600732da3895fb1c3e4ae0941b4b79deb07"
     },
     {
       "path": "lake-manifest.json",
@@ -42848,8 +42863,8 @@
     },
     {
       "path": "scripts/t03_retry/README.md",
-      "bytes": 15630,
-      "sha256": "b4633cb66a13c34367f7b87bee9b7755a741e7f2e816b998753f983219671a8e"
+      "bytes": 17279,
+      "sha256": "1c3f2e9a0e9735a9b8e77870fe649e706562eaacd1aff76f02dd6ec1640e2e65"
     },
     {
       "path": "scripts/t03_retry/activate_prepared_local_case.py",
@@ -42902,6 +42917,16 @@
       "sha256": "47e4eb322b66624f7f99984e6efb1cbbb7a76f3f3c5326c6b526422d8b9d5485"
     },
     {
+      "path": "scripts/t03_retry/prepare_homogeneous_fan_comparison.py",
+      "bytes": 9323,
+      "sha256": "f3e6f78538dadc2e23b42d825ba0e1c5e17c1dab00f5884cb0525edc633a072e"
+    },
+    {
+      "path": "scripts/t03_retry/prepare_homogeneous_fan_probe.py",
+      "bytes": 4407,
+      "sha256": "3fcafddaf8c6053288a37c47e7ddb46067813fcea08df513b8bd28b77f038e3f"
+    },
+    {
       "path": "scripts/t03_retry/prepare_remaining_parallel_case.py",
       "bytes": 13219,
       "sha256": "1d17dd3022e129134be194447bc3c847fa2d48971ab504b9aecb34d93540f45b"
@@ -42925,6 +42950,11 @@
       "path": "scripts/t03_retry/queue_parallel_case_retry.py",
       "bytes": 8369,
       "sha256": "1830b19551f6857a8e2d1fcf3de095ac96b091fd12586e1b72b7b244d6e9dd86"
+    },
+    {
+      "path": "scripts/t03_retry/record_homogeneous_fan_helper_acceptance.py",
+      "bytes": 3836,
+      "sha256": "dc2b20b57a17ace899455d109dbb75cc0c1ef96869857ca4f387e6fd9aa1d883"
     },
     {
       "path": "scripts/t03_retry/record_native_source_sync_validation.py",
@@ -42988,8 +43018,8 @@
     },
     {
       "path": "verification/privacy-review.json",
-      "bytes": 10192,
-      "sha256": "c7b9bd2b135454865e2d6fda8b0a1b7324e44502844b5ba1eb35209451ca72f9"
+      "bytes": 10709,
+      "sha256": "95721f2ebb5e8e2df593f5b9ae72d8325ab781e205ab56e5d4497b425bc282eb"
     },
     {
       "path": "verification/source-check.json",
@@ -43062,6 +43092,11 @@
       "sha256": "a72b61e96a789d2da6ba28446921aef22a893f9223cf6dffeaf214a9c8926a71"
     },
     {
+      "path": "verification/t03-case1465-retry03-group-audit.json",
+      "bytes": 2739,
+      "sha256": "04b95fec99aa33a1471b9e656e311de0b938c08153004d2086fc7aaf3d8a29d5"
+    },
+    {
       "path": "verification/t03-case1465-retry03-progress.json",
       "bytes": 2396,
       "sha256": "ea8855a065f48f92397fc2576581d0876b0412d63fbc0b5f920f646b15339a0e"
@@ -43132,6 +43167,11 @@
       "sha256": "509a650e34764aad2f1021e0428e3bc7d7c3e2769e9fd2b2ca2ce8e73791b475"
     },
     {
+      "path": "verification/t03-homogeneous-fan-helper.json",
+      "bytes": 26049,
+      "sha256": "c25d931732cb38f99665db554d5bf56e526d6877d3d5e96ef62470b69d698a0c"
+    },
+    {
       "path": "verification/t03-native-source-sync-application.json",
       "bytes": 1223,
       "sha256": "24cad6066bb75b066df51f2c2c881a243ff07501fa3803ce5029a324973d70fe"
@@ -43158,8 +43198,8 @@
     },
     {
       "path": "verification/t03-progress.json",
-      "bytes": 66393,
-      "sha256": "c18772cb0d9dbe972fd20a358ba236c3c1edb30d4ae52fbc9e17376daf15bd2d"
+      "bytes": 67476,
+      "sha256": "c84a9caedcbdc3d1d15dbd2cff43fc3a7893ff7e3fbb954fb844507206237df8"
     },
     {
       "path": "verification/t03-release-checkpoint.json",
