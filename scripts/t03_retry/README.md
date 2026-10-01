@@ -173,9 +173,19 @@ latest transition; earlier revision records/archives remain preserved.
 `--supplement-sha256` and a fresh `--output`. It verifies both ZIP digests,
 safe members, changed-member bindings and the updated source manifest, then
 streams unchanged base members plus the explicitly bound overlay to a fresh
-source directory. Exactly one Lean module may change. Metadata changes are
+source directory. Each source layer changes exactly one Lean module. Metadata changes are
 explicitly listed. All proof/source/environment/task acceptance still belongs
 to the unchanged original Lean checker. A small isolated fixture checked
 byte preservation, manifest application, existing-output refusal and wrong
 base/supplement digest rejection; no real bulk source extraction or Lean
 build was performed for this publication.
+
+
+For a stacked recipe, supply ordered repeated `--prior-supplement PATH` inputs.
+Their required SHA256 values are bound by the current supplement's authenticated
+recipe. The tool validates each predecessor chain, old/new source member hash
+and refreshed manifest before creating the fresh output. The original base
+ZIP stays unchanged, so no full ZIP repack is needed. Layered output is still
+pending source, requiring the original full Lean check. The two-layer Python
+fixture preserved both source changes and unchanged environment bytes and
+rejected a missing/wrong predecessor before output creation.

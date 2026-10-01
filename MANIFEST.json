@@ -42818,13 +42818,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 8081,
-      "sha256": "6d2c0466b9d37d32dd647c75261de0ecc6388906766de6f73ab995629d0be3d0"
+      "bytes": 8240,
+      "sha256": "8d14a8e5723a22daf97185631f12ec1e6eab4dd6d51282eac448126a4c8fda41"
     },
     {
       "path": "T03_PROGRESS.md",
-      "bytes": 49476,
-      "sha256": "50fdeb19ea166b5e49f3c0f80985aa511a3aa306b73e00cf75d3c5d2f91ff311"
+      "bytes": 51603,
+      "sha256": "d0cac1172b4ea892273d97c22b224d1a31c2a02f7600476a7ba8674105d7a4b1"
     },
     {
       "path": "lake-manifest.json",
@@ -42848,13 +42848,13 @@
     },
     {
       "path": "scripts/t03_retry/README.md",
-      "bytes": 12619,
-      "sha256": "33fc722bd90c337e744bfa0e8fe2dd386b9996cc7551bb5c1fd88c2bd707ad5f"
+      "bytes": 13240,
+      "sha256": "165b61e7b5bde98a0d074552d8b606f14e860e194a89eae5cc0a3d8f8163d5a0"
     },
     {
       "path": "scripts/t03_retry/apply_source_supplement.py",
-      "bytes": 4641,
-      "sha256": "93d79540c7559b43e3ac5d94143698625a22c771183fe6819ad4cbdf2ef0cdb6"
+      "bytes": 6618,
+      "sha256": "afcf4d9d449c6fbe9fdaab597070c7fd97942b1b1ad6730cb5c4b1d3eb6ab9a3"
     },
     {
       "path": "scripts/t03_retry/benchmark_native_source_sync.py",
@@ -42968,8 +42968,8 @@
     },
     {
       "path": "verification/privacy-review.json",
-      "bytes": 8778,
-      "sha256": "3fc2d27abdeda4d2c153f65700003c40ef474eb53cf77d056f9053cccbc036e5"
+      "bytes": 9166,
+      "sha256": "f8db60ca3c5bf88bdeb2ba70c051b5b0fc02bb2341d3a5768bba40267f14ddc2"
     },
     {
       "path": "verification/source-check.json",
@@ -43035,6 +43035,16 @@
       "path": "verification/t03-case1465-retry02-source-supplement.json",
       "bytes": 6321,
       "sha256": "a72b61e96a789d2da6ba28446921aef22a893f9223cf6dffeaf214a9c8926a71"
+    },
+    {
+      "path": "verification/t03-case1465-retry03-progress.json",
+      "bytes": 2396,
+      "sha256": "ea8855a065f48f92397fc2576581d0876b0412d63fbc0b5f920f646b15339a0e"
+    },
+    {
+      "path": "verification/t03-case1465-retry03-source-supplement.json",
+      "bytes": 4757,
+      "sha256": "d1460013cb55eceb464e69031a0a1c0e209212952257dd57899de710b797b6d9"
     },
     {
       "path": "verification/t03-case1499-local-resume.json",
@@ -43103,8 +43113,8 @@
     },
     {
       "path": "verification/t03-progress.json",
-      "bytes": 63538,
-      "sha256": "b0cc851d031a17826e9955fe976cf3c551d02d7f425991f04689fb0075997cdb"
+      "bytes": 64152,
+      "sha256": "320dee3e74339fb68082cca3b405ccb7bc59f28702d58cc2dd7e41cf1d749869"
     },
     {
       "path": "verification/t03-release-checkpoint.json",

@@ -1951,5 +1951,15 @@
     "release_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/tag/t03-pending-case1465-retry02-20261001",
     "github_server_all3_asset_digests_and_sizes_verified": true,
     "actual106_group_target_audit_accepted": true
+  },
+  "case1465_frozen_retry03_supplement": {
+    "manifest": "verification/t03-case1465-retry03-source-supplement.json",
+    "changed_Lean_modules_relative_to_required_layers": 1,
+    "ordinary_equality_constructions_changed": 64,
+    "required_base_zip_sha256": "2e94181e269002faa2ad6261526a954eebbbef3c038fe7afcd35da30c74d043e",
+    "required_prior106_supplement_sha256": "91e5360a56c6d00fe4c8ae9940444dc23af5a0fd7e45aed2faf7006a55eba46d",
+    "frozen_raw_master_sha256": "5ee177b78311b92b3e6a0eb4992d56340e1421fe354c4b0f7ef7bc1ae9455cc5",
+    "full_case_audit_accepted": false,
+    "accepted_full_cases": 157
   }
 }

@@ -1,0 +1,45 @@
+{
+  "status": "FAILED_AND_UNPUBLISHED_GROUP_EQUALITY_PROOFS_CANONICALLY_PUBLISHED",
+  "case": 1465,
+  "utc": "2026-10-01T08:01:57.938824+00:00",
+  "repair_revision": 3,
+  "previous_grouped_archive_sha256": "c8cc656c45285bb67d76cd9b360aab43978cf70d49bba859d84d787584366a92",
+  "new_grouped_archive_sha256": "5ee177b78311b92b3e6a0eb4992d56340e1421fe354c4b0f7ef7bc1ae9455cc5",
+  "modified_groups": 1,
+  "changed_equality_proof_constructions": 64,
+  "group_task_aliases": {
+    "ElevenSquare.Tasks.T03.Batch04.Case1465.PackedNamespaced.Chunk107": "library-case1465-node998-107-equality-retry01-task.json",
+    "ElevenSquare.Tasks.T03.Batch04.Case1465.PackedNamespaced.Chunk108": "library-case1465-node998-108-equality-retry01-task.json",
+    "ElevenSquare.Tasks.T03.Batch04.Case1465.PackedNamespaced.Chunk106": "library-case1465-node998-106-equality-retry02-task.json",
+    "ElevenSquare.Tasks.T03.Batch04.Case1465.PackedNamespaced.Chunk105": "library-case1465-node998-105-equality-retry03-task.json"
+  },
+  "modified_source_bindings": [
+    {
+      "module": "ElevenSquare.Tasks.T03.Batch04.Case1465.PackedNamespaced.Chunk105",
+      "old_source_sha256": "f62860f14797188280df587bd4b979680bd7f517a14ac6ca040de8cf361ccc12",
+      "new_source_sha256": "79b644c036e195b4e0a44ea7507dfbbc69b5f53cb1319cceb966807bc7db0ba8",
+      "equalities": 64
+    }
+  ],
+  "numeric_tokens_unchanged": true,
+  "all_unaffected_published_and_running_group_source_closures_unchanged": true,
+  "original_certificate_type_and_root_unchanged": true,
+  "full_case_and_final_audits_pending": true,
+  "running_proof_workers_unchanged": true,
+  "published_utc": "2026-10-01T08:02:33.295960+00:00",
+  "actual_failed105_CHECK": {
+    "status": "failed_or_resource_limited",
+    "source": "ElevenSquare/Tasks/T03/Batch04/Case1465/PackedNamespaced/Chunk105.lean",
+    "exit_code": 1,
+    "elapsed_seconds": 491.09,
+    "lean_threads": 1,
+    "lean_memory_limit_mb": 8192
+  },
+  "actual_failed105_CHECK_sha256": "c4e20bde5e007b108f198350702714f04cd317aa1ee0d790844193caafebceb8",
+  "actual_failed105_log_sha256": "9482c9b044f7bf9c2e8758b521aa9b5aeb459834ff856ee9684e7c24c992aef8",
+  "exact64_rewrites_independently_verified": true,
+  "base_and_prior_supplement_and_new_master_digests_verified": true,
+  "all_other_original_member_binding_set_verified": true,
+  "accepted_full_case_count": 157,
+  "new105_proof_checks_pending": true
+}

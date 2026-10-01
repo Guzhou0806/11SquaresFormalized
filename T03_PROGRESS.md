@@ -122,6 +122,39 @@ reads the named latest publication transition and its cumulative retry
 aliases, preserving earlier retries. These parameterized ports had Python
 parsing/help checks; no process controls, Lean builds or workers were run.
 
+## Frozen case1465 revision3 source supplement
+
+The subsequent preserved `Chunk105` also failed equality elaboration. The
+frozen revision3 supplement changes **64 ordinary equality constructions**
+in that single module. It requires the exact original portable case1465 base
+and the published frozen revision2/Chunk106 supplement. It preserves all
+other source, environment and task bytes relative to those two input layers.
+The raw master digest is `5ee177b78311b92b3e6a0eb4992d56340e1421fe354c4b0f7ef7bc1ae9455cc5`.
+
+This supplement is **3,977,887 bytes**, SHA-256
+`26fa942f3928fb4f1d3c6c94cc38a2c40fcc4817dd358d24fb0f9646f85cbdbc`. The [recipe](verification/t03-case1465-retry03-source-supplement.json)
+binds the required base digest, predecessor supplement digest, changed member
+old/new hashes, refreshed manifests and original exact task/target. Every
+one of the 64 rewrites was independently reproduced, and all other original
+member bindings agree with the required prior layers. New Chunk105 proofs
+and the full case target remain pending; the accepted count stays 157/173.
+Subsequent source changes are separate frozen versions.
+
+```sh
+python scripts/t03_retry/apply_source_supplement.py --base BASE.zip --prior-supplement FROZEN-106.zip --supplement FROZEN-105.zip --supplement-sha256 26fa942f3928fb4f1d3c6c94cc38a2c40fcc4817dd358d24fb0f9646f85cbdbc --output fresh-case1465-retry03
+```
+
+The application tool verifies the ordered predecessor ZIP hashes and each
+layer's old/new member bindings, streams the latest member bytes into one
+fresh source directory, and checks its refreshed manifest. Each layer changes
+exactly one Lean source. Tiny Python fixtures checked preservation of both
+source changes and the unchanged environment, and rejected missing/wrong
+predecessors before creating output. No full base extraction or recompression,
+Lean build, source regeneration or worker control ran for publication.
+The unchanged original checker must still verify the exact full case.
+The [actual failed Chunk105 CHECK binding](verification/t03-case1465-retry03-progress.json)
+is recorded without private machine paths.
+
 ## Included source
 
 `ElevenSquare/Tasks/T03/Common.lean` imports two useful improvements and their

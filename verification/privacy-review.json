@@ -196,5 +196,13 @@
     "updated_portable_metadata_and_manifests": true,
     "private_paths_caches_logs_chats_or_account_data_included": false,
     "personal_information_findings": []
+  },
+  "case1465_retry03_supplement_review": {
+    "one_Lean_module_relative_to_prior_layers": true,
+    "base_predecessor_and_master_digests_verified": true,
+    "all64_rewrites_and_other_original_member_binding_set_verified": true,
+    "ordered_layer_byte_fixture_passed": true,
+    "raw_paths_logs_caches_chats_or_account_data_included": false,
+    "personal_information_findings": []
   }
 }

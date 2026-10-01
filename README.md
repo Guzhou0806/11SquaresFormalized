@@ -17,6 +17,8 @@ all four frozen versions with verified GitHub asset hashes and sizes.
 A frozen one-module case1465 revision2 supplement additionally preserves the
 exact existing base while repairing 308 equality constructions. Its exact
 group target audit has since passed; the full case remains pending.
+A separate frozen revision3/Chunk105 supplement adds 64 pending equality
+construction repairs and requires the exact base plus the frozen Chunk106 supplement.
 Native source synchronization measured 3.734 seconds versus 11.665 seconds on
 the same 381-member fixture, and has now run in an actual new proof job.
 

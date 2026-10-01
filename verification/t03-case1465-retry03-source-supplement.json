@@ -1,0 +1,89 @@
+{
+  "format": "T03-pending-single-module-supplement-v1",
+  "case": 1465,
+  "revision": 3,
+  "status": "FULL_CASE_TARGET_AUDIT_PENDING",
+  "full_case_audit_accepted": false,
+  "accepted_full_case_count": 157,
+  "required_cases": 173,
+  "required_base_zip_name": "T03-pending-case1465-equality-retry01-source-checkpoint.zip",
+  "required_base_zip_sha256": "2e94181e269002faa2ad6261526a954eebbbef3c038fe7afcd35da30c74d043e",
+  "required_base_zip_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-pending-equality-retries-20261001/T03-pending-case1465-equality-retry01-source-checkpoint.zip",
+  "required_prior_supplements": [
+    {
+      "asset_name": "T03-pending-case1465-equality-retry02-Chunk106-source-supplement.zip",
+      "asset_sha256": "91e5360a56c6d00fe4c8ae9940444dc23af5a0fd7e45aed2faf7006a55eba46d",
+      "asset_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-pending-case1465-retry02-20261001/T03-pending-case1465-equality-retry02-Chunk106-source-supplement.zip"
+    }
+  ],
+  "previous_original_transport_sha256": "c8cc656c45285bb67d76cd9b360aab43978cf70d49bba859d84d787584366a92",
+  "new_original_transport_sha256": "5ee177b78311b92b3e6a0eb4992d56340e1421fe354c4b0f7ef7bc1ae9455cc5",
+  "changed_source_member": "project/ElevenSquare/Tasks/T03/Batch04/Case1465/PackedNamespaced/Chunk105.lean",
+  "old_source_sha256": "f62860f14797188280df587bd4b979680bd7f517a14ac6ca040de8cf361ccc12",
+  "new_source_sha256": "79b644c036e195b4e0a44ea7507dfbbc69b5f53cb1319cceb966807bc7db0ba8",
+  "ordinary_equality_constructions_changed": 64,
+  "exact_ordinary_rewrite_verified": true,
+  "numeric_tokens_unchanged": true,
+  "changed_source_imports_available_in_exact_base": true,
+  "all_other_original_source_environment_and_task_bindings_unchanged_relative_to_required_layers": true,
+  "original_full_task": "forward-case1465-packed-namespaced-retry-assembly-task.json",
+  "original_full_task_sha256": "2bad9a4c7fa109efbe9202395171f386ba66294327d198e272b9c09c838a658d",
+  "original_exact_target": [
+    "ElevenSquare.Pending.T03.Batch04.Case1465.Forward.Certificate.certificate_exists"
+  ],
+  "overlay_members": {
+    "project/ElevenSquare/Tasks/T03/Batch04/Case1465/PackedNamespaced/Chunk105.lean": {
+      "sha256": "79b644c036e195b4e0a44ea7507dfbbc69b5f53cb1319cceb966807bc7db0ba8",
+      "bytes": 6838894
+    },
+    "SOURCE-MANIFEST.json": {
+      "sha256": "450077e0bc42c1bd32ad51aee06867f789cf60321378de2854ccd240b91aae46",
+      "bytes": 7168959
+    },
+    "PENDING-CHECKPOINT.json": {
+      "sha256": "23f4f727a98ca7537de2a9564f803870240e23253f951baf4021a403991407c7",
+      "bytes": 2490
+    },
+    "README.md": {
+      "sha256": "5c176c2a0a6c43c24cb14901197b367f55d79fd28f73d73eb152110e3a430936",
+      "bytes": 1224
+    },
+    "source-sync-manifest.json": {
+      "sha256": "4a203bea3b91d4949d714beffaf4a74ea142aef40fd6368d15c8fd4bc815b460",
+      "bytes": 3472192
+    }
+  },
+  "metadata_refresh": [
+    "SOURCE-MANIFEST.json",
+    "PENDING-CHECKPOINT.json",
+    "README.md",
+    "source-sync-manifest.json"
+  ],
+  "recipe": "Use apply_source_supplement.py with exact base ZIP, --prior-supplement frozen106 ZIP, current supplement SHA256 and fresh output directory. The unchanged original checker must verify the full case.",
+  "merged_repository_Lean_replay_performed": false,
+  "public_combined_targets_complete": false,
+  "final_return_zip_complete": false,
+  "asset_name": "T03-pending-case1465-equality-retry03-Chunk105-source-supplement.zip",
+  "asset_bytes": 3977887,
+  "asset_sha256": "26fa942f3928fb4f1d3c6c94cc38a2c40fcc4817dd358d24fb0f9646f85cbdbc",
+  "privacy_scan_passed": true,
+  "all_supplement_member_bytes_reread_verified": true,
+  "packaged_utc": "2026-10-01T08:17:03.316654+00:00",
+  "case1465_source_version_scope": "Frozen revision3/Chunk105 only, requiring the original base and frozen106 supplement.",
+  "publication_status": "VERIFIED_FROZEN_REVISION3_SOURCE_SUPPLEMENT_AWAITING_UPLOAD",
+  "tag": "t03-pending-case1465-retry03-20261001",
+  "application_tool": "scripts/t03_retry/apply_source_supplement.py",
+  "application_fixture": {
+    "status": "SMALL_HASH_BOUND_SOURCE_APPLICATION_AND_ORDERED_LAYER_FIXTURE_PASS",
+    "changed_member_bytes_preserved": true,
+    "unchanged_environment_bytes_preserved": true,
+    "updated_manifest_matches_applied_sources": true,
+    "existing_output_rejected": true,
+    "wrong_supplement_digest_rejected_before_output_creation": true,
+    "wrong_base_digest_rejected_before_output_creation": true,
+    "ordered_two_layer_changes_preserved": true,
+    "missing_or_wrong_predecessor_rejected_before_output_creation": true,
+    "Lean_processes_started": 0,
+    "real_multi_gigabyte_base_extracted": false
+  }
+}
