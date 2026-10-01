@@ -1,0 +1,407 @@
+{
+  "status": "FROZEN1499_REMAINDER_SOURCE_PREFIX_AND_PROOF_CONSTRUCTION_BINDINGS_VERIFIED",
+  "case": 1499,
+  "plan_utc": "2026-10-01T08:20:37.928180+00:00",
+  "preparation_utc": "2026-10-01T08:25:14.462794+00:00",
+  "old_transport_sha256": "6bd84daf12076d11f62ade52aa2149f1d7ea379cd7fcf285454066a3edf56495",
+  "new_transport_sha256": "f50d32e21a6babf4840f49f942d51768ed768f8d0bcadb665d4f69f50fe6979f",
+  "old_serial_remaining_groups": 58,
+  "new_remaining_groups": 72,
+  "remaining_dependency_levels": 22,
+  "maximum_parallel_original_module_width": 1557,
+  "preserved_prefix_groups": 26,
+  "preserved_original_modules": 1643,
+  "remaining_original_modules": 3705,
+  "changed_ordinary_equality_constructions": 6770,
+  "all26_prefix_CHECK_hashes_and_source_bytes_verified": true,
+  "all3705_remainder_block_rewrites_independently_verified": true,
+  "exact_original_target_bridge_byte_preserved": true,
+  "numeric_tokens_unchanged": true,
+  "original_task_fields_except_module_root_unchanged": true,
+  "original_exact_targets": [
+    "ElevenSquare.Pending.T03.Batch05.Case1499.Forward.Certificate.certificate_exists"
+  ],
+  "preserved_compiler_checks": [
+    {
+      "group": 0,
+      "CHECK_sha256": "6ee977097665559ebd27c3723262687a071cb14e49cea117de5ff261a7010e43",
+      "source_sha256": "481a045ffca06faf3e60a83eef0e0c0f9f2643f67d336507dc385b062e0e12e1",
+      "CHECK": {
+        "status": "accepted",
+        "source": "ElevenSquare/Tasks/T03/Batch05/Case1499/PackedNamespaced/Chunk000.lean",
+        "exit_code": 0,
+        "elapsed_seconds": 344.26,
+        "lean_threads": 1,
+        "lean_memory_limit_mb": 4096
+      },
+      "scope": "Accepted source elaboration, not a full case target axiom audit."
+    },
+    {
+      "group": 1,
+      "CHECK_sha256": "0476538e20ca612701d7359c71b5eff9f4f15d8fd0ea5fe37696a07510a67b3b",
+      "source_sha256": "211eeafdfa048b3dc77899bfbe5c4610b16ddd9db39eabe75c6e37d1e40cde56",
+      "CHECK": {
+        "status": "accepted",
+        "source": "ElevenSquare/Tasks/T03/Batch05/Case1499/PackedNamespaced/Chunk001.lean",
+        "exit_code": 0,
+        "elapsed_seconds": 363.4,
+        "lean_threads": 1,
+        "lean_memory_limit_mb": 4096
+      },
+      "scope": "Accepted source elaboration, not a full case target axiom audit."
+    },
+    {
+      "group": 2,
+      "CHECK_sha256": "0d0cfbc0420afc86147a4861968939f4f49d2155b5eb0d30742f6190be49c825",
+      "source_sha256": "2e02a2abb63db15131b0e7b8d65ff43b92e811fba4ddf26f968644c30b62bb93",
+      "CHECK": {
+        "status": "accepted",
+        "source": "ElevenSquare/Tasks/T03/Batch05/Case1499/PackedNamespaced/Chunk002.lean",
+        "exit_code": 0,
+        "elapsed_seconds": 491.14,
+        "lean_threads": 1,
+        "lean_memory_limit_mb": 4096
+      },
+      "scope": "Accepted source elaboration, not a full case target axiom audit."
+    },
+    {
+      "group": 3,
+      "CHECK_sha256": "dd628494034dafc887d09968823e3f0e9e2ffc8a50784a00590b5fd29ab6ece6",
+      "source_sha256": "0ad3fb849c8fd853401fa7513d9c2ee58f0a42782c4167409dc5527df896fcd9",
+      "CHECK": {
+        "status": "accepted",
+        "source": "ElevenSquare/Tasks/T03/Batch05/Case1499/PackedNamespaced/Chunk003.lean",
+        "exit_code": 0,
+        "elapsed_seconds": 355.57,
+        "lean_threads": 1,
+        "lean_memory_limit_mb": 4096
+      },
+      "scope": "Accepted source elaboration, not a full case target axiom audit."
+    },
+    {
+      "group": 4,
+      "CHECK_sha256": "f6bc5fd0d1adddc98f120771e10825a4ed4a721cc65ca2518c6806e30df757ed",
+      "source_sha256": "ecef29efd5e9a1008530461e098446bdbaff54c69502bcb3d9a5be9845412f54",
+      "CHECK": {
+        "status": "accepted",
+        "source": "ElevenSquare/Tasks/T03/Batch05/Case1499/PackedNamespaced/Chunk004.lean",
+        "exit_code": 0,
+        "elapsed_seconds": 350.69,
+        "lean_threads": 1,
+        "lean_memory_limit_mb": 4096
+      },
+      "scope": "Accepted source elaboration, not a full case target axiom audit."
+    },
+    {
+      "group": 5,
+      "CHECK_sha256": "d0159d8c579db1264d69371d1a870938baeae9553528e817c5f64420384e5ccd",
+      "source_sha256": "596c7a2f8d1c039f51acbcd1056381e958c89bd5421cca2a1bf0c13f086ace7d",
+      "CHECK": {
+        "status": "accepted",
+        "source": "ElevenSquare/Tasks/T03/Batch05/Case1499/PackedNamespaced/Chunk005.lean",
+        "exit_code": 0,
+        "elapsed_seconds": 485.27,
+        "lean_threads": 1,
+        "lean_memory_limit_mb": 4096
+      },
+      "scope": "Accepted source elaboration, not a full case target axiom audit."
+    },
+    {
+      "group": 6,
+      "CHECK_sha256": "d0c1dd11d6093476c118b947b82b0abecc8f99f5eacbc1ccb789bb34224a8d39",
+      "source_sha256": "3384bbe3fda0b543c27780e664ec4cc84b32db8c3f72d91fa507cfd7d197d14c",
+      "CHECK": {
+        "status": "accepted",
+        "source": "ElevenSquare/Tasks/T03/Batch05/Case1499/PackedNamespaced/Chunk006.lean",
+        "exit_code": 0,
+        "elapsed_seconds": 281.48,
+        "lean_threads": 1,
+        "lean_memory_limit_mb": 4096
+      },
+      "scope": "Accepted source elaboration, not a full case target axiom audit."
+    },
+    {
+      "group": 7,
+      "CHECK_sha256": "eac97010aaf57c04f69c600e8de70a607c0ab9df710decaeafec47c6c01d9cb9",
+      "source_sha256": "fe96d00a5b476625081b40ff4ad2d3e5d2f00b0acf0bc2274c459d069146b6e5",
+      "CHECK": {
+        "status": "accepted",
+        "source": "ElevenSquare/Tasks/T03/Batch05/Case1499/PackedNamespaced/Chunk007.lean",
+        "exit_code": 0,
+        "elapsed_seconds": 244.81,
+        "lean_threads": 1,
+        "lean_memory_limit_mb": 4096
+      },
+      "scope": "Accepted source elaboration, not a full case target axiom audit."
+    },
+    {
+      "group": 8,
+      "CHECK_sha256": "693e8e08730ff80a34b9375969596a35e5df1baf2fc7073a72d8a2b3b4456898",
+      "source_sha256": "985fa5b7732c8bfce57d521aceff83c34d82e8f98a199c77f0214cda3f795b57",
+      "CHECK": {
+        "status": "accepted",
+        "source": "ElevenSquare/Tasks/T03/Batch05/Case1499/PackedNamespaced/Chunk008.lean",
+        "exit_code": 0,
+        "elapsed_seconds": 269.74,
+        "lean_threads": 1,
+        "lean_memory_limit_mb": 4096
+      },
+      "scope": "Accepted source elaboration, not a full case target axiom audit."
+    },
+    {
+      "group": 9,
+      "CHECK_sha256": "e548c4bc2d77bfd1b9122ea4e07a1a1c185bb927f8f2b3c010acb9ecb75d8571",
+      "source_sha256": "44441b5b8521820ede835a63161c9548c1237f7d01a4fe4ec680a56578b107be",
+      "CHECK": {
+        "status": "accepted",
+        "source": "ElevenSquare/Tasks/T03/Batch05/Case1499/PackedNamespaced/Chunk009.lean",
+        "exit_code": 0,
+        "elapsed_seconds": 254.04,
+        "lean_threads": 1,
+        "lean_memory_limit_mb": 4096
+      },
+      "scope": "Accepted source elaboration, not a full case target axiom audit."
+    },
+    {
+      "group": 10,
+      "CHECK_sha256": "d944d140db1b171bbd8841bd315d296259e947a8993134c0a89aa47b86624f4a",
+      "source_sha256": "5c678fd29d8146413eee359b2bb60d845cc839ed43df9466310625cc3d323eb2",
+      "CHECK": {
+        "status": "accepted",
+        "source": "ElevenSquare/Tasks/T03/Batch05/Case1499/PackedNamespaced/Chunk010.lean",
+        "exit_code": 0,
+        "elapsed_seconds": 240.51,
+        "lean_threads": 1,
+        "lean_memory_limit_mb": 4096
+      },
+      "scope": "Accepted source elaboration, not a full case target axiom audit."
+    },
+    {
+      "group": 11,
+      "CHECK_sha256": "f25efa031f2b8f95232fef8a1090a3ec57a84ce22456abc1086da423576395a2",
+      "source_sha256": "4d76a3f03e25ee7540172c8c14a14120c8f944a43da7c7b5e9512f0904b765f1",
+      "CHECK": {
+        "status": "accepted",
+        "source": "ElevenSquare/Tasks/T03/Batch05/Case1499/PackedNamespaced/Chunk011.lean",
+        "exit_code": 0,
+        "elapsed_seconds": 277.26,
+        "lean_threads": 1,
+        "lean_memory_limit_mb": 4096
+      },
+      "scope": "Accepted source elaboration, not a full case target axiom audit."
+    },
+    {
+      "group": 12,
+      "CHECK_sha256": "12e376aaaeb81d85cbfe1981f1fac49cc7112ed5e9d3b30881dbc55719519488",
+      "source_sha256": "151a1fbb7b90c2b1a80a709ecbc7cd162f61cd03ed79d5696edc206931ce4513",
+      "CHECK": {
+        "status": "accepted",
+        "source": "ElevenSquare/Tasks/T03/Batch05/Case1499/PackedNamespaced/Chunk012.lean",
+        "exit_code": 0,
+        "elapsed_seconds": 267.59,
+        "lean_threads": 1,
+        "lean_memory_limit_mb": 4096
+      },
+      "scope": "Accepted source elaboration, not a full case target axiom audit."
+    },
+    {
+      "group": 13,
+      "CHECK_sha256": "9dcd3c4958b7fd66418b68d784728097f8f805be1492c5d5e424a82c1b9bb11e",
+      "source_sha256": "dd7d568d7a83ea4bd456a70d1098e776ae28a06e023f35f597a204fb5c971d56",
+      "CHECK": {
+        "status": "accepted",
+        "source": "ElevenSquare/Tasks/T03/Batch05/Case1499/PackedNamespaced/Chunk013.lean",
+        "exit_code": 0,
+        "elapsed_seconds": 263.58,
+        "lean_threads": 1,
+        "lean_memory_limit_mb": 4096
+      },
+      "scope": "Accepted source elaboration, not a full case target axiom audit."
+    },
+    {
+      "group": 14,
+      "CHECK_sha256": "c6af150fd1b61c9c2d861c7b90af02eef1fae01645130654a08476c2336fd32f",
+      "source_sha256": "765906b262db0af671e79c40b98dfc8ca79d332b75ac0807dde704f8d9bcdc0d",
+      "CHECK": {
+        "status": "accepted",
+        "source": "ElevenSquare/Tasks/T03/Batch05/Case1499/PackedNamespaced/Chunk014.lean",
+        "exit_code": 0,
+        "elapsed_seconds": 276.08,
+        "lean_threads": 1,
+        "lean_memory_limit_mb": 4096
+      },
+      "scope": "Accepted source elaboration, not a full case target axiom audit."
+    },
+    {
+      "group": 15,
+      "CHECK_sha256": "38b1064975f11a81ebced739acaf86bbae5b04ad5be02ee7c2133394d005a13e",
+      "source_sha256": "7c8565c05ede715c5a8b2a8858ffcac310a97a89fec352c8301fffd038299dbb",
+      "CHECK": {
+        "status": "accepted",
+        "source": "ElevenSquare/Tasks/T03/Batch05/Case1499/PackedNamespaced/Chunk015.lean",
+        "exit_code": 0,
+        "elapsed_seconds": 282.47,
+        "lean_threads": 1,
+        "lean_memory_limit_mb": 4096
+      },
+      "scope": "Accepted source elaboration, not a full case target axiom audit."
+    },
+    {
+      "group": 16,
+      "CHECK_sha256": "63520192e3589b83d80868329d4f1ffbfe81b1f0cf8f1d9e32f649b6ee25201d",
+      "source_sha256": "dd96a1b5a8670d04a19b3a225e88304ced7db0fde91f3497acf96c04a0594b6d",
+      "CHECK": {
+        "status": "accepted",
+        "source": "ElevenSquare/Tasks/T03/Batch05/Case1499/PackedNamespaced/Chunk016.lean",
+        "exit_code": 0,
+        "elapsed_seconds": 285.07,
+        "lean_threads": 1,
+        "lean_memory_limit_mb": 4096
+      },
+      "scope": "Accepted source elaboration, not a full case target axiom audit."
+    },
+    {
+      "group": 17,
+      "CHECK_sha256": "09c337b4a2661d19d03f6bc3212e2f2735ad0651079bc93a3dd26b2da2be6033",
+      "source_sha256": "5ac25323ee69c3eccecf282b0433ed57a292f25c558c2f118ecf44c107354d18",
+      "CHECK": {
+        "status": "accepted",
+        "source": "ElevenSquare/Tasks/T03/Batch05/Case1499/PackedNamespaced/Chunk017.lean",
+        "exit_code": 0,
+        "elapsed_seconds": 211.47,
+        "lean_threads": 1,
+        "lean_memory_limit_mb": 4096
+      },
+      "scope": "Accepted source elaboration, not a full case target axiom audit."
+    },
+    {
+      "group": 18,
+      "CHECK_sha256": "a81bc6f96e0c3960b62488f118db8dce0b906d2675bc98c1b8db9df48d373e30",
+      "source_sha256": "cbf6ce3dd31fe58b4e0978d7f250ec9fcdcd107500578800057106cf3ac35b80",
+      "CHECK": {
+        "status": "accepted",
+        "source": "ElevenSquare/Tasks/T03/Batch05/Case1499/PackedNamespaced/Chunk018.lean",
+        "exit_code": 0,
+        "elapsed_seconds": 362.35,
+        "lean_threads": 1,
+        "lean_memory_limit_mb": 4096
+      },
+      "scope": "Accepted source elaboration, not a full case target axiom audit."
+    },
+    {
+      "group": 19,
+      "CHECK_sha256": "534ee62adf285a55da422f00ab7f38c206385532c7af2dcb3e21191b61d96d06",
+      "source_sha256": "63c98581e792bc9d47e2293b14932e6c20f153d689447c010246046099d997b9",
+      "CHECK": {
+        "status": "accepted",
+        "source": "ElevenSquare/Tasks/T03/Batch05/Case1499/PackedNamespaced/Chunk019.lean",
+        "exit_code": 0,
+        "elapsed_seconds": 298.25,
+        "lean_threads": 1,
+        "lean_memory_limit_mb": 4096
+      },
+      "scope": "Accepted source elaboration, not a full case target axiom audit."
+    },
+    {
+      "group": 20,
+      "CHECK_sha256": "62e426d8e31380e7727b974b62ddeda989f2ad4e6a572a7ee94367d8ee057d58",
+      "source_sha256": "8deb53f5cb0e9fba5006cb1cb30325a6c8b3fa1799dd59a31b12c011fb6f00cd",
+      "CHECK": {
+        "status": "accepted",
+        "source": "ElevenSquare/Tasks/T03/Batch05/Case1499/PackedNamespaced/Chunk020.lean",
+        "exit_code": 0,
+        "elapsed_seconds": 267.72,
+        "lean_threads": 1,
+        "lean_memory_limit_mb": 4096
+      },
+      "scope": "Accepted source elaboration, not a full case target axiom audit."
+    },
+    {
+      "group": 21,
+      "CHECK_sha256": "c9cf87294559be977f6906cc87b4ec9f64b7d32f8f88cf8bb8973b2778053742",
+      "source_sha256": "3b87c77b0775684ec2a7692c1cfb527130e59162fb62f190ede50a8ecaeb92ef",
+      "CHECK": {
+        "status": "accepted",
+        "source": "ElevenSquare/Tasks/T03/Batch05/Case1499/PackedNamespaced/Chunk021.lean",
+        "exit_code": 0,
+        "elapsed_seconds": 233.82,
+        "lean_threads": 1,
+        "lean_memory_limit_mb": 4096
+      },
+      "scope": "Accepted source elaboration, not a full case target axiom audit."
+    },
+    {
+      "group": 22,
+      "CHECK_sha256": "db7c6552f760596a0262b055983c003ebcf6bd6b8076fd284b575db21080bf34",
+      "source_sha256": "290a4afba0cc7b7410ab72d2d6cf71c02a2783bef76b108e24f2353de7c414a6",
+      "CHECK": {
+        "status": "accepted",
+        "source": "ElevenSquare/Tasks/T03/Batch05/Case1499/PackedNamespaced/Chunk022.lean",
+        "exit_code": 0,
+        "elapsed_seconds": 216.09,
+        "lean_threads": 1,
+        "lean_memory_limit_mb": 4096
+      },
+      "scope": "Accepted source elaboration, not a full case target axiom audit."
+    },
+    {
+      "group": 23,
+      "CHECK_sha256": "fc1b3c9ca0a0bd932d10be63cc773c0f3aecc8fb9681d47e2a1b0d45e808c5ae",
+      "source_sha256": "5a1b58733196d42b57eaeabde25a918ca6c4f89a6bf4ca0a63212438218230dc",
+      "CHECK": {
+        "status": "accepted",
+        "source": "ElevenSquare/Tasks/T03/Batch05/Case1499/PackedNamespaced/Chunk023.lean",
+        "exit_code": 0,
+        "elapsed_seconds": 225.76,
+        "lean_threads": 1,
+        "lean_memory_limit_mb": 4096
+      },
+      "scope": "Accepted source elaboration, not a full case target axiom audit."
+    },
+    {
+      "group": 24,
+      "CHECK_sha256": "76f58b89d2f039653a72a3733d84d907bfb0dc3455c64e99850b5e35f6c42fc3",
+      "source_sha256": "6df3d8964cd0a83dc57d7af9c51bcff6f5b9c00e3a1e4f61f2c97d60ee77a446",
+      "CHECK": {
+        "status": "accepted",
+        "source": "ElevenSquare/Tasks/T03/Batch05/Case1499/PackedNamespaced/Chunk024.lean",
+        "exit_code": 0,
+        "elapsed_seconds": 212.94,
+        "lean_threads": 1,
+        "lean_memory_limit_mb": 4096
+      },
+      "scope": "Accepted source elaboration, not a full case target axiom audit."
+    },
+    {
+      "group": 25,
+      "CHECK_sha256": "a637e7db527a1cb34363320ce74ade2919e42c3949e937c92dede52413467376",
+      "source_sha256": "5da58a9d96881d50f5b90a2d1f5832a66484fc3aabf48ff47564fdc7ca7b38bf",
+      "CHECK": {
+        "status": "accepted",
+        "source": "ElevenSquare/Tasks/T03/Batch05/Case1499/PackedNamespaced/Chunk025.lean",
+        "exit_code": 0,
+        "elapsed_seconds": 300.08,
+        "lean_threads": 1,
+        "lean_memory_limit_mb": 4096
+      },
+      "scope": "Accepted source elaboration, not a full case target axiom audit."
+    }
+  ],
+  "failed_Chunk026_CHECK": {
+    "status": "failed_or_resource_limited",
+    "source": "ElevenSquare/Tasks/T03/Batch05/Case1499/PackedNamespaced/Chunk026.lean",
+    "exit_code": 1,
+    "elapsed_seconds": 517.64,
+    "lean_threads": 1,
+    "lean_memory_limit_mb": 4096
+  },
+  "failed_Chunk026_CHECK_sha256": "a29e74e3b7fe56e89f319cad18f9e91b44bfb780d8acd412fa30ceb41cd47f7d",
+  "failed_Chunk026_actual_log_sha256": "a5db0beb1dd64932dbf8e2e8b7623ff82bd76e2407bd082168de6948db4392d2",
+  "full_case_audit_accepted": false,
+  "new_kernel_and_full_case_target_audits_pending": true,
+  "accepted_full_case_count": 157,
+  "running_proof_workers_unchanged": true,
+  "maximum_global_compiler_checks": 6,
+  "proof_performance_measurement_for_this_plan_performed": false,
+  "audit_timing_probe_counted_as_case_evidence": false
+}

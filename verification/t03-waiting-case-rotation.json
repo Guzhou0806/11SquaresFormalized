@@ -1,0 +1,53 @@
+{
+  "status": "PORTABLE_WAITING_CASE_ROTATION_PURE_FIXTURE_PASS",
+  "production_scenario_record": {
+    "status": "ACTUAL_PRIORITY_STARVATION_AND_SIMULTANEOUS_SLOT_SCENARIOS_PASSED",
+    "utc": "2026-10-01T08:40:53.614803+00:00",
+    "dispatcher_source_sha256": "8c0f3c29a30b9afd51bdf1db243bafad1f7ca02318de640ba770204888cbcb0d",
+    "simultaneous_slot_case_order": [
+      1499,
+      1393,
+      1464,
+      1465
+    ],
+    "seven_completion_case_order": [
+      1887,
+      2051,
+      2069,
+      1499,
+      1393,
+      1464,
+      1465
+    ],
+    "compiler_processes_started": 0,
+    "proof_acceptance_claims": 0
+  },
+  "production_transition": {
+    "status": "GLOBAL_CRITICAL_PATH_CONTROLLER_STARTED_EXISTING_PROOF_WORKERS_ADOPTED",
+    "utc": "2026-10-01T08:40:54.155660+00:00",
+    "live_proof_worker_count": 6,
+    "maximum_parallel_checks": 6,
+    "original_adoption_sha256": "f7a17697bfa173dcff6cd79fad035e3fe637f481f9d2da8709eb6a66ccb19c00",
+    "changes": [
+      "Prefer fewer active group checks, then rotate the oldest waiting case, then choose its longest dependency path.",
+      "Update case counts after each assignment so simultaneous free slots serve different waiting cases.",
+      "Conservatively reserve active source closures without rehashing proof caches at adoption.",
+      "Keep full-case priority and ordinary exact candidate receipt checks."
+    ],
+    "controller_source_sha256": "8c0f3c29a30b9afd51bdf1db243bafad1f7ca02318de640ba770204888cbcb0d",
+    "running_proof_workers_unchanged": true,
+    "compiler_processes_interrupted": 0
+  },
+  "portable_scheduling_sha256": "db12f20e53cc5aeb4dea557ed759382780758c8723adca9d4fc77fd68fe75a06",
+  "portable_simultaneous_slot_case_order": [
+    1499,
+    1393,
+    1464,
+    1465
+  ],
+  "within_case_longest_dependency_path_passed": true,
+  "full_case_priority_passed": true,
+  "caller_must_recompute_counts_and_waiting_after_each_actual_assignment": true,
+  "live_dispatcher_or_compiler_processes_started": 0,
+  "proof_acceptance_claims": 0
+}

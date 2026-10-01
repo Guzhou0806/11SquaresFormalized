@@ -189,3 +189,39 @@ ZIP stays unchanged, so no full ZIP repack is needed. Layered output is still
 pending source, requiring the original full Lean check. The two-layer Python
 fixture preserved both source changes and unchanged environment bytes and
 rejected a missing/wrong predecessor before output creation.
+
+
+`plan_remaining_packed_parallelism.py` takes explicit `--case`, `--prefix`,
+`--worker`, `--kit`, `--scratch-root` and optional `--transport-dir`. It reads
+actual failed-check evidence and accepted prefix CHECK/source bindings before
+planning the dependency-depth remainder. `prepare_remaining_parallel_case.py`
+implements the reviewed case1499/prefix26 source format, with explicit kit,
+scratch and optional source/transport roots and WSL distribution. It preserves
+prefix source bytes and the exact original target, rewrites only reviewed
+generated equality constructs, and prepares source/task metadata. It does not
+prove a case; the unchanged original checker still validates every new proof.
+
+`create_private_packed_source_storage.py` creates only fresh Windows source
+junctions under the chosen scratch root, with an explicit `--kit`, optional
+`--source-root` and `--wsl-distro`. It refuses existing source/storage directories
+and active/completed cases and checks both Windows and WSL access. The logical
+source path stays unchanged while new generated sources use scratch storage.
+`activate_prepared_local_case.py` requires explicit kit/scratch roots and preserves
+the earlier hold record before leaving a full exact-target proof barrier in its
+place. Neither accepts proofs, starts a compiler nor increases the pool.
+These portable source-storage/activation actions were not executed during
+publication; only parsing and help paths were checked.
+
+The producer's `--preparation` argument must name a kit evidence JSON basename.
+If it records `group_module_prefix`, only those new groups become queue rows;
+checked prefix modules remain source dependencies. `--resume` preserves the
+previous live-archive bound unless `--max-live` is explicitly supplied; a new
+producer still defaults to eight. Preparation defaults to one core and the
+portable global compiler ceiling defaults to one, with an explicit maximum six.
+
+`scheduling.prioritize_ready_candidates` accepts optional `last_case_starts`.
+Full cases retain priority; group ranking uses active count, oldest last
+assignment and then longest dependency path. Recompute after every successful
+assignment with current active jobs and timestamps so simultaneous free slots
+rotate fairly. Isolated decision fixtures checked rotation and priority without
+starting jobs. No audit timing probe is evidence of mathematical correctness.

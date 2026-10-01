@@ -15,8 +15,14 @@ def group_case(task):
     return int(task.split('library-case', 1)[1].split('-', 1)[0])
 
 
-def prioritize_ready_candidates(candidates, active_jobs):
-    """Full cases first; fewer active groups per case, then longest path."""
+def prioritize_ready_candidates(candidates, active_jobs, last_case_starts=None):
+    """Full cases first; fewer active groups, oldest waiting case, longest path.
+
+    Pass comparable timestamps for each case's last group assignment. Recompute
+    after every actual assignment, updating active_jobs and last_case_starts,
+    so simultaneous free slots rotate fairly. This function starts no jobs.
+    """
+    last_case_starts = last_case_starts or {}
     counts = {}
     for job in active_jobs:
         if job['kind'] == 'library':
@@ -25,8 +31,9 @@ def prioritize_ready_candidates(candidates, active_jobs):
 
     def priority(row):
         if row['kind'] == 'case':
-            return (0, 0, 0)
-        return (1, counts.get(group_case(row['task']), 0),
+            return (0, 0, 0, 0)
+        case = group_case(row['task'])
+        return (1, counts.get(case, 0), last_case_starts.get(case, 0),
                 -row.get('dependency_path', 0))
 
     return sorted(candidates, key=priority)

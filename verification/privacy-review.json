@@ -208,5 +208,15 @@
     "personal_information_findings": [],
     "github_server_all3_asset_digests_and_sizes_verified": true,
     "prior39_assets_and_main_unchanged": true
+  },
+  "case1372_acceptance_and_remaining_preparation_review": {
+    "actual_full_case1372_audit_and_exact_published_member_bytes_checked": true,
+    "case1499_exact_source_members_and_full_import_closure_checked": true,
+    "all26_actual_prefix_CHECKs_and_all3705_remainder_blocks_checked": true,
+    "source_zip_original_metadata_omissions_replacements_explicit": true,
+    "case2051_exact_master_task_and_preserved_hold_checked": true,
+    "raw_machine_paths_logs_caches_account_or_conversation_data_included": false,
+    "personal_information_findings": [],
+    "portable_tool_live_actions_or_proof_workers_started": 0
   }
 }

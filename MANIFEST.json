@@ -42818,13 +42818,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 8353,
-      "sha256": "6e5aaf43d4c5378abd5ad79fbb24ee7eccd9f6f172fc880ee860d187100fa0cb"
+      "bytes": 7954,
+      "sha256": "b1e9668e545fe3fe93637e828713004a049893f0a69ad0fa9e1ab6257ebc4207"
     },
     {
       "path": "T03_PROGRESS.md",
-      "bytes": 51859,
-      "sha256": "4e10d5da18d9185bb1a2e2ee057b20188ac10411d53cd08ed69d5046f70fd6da"
+      "bytes": 56339,
+      "sha256": "36639983ca756a10dfcb778953919d170cc26b276bf8a6e8df2c9b23299a2dbe"
     },
     {
       "path": "lake-manifest.json",
@@ -42848,8 +42848,13 @@
     },
     {
       "path": "scripts/t03_retry/README.md",
-      "bytes": 13240,
-      "sha256": "165b61e7b5bde98a0d074552d8b606f14e860e194a89eae5cc0a3d8f8163d5a0"
+      "bytes": 15630,
+      "sha256": "b4633cb66a13c34367f7b87bee9b7755a741e7f2e816b998753f983219671a8e"
+    },
+    {
+      "path": "scripts/t03_retry/activate_prepared_local_case.py",
+      "bytes": 2251,
+      "sha256": "ba3ba4a58ff126f44f74fa193a59b899418cfe106a0d241d0e0304a89d564b9f"
     },
     {
       "path": "scripts/t03_retry/apply_source_supplement.py",
@@ -42872,9 +42877,19 @@
       "sha256": "74f12bb9e545eac9c59a90a1f670b9db4d9a9ad612ac26fedb561ca617cf6f0f"
     },
     {
+      "path": "scripts/t03_retry/create_private_packed_source_storage.py",
+      "bytes": 3890,
+      "sha256": "c0017681d3ca45c83a938d4c5ff33816339b065d820ee12be65ecd212dc648b3"
+    },
+    {
       "path": "scripts/t03_retry/parallel_packed_case_producer.py",
-      "bytes": 14229,
-      "sha256": "31f6bc39a803af25d62f1cacc7f7e393fa5e2f4f2d5d895efddcc37fcbc5c407"
+      "bytes": 14649,
+      "sha256": "c1dee49e56ee14f5b34523ee496e093198aee3618ae7eea3b0abcc810fd9239a"
+    },
+    {
+      "path": "scripts/t03_retry/plan_remaining_packed_parallelism.py",
+      "bytes": 5596,
+      "sha256": "f82b2db94ee30a2ff860adb0c2e6eafaf604fff3ecba607c79d8c434998d0d8e"
     },
     {
       "path": "scripts/t03_retry/prepare_coordinate_binding_retry.py",
@@ -42885,6 +42900,11 @@
       "path": "scripts/t03_retry/prepare_failed_packed_equality_repairs.py",
       "bytes": 11821,
       "sha256": "47e4eb322b66624f7f99984e6efb1cbbb7a76f3f3c5326c6b526422d8b9d5485"
+    },
+    {
+      "path": "scripts/t03_retry/prepare_remaining_parallel_case.py",
+      "bytes": 13219,
+      "sha256": "1d17dd3022e129134be194447bc3c847fa2d48971ab504b9aecb34d93540f45b"
     },
     {
       "path": "scripts/t03_retry/publish_coordinate_binding_retry.py",
@@ -42933,8 +42953,8 @@
     },
     {
       "path": "scripts/t03_retry/scheduling.py",
-      "bytes": 4210,
-      "sha256": "7e948d6f0b3e728311b8e7d6fe7458bd699b7d4fd9949191352b604690b268e4"
+      "bytes": 4580,
+      "sha256": "db12f20e53cc5aeb4dea557ed759382780758c8723adca9d4fc77fd68fe75a06"
     },
     {
       "path": "scripts/t03_retry/share_completed_receipts.py",
@@ -42968,8 +42988,8 @@
     },
     {
       "path": "verification/privacy-review.json",
-      "bytes": 9382,
-      "sha256": "9618f6c730a272a4043589bc5c06f6ecec029822910ab405a484b71e4a3a95a1"
+      "bytes": 10005,
+      "sha256": "c918dbaac51583ec5da98054ac6aebc9051537cfa7a576659781af568616d41f"
     },
     {
       "path": "verification/source-check.json",
@@ -42985,6 +43005,11 @@
       "path": "verification/t03-case1311-source-supplement.json",
       "bytes": 2607,
       "sha256": "021ccf518b9614f792a8a17e0d10a15fbcaade6de588b8d6358467ff9174f7a4"
+    },
+    {
+      "path": "verification/t03-case1372-accepted-source-audit.json",
+      "bytes": 2908,
+      "sha256": "031392601ee55081c3ce94751817234b2e9b57b008252625f249526fc8e3a9cd"
     },
     {
       "path": "verification/t03-case1372-binding-pilot-audit.lean",
@@ -43052,6 +43077,16 @@
       "sha256": "9d6c0ed8f4bea49bdad9139f5e25d39f62f57f6e577a69c8ff2d217c6ec20116"
     },
     {
+      "path": "verification/t03-case1499-remaining-progress.json",
+      "bytes": 16681,
+      "sha256": "1a36fa64a1137c978015dde71dbe062b8d516f44c9bd609aaf556326c4533ffd"
+    },
+    {
+      "path": "verification/t03-case1499-source-release.json",
+      "bytes": 3107,
+      "sha256": "85809d850e2850cda4554d19492ce007e8308af7f97d2ca38a0b9c33b899ac60"
+    },
+    {
       "path": "verification/t03-case1646-source-supplement.json",
       "bytes": 2308,
       "sha256": "d4cf520f3f6208e65be2abd466fdd6faa5d69a79a4b446422ed8b3b605a685ef"
@@ -43065,6 +43100,11 @@
       "path": "verification/t03-case2047-source-supplement.json",
       "bytes": 2288,
       "sha256": "a5074899fc3afef32d5b97fa820c8f070d6f9b1bc8b527943a336d43ec3bfa11"
+    },
+    {
+      "path": "verification/t03-case2051-prepared-progress.json",
+      "bytes": 1704,
+      "sha256": "186520588867bdc361382bd5f2a1abd525387ba9c2115c69da11adbc1900cb8b"
     },
     {
       "path": "verification/t03-case2135.json",
@@ -43113,8 +43153,8 @@
     },
     {
       "path": "verification/t03-progress.json",
-      "bytes": 64349,
-      "sha256": "73a46079aab226fa77d3b31e955a7b19c1222e92349d6ddf11130813c6ac8b4e"
+      "bytes": 65890,
+      "sha256": "38d51c92d43c8d3bd0b81561eb066791b3785e01e858dc6d803f4d149799ce9a"
     },
     {
       "path": "verification/t03-release-checkpoint.json",
@@ -43125,6 +43165,11 @@
       "path": "verification/t03-source-supplement.json",
       "bytes": 2999,
       "sha256": "7f52eb9c52686ee0140178174402dfee919720da763187083891eccdf329b9d2"
+    },
+    {
+      "path": "verification/t03-waiting-case-rotation.json",
+      "bytes": 2023,
+      "sha256": "12d34ee5c68485247bd89987c02663b11911d51b32fb37a8df9369ee3e972799"
     }
   ]
 }

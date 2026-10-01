@@ -6,7 +6,71 @@ repository, and global optimality remains unfinished. This branch supplies
 checked common tools and the complete source closure of one audited certificate,
 case2135. It does not discharge the full-family obligation.
 
-## Latest equality repair checkpoint
+## Accepted case1372 and pending remainder checkpoint
+
+The full accepted count is now **158/173**, with **15 cases remaining**.
+Case1372's original exact certificate target passed its full supplied-checker
+HandoffAudit in **88.77 seconds**, using only `propext`, `Classical.choice` and
+`Quot.sound`. The actual immutable CHECK and log, accepted execution transport
+and exact source bindings were independently inspected. The [audit sidecar](verification/t03-case1372-accepted-source-audit.json)
+records them, including every Lean member's binding to the existing portable
+retry02 ZIP SHA-256 `2b62863a6bfff5104139369cdd5ded3cc1831082bed45393ab6851e5fa3a34ae`.
+Its 2,351 supplied source modules form the complete local target import closure.
+The original task, environment and checkers are byte-identical to the accepted
+transport. The earlier source asset and its historical pending metadata remain
+unchanged; no duplicate 89 MB source upload is needed. This independent audit
+does not constitute a merged repository replay or complete the public family.
+
+Case1499 naturally failed its original `PackedNamespaced.Chunk026` after 26
+accepted group elaborations. The retry retains all 26 checked prefix sources
+(1,643 original modules) and replaces only the remaining grouped preparation:
+**3,705 original modules, 72 new groups, 22 dependency levels**, replacing 58
+serial remaining groups. Its 6,770 ordinary equality proof constructions use
+the tested kernel equality tactic; all new proofs and the full case audit are
+still pending. Publication independently matched all 26 actual CHECK hashes
+and source bytes and reproduced every remaining declaration-block rewrite,
+preserving the exact original target bridge, numbers and all other task fields.
+The [source/prefix evidence](verification/t03-case1499-remaining-progress.json)
+separates actual elaborations from future proof obligations. Dependency depth
+is a scheduling plan; no measured compiler speedup or timing pilot is counted
+as case acceptance evidence.
+
+The distinct frozen case1499 master SHA-256 is
+`f50d32e21a6babf4840f49f942d51768ed768f8d0bcadb665d4f69f50fe6979f`.
+Its portable source ZIP is **116,767,158 bytes**, SHA-256
+`4f0372214f60f84c7d1199241e526261e1ae6a618cea40d2d847ba36f8172899`.
+All 3,010 supplied source modules and the complete local target import graph,
+every output member's hash, privacy filtering and the per-source 16 MiB bound
+were checked. Sources, individual task, pinned Lake files and original checkers
+retain their bytes; private resource-history metadata is replaced with serial
+limits, the unrelated packet task omitted, and manifests explicitly rebuilt.
+The accepted count inside the frozen package is the historical 157 at packaging;
+case1372's later audit updates this document to 158. No source proof was
+regenerated for packaging. [Packaging/publication metadata](verification/t03-case1499-source-release.json)
+records the immutable version and upload status.
+
+Case2051 has an exact prepared 291-group source task, with 10,564 original
+modules grouped and a two-live-archive storage bound. Its exact raw master
+SHA-256 is `964c1f96ff52764e3f0e3cff586d49830114d9d924291b8b4a8529d11453b3c8`.
+Publication verified that master digest, its individual task bytes and original
+target, and the preserved earlier hold digest. The [compact pending record](verification/t03-case2051-prepared-progress.json)
+includes the fresh private source-storage and queue metadata, without machine
+paths. This checkpoint adds no case2051 source asset or accepted certificate.
+
+The portable tools now include remainder planning/preparation, fresh source
+storage and prepared-case activation. The producer accepts an explicit
+`--preparation` record and `group_module_prefix` so only fresh remainder groups
+are queued; preserved prefix sources remain dependencies. A resumed producer
+retains its prior live-archive bound when that option is omitted. The pure
+scheduling policy prefers fewer active groups, then the oldest waiting case,
+then the longest path within that case; callers update counts after each actual
+assignment. [Rotation evidence](verification/t03-waiting-case-rotation.json)
+records the original scenario check and isolated portable decision fixtures.
+These policies accept no proof. New tools had parsing/help checks, not live
+source preparation, queue activation, junction creation or process-control
+replay. All six existing proof slots and running jobs were left untouched.
+
+## Earlier equality repair checkpoint (157/173)
 
 The full accepted count remains **157/173**, with **16 cases remaining**. The
 full public returned-family targets, merged repository replay and final return

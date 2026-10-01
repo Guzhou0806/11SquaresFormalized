@@ -1,0 +1,69 @@
+{
+  "format": "T03-pending-remaining-source-release-v1",
+  "status": "PREPARED_IMMUTABLE_SOURCE_ASSET_FULL_CASE1499_AUDIT_PENDING",
+  "tag": "t03-progress-158-case1499-remainder-20261001",
+  "accepted_full_case_count": 158,
+  "required_cases": 173,
+  "remaining_cases": 15,
+  "package": {
+    "accepted_case_count_at_packaging": 157,
+    "asset_bytes": 116767158,
+    "asset_name": "T03-pending-case1499-remaining-parallel-retry01-source-checkpoint.zip",
+    "asset_sha256": "4f0372214f60f84c7d1199241e526261e1ae6a618cea40d2d847ba36f8172899",
+    "case": 1499,
+    "complete_local_import_closure": true,
+    "final_return_zip_complete": false,
+    "format": "T03-pending-remaining-source-checkpoint-v1",
+    "full_case_audit_accepted": false,
+    "maximum_lean_source_bytes": 8586169,
+    "merged_repository_lean_replay_performed": false,
+    "metadata_changes": [
+      {
+        "action": "omitted",
+        "member": "TASK.json",
+        "reason": "Broader packet assignment does not describe this standalone case checkpoint."
+      },
+      {
+        "action": "replaced",
+        "member": "project/verification/LOW_RESOURCE_MODE.json",
+        "original_sha256": "ece1da78fe6bb583938815993e153afbcb569fabc13df74d0e6dfb2b9d5b2cc1",
+        "reason": "Portable serial replay limits replace private resource-request history.",
+        "replacement_sha256": "00cbe342254dbb205ba115d7e433af4ed512fc1197f81350d5274b0a2f7533f3"
+      },
+      {
+        "action": "rebuilt",
+        "member": "source-sync-manifest.json",
+        "reason": "Bind the exact portable output members."
+      }
+    ],
+    "original_transport_bytes": 116613386,
+    "original_transport_sha256": "f50d32e21a6babf4840f49f942d51768ed768f8d0bcadb665d4f69f50fe6979f",
+    "output_all_member_hashes_verified": true,
+    "packaged_utc": "2026-10-01T08:32:00.099847+00:00",
+    "pinned_toolchain": "leanprover/lean4:v4.10.0-rc2",
+    "privacy_scan_passed": true,
+    "public_combined_targets_complete": false,
+    "required_cases": 173,
+    "source_lean_bytes": 574686176,
+    "source_manifest_sha256": "ead380ea530fe12f0145e50f2f8946bcb86b1534f11eb79999581c4fd8780870",
+    "source_members_byte_preserved": true,
+    "source_modules_included": 3010,
+    "source_sync_manifest_sha256": "70b95f3a37c739a93795fea0c59a25f45c8c6437ad7d97f511864091141eb919",
+    "status": "FULL_CASE_TARGET_AUDIT_PENDING",
+    "target_root_reachable_source_modules": 3010,
+    "task": {
+      "axiom_targets": [
+        "ElevenSquare.Pending.T03.Batch05.Case1499.Forward.Certificate.certificate_exists"
+      ],
+      "id": "T03_compact_full_trace",
+      "modules": [
+        "ElevenSquare.Tasks.T03.Batch05.Case1499.PackedRemainingRetry01.Chunk071"
+      ]
+    },
+    "task_file": "forward-case1499-parallel-retry01-assembly-task.json",
+    "verification_scope": "Source transport/member hashes, supplied local dependency closure, portable privacy metadata and output member reread only; no compiler replay or proof regeneration.",
+    "version": "remaining-parallel-retry01"
+  },
+  "new_Lean_workers_or_builds": 0,
+  "Git_large_source_blobs_added": false
+}

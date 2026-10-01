@@ -8,21 +8,26 @@ from pathlib import Path
 import argparse,collections,ctypes,datetime,functools,hashlib,json,os,re,shutil,time,zipfile
 from retry_paths import kit_paths, low_priority_single_core
 ap=argparse.ArgumentParser();ap.add_argument('--resume',action='store_true')
-ap.add_argument('--case',type=int,required=True);ap.add_argument('--publication')
+ap.add_argument('--case',type=int,required=True);ap.add_argument('--publication');ap.add_argument('--preparation')
 ap.add_argument('--kit',required=True);ap.add_argument('--transport-dir')
 ap.add_argument('--scratch-root',required=True);ap.add_argument('--receipt-root',required=True)
 ap.add_argument('--object-root',required=True);ap.add_argument('--max-workers',type=int,default=1)
-ap.add_argument('--max-live-archives', '--max-live',type=int,default=8)
+ap.add_argument('--max-live-archives', '--max-live',type=int)
 args=ap.parse_args();case=args.case
 K,E,transport_root=kit_paths(args.kit,args.transport_dir)
-assert 1<=args.max_workers<=6 and 1<=args.max_live_archives<=8
+assert 1<=args.max_workers<=6
 assert case in {r['case'] for r in json.loads((E/'forward-workload-inventory.json').read_text())['records']}
 low_priority_single_core()
 record=E/f'case{case}-parallel-packed-status.json'
 previous=json.loads(record.read_text()) if args.resume else None
+if args.max_live_archives is None:
+ args.max_live_archives=previous.get('maximum_live_chunk_archives',8) if previous else 8
+assert 1<=args.max_live_archives<=8
 assert args.resume or not record.exists()
 if previous:assert previous['case']==case
-prep=json.loads((E/f'case{case}-packed-namespaced-publication.json').read_text())
+preparation_name=args.preparation or f'case{case}-packed-namespaced-publication.json'
+assert Path(preparation_name).name==preparation_name and preparation_name.endswith('.json')
+prep=json.loads((E/preparation_name).read_text())
 publication_name=args.publication or f'case{case}-packed-canonical-publication.json'
 assert Path(publication_name).name==publication_name and publication_name.endswith('.json')
 publication=json.loads((E/publication_name).read_text())
@@ -95,7 +100,9 @@ def passed(task):
 with zipfile.ZipFile(master) as z:
  manifest=json.loads(z.read('source-sync-manifest.json'));environment=z.read('project/lake-manifest.json')+z.read('project/lean-toolchain')
  full_task=json.loads(z.read(prep['task']))
- modules=sorted(n[8:-5].replace('/','.') for n in manifest if '/PackedNamespaced/' in n and n.endswith('.lean'))
+ group_prefix=prep.get('group_module_prefix')
+ modules=sorted(n[8:-5].replace('/','.') for n in manifest if n.endswith('.lean') and
+     (n[8:-5].replace('/','.').startswith(group_prefix) if group_prefix else '/PackedNamespaced/' in n))
  assert len(modules)==prep['groups']
  @functools.lru_cache(maxsize=32)
  def raw(module):

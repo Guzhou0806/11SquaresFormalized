@@ -1,0 +1,38 @@
+{
+  "case": 2051,
+  "utc": "2026-10-01T08:09:55.636977+00:00",
+  "archive_sha256": "964c1f96ff52764e3f0e3cff586d49830114d9d924291b8b4a8529d11453b3c8",
+  "task": "forward-case2051-assembly-task.json",
+  "root_module": "ElevenSquare.Tasks.T03.Batch10.Case2051.PackedNamespaced.Chunk290",
+  "axiom_targets": [
+    "ElevenSquare.Pending.T03.Batch10.Case2051.Forward.Certificate.certificate_exists"
+  ],
+  "groups": 291,
+  "original_modules_grouped": 10564,
+  "finite_bool_proof_constructions_changed": 8358,
+  "coordinate_equality_proof_constructions_changed": 3963,
+  "remaining_equality_proof_constructions_changed": 19152,
+  "numeric_tokens_unchanged": true,
+  "original_sources_and_data_unchanged": true,
+  "full_case_and_final_target_audits_pending": true,
+  "lean_processes_started": 0,
+  "status": "EXACT_PREPARED2051_METADATA_ONLY_FULL_CASE_AUDIT_PENDING",
+  "exact_transport_digest_and_task_bytes_verified": true,
+  "source_asset_published": false,
+  "full_case_audit_accepted": false,
+  "accepted_full_case_count": 157,
+  "canonical_source_and_proof_workers_unchanged": true,
+  "full_case_guard_retained": true,
+  "preserved_old_hold_sha256": "9f2fa6b2829273d4a274a42e95626ca518b5ad9f42c78058a524d832977e0812",
+  "maximum_live_chunk_archives": 2,
+  "source_storage": {
+    "status": "FRESH_PRIVATE_PACKED_SOURCE_STORAGE_ON_D_WINDOWS_AND_WSL_VERIFIED",
+    "utc": "2026-10-01T08:08:14.052026+00:00",
+    "original_source_files_unchanged": true,
+    "active_source_closures_unchanged": true,
+    "lean_processes_started": 0,
+    "proof_checks_pending": true,
+    "final_exporter_uses_fresh_physical_source_staging": true
+  },
+  "storage_and_activation_live_actions_replayed_for_publication": false
+}

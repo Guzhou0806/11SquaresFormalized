@@ -1,5 +1,5 @@
 {
-  "status": "PARTIAL_TESTED_COMMON_TOOLS_AND_157_CASE_SOURCE_RELEASE_ASSETS",
+  "status": "PARTIAL_TESTED_COMMON_TOOLS_AND_158_AUDITED_CASE_SOURCE_CLOSURES",
   "snapshot_date": "2026-09-30",
   "meaning": "Independent returned compiler audits. This is not a fresh combined replay of the GitHub assembly.",
   "lean_version": "4.10.0-rc2",
@@ -1665,10 +1665,10 @@
     "case_certificates": 151,
     "source_modules": 101494,
     "source_lean_bytes": 5499202925,
-    "meaning": "The original 151 exact source closures remain in the unchanged base release asset; standalone supplements add cases 1484, 2122, the accepted grouped case1646, case2047, and case1848, for 156 published case closures. Only case2135 is directly integrated into the Git source tree. No merged Lean replay or full-family completion is claimed."
+    "meaning": "The original 151 source closures and six supplements remain unchanged, supplying 157 audited closures. The separately published frozen case1372 binding-retry02 source ZIP subsequently passed its exact full target audit, for 158. Only case2135 is directly integrated into Git source; no merged replay or full-family completion is claimed."
   },
-  "published_case_source_closures": 157,
-  "remaining_case_certificates": 16,
+  "published_case_source_closures": 158,
+  "remaining_case_certificates": 15,
   "source_supplements": [
     {
       "asset_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/T03-audited-cases1484-2122-source-supplement.zip",
@@ -1768,6 +1768,19 @@
           "target": "ElevenSquare.Pending.T03.Batch02.Case1311.Forward.Certificate.certificate_exists"
         }
       ]
+    },
+    {
+      "case_certificates": 1,
+      "supplement_cases": [
+        1372
+      ],
+      "manifest": "verification/t03-case1372-accepted-source-audit.json",
+      "asset_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-pending-equality-retries-20261001/T03-pending-case1372-binding-retry02-source-checkpoint.zip",
+      "asset_sha256": "2b62863a6bfff5104139369cdd5ded3cc1831082bed45393ab6851e5fa3a34ae",
+      "asset_bytes": 88989946,
+      "previously_pending_source_later_full_audit_accepted": true,
+      "new_source_upload_needed": false,
+      "standalone": true
     }
   ],
   "additional_tested_common_helpers": [
@@ -1963,5 +1976,22 @@
     "accepted_full_cases": 157,
     "release_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/tag/t03-pending-case1465-retry03-20261001",
     "github_server_all3_asset_digests_and_sizes_verified": true
+  },
+  "latest_158_remainder_checkpoint": {
+    "accepted_case1372_manifest": "verification/t03-case1372-accepted-source-audit.json",
+    "accepted_full_cases": 158,
+    "remaining_cases": 15,
+    "pending_case1499_manifest": "verification/t03-case1499-remaining-progress.json",
+    "pending_case1499_source_manifest": "verification/t03-case1499-source-release.json",
+    "case1499_preserved_actual_group_elaborations": 26,
+    "case1499_remaining_original_modules": 3705,
+    "case1499_remaining_new_groups": 72,
+    "case1499_remaining_dependency_levels": 22,
+    "case1499_plan_is_measured_speedup": false,
+    "case1499_full_case_audit_accepted": false,
+    "case2051_pending_metadata": "verification/t03-case2051-prepared-progress.json",
+    "case2051_full_case_audit_accepted": false,
+    "waiting_case_rotation": "verification/t03-waiting-case-rotation.json",
+    "Lean_workers_or_builds_started_for_publication": 0
   }
 }
