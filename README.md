@@ -6,8 +6,22 @@ still unfinished.** Six explicit `sorry` sites record the remaining obligations.
 A build that accepts those sites checks the surrounding code but does not prove
 the final optimality theorem. See [MISSING.md](MISSING.md).
 
-At the latest checkpoint, **158/173** full case certificates have independently
-accepted exact target audits and published complete source closures; **15 remain**.
+At the latest checkpoint, **159/173** full case certificates have independently
+accepted exact target audits and published complete source closures; **14 remain**.
+Case1731's exact full certificate now passes too: its actual audit took 90.39
+seconds and uses only `propext`, `Classical.choice` and `Quot.sound`. Publication
+independently checked every one of its 2,831 original and portable Lean members,
+the complete import closure, task, environment and checkers. Its [accepted
+audit/source sidecar](verification/t03-case1731-accepted-source-audit.json) binds
+the existing immutable source ZIP; its original pending history is preserved.
+
+All 14 remaining cases have local dependency queues. Their first-group actual
+audits are checked in the [timestamped queue checkpoint](verification/t03-local-queues-checkpoint-20261001.json); group counters remain partial observations.
+Selecting the same 35 ready tasks from 4,361 unattempted queue rows took 15.761
+seconds before a source-archive prefilter, 1.547 after and 1.543 on repeat. This
+measures controller task selection, not Lean compilation. The six-slot limit
+and ordinary source/object validation remain. See the [scheduler evidence](verification/t03-ready-archive-prefilter-checkpoint-20261001.json).
+
 Case1372's full audit now passes with only `propext`, `Classical.choice` and
 `Quot.sound`. Its exact 2,351-module source closure is already in the [frozen
 binding-retry02 source asset](https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-pending-equality-retries-20261001/T03-pending-case1372-binding-retry02-source-checkpoint.zip).
@@ -57,7 +71,7 @@ module 33.28 seconds, integer module 34.23 seconds. This sample showed no saving
 the optional helper has not been applied to pending case sources. See its
 [source and audit provenance](verification/t03-homogeneous-fan-helper.json).
 The frozen case1465 Chunk105 supplement has now passed its group target audit;
-its full case remains pending. The accepted full-case count stays **158/173**.
+its full case remains pending. At that helper checkpoint, the accepted full-case count was **158/173**.
 
 The target side length is the exact real number
 

@@ -6,6 +6,53 @@ repository, and global optimality remains unfinished. This branch supplies
 checked common tools and the complete source closure of one audited certificate,
 case2135. It does not discharge the full-family obligation.
 
+## Current checkpoint: 159 accepted full cases
+
+Case1731's exact original `certificate_exists` has passed the actual full target
+audit: **90.39 seconds**, with only `propext`, `Classical.choice` and `Quot.sound`.
+There are now **159/173** accepted full cases and **14 remaining**. Neither
+original public family target, the merged repository replay nor the final return
+ZIP is complete. Only case2135 is integrated directly in Git; other complete
+source closures are separate release assets.
+
+The [case1731 accepted audit sidecar](verification/t03-case1731-accepted-source-audit.json)
+binds the actual CHECK/log, wrapper/execution hashes, exact task and all 2,831
+Lean members to the existing [portable source ZIP](https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-pending-equality-retries-20261001/T03-pending-case1731-binding-retry01-source-checkpoint.zip).
+ZIP SHA-256: `9a957821c2d6dc8da22d10b4b21c6de072318e873f77d6ea0068838dad10d595`;
+size: 107,520,465 bytes. Original accepted transport SHA-256:
+`34c1b3d9f69fc62be9a2c59688eee32f7b5881129eada090f3bf1011028c3fe0`.
+Every source member, pinned environment/checker member and full local import
+closure was independently checked, as were the GitHub source asset digest/size.
+The earlier pending source release is frozen. A [new accepted-metadata
+release](https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/tag/t03-audited159-case1731-20261001)
+adds its acceptance sidecar without uploading the identical source ZIP again.
+
+The [10:36 UTC queue snapshot](verification/t03-local-queues-checkpoint-20261001.json)
+records all local paths then pending, when the accepted count was 158; 1731's
+subsequent full acceptance is explicitly separate. Publication independently
+read all 14 remaining queues' first-group actual CHECK/logs, wrapper/execution
+bindings and transport member hashes, and matched their Lean members to current
+master manifests. Full-master archive hashing was performed by the root snapshot
+checker, not repeated for publication. The per-case group counters are producer
+observations at that timestamp, not newly accepted full certificates. No large
+pending source archives are added by this compact checkpoint.
+
+The scheduler now checks that a source transport exists before probing historical
+worker logs. Against 4,361 unattempted queue rows, the exact same 35 ready tasks
+were found in **15.761 seconds before, 1.547 after, 1.543 on repeat**; log probes
+fell from 69,454 to 1,918. These are controller selection times, not Lean timings.
+The running controller adopted four live checks without compiler interruption,
+kept the six-slot limit and polls every five seconds. Actual later refill events
+are retained; one reversed timestamp pair is preserved and excluded from delay
+summaries. See [benchmark, adoption and observation evidence](verification/t03-ready-archive-prefilter-checkpoint-20261001.json).
+
+Portable preparation, queue/controller and final report/staging tools use explicit
+workspace arguments and a low-priority single-core default. Publication checked
+syntax, CLI help and privacy; it did not replay their live control actions or
+start a compiler. The final stager/report still require all 173 full certificates,
+both exact public target audits and the supplied frozen protocol. The following
+older sections retain their historical counts and pending-source labels.
+
 ## Checked homogeneous polygon fan helper
 
 The new `HomogeneousPolygonFan.lean` helper writes point coordinates as integer

@@ -231,5 +231,16 @@
     "personal_information_findings": [],
     "source_bytes_exact_transport": true,
     "new_bulk_assets_or_Lean_workers": 0
+  },
+  "case1731_and_local_queue_checkpoint_review": {
+    "exact_full_case1731_actual_audit_and_all2831_source_members_checked": true,
+    "source_asset_server_digest_size_verified": true,
+    "all14_first_group_actual_audits_and_transports_checked": true,
+    "public_group_snapshots_not_full_case_acceptances": true,
+    "reversed_timestamp_pair_preserved_and_excluded": true,
+    "portable_tools_AST_help_checked_without_live_actions": true,
+    "private_machine_paths_caches_chats_credentials_included": false,
+    "personal_information_findings": [],
+    "Lean_jobs_or_worker_controls_for_publication": 0
   }
 }

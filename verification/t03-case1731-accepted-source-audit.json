@@ -1,0 +1,71 @@
+{
+  "format": "T03-accepted-source-audit-sidecar-v1",
+  "status": "ACCEPTED_FULL_CASE1731_EXACT_SOURCE_CHECKPOINT_BOUND",
+  "case": 1731,
+  "accepted_full_case_count": 159,
+  "required_cases": 173,
+  "remaining_cases": 14,
+  "target": "ElevenSquare.Pending.T03.Batch08.Case1731.Forward.Certificate.certificate_exists",
+  "reported_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "accepted_execution_transport_sha256": "34c1b3d9f69fc62be9a2c59688eee32f7b5881129eada090f3bf1011028c3fe0",
+  "accepted_execution_record_sha256": "8341261b1808ae6e43f1edb5e366d51fdb132e9838d1feedb554e25e685eb569",
+  "actual_audit_CHECK": {
+    "status": "accepted",
+    "source": "verification/HandoffAudit.lean",
+    "exit_code": 0,
+    "elapsed_seconds": 90.39,
+    "lean_memory_limit_mb": 4096,
+    "lean_threads": 1,
+    "lean_thread_stack_kb": 32768,
+    "lean_main_stack_kb": 65536,
+    "cpu_seconds_limit": 1800,
+    "wall_seconds_limit": 2100,
+    "nice_increment": 0,
+    "emitted_olean": null,
+    "meaning": "Elaboration check only; inspect axioms and admissions before marking a proof complete."
+  },
+  "actual_audit_CHECK_sha256": "7b4054e231ccfbd96394909dabe28dbb497bb8737bc765df792a376a1dc0b1eb",
+  "actual_audit_log": "'ElevenSquare.Pending.T03.Batch08.Case1731.Forward.Certificate.certificate_exists' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+  "actual_audit_log_sha256": "fc702371c8d122a3da4896ec692f8fbc9fe2fdb4ecc527fe405d172f1edcf168",
+  "actual_wrapper_log_sha256": "d871088de737bb9b3c1dae65ffb17d487bd3c867166fda1aadbd19759544e81e",
+  "audit_elapsed_seconds": 90.39,
+  "full_case_audit_accepted": true,
+  "all_original_and_portable_Lean_member_bytes_independently_verified": true,
+  "exact_environment_task_and_checker_bytes_verified": true,
+  "complete_local_import_closure_verified": true,
+  "source_modules": 2831,
+  "target_root_reachable_source_modules": 2831,
+  "source_lean_bytes": 507855385,
+  "target_root_module": "ElevenSquare.Tasks.T03.Batch08.Case1731.PackedNamespaced.Chunk055",
+  "existing_portable_source_zip_sha256": "9a957821c2d6dc8da22d10b4b21c6de072318e873f77d6ea0068838dad10d595",
+  "existing_portable_source_zip_bytes": 107520465,
+  "source_asset_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-pending-equality-retries-20261001/T03-pending-case1731-binding-retry01-source-checkpoint.zip",
+  "original_source_release_pending_metadata_preserved": true,
+  "source_manifest_sha256": "80b14d251f6f0fca3f01d9c65a4aba03cfb6b53438ebcc0e7416480c89dfe8a6",
+  "immutable_log_and_CHECK_inspected": true,
+  "mutable_current_HandoffAudit_source_used_as_historical_evidence": false,
+  "new_source_upload_needed": false,
+  "merged_repository_Lean_replay_performed": false,
+  "public_family_targets_complete": false,
+  "final_return_ZIP_complete": false,
+  "Lean_builds_or_worker_controls_for_publication": 0,
+  "actual_audit_source_sha256": "cddfd90a65641c9daac0cfab30aee9409ff07ef169c65510a1526ece7518160b",
+  "root_actual_audit_checkpoint_sha256": "091775a3815bfbffc28c0c81236a888dcac50abd5707eb7e5e92bf8b792f0070",
+  "exact_task": {
+    "id": "T03_compact_full_trace",
+    "modules": [
+      "ElevenSquare.Tasks.T03.Batch08.Case1731.PackedNamespaced.Chunk055"
+    ],
+    "axiom_targets": [
+      "ElevenSquare.Pending.T03.Batch08.Case1731.Forward.Certificate.certificate_exists"
+    ]
+  },
+  "exact_task_sha256": "00f0709de48bb493b229a3223de659cb372b3b6035692c4bea6d7645f0d5834d",
+  "github_server_existing_source_digest_verified": true,
+  "github_server_existing_source_size_verified": true,
+  "source_asset_id": 602705171
+}

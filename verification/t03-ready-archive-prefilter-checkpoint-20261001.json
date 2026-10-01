@@ -1,0 +1,404 @@
+{
+  "format": "T03-ready-archive-prefilter-checkpoint-v1",
+  "status": "ACTUAL_ELIGIBILITY_BENCHMARK_AND_CONTROLLER_ADOPTION_SCOPE_ONLY",
+  "benchmark": {
+    "status": "LIVE_QUEUE_ELIGIBILITY_EQUAL_NO_PROOF_PROCESSES_STARTED",
+    "utc": "2026-10-01T10:40:08.955531+00:00",
+    "unattempted_queue_rows": 4361,
+    "samples": [
+      {
+        "method": "prior",
+        "elapsed_seconds": 15.761445947995526,
+        "tasks": [
+          "library-case1373-node998-017-task.json",
+          "library-case1373-node998-088-task.json",
+          "library-case1393-node998-041-task.json",
+          "library-case1393-node998-073-task.json",
+          "library-case1463-node998-008-task.json",
+          "library-case1463-node998-009-task.json",
+          "library-case1464-node998-131-task.json",
+          "library-case1464-node998-100-task.json",
+          "library-case1464-node998-105-task.json",
+          "library-case1464-node998-108-task.json",
+          "library-case1464-node998-106-task.json",
+          "library-case1465-node998-135-task.json",
+          "library-case1465-node998-066-task.json",
+          "library-case1465-node998-090-task.json",
+          "library-case1465-node998-091-task.json",
+          "library-case1499-node998-013-task.json",
+          "library-case1499-node998-020-task.json",
+          "library-case1823-node998-008-task.json",
+          "library-case1823-node998-012-task.json",
+          "library-case1849-node998-026-task.json",
+          "library-case1849-node998-004-task.json",
+          "library-case1887-node998-143-task.json",
+          "library-case1887-node998-039-task.json",
+          "library-case1891-node998-006-task.json",
+          "library-case1891-node998-016-task.json",
+          "library-case2051-node998-063-task.json",
+          "library-case2068-node998-009-task.json",
+          "library-case2068-node998-012-task.json",
+          "library-case2069-node998-042-task.json",
+          "library-case2069-node998-079-task.json",
+          "library-case2069-node998-049-task.json",
+          "library-case2069-node998-050-task.json",
+          "library-case2069-node998-051-task.json",
+          "library-case2069-node998-043-task.json",
+          "library-case2070-node998-008-task.json"
+        ],
+        "log_probes": 69454,
+        "archive_probes": 4256
+      },
+      {
+        "method": "ready_archive_first",
+        "elapsed_seconds": 1.5470179850090062,
+        "tasks": [
+          "library-case1373-node998-017-task.json",
+          "library-case1373-node998-088-task.json",
+          "library-case1393-node998-041-task.json",
+          "library-case1393-node998-073-task.json",
+          "library-case1463-node998-008-task.json",
+          "library-case1463-node998-009-task.json",
+          "library-case1464-node998-131-task.json",
+          "library-case1464-node998-100-task.json",
+          "library-case1464-node998-105-task.json",
+          "library-case1464-node998-108-task.json",
+          "library-case1464-node998-106-task.json",
+          "library-case1465-node998-135-task.json",
+          "library-case1465-node998-066-task.json",
+          "library-case1465-node998-090-task.json",
+          "library-case1465-node998-091-task.json",
+          "library-case1499-node998-013-task.json",
+          "library-case1499-node998-020-task.json",
+          "library-case1823-node998-008-task.json",
+          "library-case1823-node998-012-task.json",
+          "library-case1849-node998-026-task.json",
+          "library-case1849-node998-004-task.json",
+          "library-case1887-node998-143-task.json",
+          "library-case1887-node998-039-task.json",
+          "library-case1891-node998-006-task.json",
+          "library-case1891-node998-016-task.json",
+          "library-case2051-node998-063-task.json",
+          "library-case2068-node998-009-task.json",
+          "library-case2068-node998-012-task.json",
+          "library-case2069-node998-042-task.json",
+          "library-case2069-node998-079-task.json",
+          "library-case2069-node998-049-task.json",
+          "library-case2069-node998-050-task.json",
+          "library-case2069-node998-051-task.json",
+          "library-case2069-node998-043-task.json",
+          "library-case2070-node998-008-task.json"
+        ],
+        "log_probes": 1918,
+        "archive_probes": 4361
+      },
+      {
+        "method": "ready_archive_first_repeat",
+        "elapsed_seconds": 1.5426141179923434,
+        "tasks": [
+          "library-case1373-node998-017-task.json",
+          "library-case1373-node998-088-task.json",
+          "library-case1393-node998-041-task.json",
+          "library-case1393-node998-073-task.json",
+          "library-case1463-node998-008-task.json",
+          "library-case1463-node998-009-task.json",
+          "library-case1464-node998-131-task.json",
+          "library-case1464-node998-100-task.json",
+          "library-case1464-node998-105-task.json",
+          "library-case1464-node998-108-task.json",
+          "library-case1464-node998-106-task.json",
+          "library-case1465-node998-135-task.json",
+          "library-case1465-node998-066-task.json",
+          "library-case1465-node998-090-task.json",
+          "library-case1465-node998-091-task.json",
+          "library-case1499-node998-013-task.json",
+          "library-case1499-node998-020-task.json",
+          "library-case1823-node998-008-task.json",
+          "library-case1823-node998-012-task.json",
+          "library-case1849-node998-026-task.json",
+          "library-case1849-node998-004-task.json",
+          "library-case1887-node998-143-task.json",
+          "library-case1887-node998-039-task.json",
+          "library-case1891-node998-006-task.json",
+          "library-case1891-node998-016-task.json",
+          "library-case2051-node998-063-task.json",
+          "library-case2068-node998-009-task.json",
+          "library-case2068-node998-012-task.json",
+          "library-case2069-node998-042-task.json",
+          "library-case2069-node998-079-task.json",
+          "library-case2069-node998-049-task.json",
+          "library-case2069-node998-050-task.json",
+          "library-case2069-node998-051-task.json",
+          "library-case2069-node998-043-task.json",
+          "library-case2070-node998-008-task.json"
+        ],
+        "log_probes": 1918,
+        "archive_probes": 4361
+      }
+    ],
+    "compiler_processes_started": 0,
+    "case_certificate_acceptances": 0,
+    "scope": "Source-readiness/log filtering only; all ordinary source/object validation remains required."
+  },
+  "benchmark_original_sha256": "8ef23fbf25c7ea9f1bb23b4e127c9650917280a5f022dab4dae05fb28691bc51",
+  "controller_transition": {
+    "status": "GLOBAL_CRITICAL_PATH_CONTROLLER_STARTED_EXISTING_PROOF_WORKERS_ADOPTED",
+    "utc": "2026-10-01T10:41:23.810571+00:00",
+    "active_workers": [
+      {
+        "task": "forward-case1731-coordinate-binding-retry01-assembly-task.json",
+        "worker": "independent-probe",
+        "archive": ".t03-runtime-sync-forward-case1731-coordinate-binding-retry01-assembly-task.zip",
+        "kind": "case",
+        "case": 1731,
+        "reservation_manifest_sha256": "576cffcffbe6212fd2310da911e1bb27eb85bdec77bceb4024584cdc05789b4d"
+      },
+      {
+        "task": "library-case1465-node998-103-task.json",
+        "worker": "helper-probe",
+        "archive": ".t03-runtime-sync-library-case1465-node998-103-task.zip",
+        "kind": "library",
+        "reservation_manifest_sha256": "8316756d95b1e0b27fd030f0e3f40b4d68f849fb41139b49e005894c91b3d7be"
+      },
+      {
+        "task": "library-case2069-node998-042-task.json",
+        "worker": "primary",
+        "archive": ".t03-runtime-sync-library-case2069-node998-042-task.zip",
+        "kind": "library",
+        "reservation_manifest_sha256": "ad94353bd99039bc02c8388cf8965ad8d0e12cca33fd45094c55109972380ab2"
+      },
+      {
+        "task": "library-case1373-node998-017-task.json",
+        "worker": "library-c",
+        "archive": ".t03-runtime-sync-library-case1373-node998-017-task.zip",
+        "kind": "library",
+        "reservation_manifest_sha256": "56384cf1cc3fa69d33387f2422e2c2c5340cd9167dddd1e58e1ce51fd5aec76b"
+      }
+    ],
+    "live_proof_worker_count": 4,
+    "maximum_parallel_checks": 6,
+    "original_adoption_preserved": "unified-pool-adoption-v7-before-critical-path-retry06.json",
+    "original_adoption_sha256": "58c38c40e6e10ae9cb1afc3d276dd93e96401ad725eadaec5d532fd7c3a86b2c",
+    "changes": [
+      "Prefer fewer active group checks, then rotate the oldest waiting case, then choose its longest dependency path.",
+      "Update case counts after each assignment so simultaneous free slots serve different waiting cases.",
+      "Check whether a prepared source archive exists before probing historical proof logs.",
+      "Poll every five seconds after reducing unissued-batch filesystem probes.",
+      "Conservatively reserve active source closures without rehashing proof caches at adoption.",
+      "Keep full-case priority and ordinary exact candidate receipt checks."
+    ],
+    "controller_source_sha256": "01095e1622b027c0d4f3b00131febde8bbf6037e30e05decc553fc7d56d9779c",
+    "running_proof_workers_unchanged": true,
+    "compiler_processes_interrupted": 0
+  },
+  "controller_transition_original_sha256": "7cbc7992325e14a7b9b2219e17b872e884356cc6c0417846bd18df6066ed1ffc",
+  "actual_application": {
+    "status": "SOURCE_READY_PREFILTER_APPLIED_EXISTING_PROOF_WORKERS_PRESERVED",
+    "utc": "2026-10-01T10:43:21.324998+00:00",
+    "transition": "critical-path-dispatcher-transition-retry06.json",
+    "transition_sha256": "7cbc7992325e14a7b9b2219e17b872e884356cc6c0417846bd18df6066ed1ffc",
+    "benchmark": "ready-archive-prefilter-benchmark-20261001.json",
+    "benchmark_sha256": "8ef23fbf25c7ea9f1bb23b4e127c9650917280a5f022dab4dae05fb28691bc51",
+    "controller_source_sha256": "01095e1622b027c0d4f3b00131febde8bbf6037e30e05decc553fc7d56d9779c",
+    "completed_case_certificates": 158,
+    "maximum_parallel_checks": 6,
+    "controller_poll_seconds": 5,
+    "compiler_processes_interrupted": 0,
+    "actual_following_refill_events": [
+      {
+        "worker": "library-c",
+        "completed_task": "library-case1373-node998-017-task.json",
+        "next_task": "library-case1823-node998-008-task.json",
+        "completion_utc": "2026-10-01T10:41:59.722650+00:00",
+        "start_utc": "2026-10-01T10:42:03.182746+00:00",
+        "refill_delay_seconds": 3.460096
+      },
+      {
+        "worker": "primary",
+        "completed_task": "library-case2069-node998-042-task.json",
+        "next_task": "library-case1393-node998-041-task.json",
+        "completion_utc": "2026-10-01T10:41:59.588110+00:00",
+        "start_utc": "2026-10-01T10:42:03.361062+00:00",
+        "refill_delay_seconds": 3.772952
+      },
+      {
+        "worker": "library-b",
+        "completed_task": "library-case1499-node998-013-task.json",
+        "next_task": "library-case1463-node998-008-task.json",
+        "completion_utc": "2026-10-01T10:42:36.387801+00:00",
+        "start_utc": "2026-10-01T10:42:32.211370+00:00",
+        "refill_delay_seconds": -4.176431
+      },
+      {
+        "worker": "extra-a",
+        "completed_task": "library-case1849-node998-026-task.json",
+        "next_task": "library-case1891-node998-006-task.json",
+        "completion_utc": "2026-10-01T10:42:50.451261+00:00",
+        "start_utc": "2026-10-01T10:42:53.930359+00:00",
+        "refill_delay_seconds": 3.479098
+      },
+      {
+        "worker": "helper-probe",
+        "completed_task": "library-case1465-node998-103-task.json",
+        "next_task": "library-case1464-node998-131-task.json",
+        "completion_utc": "2026-10-01T10:42:59.462264+00:00",
+        "start_utc": "2026-10-01T10:43:11.476794+00:00",
+        "refill_delay_seconds": 12.01453
+      }
+    ],
+    "timing_scope": "Observed controller events include scheduling and polling; they are not Lean compilation benchmarks."
+  },
+  "application_original_sha256": "8fd8a829855455575553822a85983c251050de4a16df123dc21a99959a591462",
+  "timestamp_ordering_addendum": {
+    "status": "ACTUAL_TIMESTAMP_ORDERING_ANOMALY_PRESERVED_EXCLUDED_FROM_DELAY_SUMMARIES",
+    "original_record": "ready-archive-prefilter-application-20261001.json",
+    "original_record_sha256": "8fd8a829855455575553822a85983c251050de4a16df123dc21a99959a591462",
+    "valid_delay_samples": [
+      {
+        "worker": "library-c",
+        "completed_task": "library-case1373-node998-017-task.json",
+        "next_task": "library-case1823-node998-008-task.json",
+        "completion_utc": "2026-10-01T06:41:59.72265-04:00",
+        "start_utc": "2026-10-01T06:42:03.182746-04:00",
+        "refill_delay_seconds": 3.460096
+      },
+      {
+        "worker": "primary",
+        "completed_task": "library-case2069-node998-042-task.json",
+        "next_task": "library-case1393-node998-041-task.json",
+        "completion_utc": "2026-10-01T06:41:59.58811-04:00",
+        "start_utc": "2026-10-01T06:42:03.361062-04:00",
+        "refill_delay_seconds": 3.772952
+      },
+      {
+        "worker": "extra-a",
+        "completed_task": "library-case1849-node998-026-task.json",
+        "next_task": "library-case1891-node998-006-task.json",
+        "completion_utc": "2026-10-01T06:42:50.451261-04:00",
+        "start_utc": "2026-10-01T06:42:53.930359-04:00",
+        "refill_delay_seconds": 3.479098
+      },
+      {
+        "worker": "helper-probe",
+        "completed_task": "library-case1465-node998-103-task.json",
+        "next_task": "library-case1464-node998-131-task.json",
+        "completion_utc": "2026-10-01T06:42:59.462264-04:00",
+        "start_utc": "2026-10-01T06:43:11.476794-04:00",
+        "refill_delay_seconds": 12.01453
+      }
+    ],
+    "excluded_reversed_timestamp_samples": [
+      {
+        "worker": "library-b",
+        "completed_task": "library-case1499-node998-013-task.json",
+        "next_task": "library-case1463-node998-008-task.json",
+        "completion_utc": "2026-10-01T06:42:36.387801-04:00",
+        "start_utc": "2026-10-01T06:42:32.21137-04:00",
+        "refill_delay_seconds": -4.176431
+      }
+    ],
+    "explanation": "The original event bytes remain preserved. Negative wall-clock timestamp pairs cannot establish a refill duration. The perf_counter benchmark and its identical ready-task comparison are unaffected."
+  },
+  "addendum_original_sha256": "2264432f172ad08e9c9e08d43598b98e2a51b50e85574cb777981a23298a18a4",
+  "negative_sample_excluded_from_delay_summaries": true,
+  "compiler_speedup_claimed": false,
+  "publication_tooling_runtime_replay_performed": false,
+  "portable_tools_validation": {
+    "status": "PORTABLE_QUEUE_CONTROLLER_RESTART_FINAL_TOOLS_AST_HELP_PRIVACY_PASS",
+    "files": [
+      {
+        "path": "scripts/t03_retry/pool_helpers.py",
+        "sha256": "e0405ac1a08990ee247760944f724cb1568c0c671d9acfb58b7bdbac3ea861cc",
+        "AST_passed": true,
+        "help_checked": false,
+        "original_local_script_sha256": "3b8b87789e7eef62c7b8cca75c08db225b2d7a75959a8e7e898797652072d9ea"
+      },
+      {
+        "path": "scripts/t03_retry/run_unified_proof_pool_v7.py",
+        "sha256": "f4a7841458d95eb026c785bcafcc3497c7966558ed5396d02d78c1dc784c591a",
+        "AST_passed": true,
+        "help_checked": true,
+        "original_local_script_sha256": "01095e1622b027c0d4f3b00131febde8bbf6037e30e05decc553fc7d56d9779c"
+      },
+      {
+        "path": "scripts/t03_retry/restart_critical_path_dispatcher.py",
+        "sha256": "b3d78bbabdc2fa35172959ca5bf7e813a32cee5b998580a09654414b330eebcd",
+        "AST_passed": true,
+        "help_checked": true,
+        "original_local_script_sha256": "c0319f02ddd06317327a4e100871b82401868517fea160a8250591b70f96f50b"
+      },
+      {
+        "path": "scripts/t03_retry/benchmark_ready_archive_prefilter.py",
+        "sha256": "2ddcb3c9a32e49f65a8d47cd77e6d237ddb5ad479f76dde4a0a7fffab77d192f",
+        "AST_passed": true,
+        "help_checked": true,
+        "original_local_script_sha256": "b615f1783479f83ab8d277fdd6955e021e360b388128f3b3950a4a4f7e0db7d4"
+      },
+      {
+        "path": "scripts/t03_retry/record_ready_archive_prefilter_application.py",
+        "sha256": "49a7b3f732550603a4d31561c5619f8a5ff394a99f480266decd913114214e05",
+        "AST_passed": true,
+        "help_checked": true,
+        "original_local_script_sha256": "8e0af210126086fae0dc6100a70866257d85af0325995c4f86d3abd76b5cc621"
+      },
+      {
+        "path": "scripts/t03_retry/stage_verified_return.py",
+        "sha256": "596b0ea2131735a3b7711aa541ba193bc82b41ff6e2aaeea857bf946d01fa59d",
+        "AST_passed": true,
+        "help_checked": true,
+        "original_local_script_sha256": "d9ff1ef603272a3009c64b18b309b90f92d69fd0e072e3ae74cd350c04398858"
+      },
+      {
+        "path": "scripts/t03_retry/write_verified_report.py",
+        "sha256": "fda03acd7263d9502f39cb414df2d12c222b471ed5eeba8b44202540bfe73abb",
+        "AST_passed": true,
+        "help_checked": true,
+        "original_local_script_sha256": "165343dc7cfd9e0959b3b3efc15c4e233677025d698ae4a6f14cc7793c414921"
+      },
+      {
+        "path": "scripts/t03_retry/publish_idle_rebalanced_case.py",
+        "sha256": "c0853a54536562067d44706a2d8b5c3995697792e6cbaa4be8a24d45979342aa",
+        "AST_passed": true,
+        "help_checked": true,
+        "original_local_script_sha256": "01be7e17c95b0faa176b42740c5f019dbfdbe5bae183a78c74fc90a8ecb41c62"
+      },
+      {
+        "path": "scripts/t03_retry/restore_external_case_queue.py",
+        "sha256": "df6740c3cbee653c5f8bbe58d48ff03b72cc188a41c3267bd836fcee5aeb2fd6",
+        "AST_passed": true,
+        "help_checked": true,
+        "original_local_script_sha256": "c4ff2e436b2c44a391022358e8623d9a7daa979f3f0c5700bbdd710941c11a46"
+      },
+      {
+        "path": "scripts/t03_retry/packed_namespace_transform.py",
+        "sha256": "7175b173b7c142f9d7574cd40e57a338679668196a9c13984e6426e4cb4899b6",
+        "AST_passed": true,
+        "help_checked": false,
+        "original_local_script_sha256": "7175b173b7c142f9d7574cd40e57a338679668196a9c13984e6426e4cb4899b6"
+      },
+      {
+        "path": "scripts/t03_retry/plan_packed_case.py",
+        "sha256": "8a99c9d7094f208102b8f82e8c77767fe9a8bf0d64bda99c489b7158515d621b",
+        "AST_passed": true,
+        "help_checked": true,
+        "original_local_script_sha256": "0bd07aebe7c2d9bfe917f447a426d5a0a9bb4bb2ebb564ec01ab1c607b19008c"
+      },
+      {
+        "path": "scripts/t03_retry/prepare_namespaced_packed_case.py",
+        "sha256": "21350b615d7486c2501d5d721b548f633d158d5828896b998e96cf4ce3453f74",
+        "AST_passed": true,
+        "help_checked": true,
+        "original_local_script_sha256": "5ade449e6a139785c0553f6d7394ff242356c0145346e8ef8aa79e32e9946d79"
+      },
+      {
+        "path": "scripts/t03_retry/regroup_packed_case_by_depth.py",
+        "sha256": "1b5fbfc235908cc582be4e0f173adaf909d73c54e213c311e0cc0c2e159cf1c1",
+        "AST_passed": true,
+        "help_checked": true,
+        "original_local_script_sha256": "2eb4429a048c837fa1c75838f1d96fea42c8bbcdcfc0c4e7a480b4190a408600"
+      }
+    ],
+    "live_controller_process_or_source_actions_replayed": false,
+    "validation_scope": "Python syntax, CLI help and portable metadata review only; no controller, source mutation, final stager, report generation, compiler or checker was run for publication."
+  }
+}

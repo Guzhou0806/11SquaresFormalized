@@ -42833,13 +42833,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 8999,
-      "sha256": "1202939f14ec8eb515794ae852e1ffa8e595ffab6e47dd6f6e97ff4e8ce97c2d"
+      "bytes": 10119,
+      "sha256": "b9ba6c1bc763374296a3179987022b6ec40e1bca7b821f75d7d88ddf6793928f"
     },
     {
       "path": "T03_PROGRESS.md",
-      "bytes": 60524,
-      "sha256": "f4c1696a0e5f7af0d4c8f6d81a246600732da3895fb1c3e4ae0941b4b79deb07"
+      "bytes": 63928,
+      "sha256": "8d49ad9f57cd5c0f4f3ed123571986272e60dea65400135ecbbe3a5ff77a1c09"
     },
     {
       "path": "lake-manifest.json",
@@ -42863,8 +42863,8 @@
     },
     {
       "path": "scripts/t03_retry/README.md",
-      "bytes": 17279,
-      "sha256": "1c3f2e9a0e9735a9b8e77870fe649e706562eaacd1aff76f02dd6ec1640e2e65"
+      "bytes": 19908,
+      "sha256": "42a951f68043a85be411d0732056d77aec6aad3f88cdee0975bcf634c7a43981"
     },
     {
       "path": "scripts/t03_retry/activate_prepared_local_case.py",
@@ -42882,6 +42882,11 @@
       "sha256": "c73ea7df0bf58915b2d8abcedb07b36435031730e77ef79c1d61f3e2cd985715"
     },
     {
+      "path": "scripts/t03_retry/benchmark_ready_archive_prefilter.py",
+      "bytes": 3264,
+      "sha256": "2ddcb3c9a32e49f65a8d47cd77e6d237ddb5ad479f76dde4a0a7fffab77d192f"
+    },
+    {
       "path": "scripts/t03_retry/checkpoint_native_packed_producer.py",
       "bytes": 4700,
       "sha256": "3260b893a4f5193df1fd15354ff3beedc779deedc4ffac96348310d8c3a0622e"
@@ -42897,14 +42902,29 @@
       "sha256": "c0017681d3ca45c83a938d4c5ff33816339b065d820ee12be65ecd212dc648b3"
     },
     {
+      "path": "scripts/t03_retry/packed_namespace_transform.py",
+      "bytes": 4369,
+      "sha256": "7175b173b7c142f9d7574cd40e57a338679668196a9c13984e6426e4cb4899b6"
+    },
+    {
       "path": "scripts/t03_retry/parallel_packed_case_producer.py",
       "bytes": 14649,
       "sha256": "c1dee49e56ee14f5b34523ee496e093198aee3618ae7eea3b0abcc810fd9239a"
     },
     {
+      "path": "scripts/t03_retry/plan_packed_case.py",
+      "bytes": 5254,
+      "sha256": "8a99c9d7094f208102b8f82e8c77767fe9a8bf0d64bda99c489b7158515d621b"
+    },
+    {
       "path": "scripts/t03_retry/plan_remaining_packed_parallelism.py",
       "bytes": 5596,
       "sha256": "f82b2db94ee30a2ff860adb0c2e6eafaf604fff3ecba607c79d8c434998d0d8e"
+    },
+    {
+      "path": "scripts/t03_retry/pool_helpers.py",
+      "bytes": 4842,
+      "sha256": "e0405ac1a08990ee247760944f724cb1568c0c671d9acfb58b7bdbac3ea861cc"
     },
     {
       "path": "scripts/t03_retry/prepare_coordinate_binding_retry.py",
@@ -42927,6 +42947,11 @@
       "sha256": "3fcafddaf8c6053288a37c47e7ddb46067813fcea08df513b8bd28b77f038e3f"
     },
     {
+      "path": "scripts/t03_retry/prepare_namespaced_packed_case.py",
+      "bytes": 13194,
+      "sha256": "21350b615d7486c2501d5d721b548f633d158d5828896b998e96cf4ce3453f74"
+    },
+    {
       "path": "scripts/t03_retry/prepare_remaining_parallel_case.py",
       "bytes": 13219,
       "sha256": "1d17dd3022e129134be194447bc3c847fa2d48971ab504b9aecb34d93540f45b"
@@ -42940,6 +42965,11 @@
       "path": "scripts/t03_retry/publish_failed_packed_equality_repairs.py",
       "bytes": 8474,
       "sha256": "833944882d12d8cd3fd1b04342162383baa250d5d8ad8f0e92954d6ef21270d1"
+    },
+    {
+      "path": "scripts/t03_retry/publish_idle_rebalanced_case.py",
+      "bytes": 5592,
+      "sha256": "c0853a54536562067d44706a2d8b5c3995697792e6cbaa4be8a24d45979342aa"
     },
     {
       "path": "scripts/t03_retry/queue_failed_binding_pilot.py",
@@ -42962,9 +42992,24 @@
       "sha256": "fa3043460e0735aa5df5147615220f3c870c55132a2c191423b6e60aaa6c8e4a"
     },
     {
+      "path": "scripts/t03_retry/record_ready_archive_prefilter_application.py",
+      "bytes": 3516,
+      "sha256": "49a7b3f732550603a4d31561c5619f8a5ff394a99f480266decd913114214e05"
+    },
+    {
       "path": "scripts/t03_retry/regroup_packed_case_by_depth.py",
-      "bytes": 3926,
-      "sha256": "2f45bbaeb7e3ffd2c445618825a40e7555916d377b65f596f9765ff71d414d63"
+      "bytes": 4145,
+      "sha256": "1b5fbfc235908cc582be4e0f173adaf909d73c54e213c311e0cc0c2e159cf1c1"
+    },
+    {
+      "path": "scripts/t03_retry/restart_critical_path_dispatcher.py",
+      "bytes": 6970,
+      "sha256": "b3d78bbabdc2fa35172959ca5bf7e813a32cee5b998580a09654414b330eebcd"
+    },
+    {
+      "path": "scripts/t03_retry/restore_external_case_queue.py",
+      "bytes": 2788,
+      "sha256": "df6740c3cbee653c5f8bbe58d48ff03b72cc188a41c3267bd836fcee5aeb2fd6"
     },
     {
       "path": "scripts/t03_retry/retry_paths.py",
@@ -42982,6 +43027,11 @@
       "sha256": "6f4bc3cf2b298163e928ca23145d02efb64ddbf812e34bfc209d42abd08e5414"
     },
     {
+      "path": "scripts/t03_retry/run_unified_proof_pool_v7.py",
+      "bytes": 9726,
+      "sha256": "f4a7841458d95eb026c785bcafcc3497c7966558ed5396d02d78c1dc784c591a"
+    },
+    {
       "path": "scripts/t03_retry/scheduling.py",
       "bytes": 4580,
       "sha256": "db12f20e53cc5aeb4dea557ed759382780758c8723adca9d4fc77fd68fe75a06"
@@ -42992,9 +43042,19 @@
       "sha256": "ff779a7c708a20114e89e8cef439beb3ea5b8b3a540bca3dc856d183658b2657"
     },
     {
+      "path": "scripts/t03_retry/stage_verified_return.py",
+      "bytes": 14112,
+      "sha256": "596b0ea2131735a3b7711aa541ba193bc82b41ff6e2aaeea857bf946d01fa59d"
+    },
+    {
       "path": "scripts/t03_retry/sync_native_runtime_sources.py",
       "bytes": 7185,
       "sha256": "4376cc668ef80c239c45b4b656dbff9e4f0381b2dd17028fe7d9d7b8dd9fffb0"
+    },
+    {
+      "path": "scripts/t03_retry/write_verified_report.py",
+      "bytes": 25564,
+      "sha256": "fda03acd7263d9502f39cb414df2d12c222b471ed5eeba8b44202540bfe73abb"
     },
     {
       "path": "scripts/verify.py",
@@ -43018,8 +43078,8 @@
     },
     {
       "path": "verification/privacy-review.json",
-      "bytes": 10709,
-      "sha256": "95721f2ebb5e8e2df593f5b9ae72d8325ab781e205ab56e5d4497b425bc282eb"
+      "bytes": 11320,
+      "sha256": "78dabacd5ce889f0d808a1a6a878cdc662f603731407129cacefdc1ea554eb63"
     },
     {
       "path": "verification/source-check.json",
@@ -43132,6 +43192,26 @@
       "sha256": "d4cf520f3f6208e65be2abd466fdd6faa5d69a79a4b446422ed8b3b605a685ef"
     },
     {
+      "path": "verification/t03-case1731-accepted-source-audit.json",
+      "bytes": 3699,
+      "sha256": "1fd766dd28869560988f1e9f4eec0ae6819ff651245a8b067eee90ca9864669d"
+    },
+    {
+      "path": "verification/t03-case1731-full-audit-CHECK.json",
+      "bytes": 446,
+      "sha256": "7b4054e231ccfbd96394909dabe28dbb497bb8737bc765df792a376a1dc0b1eb"
+    },
+    {
+      "path": "verification/t03-case1731-full-audit.lean",
+      "bytes": 168,
+      "sha256": "cddfd90a65641c9daac0cfab30aee9409ff07ef169c65510a1526ece7518160b"
+    },
+    {
+      "path": "verification/t03-case1731-full-audit.txt",
+      "bytes": 144,
+      "sha256": "fc702371c8d122a3da4896ec692f8fbc9fe2fdb4ecc527fe405d172f1edcf168"
+    },
+    {
       "path": "verification/t03-case1848-source-supplement.json",
       "bytes": 2288,
       "sha256": "039030dff956746934b2da4d19731ad91cb2b72faa08200cdf4112ca641fb656"
@@ -43172,6 +43252,11 @@
       "sha256": "c25d931732cb38f99665db554d5bf56e526d6877d3d5e96ef62470b69d698a0c"
     },
     {
+      "path": "verification/t03-local-queues-checkpoint-20261001.json",
+      "bytes": 47038,
+      "sha256": "6bdaf313f670e3cdfe433798663c31b533dd46a11c4beca964336a9bfbd5d82a"
+    },
+    {
       "path": "verification/t03-native-source-sync-application.json",
       "bytes": 1223,
       "sha256": "24cad6066bb75b066df51f2c2c881a243ff07501fa3803ce5029a324973d70fe"
@@ -43198,8 +43283,13 @@
     },
     {
       "path": "verification/t03-progress.json",
-      "bytes": 67476,
-      "sha256": "c84a9caedcbdc3d1d15dbd2cff43fc3a7893ff7e3fbb954fb844507206237df8"
+      "bytes": 68212,
+      "sha256": "4401b53c7837cecce7a663faf6528664746b405c3fb5e78247ccfecfa03ae9e9"
+    },
+    {
+      "path": "verification/t03-ready-archive-prefilter-checkpoint-20261001.json",
+      "bytes": 19376,
+      "sha256": "481192e4efd8e8363e4faf1fa5de7531473739e97517fa3c8bcedea43c8dbf3d"
     },
     {
       "path": "verification/t03-release-checkpoint.json",

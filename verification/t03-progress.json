@@ -1,5 +1,5 @@
 {
-  "status": "PARTIAL_TESTED_COMMON_TOOLS_AND_158_AUDITED_CASE_SOURCE_CLOSURES",
+  "status": "PARTIAL_TESTED_COMMON_TOOLS_AND_159_AUDITED_CASE_SOURCE_CLOSURES",
   "snapshot_date": "2026-09-30",
   "meaning": "Independent returned compiler audits. This is not a fresh combined replay of the GitHub assembly.",
   "lean_version": "4.10.0-rc2",
@@ -1667,8 +1667,8 @@
     "source_lean_bytes": 5499202925,
     "meaning": "The original 151 source closures and six supplements remain unchanged, supplying 157 audited closures. The separately published frozen case1372 binding-retry02 source ZIP subsequently passed its exact full target audit, for 158. Only case2135 is directly integrated into Git source; no merged replay or full-family completion is claimed."
   },
-  "published_case_source_closures": 158,
-  "remaining_case_certificates": 15,
+  "published_case_source_closures": 159,
+  "remaining_case_certificates": 14,
   "source_supplements": [
     {
       "asset_url": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/download/t03-audited-151-20260930/T03-audited-cases1484-2122-source-supplement.zip",
@@ -2022,5 +2022,16 @@
     "new_bulk_assets": 0,
     "merged_repository_Lean_replay_performed": false,
     "Lean_workers_or_process_controls_started_for_publication": 0
+  },
+  "latest_159_local_queue_checkpoint": {
+    "accepted_full_cases": 159,
+    "remaining_cases": 14,
+    "accepted_case1731_manifest": "verification/t03-case1731-accepted-source-audit.json",
+    "existing_source_ZIP_sha256": "9a957821c2d6dc8da22d10b4b21c6de072318e873f77d6ea0068838dad10d595",
+    "new_accepted_sidecar_release": "https://github.com/Queuingtheorydotcom/11SquaresFormalized/releases/tag/t03-audited159-case1731-20261001",
+    "local_queue_manifest": "verification/t03-local-queues-checkpoint-20261001.json",
+    "scheduler_manifest": "verification/t03-ready-archive-prefilter-checkpoint-20261001.json",
+    "full_remaining_certificates_pending": true,
+    "merged_replay_family_targets_and_final_ZIP_complete": false
   }
 }

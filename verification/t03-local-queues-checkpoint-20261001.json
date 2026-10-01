@@ -1,0 +1,873 @@
+{
+  "format": "T03-local-queue-checkpoint-v1",
+  "status": "FOURTEEN_REMAINING_LOCAL_QUEUES_NOT_FULL_CERTIFICATES",
+  "snapshot_utc": "2026-10-01T10:36:22.860298+00:00",
+  "publication_inspection_utc": "2026-10-01T10:57:38.015121+00:00",
+  "root_snapshot_sha256": "704f109d5b131fb3c1ad56fb4abbd28863bee1ee638bd63740eeedb906dc0f8c",
+  "accepted_case_count_at_root_snapshot": 158,
+  "current_accepted_full_case_count": 159,
+  "case1731_accepted_manifest": "verification/t03-case1731-accepted-source-audit.json",
+  "remaining_cases": [
+    1373,
+    1393,
+    1463,
+    1464,
+    1465,
+    1499,
+    1823,
+    1849,
+    1887,
+    1891,
+    2051,
+    2068,
+    2069,
+    2070
+  ],
+  "local_cases": [
+    {
+      "case": 1373,
+      "mode": "local_parallel_dependency_queue",
+      "task": "forward-case1373-assembly-task.json",
+      "source_publication": "case1373-packed-canonical-publication.json",
+      "exact_source_archive_sha256": "0fd0f762ea9dd2d2a7a3fe6146193dff9f8c77868ab903cabf7a0382e966554c",
+      "groups": 198,
+      "queue_sha256": "50879172c2e86a184557dd121d2f522461d94582dd3307fb509f5af7ffa196b3",
+      "last_observed_completed_groups": 8,
+      "full_case_audit_pending": true,
+      "complete_source_master_hash_validation_scope": "Root checkpoint rehashed each complete master. Publication independently read the stable master member manifest, checked every accepted first-group transport member, and matched its Lean hashes against this master; it did not rehash all large masters again.",
+      "first_actual_group_audit": {
+        "task": "library-case1373-node998-000-task.json",
+        "transport_sha256": "8abfe4d0b3fe6381f9da8024df13d474a70aa0b830e7da9c5dcfa059d51a3e2a",
+        "actual_log_sha256": "f48a350864142c2acb4494b1b64838fe9f1bc89b16d35cf01cbe2d7c9f777dc7",
+        "CHECK_sha256": "886f2be5fc5610a6a13de301545f049f42f2eb034eded49863b348039b8dbeba",
+        "audit_seconds": 31.28,
+        "target_axioms": {
+          "ElevenSquare.Pending.T03.Certificates.Polygon9333dee82b1f5dcbcfd31d09.PackedCase1373.contained": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "actual_CHECK": {
+          "status": "accepted",
+          "source": "verification/HandoffAudit.lean",
+          "exit_code": 0,
+          "elapsed_seconds": 31.28,
+          "lean_memory_limit_mb": 8192,
+          "lean_threads": 1,
+          "lean_thread_stack_kb": 32768,
+          "lean_main_stack_kb": 65536,
+          "cpu_seconds_limit": 1800,
+          "wall_seconds_limit": 2100,
+          "nice_increment": 0,
+          "emitted_olean": null,
+          "meaning": "Elaboration check only; inspect axioms and admissions before marking a proof complete."
+        },
+        "actual_log": "'ElevenSquare.Pending.T03.Certificates.Polygon9333dee82b1f5dcbcfd31d09.PackedCase1373.contained' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+        "all_transport_member_hashes_checked": true,
+        "accepted_group_Lean_members_matching_current_master_manifest": 637,
+        "execution_record_sha256": "5abd323e719de2dfdf98f173a9b09494b4304ed3c726c1b371a28348c8e8f4ac",
+        "wrapper_sha256": "f4b5799a17bed53b540a69490ab29e663eb0c07d1827664792040cbdb6f47aab",
+        "exact_group_task": {
+          "id": "T03_compact_full_trace",
+          "modules": [
+            "ElevenSquare.Tasks.T03.Batch03.Case1373.PackedNamespaced.Chunk000"
+          ],
+          "axiom_targets": [
+            "ElevenSquare.Pending.T03.Certificates.Polygon9333dee82b1f5dcbcfd31d09.PackedCase1373.contained"
+          ]
+        },
+        "exact_group_task_sha256": "45cdc1e69558b5f1a6ecd6f283e37b9eee5468a40e8b15c72a5eb95d40d241e8"
+      },
+      "full_case_original_axiom_targets": [
+        "ElevenSquare.Pending.T03.Batch03.Case1373.Forward.Certificate.certificate_exists"
+      ],
+      "full_case_guard_sha256": "42b728d56f73f3cfd65daace18720d788d932519a03aa07ff4e95c640b25b9d6"
+    },
+    {
+      "case": 1393,
+      "mode": "local_parallel_dependency_queue",
+      "task": "forward-case1393-assembly-task.json",
+      "source_publication": "case1393-packed-canonical-publication.json",
+      "exact_source_archive_sha256": "ba7f61d0fc4437faa99aa3f432725ec4924a0b44b307306c913dc4a4d1c81c26",
+      "groups": 523,
+      "queue_sha256": "361ca914404acfa92446fff113e9428cc02ce5d4318c2c12174e9e17f08a5c79",
+      "last_observed_completed_groups": 52,
+      "full_case_audit_pending": true,
+      "complete_source_master_hash_validation_scope": "Root checkpoint rehashed each complete master. Publication independently read the stable master member manifest, checked every accepted first-group transport member, and matched its Lean hashes against this master; it did not rehash all large masters again.",
+      "first_actual_group_audit": {
+        "task": "library-case1393-node998-000-task.json",
+        "transport_sha256": "9a4f23c7c1790fed25c0ac8fb83376da93c45552c4c98dc3ee4f992184d5d345",
+        "actual_log_sha256": "ed40f23e35778817ed763d1f05e2ecf04d9d3d2bacc817b93ad18d481b4d1590",
+        "CHECK_sha256": "ce263ed594bef4a9f477f11b888a36a6842bf46a10b61f75a67fa1aa09d9cd19",
+        "audit_seconds": 3.79,
+        "target_axioms": {
+          "ElevenSquare.Pending.T03.Certificates.Polygona9883c411b1d1d255560285f.PackedCase1393.contained": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "actual_CHECK": {
+          "status": "accepted",
+          "source": "verification/HandoffAudit.lean",
+          "exit_code": 0,
+          "elapsed_seconds": 3.79,
+          "lean_memory_limit_mb": 8192,
+          "lean_threads": 1,
+          "lean_thread_stack_kb": 32768,
+          "lean_main_stack_kb": 65536,
+          "cpu_seconds_limit": 1800,
+          "wall_seconds_limit": 2100,
+          "nice_increment": 0,
+          "emitted_olean": null,
+          "meaning": "Elaboration check only; inspect axioms and admissions before marking a proof complete."
+        },
+        "actual_log": "'ElevenSquare.Pending.T03.Certificates.Polygona9883c411b1d1d255560285f.PackedCase1393.contained' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+        "all_transport_member_hashes_checked": true,
+        "accepted_group_Lean_members_matching_current_master_manifest": 636,
+        "execution_record_sha256": "b95743271a713b7c9ee614ac37228329b855e8a8a90cdd4ec8b9f11b78301bef",
+        "wrapper_sha256": "b31238929d54020fe0ac7c6a984a42d5e0e7d5c19081efc2bd217cfbc09d1e75",
+        "exact_group_task": {
+          "id": "T03_compact_full_trace",
+          "modules": [
+            "ElevenSquare.Tasks.T03.Batch03.Case1393.PackedNamespaced.Chunk000"
+          ],
+          "axiom_targets": [
+            "ElevenSquare.Pending.T03.Certificates.Polygona9883c411b1d1d255560285f.PackedCase1393.contained"
+          ]
+        },
+        "exact_group_task_sha256": "6ce173193176e2be4e6b4c3e17e53c78af522fb393b00603c0001a8a7260563b"
+      },
+      "full_case_original_axiom_targets": [
+        "ElevenSquare.Pending.T03.Batch03.Case1393.Forward.Certificate.certificate_exists"
+      ],
+      "full_case_guard_sha256": "d9fcde5033bf0da42b3d554281c5bfc5014fe7448e12cb6fd0ea58217476b527"
+    },
+    {
+      "case": 1463,
+      "mode": "local_parallel_dependency_queue",
+      "task": "forward-case1463-assembly-task.json",
+      "source_publication": "case1463-packed-canonical-publication.json",
+      "exact_source_archive_sha256": "2f27827201e1ff5534862ee838bb07dd462c951fabfe01bd532d33958eb30579",
+      "groups": 292,
+      "queue_sha256": "f57e7b88fc20460a57adb3ebfd7d211e31d0cc170cb3bcd7b812cf82a66fb843",
+      "last_observed_completed_groups": 4,
+      "full_case_audit_pending": true,
+      "complete_source_master_hash_validation_scope": "Root checkpoint rehashed each complete master. Publication independently read the stable master member manifest, checked every accepted first-group transport member, and matched its Lean hashes against this master; it did not rehash all large masters again.",
+      "first_actual_group_audit": {
+        "task": "library-case1463-node998-000-task.json",
+        "transport_sha256": "20b88df880593ec308b0b2e7a2e07c5014c2617257d0ea20bdc4ad73158eea78",
+        "actual_log_sha256": "db16714813681e4deac892ecf9756271d3769ce2a2e7b7ceaa1a8c34466e135f",
+        "CHECK_sha256": "ed02e31c3c1ddb6d8714f43b4c73945be107e2911cc809b144e479369b7218f5",
+        "audit_seconds": 34.48,
+        "target_axioms": {
+          "ElevenSquare.Pending.T03.Certificates.Polygon2519f7d65902555769602cee.PackedCase1463.contained": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "actual_CHECK": {
+          "status": "accepted",
+          "source": "verification/HandoffAudit.lean",
+          "exit_code": 0,
+          "elapsed_seconds": 34.48,
+          "lean_memory_limit_mb": 8192,
+          "lean_threads": 1,
+          "lean_thread_stack_kb": 32768,
+          "lean_main_stack_kb": 65536,
+          "cpu_seconds_limit": 1800,
+          "wall_seconds_limit": 2100,
+          "nice_increment": 0,
+          "emitted_olean": null,
+          "meaning": "Elaboration check only; inspect axioms and admissions before marking a proof complete."
+        },
+        "actual_log": "'ElevenSquare.Pending.T03.Certificates.Polygon2519f7d65902555769602cee.PackedCase1463.contained' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+        "all_transport_member_hashes_checked": true,
+        "accepted_group_Lean_members_matching_current_master_manifest": 637,
+        "execution_record_sha256": "bab73cbebd65f2258008850a7b24da24127c3b98867442d8ef497c6a5dc341a7",
+        "wrapper_sha256": "0578c19f95d265a6c32982f33dd415116a9be27825ff097e293ad0f97fc37cb6",
+        "exact_group_task": {
+          "id": "T03_compact_full_trace",
+          "modules": [
+            "ElevenSquare.Tasks.T03.Batch04.Case1463.PackedNamespaced.Chunk000"
+          ],
+          "axiom_targets": [
+            "ElevenSquare.Pending.T03.Certificates.Polygon2519f7d65902555769602cee.PackedCase1463.contained"
+          ]
+        },
+        "exact_group_task_sha256": "4d7548fa2e2bae8be42a6f6f3a7ec5033e6f8d0b0ba8cabc8fe53f51732e5cff"
+      },
+      "full_case_original_axiom_targets": [
+        "ElevenSquare.Pending.T03.Batch04.Case1463.Forward.Certificate.certificate_exists"
+      ],
+      "full_case_guard_sha256": "4ae2d5736b9e3da9fad0fdc016d07785caf8b140e3327004f254f545e8e13558"
+    },
+    {
+      "case": 1464,
+      "mode": "local_parallel_dependency_queue",
+      "task": "forward-case1464-packed-namespaced-retry-assembly-task.json",
+      "source_publication": "case1464-packed-parallel-publication.json",
+      "exact_source_archive_sha256": "e6006483335c1e808012a896cfe6736cbdb1fd2fcee854d2d5dd7c0cd06b211c",
+      "groups": 370,
+      "queue_sha256": "30567ac87931b72dfd3dd33c8a69a69500982b2e3f4308740e7208c10559c1c1",
+      "last_observed_completed_groups": 105,
+      "full_case_audit_pending": true,
+      "complete_source_master_hash_validation_scope": "Root checkpoint rehashed each complete master. Publication independently read the stable master member manifest, checked every accepted first-group transport member, and matched its Lean hashes against this master; it did not rehash all large masters again.",
+      "first_actual_group_audit": {
+        "task": "library-case1464-node998-036-task.json",
+        "transport_sha256": "cf0f6759c9953ca917b5e46dbd66971ea29a3e6c0269893facbe6247f3abbbd0",
+        "actual_log_sha256": "af367c36d55c7111ae8566da079228f30c7f6f2e3c88bb2b4f9f9884ba4b4d40",
+        "CHECK_sha256": "924ce9851152a10024e484fc0c9883187fdd7097520610f84a99133872b1cde5",
+        "audit_seconds": 23.77,
+        "target_axioms": {
+          "ElevenSquare.Pending.T03.Certificates.Minkowski239fb0d9e7e642ca1b10cf83.PackedCase1464.contained": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "actual_CHECK": {
+          "status": "accepted",
+          "source": "verification/HandoffAudit.lean",
+          "exit_code": 0,
+          "elapsed_seconds": 23.77,
+          "lean_memory_limit_mb": 8192,
+          "lean_threads": 1,
+          "lean_thread_stack_kb": 32768,
+          "lean_main_stack_kb": 65536,
+          "cpu_seconds_limit": 1800,
+          "wall_seconds_limit": 2100,
+          "nice_increment": 0,
+          "emitted_olean": null,
+          "meaning": "Elaboration check only; inspect axioms and admissions before marking a proof complete."
+        },
+        "actual_log": "'ElevenSquare.Pending.T03.Certificates.Minkowski239fb0d9e7e642ca1b10cf83.PackedCase1464.contained' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+        "all_transport_member_hashes_checked": true,
+        "accepted_group_Lean_members_matching_current_master_manifest": 79,
+        "execution_record_sha256": "f08548c8cb3a5e1c8e48a09feb1c57b52cd24616a3d284bbd323234151fa4cd9",
+        "wrapper_sha256": "fa9ecaee4746f1bb38723a8ec4a6384cbc233dcd224750fbe2e75c280a1dcdf9",
+        "exact_group_task": {
+          "id": "T03_compact_full_trace",
+          "modules": [
+            "ElevenSquare.Tasks.T03.Batch04.Case1464.PackedNamespaced.Chunk036"
+          ],
+          "axiom_targets": [
+            "ElevenSquare.Pending.T03.Certificates.Minkowski239fb0d9e7e642ca1b10cf83.PackedCase1464.contained"
+          ]
+        },
+        "exact_group_task_sha256": "dc1d1f730e23dce77105e80f544f4ae2c67b1591ec81ffde065283e5e6158603"
+      },
+      "full_case_original_axiom_targets": [
+        "ElevenSquare.Pending.T03.Batch04.Case1464.Forward.Certificate.certificate_exists"
+      ],
+      "full_case_guard_sha256": "d8d20507758a5f6b05bc8c1e97ff0d0ddc13cb833557c9565ba6a64957eaa7c3"
+    },
+    {
+      "case": 1465,
+      "mode": "local_parallel_dependency_queue",
+      "task": "forward-case1465-packed-namespaced-retry-assembly-task.json",
+      "source_publication": "case1465-packed-parallel-publication.json",
+      "exact_source_archive_sha256": "5ee177b78311b92b3e6a0eb4992d56340e1421fe354c4b0f7ef7bc1ae9455cc5",
+      "groups": 253,
+      "queue_sha256": "7f8b325af94de5fda2bf6708c249cc385cad1cb4f647dbba43b4488bb3f0287c",
+      "last_observed_completed_groups": 100,
+      "full_case_audit_pending": true,
+      "complete_source_master_hash_validation_scope": "Root checkpoint rehashed each complete master. Publication independently read the stable master member manifest, checked every accepted first-group transport member, and matched its Lean hashes against this master; it did not rehash all large masters again.",
+      "first_actual_group_audit": {
+        "task": "library-case1465-node998-009-task.json",
+        "transport_sha256": "3d367f758999f947c2c7cba41444f563626cf8dd27377dfbf4fc8caf5c4c8c30",
+        "actual_log_sha256": "62b66384baea560d307a6f537328faff273e5f9bb6d22ccc5b29761187aa1339",
+        "CHECK_sha256": "79b87a4946d9251f94125d8b284c2aa781e8dbba4ddcf5c60da52871bf7a7150",
+        "audit_seconds": 40.18,
+        "target_axioms": {
+          "ElevenSquare.Pending.T03.Certificates.Polygonaf507f7cd980dddc55a436e2.PackedCase1465.contained": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "actual_CHECK": {
+          "status": "accepted",
+          "source": "verification/HandoffAudit.lean",
+          "exit_code": 0,
+          "elapsed_seconds": 40.18,
+          "lean_memory_limit_mb": 8192,
+          "lean_threads": 1,
+          "lean_thread_stack_kb": 32768,
+          "lean_main_stack_kb": 65536,
+          "cpu_seconds_limit": 1800,
+          "wall_seconds_limit": 2100,
+          "nice_increment": 0,
+          "emitted_olean": null,
+          "meaning": "Elaboration check only; inspect axioms and admissions before marking a proof complete."
+        },
+        "actual_log": "'ElevenSquare.Pending.T03.Certificates.Polygonaf507f7cd980dddc55a436e2.PackedCase1465.contained' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+        "all_transport_member_hashes_checked": true,
+        "accepted_group_Lean_members_matching_current_master_manifest": 176,
+        "execution_record_sha256": "beac41bafa3935a60eb14d1e40dd2c096c606735e0a3fb08eaea20ed43cc288d",
+        "wrapper_sha256": "d4af2296ad2c40f2e4a4882733d4aab8654c47cde738509a4419541344d6c046",
+        "exact_group_task": {
+          "id": "T03_compact_full_trace",
+          "modules": [
+            "ElevenSquare.Tasks.T03.Batch04.Case1465.PackedNamespaced.Chunk009"
+          ],
+          "axiom_targets": [
+            "ElevenSquare.Pending.T03.Certificates.Polygonaf507f7cd980dddc55a436e2.PackedCase1465.contained"
+          ]
+        },
+        "exact_group_task_sha256": "59acf793a266327a766242c85b5b1ec621ac7e32d6037508db3d9e563a6e709a"
+      },
+      "full_case_original_axiom_targets": [
+        "ElevenSquare.Pending.T03.Batch04.Case1465.Forward.Certificate.certificate_exists"
+      ],
+      "full_case_guard_sha256": "b51c867f1f25d364eedf2e2f48071580e897c860b5403460ece8d79b7fed4c39"
+    },
+    {
+      "case": 1499,
+      "mode": "local_parallel_dependency_queue",
+      "task": "forward-case1499-parallel-retry01-assembly-task.json",
+      "source_publication": "case1499-remaining-parallel-canonical-publication.json",
+      "exact_source_archive_sha256": "f50d32e21a6babf4840f49f942d51768ed768f8d0bcadb665d4f69f50fe6979f",
+      "groups": 72,
+      "queue_sha256": "8f87348dd4e1557fc9dd609fbf6dcf813f020c175bcc98a5a7f40e058ca5d092",
+      "last_observed_completed_groups": 20,
+      "full_case_audit_pending": true,
+      "complete_source_master_hash_validation_scope": "Root checkpoint rehashed each complete master. Publication independently read the stable master member manifest, checked every accepted first-group transport member, and matched its Lean hashes against this master; it did not rehash all large masters again.",
+      "first_actual_group_audit": {
+        "task": "library-case1499-node998-015-task.json",
+        "transport_sha256": "e8883831ce4dacd4e0538350bac79fe16120198c7d464c128412829acf7bfc5c",
+        "actual_log_sha256": "f7f4a9e1c1c99a8df3674c31ae67921bd621dd2d3719e23ac6ed2a84cb32fe7c",
+        "CHECK_sha256": "4e84dd7aef2a1f956c01ea306e918210c82cf77dd92b7483ba0d2104cf4de61c",
+        "audit_seconds": 27.44,
+        "target_axioms": {
+          "ElevenSquare.Pending.T03.Certificates.Polygonaf3590929bd4736536df7bf0.PackedCase1499.contained": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "actual_CHECK": {
+          "status": "accepted",
+          "source": "verification/HandoffAudit.lean",
+          "exit_code": 0,
+          "elapsed_seconds": 27.44,
+          "lean_memory_limit_mb": 8192,
+          "lean_threads": 1,
+          "lean_thread_stack_kb": 32768,
+          "lean_main_stack_kb": 65536,
+          "cpu_seconds_limit": 1800,
+          "wall_seconds_limit": 2100,
+          "nice_increment": 0,
+          "emitted_olean": null,
+          "meaning": "Elaboration check only; inspect axioms and admissions before marking a proof complete."
+        },
+        "actual_log": "'ElevenSquare.Pending.T03.Certificates.Polygonaf3590929bd4736536df7bf0.PackedCase1499.contained' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+        "all_transport_member_hashes_checked": true,
+        "accepted_group_Lean_members_matching_current_master_manifest": 61,
+        "execution_record_sha256": "3a73d981e480ad5bcbdb973775ba0fe4a52413bcc10759dcb5ee51adb444d20c",
+        "wrapper_sha256": "58fc66bc69438ba133e03c2e755831a3f061262cd4f8520ca52fd35e274ac845",
+        "exact_group_task": {
+          "id": "T03_compact_full_trace",
+          "modules": [
+            "ElevenSquare.Tasks.T03.Batch05.Case1499.PackedRemainingRetry01.Chunk015"
+          ],
+          "axiom_targets": [
+            "ElevenSquare.Pending.T03.Certificates.Polygonaf3590929bd4736536df7bf0.PackedCase1499.contained"
+          ]
+        },
+        "exact_group_task_sha256": "f0de8bc3edb17110f84c31e76497371d33d26daaf9358284c9a6c51e606f8483"
+      },
+      "full_case_original_axiom_targets": [
+        "ElevenSquare.Pending.T03.Batch05.Case1499.Forward.Certificate.certificate_exists"
+      ],
+      "full_case_guard_sha256": "4fcb87f354a360516577a83523d91aea71b5bc8608669d7833e38d31a061bb72"
+    },
+    {
+      "case": 1823,
+      "mode": "local_parallel_dependency_queue",
+      "task": "forward-case1823-assembly-task.json",
+      "source_publication": "case1823-packed-canonical-publication.json",
+      "exact_source_archive_sha256": "2b9bb0e4bfc5c0f71d4ec5b07035606048b958799a6b3ad1615c1d3acf45a377",
+      "groups": 641,
+      "queue_sha256": "1d6ec80b38a3f4b1fba03f1d2b6c84ca88a55afb43ece1d4d34fad00ed84652e",
+      "last_observed_completed_groups": 4,
+      "full_case_audit_pending": true,
+      "complete_source_master_hash_validation_scope": "Root checkpoint rehashed each complete master. Publication independently read the stable master member manifest, checked every accepted first-group transport member, and matched its Lean hashes against this master; it did not rehash all large masters again.",
+      "first_actual_group_audit": {
+        "task": "library-case1823-node998-000-task.json",
+        "transport_sha256": "2c75e6dbc72f3638d3a846544efe89779aa287ade73c9d52dfbb5913a23d438b",
+        "actual_log_sha256": "0279ec768123a17fa7b4262f5e9bf7f4b7d82943c444e20da9efb735c89a0eac",
+        "CHECK_sha256": "cd5ab9ad04585e110fde909a086145ed50c3a56dcdbfe21c328c5953c96a75b6",
+        "audit_seconds": 39.42,
+        "target_axioms": {
+          "ElevenSquare.Pending.T03.Certificates.Polygonca923df2f4633926fcd28bdb.PackedCase1823.contained": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "actual_CHECK": {
+          "status": "accepted",
+          "source": "verification/HandoffAudit.lean",
+          "exit_code": 0,
+          "elapsed_seconds": 39.42,
+          "lean_memory_limit_mb": 8192,
+          "lean_threads": 1,
+          "lean_thread_stack_kb": 32768,
+          "lean_main_stack_kb": 65536,
+          "cpu_seconds_limit": 1800,
+          "wall_seconds_limit": 2100,
+          "nice_increment": 0,
+          "emitted_olean": null,
+          "meaning": "Elaboration check only; inspect axioms and admissions before marking a proof complete."
+        },
+        "actual_log": "'ElevenSquare.Pending.T03.Certificates.Polygonca923df2f4633926fcd28bdb.PackedCase1823.contained' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+        "all_transport_member_hashes_checked": true,
+        "accepted_group_Lean_members_matching_current_master_manifest": 654,
+        "execution_record_sha256": "1af59f61225bf3d06dc6f8686b8a4269ddca340c5e3b6c4c28843c04dd64576f",
+        "wrapper_sha256": "15251bb81ccc2a29223b0f5d58f75ffcb6c2d110c20ea2c4c25001f64ffcff07",
+        "exact_group_task": {
+          "id": "T03_compact_full_trace",
+          "modules": [
+            "ElevenSquare.Tasks.T03.Batch08.Case1823.PackedNamespaced.Chunk000"
+          ],
+          "axiom_targets": [
+            "ElevenSquare.Pending.T03.Certificates.Polygonca923df2f4633926fcd28bdb.PackedCase1823.contained"
+          ]
+        },
+        "exact_group_task_sha256": "fcb65c6315e7f7aa58de619266c781ea1c88abdb9692617e3ab1ee677163c7db"
+      },
+      "full_case_original_axiom_targets": [
+        "ElevenSquare.Pending.T03.Batch08.Case1823.Forward.Certificate.certificate_exists"
+      ],
+      "full_case_guard_sha256": "5717aa80636deae5d6fa569b1a2dc92d338aa118febf86f9772024b9cf3f14d5"
+    },
+    {
+      "case": 1849,
+      "mode": "local_parallel_dependency_queue",
+      "task": "forward-case1849-packed-namespaced-retry01-retry-assembly-task.json",
+      "source_publication": "case1849-packed-parallel-publication.json",
+      "exact_source_archive_sha256": "caa1cd05a87494e9262e09514a9435d82651b20688b1d644953241803227f8e0",
+      "groups": 150,
+      "queue_sha256": "6bb24f8a1d0d9acdf5cf9f9d97aefded7d47af267d8d1eea76eacf2fe7365fc2",
+      "last_observed_completed_groups": 2,
+      "full_case_audit_pending": true,
+      "complete_source_master_hash_validation_scope": "Root checkpoint rehashed each complete master. Publication independently read the stable master member manifest, checked every accepted first-group transport member, and matched its Lean hashes against this master; it did not rehash all large masters again.",
+      "first_actual_group_audit": {
+        "task": "library-case1849-node998-000-task.json",
+        "transport_sha256": "778fccb5af97a9a7c973d00ae676320896ef5ab18789af86ee46d5eba0c4d2fc",
+        "actual_log_sha256": "859dfbfa30f8a00c57a34d5a8b443ed47d08536e1bd18b4c80cea93848ffe002",
+        "CHECK_sha256": "d5cdd11f128a394f72deb6de07130c8197ef7204196da057521c8b6018a85239",
+        "audit_seconds": 37.97,
+        "target_axioms": {
+          "ElevenSquare.Pending.T03.Certificates.Polygonec546395f9684c43212d1637.PackedCase1849.contained": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "actual_CHECK": {
+          "status": "accepted",
+          "source": "verification/HandoffAudit.lean",
+          "exit_code": 0,
+          "elapsed_seconds": 37.97,
+          "lean_memory_limit_mb": 8192,
+          "lean_threads": 1,
+          "lean_thread_stack_kb": 32768,
+          "lean_main_stack_kb": 65536,
+          "cpu_seconds_limit": 1800,
+          "wall_seconds_limit": 2100,
+          "nice_increment": 0,
+          "emitted_olean": null,
+          "meaning": "Elaboration check only; inspect axioms and admissions before marking a proof complete."
+        },
+        "actual_log": "'ElevenSquare.Pending.T03.Certificates.Polygonec546395f9684c43212d1637.PackedCase1849.contained' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+        "all_transport_member_hashes_checked": true,
+        "accepted_group_Lean_members_matching_current_master_manifest": 654,
+        "execution_record_sha256": "7b4200e87ac36c5b153af07064520e629f4cb584a0c30d15d64a3d642154a801",
+        "wrapper_sha256": "a789a9c1e0b350331a70b952b08a3ab1398317beb79b35443d8895183ea6f1de",
+        "exact_group_task": {
+          "id": "T03_compact_full_trace",
+          "modules": [
+            "ElevenSquare.Tasks.T03.Batch09.Case1849.PackedNamespacedRetry01.Chunk000"
+          ],
+          "axiom_targets": [
+            "ElevenSquare.Pending.T03.Certificates.Polygonec546395f9684c43212d1637.PackedCase1849.contained"
+          ]
+        },
+        "exact_group_task_sha256": "23209d89333a79233b3bd16ef052b36a7b30d32d0bc4b62262d2934b080506ea"
+      },
+      "full_case_original_axiom_targets": [
+        "ElevenSquare.Pending.T03.Batch09.Case1849.Forward.Certificate.certificate_exists"
+      ],
+      "full_case_guard_sha256": "e77abc24145ee818e13e804def2ffe9b0c5914da0fd9182528ff8a0a934a0d79"
+    },
+    {
+      "case": 1887,
+      "mode": "local_parallel_dependency_queue",
+      "task": "forward-case1887-assembly-task.json",
+      "source_publication": "case1887-packed-canonical-publication.json",
+      "exact_source_archive_sha256": "289117cc4c737492fd0a2f3c5fa3d3b45140e38b8ca4e272dfbc987dcfd3c368",
+      "groups": 294,
+      "queue_sha256": "f8197261fcf7d2e28ee7aaa7c3716ed673a2991415b65db054fc331a19ef6f17",
+      "last_observed_completed_groups": 57,
+      "full_case_audit_pending": true,
+      "complete_source_master_hash_validation_scope": "Root checkpoint rehashed each complete master. Publication independently read the stable master member manifest, checked every accepted first-group transport member, and matched its Lean hashes against this master; it did not rehash all large masters again.",
+      "first_actual_group_audit": {
+        "task": "library-case1887-node998-000-task.json",
+        "transport_sha256": "3610cca069f4041cbad54c7166b7e2348b37866c7e4000c516fa4d6e32140926",
+        "actual_log_sha256": "8d25c21fbbf97b1522baf896f262a7832025654edf1aaf7424d1473a713f4917",
+        "CHECK_sha256": "0379ec04fe824ee7b0a1c0c116ea017f7df43a453ae78e3883cfd354a775c51b",
+        "audit_seconds": 34.2,
+        "target_axioms": {
+          "ElevenSquare.Pending.T03.Certificates.Polygon4ac46d4dcdcd678ed6eb4bc5.PackedCase1887.contained": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "actual_CHECK": {
+          "status": "accepted",
+          "source": "verification/HandoffAudit.lean",
+          "exit_code": 0,
+          "elapsed_seconds": 34.2,
+          "lean_memory_limit_mb": 8192,
+          "lean_threads": 1,
+          "lean_thread_stack_kb": 32768,
+          "lean_main_stack_kb": 65536,
+          "cpu_seconds_limit": 1800,
+          "wall_seconds_limit": 2100,
+          "nice_increment": 0,
+          "emitted_olean": null,
+          "meaning": "Elaboration check only; inspect axioms and admissions before marking a proof complete."
+        },
+        "actual_log": "'ElevenSquare.Pending.T03.Certificates.Polygon4ac46d4dcdcd678ed6eb4bc5.PackedCase1887.contained' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+        "all_transport_member_hashes_checked": true,
+        "accepted_group_Lean_members_matching_current_master_manifest": 671,
+        "execution_record_sha256": "714c41ac3dfd09888d3e90e20dc8daa89702e175c37feec1e452f94cc9bca754",
+        "wrapper_sha256": "fccf43e6fe2675a18df7cd54f563c73333a1021305540ade0c6275abaeb01466",
+        "exact_group_task": {
+          "id": "T03_compact_full_trace",
+          "modules": [
+            "ElevenSquare.Tasks.T03.Batch09.Case1887.PackedNamespaced.Chunk000"
+          ],
+          "axiom_targets": [
+            "ElevenSquare.Pending.T03.Certificates.Polygon4ac46d4dcdcd678ed6eb4bc5.PackedCase1887.contained"
+          ]
+        },
+        "exact_group_task_sha256": "5228b3db2938c42151b5654ccac3cb904503ad9ee82c0fe33da217c8ef5daf3d"
+      },
+      "full_case_original_axiom_targets": [
+        "ElevenSquare.Pending.T03.Batch09.Case1887.Forward.Certificate.certificate_exists"
+      ],
+      "full_case_guard_sha256": "aff8d9043d3d692bb8b3f6d838f8e53a578e76baf1a5a061a825a07337757b75"
+    },
+    {
+      "case": 1891,
+      "mode": "local_parallel_dependency_queue",
+      "task": "forward-case1891-assembly-task.json",
+      "source_publication": "case1891-packed-canonical-publication.json",
+      "exact_source_archive_sha256": "c03e1befc0b4aa98d1ac4be1cdd66ed70140d0036656d3f48e3f909d54a5d205",
+      "groups": 365,
+      "queue_sha256": "d722b9fa647e6a68ccd69dac934e1be59deb0cdb38c1e678a0a2db8cf55e8fc5",
+      "last_observed_completed_groups": 4,
+      "full_case_audit_pending": true,
+      "complete_source_master_hash_validation_scope": "Root checkpoint rehashed each complete master. Publication independently read the stable master member manifest, checked every accepted first-group transport member, and matched its Lean hashes against this master; it did not rehash all large masters again.",
+      "first_actual_group_audit": {
+        "task": "library-case1891-node998-000-task.json",
+        "transport_sha256": "086c978a55d83fec21b534beb39aba7b0493843ec91a76a3db1754008e90a733",
+        "actual_log_sha256": "a5883cf981aeaf696622cf0e4b8b9a106e087af3b68d6c6fc10e912238231f86",
+        "CHECK_sha256": "1c8581dec5ed5a5395c5e5da8517ae7a85548d0a8616daa84a2e833dddc251b6",
+        "audit_seconds": 40.34,
+        "target_axioms": {
+          "ElevenSquare.Pending.T03.Certificates.UniversalCollision3b1f1c0245e91b6f5131cd63.PackedCase1891.hi": [
+            "propext"
+          ]
+        },
+        "actual_CHECK": {
+          "status": "accepted",
+          "source": "verification/HandoffAudit.lean",
+          "exit_code": 0,
+          "elapsed_seconds": 40.34,
+          "lean_memory_limit_mb": 8192,
+          "lean_threads": 1,
+          "lean_thread_stack_kb": 32768,
+          "lean_main_stack_kb": 65536,
+          "cpu_seconds_limit": 1800,
+          "wall_seconds_limit": 2100,
+          "nice_increment": 0,
+          "emitted_olean": null,
+          "meaning": "Elaboration check only; inspect axioms and admissions before marking a proof complete."
+        },
+        "actual_log": "'ElevenSquare.Pending.T03.Certificates.UniversalCollision3b1f1c0245e91b6f5131cd63.PackedCase1891.hi' depends on axioms: [propext]\n",
+        "all_transport_member_hashes_checked": true,
+        "accepted_group_Lean_members_matching_current_master_manifest": 671,
+        "execution_record_sha256": "f4b4e866dd8d174662228e153af575ba09b044ad5d1fd839a3a3a30f00e7b0bd",
+        "wrapper_sha256": "d7d09dff0ebd1bb94ea5a6cc3d6a2b04bd794d2ffba39401d6ce44028aa18889",
+        "exact_group_task": {
+          "id": "T03_compact_full_trace",
+          "modules": [
+            "ElevenSquare.Tasks.T03.Batch09.Case1891.PackedNamespaced.Chunk000"
+          ],
+          "axiom_targets": [
+            "ElevenSquare.Pending.T03.Certificates.UniversalCollision3b1f1c0245e91b6f5131cd63.PackedCase1891.hi"
+          ]
+        },
+        "exact_group_task_sha256": "c508700f9ee45b2aa33bbebbb952e88768f7cb8d513763302d61cc8972102108"
+      },
+      "full_case_original_axiom_targets": [
+        "ElevenSquare.Pending.T03.Batch09.Case1891.Forward.Certificate.certificate_exists"
+      ],
+      "full_case_guard_sha256": "5257d5c19d7e6adfeb6bde3c69dfe8406aea6b17055dd22bc718f50e6cce8ac0"
+    },
+    {
+      "case": 2051,
+      "mode": "local_parallel_dependency_queue",
+      "task": "forward-case2051-assembly-task.json",
+      "source_publication": "case2051-packed-canonical-publication.json",
+      "exact_source_archive_sha256": "964c1f96ff52764e3f0e3cff586d49830114d9d924291b8b4a8529d11453b3c8",
+      "groups": 291,
+      "queue_sha256": "8c5ad6eeb120a8d7efaee177f9d486ebd109cd6795cb5fd8301b44faa7c8fc0c",
+      "last_observed_completed_groups": 27,
+      "full_case_audit_pending": true,
+      "complete_source_master_hash_validation_scope": "Root checkpoint rehashed each complete master. Publication independently read the stable master member manifest, checked every accepted first-group transport member, and matched its Lean hashes against this master; it did not rehash all large masters again.",
+      "first_actual_group_audit": {
+        "task": "library-case2051-node998-000-task.json",
+        "transport_sha256": "9ae00b11308639d48a0168cf9997e076527aeef00c49a1ccbb3bd5a0890bb379",
+        "actual_log_sha256": "3c72d224d7f46bf681b33c3c1105e09358b67995aa10833cabbba7f29f04f69c",
+        "CHECK_sha256": "10c097c6c8e0798f8a1b07aaed757552dea390ee220fdfbed7d26c3fee0d33b6",
+        "audit_seconds": 32.07,
+        "target_axioms": {
+          "ElevenSquare.Pending.T03.Certificates.UniversalCollision8c97268908577892d97942b1.PackedCase2051.hi": [
+            "propext"
+          ]
+        },
+        "actual_CHECK": {
+          "status": "accepted",
+          "source": "verification/HandoffAudit.lean",
+          "exit_code": 0,
+          "elapsed_seconds": 32.07,
+          "lean_memory_limit_mb": 8192,
+          "lean_threads": 1,
+          "lean_thread_stack_kb": 32768,
+          "lean_main_stack_kb": 65536,
+          "cpu_seconds_limit": 1800,
+          "wall_seconds_limit": 2100,
+          "nice_increment": 0,
+          "emitted_olean": null,
+          "meaning": "Elaboration check only; inspect axioms and admissions before marking a proof complete."
+        },
+        "actual_log": "'ElevenSquare.Pending.T03.Certificates.UniversalCollision8c97268908577892d97942b1.PackedCase2051.hi' depends on axioms: [propext]\n",
+        "all_transport_member_hashes_checked": true,
+        "accepted_group_Lean_members_matching_current_master_manifest": 655,
+        "execution_record_sha256": "d5befa749fa492030c4923cf3170055e74cb99ed11ef056470d3eafb6685ea27",
+        "wrapper_sha256": "870799aba691e5aff1a67f9e70d41a2d595085e2b1557d455637c284e474a8ad",
+        "exact_group_task": {
+          "id": "T03_compact_full_trace",
+          "modules": [
+            "ElevenSquare.Tasks.T03.Batch10.Case2051.PackedNamespaced.Chunk000"
+          ],
+          "axiom_targets": [
+            "ElevenSquare.Pending.T03.Certificates.UniversalCollision8c97268908577892d97942b1.PackedCase2051.hi"
+          ]
+        },
+        "exact_group_task_sha256": "bc6c4c7f560e458594f84a91057b6f14956fbf91cf4ff1a07d578bf89f2944ef"
+      },
+      "full_case_original_axiom_targets": [
+        "ElevenSquare.Pending.T03.Batch10.Case2051.Forward.Certificate.certificate_exists"
+      ],
+      "full_case_guard_sha256": "0d67a09c7821f811d037ee5d77dd4d3306866630bc682e38e53995d82c9db8a4"
+    },
+    {
+      "case": 2068,
+      "mode": "local_parallel_dependency_queue",
+      "task": "forward-case2068-assembly-task.json",
+      "source_publication": "case2068-packed-canonical-publication.json",
+      "exact_source_archive_sha256": "7b831f9a2bad8fc5135cb55b2f5242325f131663ffcf6208ba9b9a81edd30e4b",
+      "groups": 545,
+      "queue_sha256": "b9777f66949d0c584b6adc1cc9b19e1db7c23baba3e39506e75bf9a4936cf96d",
+      "last_observed_completed_groups": 4,
+      "full_case_audit_pending": true,
+      "complete_source_master_hash_validation_scope": "Root checkpoint rehashed each complete master. Publication independently read the stable master member manifest, checked every accepted first-group transport member, and matched its Lean hashes against this master; it did not rehash all large masters again.",
+      "first_actual_group_audit": {
+        "task": "library-case2068-node998-000-task.json",
+        "transport_sha256": "ac2259a1afce1edbdd357c6460856892ecb22a20aa6fdb71b60111d6f3d7ef14",
+        "actual_log_sha256": "d08781707de4af9ed41f2ac90a949162cc83b03cb27d86c0c97287e6734b54c2",
+        "CHECK_sha256": "9ebadd7bf5ead9bb602bd4ea7360ac701322833230b1427b525202aa892541b6",
+        "audit_seconds": 32.65,
+        "target_axioms": {
+          "ElevenSquare.Pending.T03.Certificates.Polygon5639c465e91335f8d40c4917.PackedCase2068.contained": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "actual_CHECK": {
+          "status": "accepted",
+          "source": "verification/HandoffAudit.lean",
+          "exit_code": 0,
+          "elapsed_seconds": 32.65,
+          "lean_memory_limit_mb": 8192,
+          "lean_threads": 1,
+          "lean_thread_stack_kb": 32768,
+          "lean_main_stack_kb": 65536,
+          "cpu_seconds_limit": 1800,
+          "wall_seconds_limit": 2100,
+          "nice_increment": 0,
+          "emitted_olean": null,
+          "meaning": "Elaboration check only; inspect axioms and admissions before marking a proof complete."
+        },
+        "actual_log": "'ElevenSquare.Pending.T03.Certificates.Polygon5639c465e91335f8d40c4917.PackedCase2068.contained' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+        "all_transport_member_hashes_checked": true,
+        "accepted_group_Lean_members_matching_current_master_manifest": 637,
+        "execution_record_sha256": "74f5547032451d5a79fd4e5958b508bedf080f0cbc35e202a111c11c6670997d",
+        "wrapper_sha256": "1f6498f6c8b9101bef4aa8638dcb02f010f1798e485e66268c603a94f46a3416",
+        "exact_group_task": {
+          "id": "T03_compact_full_trace",
+          "modules": [
+            "ElevenSquare.Tasks.T03.Batch10.Case2068.PackedNamespaced.Chunk000"
+          ],
+          "axiom_targets": [
+            "ElevenSquare.Pending.T03.Certificates.Polygon5639c465e91335f8d40c4917.PackedCase2068.contained"
+          ]
+        },
+        "exact_group_task_sha256": "5d8014360a11f88410fa046bef2e628ebcb5c40b0d0cf22f89bae6399f817fe1"
+      },
+      "full_case_original_axiom_targets": [
+        "ElevenSquare.Pending.T03.Batch10.Case2068.Forward.Certificate.certificate_exists"
+      ],
+      "full_case_guard_sha256": "bc7fc226afae9ce87863d3b149a0bf1d4abca2b65f4f050a09c8c921e32d4c4a"
+    },
+    {
+      "case": 2069,
+      "mode": "local_parallel_dependency_queue",
+      "task": "forward-case2069-packed-namespaced-retry-assembly-task.json",
+      "source_publication": "case2069-packed-parallel-publication.json",
+      "exact_source_archive_sha256": "e9be51f8d9dff430971bbcb95a7e5689517ce999355a1471ff5a7855fbbfe1b4",
+      "groups": 120,
+      "queue_sha256": "290a475a4d18c9e8bb18040e5094317268e2483bec7740c499617d61f3ea1740",
+      "last_observed_completed_groups": 71,
+      "full_case_audit_pending": true,
+      "complete_source_master_hash_validation_scope": "Root checkpoint rehashed each complete master. Publication independently read the stable master member manifest, checked every accepted first-group transport member, and matched its Lean hashes against this master; it did not rehash all large masters again.",
+      "first_actual_group_audit": {
+        "task": "library-case2069-node998-016-task.json",
+        "transport_sha256": "e1e459ef1f59b6b536c12cf7deacd68126581c60caf36f64c8a9273a837f8107",
+        "actual_log_sha256": "3cfa70cb7b8b39d1bfa9a9f66f6d9cb809fb61fe330ac2ccd33854e75a7a0180",
+        "CHECK_sha256": "1cf844e61fa09401bf09734bf3cded5f69d437aa524d2e2c990572375f196dc2",
+        "audit_seconds": 30.02,
+        "target_axioms": {
+          "ElevenSquare.Pending.T03.Certificates.UniversalHull02056b0214be0ff65e776a45.PackedCase2069.shapeContained": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "actual_CHECK": {
+          "status": "accepted",
+          "source": "verification/HandoffAudit.lean",
+          "exit_code": 0,
+          "elapsed_seconds": 30.02,
+          "lean_memory_limit_mb": 8192,
+          "lean_threads": 1,
+          "lean_thread_stack_kb": 32768,
+          "lean_main_stack_kb": 65536,
+          "cpu_seconds_limit": 1800,
+          "wall_seconds_limit": 2100,
+          "nice_increment": 0,
+          "emitted_olean": null,
+          "meaning": "Elaboration check only; inspect axioms and admissions before marking a proof complete."
+        },
+        "actual_log": "'ElevenSquare.Pending.T03.Certificates.UniversalHull02056b0214be0ff65e776a45.PackedCase2069.shapeContained' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+        "all_transport_member_hashes_checked": true,
+        "accepted_group_Lean_members_matching_current_master_manifest": 62,
+        "execution_record_sha256": "4ee1347b2a9ded0341c645c93709d173955349c036b0f8ef8483a9cefc4c7549",
+        "wrapper_sha256": "c282c09242462f2979dfaa87105fb2225a91271548f97c8c0d9e621ac4c02c4f",
+        "exact_group_task": {
+          "id": "T03_compact_full_trace",
+          "modules": [
+            "ElevenSquare.Tasks.T03.Batch10.Case2069.PackedNamespaced.Chunk016"
+          ],
+          "axiom_targets": [
+            "ElevenSquare.Pending.T03.Certificates.UniversalHull02056b0214be0ff65e776a45.PackedCase2069.shapeContained"
+          ]
+        },
+        "exact_group_task_sha256": "6ba6ff5e90453d5521aaa8d635e8c9d26a2e87a06f51c342b940839531f8ee89"
+      },
+      "full_case_original_axiom_targets": [
+        "ElevenSquare.Pending.T03.Batch10.Case2069.Forward.Certificate.certificate_exists"
+      ],
+      "full_case_guard_sha256": "c3a50cfe43db1f3cc571869524c0b521e186bd975ddc13475c1a019369725852"
+    },
+    {
+      "case": 2070,
+      "mode": "local_parallel_dependency_queue",
+      "task": "forward-case2070-assembly-task.json",
+      "source_publication": "case2070-packed-canonical-publication.json",
+      "exact_source_archive_sha256": "32d1e2fda4884a557223ff99f8ffee25891d9ca82db95bab0634b7101506c7cc",
+      "groups": 617,
+      "queue_sha256": "e81c1662f358dfdb3739fe4d6f3ca3a4c367572b048a2832acd8eca2e71ae6b2",
+      "last_observed_completed_groups": 4,
+      "full_case_audit_pending": true,
+      "complete_source_master_hash_validation_scope": "Root checkpoint rehashed each complete master. Publication independently read the stable master member manifest, checked every accepted first-group transport member, and matched its Lean hashes against this master; it did not rehash all large masters again.",
+      "first_actual_group_audit": {
+        "task": "library-case2070-node998-000-task.json",
+        "transport_sha256": "5a531b58c6b42bd7ec451a6afffcaf6b06ca7a74ae7b918c0fa895a320b25efe",
+        "actual_log_sha256": "1ced0084f80747de1bfb42150e5a55f82abae7425893cb8c28d2bd82b39e70ee",
+        "CHECK_sha256": "05c86b4f62e27cf87e9820583fc35cc9b96c2d042940eebb089bf6dbcf2340ef",
+        "audit_seconds": 32.43,
+        "target_axioms": {
+          "ElevenSquare.Pending.T03.Certificates.Polygonc69281c3e042ac5276e63e60.PackedCase2070.contained": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "actual_CHECK": {
+          "status": "accepted",
+          "source": "verification/HandoffAudit.lean",
+          "exit_code": 0,
+          "elapsed_seconds": 32.43,
+          "lean_memory_limit_mb": 8192,
+          "lean_threads": 1,
+          "lean_thread_stack_kb": 32768,
+          "lean_main_stack_kb": 65536,
+          "cpu_seconds_limit": 1800,
+          "wall_seconds_limit": 2100,
+          "nice_increment": 0,
+          "emitted_olean": null,
+          "meaning": "Elaboration check only; inspect axioms and admissions before marking a proof complete."
+        },
+        "actual_log": "'ElevenSquare.Pending.T03.Certificates.Polygonc69281c3e042ac5276e63e60.PackedCase2070.contained' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+        "all_transport_member_hashes_checked": true,
+        "accepted_group_Lean_members_matching_current_master_manifest": 637,
+        "execution_record_sha256": "52b3a29726cf4f4c3d6c3a148414a3ba6ec5a85e9cdd9f75bd6334d7985ce0d2",
+        "wrapper_sha256": "1cc910942fa67c41a73da82105dc08862527790ba1ff1d9eca0366e95100b94d",
+        "exact_group_task": {
+          "id": "T03_compact_full_trace",
+          "modules": [
+            "ElevenSquare.Tasks.T03.Batch10.Case2070.PackedNamespaced.Chunk000"
+          ],
+          "axiom_targets": [
+            "ElevenSquare.Pending.T03.Certificates.Polygonc69281c3e042ac5276e63e60.PackedCase2070.contained"
+          ]
+        },
+        "exact_group_task_sha256": "d01cdbad6077eb3b14d82de59694e2bd963a35808188f8e585d2b575b6d5cecd"
+      },
+      "full_case_original_axiom_targets": [
+        "ElevenSquare.Pending.T03.Batch10.Case2070.Forward.Certificate.certificate_exists"
+      ],
+      "full_case_guard_sha256": "322d8ccdc5bfa7178191b2e413106711e57a84a9e499e1ecef2e73ce443371d7"
+    }
+  ],
+  "independently_inspected_first_group_audits": 14,
+  "maximum_global_compiler_checks": 6,
+  "new_pending_bulk_source_assets_uploaded": 0,
+  "all_group_counters_are_timestamped_producer_observations_not_full_case_acceptances": true,
+  "all_root_queues_guards_and_group_TRANSPORT_bindings_checked": true,
+  "Lean_processes_started_or_controlled_for_publication": 0,
+  "merged_repository_replay_performed": false,
+  "public_family_targets_complete": false,
+  "final_return_ZIP_complete": false
+}

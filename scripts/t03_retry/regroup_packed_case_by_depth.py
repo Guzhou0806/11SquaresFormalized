@@ -3,14 +3,17 @@ from pathlib import Path
 import argparse,collections,ctypes,functools,json,zipfile
 from retry_paths import kit_paths, low_priority_single_core
 ap=argparse.ArgumentParser();ap.add_argument('--case',type=int,required=True)
+ap.add_argument('--plan')
 ap.add_argument('--preserve-original-module',action='append',default=[])
 ap.add_argument('--kit',required=True);ap.add_argument('--archive',required=True)
 args=ap.parse_args();case=args.case
 _,E,_=kit_paths(args.kit)
 assert case in {r['case'] for r in json.loads((E/'forward-workload-inventory.json').read_text())['records']}
 low_priority_single_core()
-path=E/f'case{case}-packed-compilation-plan.json';p=json.loads(path.read_text())
-backup=E/f'case{case}-packed-compilation-greedy-plan.json'
+plan_name=args.plan or f'case{case}-packed-compilation-plan.json'
+assert Path(plan_name).name==plan_name and plan_name.startswith(f'case{case}-packed-compilation') and plan_name.endswith('-plan.json')
+path=E/plan_name;p=json.loads(path.read_text());assert p['case']==case
+backup=E/plan_name.replace('-plan.json','-greedy-plan.json')
 if p.get('grouped_by_dependency_depth'):
  assert args.preserve_original_module and not p.get('preserved_original_modules')
  assert not (E/f'case{case}-packed-namespaced-publication.json').exists()

@@ -251,3 +251,45 @@ proof count calculated by this collector. Portable tools had parsing/help
 checks only; publication did not replay source generation, queue writes or
 runtime checks. The independent published provenance contains the actual
 accepted source-member and checker bindings.
+
+
+## Local queue and readiness checkpoint
+
+The current compact checkpoint records 159 full accepted cases; the 14 remaining
+dependency queues and their actual first-group audits are partial work. See
+`verification/t03-local-queues-checkpoint-20261001.json`. This does not publish
+new large pending source closures or complete a family target.
+
+`plan_packed_case.py`, `regroup_packed_case_by_depth.py` (optional `--plan`),
+`packed_namespace_transform.py` and `prepare_namespaced_packed_case.py` preserve
+the original statement/data and classify new source constructions as pending.
+The last preparation tool supports `--all-equality-refl`, `--canonical` and a
+distinct revision; all transformed proofs still need the original Lean checker.
+Planning requires genuine source/object receipts in the compatible runtime.
+Preparation requires the original kit's benchmark/precheck evidence. All paths
+are explicit `--kit`, `--runtime-root`, `--transport-dir`, `--scratch-root` or
+`--source-root` arguments as relevant. `publish_idle_rebalanced_case.py` refuses
+active/already accepted cases; `restore_external_case_queue.py` restores only
+the exact preserved queue under its full-case guard.
+
+`pool_helpers.py` exposes the unchanged source-closure and object-hash predicates
+without starting a pool. `run_unified_proof_pool_v7.py` reserves active exact
+closures, prefers fewer active groups, rotates older waiting cases and then
+chooses the longest remaining path. It defaults to four global slots, optionally
+six, with one compiler thread per worker. Its ready-archive prefilter avoids
+historical-log probes for source batches not yet published. The checked 15.761
+to 1.547 second improvement concerns readiness selection only.
+
+`restart_critical_path_dispatcher.py` requires an explicit owned controller PID
+and exact controller/probe script paths. It pauses/replaces only that controller
+and conservatively adopts live source reservations. It does not signal a Lean
+job. Controller ownership tools require Linux and the original compatible kit,
+worker schemas and supplied checker; their live actions were not replayed for
+publication. Run `--help` for explicit arguments before using them.
+
+`benchmark_ready_archive_prefilter.py` and
+`record_ready_archive_prefilter_application.py` record eligibility and actual
+event timings without starting a checker. Reversed timestamp pairs are retained
+and flagged; they cannot establish a refill duration. `stage_verified_return.py`
+and `write_verified_report.py` retain the full-173/both-target/frozen-protocol
+guards and refuse partial completion. They were not executed for this snapshot.
